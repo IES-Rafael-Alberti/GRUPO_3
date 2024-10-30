@@ -1,0 +1,10 @@
+name: israel
+title: Profile de Israel
+maintainer: The Authors
+copyright: The Authors
+copyright_email: ivalgar260@g.educaand.es
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: linux
