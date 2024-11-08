@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Despliegue de una Aplicación Web con Node.js, Next.js y Vercel
 
-## Getting Started
+Este documento recoge el proceso para desplegar una aplicación web desarrollada en **Node.js**, **Next.js** en **Vercel**.
 
-First, run the development server:
+- **Enlace del despliegue:** https://nextjs-grupo-3.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Prerrequisitos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Cuenta en Vercel**: Crea una cuenta en [vercel.com](https://vercel.com/).
+2. **Node.js y NPM**: Instala Node.js en tu sistema, ya que Next.js y sus dependencias se gestionan con npm o yarn.
+3. **Repositorio en GitHub**: Vercel permite el despliegue directamente desde un repositorio GitHub.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 1. Configura el Proyecto en Local
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Crea un proyecto de Next.js**:
 
-## Learn More
+   ```bash
+   npx create-next-app@latest nombre-de-tu-proyecto
+   cd nombre-de-tu-proyecto
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Configura las dependencias**: Asegúrate de que todas las dependencias necesarias están en el archivo `package.json`. Usa el siguiente comando para instalar cualquier dependencia adicional:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Verifica el entorno de desarrollo**: Inicia el servidor de desarrollo para asegurarte de que la aplicación funciona correctamente.
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 2. Configura el Proyecto en Git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Inicializa un repositorio Git**:
+
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+2. **Sube el proyecto a GitHub**:
+
+   ```bash
+   git remote add origin <URL_DE_TU_REPOSITORIO>
+   git push -u origin main
+   ```
+
+## 3. Despliega la Aplicación en Vercel
+
+### Paso 1: Importa el Proyecto a Vercel
+
+1. Ve a [vercel.com](https://vercel.com) y haz clic en **"New Project"**.
+2. Conecta tu cuenta de GitHub a Vercel.
+3. Selecciona el repositorio que contiene tu proyecto Next.js.
+
+### Paso 2: Configuración Inicial en Vercel
+
+1. **Configuración del Proyecto**:
+
+   - Elige un nombre para tu proyecto o usa el nombre por defecto del repositorio.
+   - Confirma que el **Framework Preset** es `Next.js`.
+   - Selecciona la rama para el despliegue.
+
+2. Haz clic en **Deploy** para iniciar el primer despliegue de la aplicación.
+
+### Paso 3: Espera el Despliegue
+
+Vercel comenzará a construir y desplegar el proyecto automáticamente. Este proceso puede tardar unos minutos.
+
+1. **Verifica el estado**: Podrás ver el estado del despliegue en tiempo real.
+2. Una vez completado el despliegue, obtendrás un enlace (como `https://tu-proyecto.vercel.app`) donde tu aplicación estará disponible. En enlace puede personalizarse una vez desplegado el proyecto.
+
+---
+
+Estos son los pasos que deben seguirse para desplegar una aplicación web usando Node.js y Next.js, y que sea accesible mediante Vercel.
