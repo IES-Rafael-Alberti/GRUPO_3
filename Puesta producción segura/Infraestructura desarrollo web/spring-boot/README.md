@@ -26,9 +26,9 @@ Nosotros hemos escogido las siguientes características:
 
 También hay una opción donde nos deja añadir dependencias. Nosotros hemos agregado las siguientes:
 - Spring Web
-- Dcoker Compose Support
+- Docker Compose Support
 
-Una vez hemos acabado le daremos a descargar y nos dará un `archivo.jar` el cuál lo descomprimiremos dentro del directorio que hemos creado en el paso anterior. 
+Una vez hemos acabado le daremos a descargar y nos dará un `archivo.jar` el cuál lo descomprimimos dentro del directorio que hemos creado en el paso anterior. 
 
 ## 3. Configuración de DockerFile
 
@@ -51,7 +51,7 @@ server.address=0.0.0.0
 server.port=8081
 ```
 
-Nosotros como vamos a utilizar maven tendremso que editar el archivo pom.xml y añadirle la dependencia de Thymeleaf. 
+Nosotros como vamos a utilizar maven tendremos que editar el archivo pom.xml y añadir la dependencia de Thymeleaf. 
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -79,7 +79,7 @@ public class HelloController {
 
 ## 5. Creación de contenedor en docker
 
-Crearemos en la raiz de la carpeta el archivo `docker-compose.yml`. Tendrá el siguiente contenido:
+Crearemos en la raíz de la carpeta el archivo `docker-compose.yml`. Tendrá el siguiente contenido:
 ```yml
 version: '3'
 services:
@@ -91,7 +91,7 @@ services:
 
 ## 6. Construcción y ejecución de los contenedores
 
-Nos pondremos en la carpeta de spring boot y ejecutaremos el siguiente comando para contruir el contenedor y levantarlo:
+Nos pondremos en la carpeta de spring boot y ejecutaremos el siguiente comando para construir el contenedor y levantarlo:
 ```bash
 docker-compose up -d
 ```
