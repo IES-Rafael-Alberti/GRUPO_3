@@ -4,6 +4,6 @@
 3. Israel Valderrama.
 ## Partes Realizadas:
 - FastAPI: Israel Valderrama.
-- SpringBoot: Alejandro Seoane, Víctor Jiménez, Israel Valderrama.
-- WordPress: Alejandro Seoane.
+- SpringBoot: Alejandro Seoane.
+- WordPress: Alejandro Seoane , Víctor Jiménez, Israel Valderrama.
 - NextJS: Víctor Jiménez
