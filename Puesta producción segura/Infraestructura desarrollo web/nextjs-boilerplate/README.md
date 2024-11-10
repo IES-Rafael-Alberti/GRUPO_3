@@ -3,6 +3,7 @@
 Este documento recoge el proceso para desplegar una aplicación web desarrollada en **Node.js**, **Next.js** en **Vercel**.
 
 - **Enlace del despliegue:** https://nextjs-grupo-3.vercel.app/
+- **Mensaje api**: https://nextjs-grupo-3.vercel.app/api/hello
 
 ## Prerrequisitos
 
