@@ -6,4 +6,4 @@
 - FastAPI: Israel Valderrama.
 - SpringBoot: Alejandro Seoane.
 - WordPress: Alejandro Seoane , Víctor Jiménez, Israel Valderrama.
-- NextJS: Víctor Jiménez
+- NextJS: Víctor Jiménez.
