@@ -82,17 +82,17 @@ Las políticas de seguridad que se tratarán en este documento, impactan una amp
 
   La checklist que se ha creado para verificar que se aplican los puntos clave anteriormente mencionados es la siguiente:
 
-  | Nivel | Alcance | Control                                                                                                              |     |
-  | ----- | ------- | -------------------------------------------------------------------------------------------------------------------- | --- |
-  | B     | PER     | Utilizar el correo electrónico corporativo únicamente para asuntos relacionados con el trabajo.                      | [ ] |
-  | B     | PER     | Comprobar cuidadosamente los destinatarios antes de enviar correos, especialmente aquellos con información sensible. | [ ] |
-  | B     | PER     | No abrir archivos adjuntos de remitentes desconocidos o sospechosos.                                                 | [ ] |
-  | A     | PER     | Utilizar herramientas de cifrado para enviar información confidencial por correo electrónico.                        | [ ] |
-  | B     | PER     | Estar alerta ante posibles correos de phishing y reportarlos al departamento de IT.                                  | [ ] |
-  | B     | TEC     | Mantener activos y actualizados los filtros antispam en todos los buzones de correo.                                 | [ ] |
-  | A     | TEC     | Implementar un sistema de análisis automático de archivos adjuntos antes de su descarga.                             | [ ] |
-  | B     | PRO     | Proporcionar formación regular a los empleados sobre el uso seguro del correo electrónico.                           | [ ] |
-  | A     | PRO     | Realizar auditorías regulares del uso del correo electrónico para detectar posibles infracciones de la política.     | [ ] |
+  | Nivel | Alcance | Control                                                                                                              | Casilla |
+  | ----- | ------- | -------------------------------------------------------------------------------------------------------------------- | ------- |
+  | B     | PER     | Utilizar el correo electrónico corporativo únicamente para asuntos relacionados con el trabajo.                      | [ ]     |
+  | B     | PER     | Comprobar cuidadosamente los destinatarios antes de enviar correos, especialmente aquellos con información sensible. | [ ]     |
+  | B     | PER     | No abrir archivos adjuntos de remitentes desconocidos o sospechosos.                                                 | [ ]     |
+  | A     | PER     | Utilizar herramientas de cifrado para enviar información confidencial por correo electrónico.                        | [ ]     |
+  | B     | PER     | Estar alerta ante posibles correos de phishing y reportarlos al departamento de IT.                                  | [ ]     |
+  | B     | TEC     | Mantener activos y actualizados los filtros antispam en todos los buzones de correo.                                 | [ ]     |
+  | A     | TEC     | Implementar un sistema de análisis automático de archivos adjuntos antes de su descarga.                             | [ ]     |
+  | B     | PRO     | Proporcionar formación regular a los empleados sobre el uso seguro del correo electrónico.                           | [ ]     |
+  | A     | PRO     | Realizar auditorías regulares del uso del correo electrónico para detectar posibles infracciones de la política.     | [ ]     |
 
 Esta política de seguridad para el uso del correo electrónico corporativo en el puesto de trabajo proporciona una base sólida para proteger la información de la empresa y prevenir riesgos asociados con esta herramienta de comunicación esencial. La implementación y seguimiento de estas directrices ayudará a mantener un entorno de trabajo seguro y eficiente.
 
