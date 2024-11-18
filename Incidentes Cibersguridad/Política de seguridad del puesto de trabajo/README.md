@@ -46,16 +46,16 @@ Proteger la información almacenada en dispositivos extraíbles y prevenir la fu
 
 **Checklist**
 
-| Nivel | Alcance | Control                                                              |
-|-------|---------|----------------------------------------------------------------------|
-| B     | PER     | Uso exclusivo de dispositivos extraíbles autorizados por la empresa.               ⬜   |
-| A     | TEC     | Implementación de cifrado en todos los dispositivos extraíbles.      <input type="checkbox">  |
-| B     | PER     | Cumplimiento de procedimientos de conexión y desconexión segura.    <input type="checkbox">  |
-| A     | PRO     | Mantenimiento de un registro actualizado de dispositivos extraíbles. <input type="checkbox">  |
-| B     | PER     | Prohibición de uso de dispositivos extraíbles personales.            <input type="checkbox">  |
-| A     | TEC     | Implementación de sistemas de monitorización de uso de dispositivos extraíbles. <input type="checkbox">  |
-| B     | PER     | Aplicación de procedimientos de borrado seguro.                     <input type="checkbox">  |
-| B     | PER     | Participación en formaciones sobre uso seguro de dispositivos extraíbles. <input type="checkbox">  |
+| Nivel | Alcance | Control                                                     |Casilla                                            |
+|-------|---------|-------------------------------------------------------------|----------------------------------------------------|
+| B     | PER     | Uso exclusivo de dispositivos extraíbles autorizados por la empresa.               |<input type="checkbox">⬜   |
+| A     | TEC     | Implementación de cifrado en todos los dispositivos extraíbles.                     |<input type="checkbox">⬜  |
+| B     | PER     | Cumplimiento de procedimientos de conexión y desconexión segura.                    |<input type="checkbox">⬜  |
+| A     | PRO     | Mantenimiento de un registro actualizado de dispositivos extraíbles.                |<input type="checkbox">⬜  |
+| B     | PER     | Prohibición de uso de dispositivos extraíbles personales.                           |<input type="checkbox">⬜  |
+| A     | TEC     | Implementación de sistemas de monitorización de uso de dispositivos extraíbles.     |<input type="checkbox">⬜  |
+| B     | PER     | Aplicación de procedimientos de borrado seguro.                                     |<input type="checkbox">⬜  |
+| B     | PER     | Participación en formaciones sobre uso seguro de dispositivos extraíbles.           |<input type="checkbox">⬜  |
 
 
 
