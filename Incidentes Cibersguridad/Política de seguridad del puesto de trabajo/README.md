@@ -37,46 +37,46 @@ Las políticas de seguridad que se tratarán en este documento, impactan una amp
 
   1. Uso apropiado del correo electrónico corporativo:
 
-  El correo electrónico corporativo debe usarse exclusivamente para fines laborales, evitando actividades personales.
-  Está prohibido enviar información confidencial a cuentas de correo personales.
-  Es fundamental mantener un tono profesional, evitando el uso de lenguaje ofensivo o inapropiado en las comunicaciones.
+  - El correo electrónico corporativo debe usarse exclusivamente para fines laborales, evitando actividades personales.
+  - Está prohibido enviar información confidencial a cuentas de correo personales.
+  - Es fundamental mantener un tono profesional, evitando el uso de lenguaje ofensivo o inapropiado en las comunicaciones.
 
   2. Protección de la información:
 
-  Antes de enviar un correo, verifica cuidadosamente los destinatarios, especialmente si contiene información sensible.
-  Para envíos masivos a destinatarios externos, utiliza la función de copia oculta (CCO).
-  En casos de datos confidenciales, emplea herramientas de cifrado para proteger la información.
+  - Antes de enviar un correo, verifica cuidadosamente los destinatarios, especialmente si contiene información sensible.
+  - Para envíos masivos a destinatarios externos, utiliza la función de copia oculta (CCO).
+  - En casos de datos confidenciales, emplea herramientas de cifrado para proteger la información.
 
   3. Prevención de malware y phishing:
 
-  Evita abrir archivos adjuntos de remitentes desconocidos o sospechosos.
-  Sé cauteloso con correos que soliciten información personal o financiera.
-  Siempre verifica la autenticidad de los remitentes, especialmente si el correo contiene solicitudes urgentes o inusuales.
+  - Evita abrir archivos adjuntos de remitentes desconocidos o sospechosos.
+  - Sé cauteloso con correos que soliciten información personal o financiera.
+  - Siempre verifica la autenticidad de los remitentes, especialmente si el correo contiene solicitudes urgentes o inusuales.
 
   4. Gestión de contraseñas:
 
-  Utiliza contraseñas robustas siguiendo las recomendaciones de la Política de contraseñas corporativa.
-  Cambia tu contraseña periódicamente y no la compartas con terceros.
+  - Utiliza contraseñas robustas siguiendo las recomendaciones de la Política de contraseñas corporativa.
+  - Cambia tu contraseña periódicamente y no la compartas con terceros.
 
   5. Respuesta a incidentes:
 
-  Reporta de inmediato cualquier actividad sospechosa o potencial brecha de seguridad al departamento de IT.
-  Evita reenviar o eliminar correos sospechosos hasta que el equipo de seguridad los haya analizado.
+  - Reporta de inmediato cualquier actividad sospechosa o potencial brecha de seguridad al departamento de IT.
+  - Evita reenviar o eliminar correos sospechosos hasta que el equipo de seguridad los haya analizado.
 
   6. Configuración y mantenimiento:
 
-  Asegúrate de mantener actualizado el cliente de correo electrónico y los plugins asociados.
-  Configura filtros antispam y reglas de correo adecuadamente para reforzar la seguridad y la eficiencia.
+  - Asegúrate de mantener actualizado el cliente de correo electrónico y los plugins asociados.
+  - Configura filtros antispam y reglas de correo adecuadamente para reforzar la seguridad y la eficiencia.
 
   7. Formación y concienciación:
 
-  Participa en las sesiones de formación sobre seguridad del correo electrónico que ofrece la empresa.
-  Mantente informado sobre las últimas amenazas y técnicas de phishing.
+  - Participa en las sesiones de formación sobre seguridad del correo electrónico que ofrece la empresa.
+  - Mantente informado sobre las últimas amenazas y técnicas de phishing.
 
   8. Cumplimiento normativo:
 
-  Cumple con las regulaciones de protección de datos al gestionar información personal en correos electrónicos.
-  Evita utilizar el correo para enviar información que infrinja derechos de autor o acuerdos de confidencialidad.
+  - Cumple con las regulaciones de protección de datos al gestionar información personal en correos electrónicos.
+  - Evita utilizar el correo para enviar información que infrinja derechos de autor o acuerdos de confidencialidad.
 
 - #### Checklist:
 
