@@ -82,7 +82,7 @@ Las políticas de seguridad que se tratarán en este documento, impactan una amp
 
   La checklist que se ha creado para verificar que se aplican los puntos clave anteriormente mencionados es la siguiente:
 
-  | Nivel | Alcance | Control                                                                                                              |                         |
+  | Nivel | Alcance | Control                                                                                                              | Casilla                 |
   | ----- | ------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------- |
   | B     | PER     | Utilizar el correo electrónico corporativo únicamente para asuntos relacionados con el trabajo.                      | <input type="checkbox"> |
   | B     | PER     | Comprobar cuidadosamente los destinatarios antes de enviar correos, especialmente aquellos con información sensible. | <input type="checkbox"> |
