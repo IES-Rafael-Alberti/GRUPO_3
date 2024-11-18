@@ -23,16 +23,16 @@
 
 La política de seguridad del puesto de trabajo tiene como objetivo establecer medidas claras para proteger los recursos y la información corporativa, especialmente en aquellos roles que implican el uso de equipos informáticos y el manejo de datos sensibles. Entre las políticas clave que se implementarán se encuentran: el borrado seguro de información, el almacenamiento en dispositivos extraíbles y el uso del correo electrónico corporativo.
 
-En el desarrollo de nuestras políticas de seguridad para la proctección del puesto de trabajo, abordaremos cuatro elementos clave ( los cuáles hemos sacado del PDF de políticas de seguridad ) para cada una de las políticas seleccionadas: borrado seguro, almacenamiento en dispositivos extraíbles y uso del correo electrónico. Estos elementos son: 
+En el desarrollo de nuestras políticas de seguridad para la protección del puesto de trabajo, abordaremos cuatro elementos clave ( los cuáles hemos sacado del PDF de políticas de seguridad ) para cada una de las políticas seleccionadas: borrado seguro, almacenamiento en dispositivos extraíbles y uso del correo electrónico. Estos elementos son: 
 - **Antecedentes**: en esta sección, proporcionaremos el contexto necesario para entender la importancia de cada política. Explicaremos los riesgos y amenazas específicos que la política busca mitigar, así como las consecuencias potenciales de no implementar medidas de seguridad adecuadas en cada área.
 
-- **Objetivos**: aquí definiremos los objetivos que tiene cada política. Estableceremos métas específicas, medibles y alcanzable que busca la empresa al implementar las políticas de seguridad.
+- **Objetivos**: aquí definiremos los objetivos que tiene cada política. Estableceremos metas específicas, medibles y alcanzables que busca la empresa al implementar las políticas de seguridad.
 
 - **Puntos claves**: destacaremos los aspectos más importantes de cada política. Estos puntos clave servirán como resumen de las medidas más críticas y como una guía rápida para la implementación y el cumplimiento de la política. 
 
-- **Checklist**: desarrollaremos una lista de vertificación detallada para cada política siguiendo el modelo que nos propone INCIBE.   
+- **Checklist**: desarrollaremos una lista de verificación detallada para cada política siguiendo el modelo que nos propone INCIBE.   
     La checklist incluirá controles clasificados por nivel de **complejidad**:   
-    - Básico (**B**): el esfuerzo y los recursos necesarios para implatarlo son asumibles. 
+    - Básico (**B**): el esfuerzo y los recursos necesarios para implantarlo son asumibles. 
     - Avanzado (**A**): el esfuerzo y los recursos necesarios para implantarlo son considerables.     
 
     Los controles podrán tener el siguiente **alcance**:
@@ -54,20 +54,20 @@ Las políticas de seguridad que se tratarán en este documento, impactan una amp
 
 #### Antecedentes
 
-La elminación inadecuado de información confidencial y sensible representa un riesgo importante para la seguridad de la empresa. Esto se debe a que el borrado de datos que se borra incorrectamente de dispositivos y medios de almacenamiento pueden ser recuperados y utilizados de forma malintencionada. Esto podría desembocar en fugas de información, violaciones de privacidad o daños financieros para la empresa. Es muy importante implementar métodos de borrado seguro para garantizar que sea irrecuperable la información que se ha borrado ya que no se necesita la información o el dispositivo se tira o reutiliza.  
+La eliminación inadecuada de información confidencial y sensible representa un riesgo importante para la seguridad de la empresa. Esto se debe a que el borrado de datos que se borra incorrectamente de dispositivos y medios de almacenamiento pueden ser recuperados y utilizados de forma malintencionada. Esto podría desembocar en fugas de información, violaciones de privacidad o daños financieros para la empresa. Es muy importante implementar métodos de borrado seguro para garantizar que sea irrecuperable la información que se ha borrado ya que no se necesita la información o el dispositivo se tira o reutiliza.  
 
 #### Objetivos
 
 - Garantizar que toda la información que sea confidencial y sensible sea eliminada de manera segura y de forma irrecuperable de todos los dispositivos y medios de almacenamiento de la empresa. 
-    - Implentar procedimientos de borrado seguro utilizando métodos de sobreescritura múltiple.
+    - Implementar procedimientos de borrado seguro utilizando métodos de sobreescritura múltiple.
     - Aplicar estos procedimientos a todos los dispositivos de la empresa.
     - Establecer un proceso de verificación posterior al borrado para asegurar la completa eliminación de los datos.
     - Capacitar al personal.
 
-- Prevenir la recuperación sin autorización de datos que han sido eliandos.
+- Prevenir la recuperación sin autorización de datos que han sido eliminados.
     - Utilizar herramientas de borrado seguro certificadas.
     - Implementar controles de acceso físico y lógico a los dispositivos y medios de almacenamiento que hayan tenido datos sensibles.
-    - Establecer políticas de destrucción física para medios de almacenamiento que no puedan se borrados de forma segura por software.
+    - Establecer políticas de destrucción física para medios de almacenamiento que no puedan ser borrados de forma segura por software.
     - Realizar auditorías periódicas para verificar la efectividad de los métodos de borrado.
 
 - Cumplir con las regulaciones de protección de datos y privacidad aplicables.
@@ -84,14 +84,15 @@ La elminación inadecuado de información confidencial y sensible representa un 
 
 #### Puntos clave
 
-- Software de borrado seguro certificado: la empresa deberá utilizar software certificado que cumpla con algún estandar reconocido para el borrado de datos. Este software deberá sobreescribir los datos múltiples veces para asegurar que sean irrecuparables.
+- Software de borrado seguro certificado: la empresa deberá utilizar software certificado que cumpla con algún estándar reconocido para el borrado de datos. Este software deberá sobreescribir los datos múltiples veces para asegurar que sean irrecuperables.
 - Procedimientos documentados: se deben establecer procedimientos claros y detallados para el borrado seguro de diferentes tipos de dispositivos. Estos procedimientos deben incluir pasos específicos para cada tipo de dispositivo y medio de almacenamiento. 
 - Registro de borrado: mantener un registro de todas las operaciones de borrado es crucial para las auditorías y cumplimiento normativo. Estos registros deberán contener información sobre el dispositivo, la fecha en la que se borró, el método que se utilizó y el encargado de hacer la operación. 
 - Capacitación del personal: todo el personal debe recibir formación sobre la importancia del borrado seguro y los métodos correctos para realizarlo. Esta capacitación debe incluir información sobre los riesgos que puede ocasionar la eliminación inadecuada de los datos. 
-- Aplicación antes de tirar o reutilizar: es fundamental cuando vayamos a tirar o reutilizar cualquier dispositivo aplicar un borrado seguro de la información. Esto no solo se refiere a ordenadores o portátiles, si no también en pen drives, discos duros extraibles, móviles, impresoras...
+- Aplicación antes de tirar o reutilizar: es fundamental cuando vayamos a tirar o reutilizar cualquier dispositivo aplicar un borrado seguro de la información. Esto no solo se refiere a ordenadores o portátiles, si no también en pendrives, discos duros extraíbles, móviles, impresoras...
 
 #### Checklist
 
+La checklist que se ha creado para verificar que se aplican los puntos clave anteriormente mencionados es la siguiente:
 
   | Nivel | Alcance | Control                                                                                                              | Casilla                    |
   | ----- | ------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------- |
@@ -99,7 +100,7 @@ La elminación inadecuado de información confidencial y sensible representa un 
   | B     | PRO     | Procedimientos documentados: Establecer y documentar procedimientos específicos para el borrado de diferentes tipos de dispositivos (PCs, portátiles, móviles, tabletas, discos externos) | <input type="checkbox"> ⬜ |
   | B     | TEC     | Registro de borrado: Mantener un registro detallado de todos los dispositivos sometidos a borrado seguro, incluyendo fecha, método utilizado y responsable del proceso.                                              | <input type="checkbox"> ⬜ |
   | A     | PER     | Capacitación del personal: Proporcionar formación a todo el personal sobre la importancia del borrado seguro y los métodos apropiados para realizarlo.                      | <input type="checkbox"> ⬜ |
-  | B     | PRO     | Aplicación antes de tirar o reutilizar: Aplicar el borrado seguro obligatoriamente antes de tiraro reutilizar cualquier dispositivo que haya contenido información de la empresa.                                | <input type="checkbox"> ⬜ |
+  | B     | PRO     | Aplicación antes de tirar o reutilizar: Aplicar el borrado seguro obligatoriamente antes de tirar o reutilizar cualquier dispositivo que haya contenido información de la empresa.                                | <input type="checkbox"> ⬜ |
 
 
 ### 3.2 Almacenamiento en dispositivos extraibles
@@ -167,6 +168,8 @@ La elminación inadecuado de información confidencial y sensible representa un 
      - Se proporcionará formación regular a los empleados sobre el uso seguro de dispositivos extraíbles y los riesgos asociados.
 
 #### Checklist
+
+La checklist que se ha creado para verificar que se aplican los puntos clave anteriormente mencionados es la siguiente:
 
 | Nivel | Alcance | Control                                                                         | Casilla                   |
 | ----- | ------- | ------------------------------------------------------------------------------- | ------------------------- |
