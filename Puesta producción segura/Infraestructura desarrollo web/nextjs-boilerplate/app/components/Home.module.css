@@ -1,0 +1,13 @@
+/* Home.module.css */
+
+.container {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.message {
+  font-size: 18px;
+  color: #333;
+}
