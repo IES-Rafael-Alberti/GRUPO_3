@@ -1,6 +1,22 @@
 # Política de seguridad del puesto de trabajo
 
+![Portada](image.png)
+
+**Participantes:** *Grupo 3*
+- Victor Jiménez
+- Alejandro Seoane
+- Israel Valderrama
+
 ## Índice
+
+- [Introducción](#1-introducción)  
+- [Identificación de los puestos de trabajo](#2-identificación-de-los-puestos-de-trabajo)  
+- [Desarrollo de las políticas](#3-desarrollo-de-las-políticas)  
+    - [Borrado seguro de información](#31-borrado-seguro-de-información)  
+    - [Almacenamiento en dispositivos extraibles](#32-almacenamiento-en-dispositivos-extraibles)  
+    - [Uso del correo electrónico corporativo](#33-uso-del-correo-electrónico-corporativo)  
+- [Conclusión](#4-conclusión)  
+- [Bibliografía](#5-bibliografía)  
 
 ## 1. Introducción
 
