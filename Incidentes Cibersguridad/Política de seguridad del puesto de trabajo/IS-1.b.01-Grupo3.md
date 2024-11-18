@@ -268,23 +268,23 @@ Esta política de seguridad para el uso del correo electrónico corporativo en e
 
 ## 4. Conclusión
 
-1. Borrado Seguro de Información
+1. Borrado Seguro de Información  
    **Objetivo:**
-   Garantizar la eliminación irrecuperable de datos sensibles para prevenir fugas de información.
+   Garantizar la eliminación irrecuperable de datos sensibles para prevenir fugas de información.  
    **Puntos Clave:**
    - Uso de software certificado para el borrado.
    - Documentación de procedimientos y registro de operaciones.
    - Capacitación del personal en técnicas adecuadas de borrado.
-2. Gestión de Dispositivos Extraíbles
+2. Gestión de Dispositivos Extraíbles    
    **Objetivo:**
-   Proteger la información en dispositivos como pendrives y discos duros externos.
-   **Puntos Clave:**
+   Proteger la información en dispositivos como pendrives y discos duros externos.  
+   **Puntos Clave:**  
    - Uso exclusivo de dispositivos autorizados y cifrado de datos.
    - Prohibición del uso de dispositivos personales.
    - Monitorización y auditoría del uso de estos dispositivos.
-3. Uso del Correo Electrónico Corporativo
+3. Uso del Correo Electrónico Corporativo  
    **Objetivo:**
-   Asegurar un uso seguro y eficiente del correo electrónico para proteger información confidencial.
+   Asegurar un uso seguro y eficiente del correo electrónico para proteger información confidencial.  
    **Puntos Clave:**
    - Uso exclusivo para fines laborales y verificación cuidadosa de destinatarios.
    - Prevención contra malware y phishing mediante formación continua.
