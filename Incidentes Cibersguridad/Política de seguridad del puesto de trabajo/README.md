@@ -24,8 +24,7 @@ En el desarrollo de nuestras políticas de seguridad para la proctección del pu
     - Tecnología (**TEC**): aplica al personal técnico especializado
     - Personas (**PER**): aplica a todo el personal
 
-## 2. Identificación de los puestos de trabajo
-=======
+
 ## 2. Identificación de los puestos de trabajo
 
 Las políticas de seguridad que se tratarán en este documento, impactan una amplia variedad de puestos dentro de la organización. Esto incluye desde los miembros de la dirección de la empresa hasta el personal temporal, abarcando también a teletrabajadores, contables y especialmente aquellos puestos relacionados con el uso de equipos informáticos y la gestión de información.
@@ -44,27 +43,27 @@ La elminación inadecuado de información confidencial y sensible representa un 
 #### Objetivos
 
 - Garantizar que toda la información que sea confidencial y sensible sea eliminada de manera segura y de forma irrecuperable de todos los dispositivos y medios de almacenamiento de la empresa. 
-    1. Implentar procedimientos de borrado seguro utilizando métodos de sobreescritura múltiple.
-    2. Aplicar estos procedimientos a todos los dispositivos de la empresa.
-    3. Establecer un proceso de verificación posterior al borrado para asegurar la completa eliminación de los datos.
-    4. Capacitar al personal.
+    - Implentar procedimientos de borrado seguro utilizando métodos de sobreescritura múltiple.
+    - Aplicar estos procedimientos a todos los dispositivos de la empresa.
+    - Establecer un proceso de verificación posterior al borrado para asegurar la completa eliminación de los datos.
+    - Capacitar al personal.
 
 - Prevenir la recuperación sin autorización de datos que han sido eliandos.
-    1. Utilizar herramientas de borrado seguro certificadas.
-    2. Implementar controles de acceso físico y lógico a los dispositivos y medios de almacenamiento que hayan tenido datos sensibles.
-    3. Establecer políticas de destrucción física para medios de almacenamiento que no puedan se borrados de forma segura por software.
-    4. Realizar auditorías periódicas para verificar la efectividad de los métodos de borrado.
+    - Utilizar herramientas de borrado seguro certificadas.
+    - Implementar controles de acceso físico y lógico a los dispositivos y medios de almacenamiento que hayan tenido datos sensibles.
+    - Establecer políticas de destrucción física para medios de almacenamiento que no puedan se borrados de forma segura por software.
+    - Realizar auditorías periódicas para verificar la efectividad de los métodos de borrado.
 
 - Cumplir con las regulaciones de protección de datos y privacidad aplicables.
-    1. Identificar y documentar todas las regulaciones relevantes.
-    2. Alinear las políticas y procedimientos de borrado seguro con los requisitos específicos.
-    3. Mantener registros detallados de todas las actividades de borrado seguro.
-    4. Actualizar regularmente las políticas y procedimientos.
+    - Identificar y documentar todas las regulaciones relevantes.
+    - Alinear las políticas y procedimientos de borrado seguro con los requisitos específicos.
+    - Mantener registros detallados de todas las actividades de borrado seguro.
+    - Actualizar regularmente las políticas y procedimientos.
 
 - Minimizar el riesgo de fugas de información debido a la eliminación inadecuada de datos. 
-    1. Desarrollar y comunicar y comunicar políticas claras de clasificación de la información para que los empleados identifiquen la información sensible que necesite borrado seguro.
-    2. Implementar controles técnicos que impidan el borrado de información sensible a través de métodos no seguros.
-    3. Establecer el proceso de gestión de dispositivos al final de su vida útil. 
+    - Desarrollar y comunicar y comunicar políticas claras de clasificación de la información para que los empleados identifiquen la información sensible que necesite borrado seguro.
+    - Implementar controles técnicos que impidan el borrado de información sensible a través de métodos no seguros.
+    - Establecer el proceso de gestión de dispositivos al final de su vida útil. 
 
 
 #### Puntos clave
@@ -141,11 +140,6 @@ Esta política de almacenamiento en dispositivos extraíbles proporciona una bas
 
 ### 3.3 Uso del correo electrónico corporativo
 
-
-## 4. Conclusión
-
-## 5. Bibliografía
-=======
 - #### Antecedentes:
 
   El correo electrónico es una herramienta esencial en la comunicación empresarial moderna, facilitando la interacción ágil y efectiva. Sin embargo, su uso inadecuado puede generar diversos riesgos para la seguridad de la organización, como la fuga de información confidencial, infecciones por malware y ataques de phishing.
