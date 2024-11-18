@@ -119,6 +119,20 @@ La elminación inadecuado de información confidencial y sensible representa un 
 #### Objetivos
 
   Proteger la información almacenada en dispositivos extraíbles y prevenir la fuga de datos confidenciales, asegurando un uso adecuado y seguro de estos dispositivos en el entorno laboral.
+ 
+   - Minimizar el riesgo de fuga de datos confidenciales:
+   Este objetivo se centra en reducir la probabilidad de que información sensible de la empresa sea extraída o filtrada a través de dispositivos extraíbles no autorizados o mal gestionados.
+   - Asegurar el cumplimiento normativo:
+   Garantizar que el uso de dispositivos extraíbles cumpla con las regulaciones de protección de datos aplicables, como el GDPR en Europa o las leyes de privacidad locales.
+   - Mejorar la trazabilidad de la información:
+   Implementar sistemas que permitan rastrear qué datos se han transferido a dispositivos extraíbles, por quién y cuándo, para facilitar auditorías y investigaciones en caso de incidentes.
+   - Fomentar una cultura de seguridad:
+   Promover la concienciación y responsabilidad entre los empleados sobre los riesgos asociados al uso de dispositivos extraíbles y la importancia de seguir las políticas de seguridad.
+   - Optimizar la gestión de activos de información:
+   Mejorar el control y la gestión de los dispositivos extraíbles como parte de los activos de información de la empresa, asegurando un inventario actualizado y un uso eficiente.
+   - Reducir la superficie de ataque:
+   Limitar las vías potenciales de entrada de malware y otras amenazas informáticas a través de dispositivos extraíbles no controlados.
+
 
 #### Puntos clave
 
@@ -250,6 +264,29 @@ Esta política de almacenamiento en dispositivos extraíbles proporciona una bas
 Esta política de seguridad para el uso del correo electrónico corporativo en el puesto de trabajo proporciona una base sólida para proteger la información de la empresa y prevenir riesgos asociados con esta herramienta de comunicación esencial. La implementación y seguimiento de estas directrices ayudará a mantener un entorno de trabajo seguro y eficiente.
 
 ## 4. Conclusión
+
+1. Borrado Seguro de Información
+   **Objetivo:**
+   Garantizar la eliminación irrecuperable de datos sensibles para prevenir fugas de información.
+   **Puntos Clave:**
+   - Uso de software certificado para el borrado.
+   - Documentación de procedimientos y registro de operaciones.
+   - Capacitación del personal en técnicas adecuadas de borrado.
+2. Gestión de Dispositivos Extraíbles
+   **Objetivo:**
+   Proteger la información en dispositivos como pendrives y discos duros externos.
+   **Puntos Clave:**
+   - Uso exclusivo de dispositivos autorizados y cifrado de datos.
+   - Prohibición del uso de dispositivos personales.
+   - Monitorización y auditoría del uso de estos dispositivos.
+3. Uso del Correo Electrónico Corporativo
+   **Objetivo:**
+   Asegurar un uso seguro y eficiente del correo electrónico para proteger información confidencial.
+   **Puntos Clave:**
+   - Uso exclusivo para fines laborales y verificación cuidadosa de destinatarios.
+   - Prevención contra malware y phishing mediante formación continua.
+   - Cumplimiento normativo en la gestión de información personal.
+   - La implementación rigurosa de estas políticas es esencial para mitigar riesgos y proteger los activos informáticos de la organización.
 
 ## 5. Bibliografía
 
