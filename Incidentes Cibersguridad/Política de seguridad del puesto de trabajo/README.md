@@ -25,8 +25,6 @@ En el desarrollo de nuestras políticas de seguridad para la proctección del pu
     - Personas (**PER**): aplica a todo el personal
 
 ## 2. Identificación de los puestos de trabajo
-=======
-## 2. Identificación de los puestos de trabajo
 
 Las políticas de seguridad que se tratarán en este documento, impactan una amplia variedad de puestos dentro de la organización. Esto incluye desde los miembros de la dirección de la empresa hasta el personal temporal, abarcando también a teletrabajadores, contables y especialmente aquellos puestos relacionados con el uso de equipos informáticos y la gestión de información.
 
