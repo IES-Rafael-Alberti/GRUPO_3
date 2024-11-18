@@ -48,7 +48,7 @@ Proteger la información almacenada en dispositivos extraíbles y prevenir la fu
 
 | Nivel | Alcance | Control                                                              |
 |-------|---------|----------------------------------------------------------------------|
-| B     | PER     | Uso exclusivo de dispositivos extraíbles autorizados por la empresa.              <input type="checkbox">  |
+| B     | PER     | Uso exclusivo de dispositivos extraíbles autorizados por la empresa.               ⬜   |
 | A     | TEC     | Implementación de cifrado en todos los dispositivos extraíbles.      <input type="checkbox">  |
 | B     | PER     | Cumplimiento de procedimientos de conexión y desconexión segura.    <input type="checkbox">  |
 | A     | PRO     | Mantenimiento de un registro actualizado de dispositivos extraíbles. <input type="checkbox">  |
