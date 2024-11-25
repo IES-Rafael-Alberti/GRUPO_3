@@ -78,19 +78,19 @@ Insomnia podemos usarla para:
 
 ### GET
 El método **GET** se utiliza para recuperar información de un servidor. Es una operación de solo lectura, lo que significa que no modifica datos en el servidor. Los datos solicitados generalmente se envían como parte de la URL. Por ejemplo ver los detalles de un producto de una página web.
-
+![alt text](img/1-GET.png)
 ### POST
 El método **POST** se utiliza para enviar datos al servidor y generalmente crea nuevos recursos o ejecuta procesos en el servidor. Los datos se envían en el cuerpo de la solicitud. Por ejemplo cunado creamos un usuario en una web. 
-
+![alt text](img/2-POST.png)
 ### OPTIONS
 El método **OPTIONS** se utiliza para que los usuarios descubrar que opciones de comunicación tienen con un servidor. Por ejemplo esta petición la envía un usuario a un servidor para verificar que métodos de HTTP (GET, POST, PUT, DELETE, etc.) están permitidos por el servidor antes de realizar cualquier petición. 
-
+![alt text](img/3-OPTIONS.png)
 ### PUT
 El método **PUT** se utiliza para crear o reemplazar un recurso completo en el servidor. Si el elemento existe se sobreescribirá y si no se crea. Por ejemplo cambiar toda la información de tu usuario en una web.
-
+![alt text](img/4-PUT.png)
 ### PATCH
 El método PATCH se utiliza para modificar un recurso que ya exite. Es parecido a PUT pero solo altera el campo que se especifíca. Por ejemplo cambiar especificamente la fecha de nacimiento de un usuario. 
-
+![alt text](img/5-PATCH.png)
 ### DELETE
 El método DELETE se utiliza para eliminar recursos en el servidor. Por ejemplo borrar una cuenta de usuario.
-
+![alt text](img/6-DELETE.png)
