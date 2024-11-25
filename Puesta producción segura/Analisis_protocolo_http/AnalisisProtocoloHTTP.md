@@ -76,9 +76,11 @@ Insomnia podemos usarla para:
 - Depuración: Permite analizar las respuestas de las APIs, detectar errores y asegurarse de que el formato de los datos sea el esperado.
 - Automatización: Puedes reutilizar configuraciones, autenticarte automáticamente...
 
+Crearemos un listado de todas las peticiones que se nos pide, donde explicaremos brevemente en que consiste cada protocolo e insertaremos una captura de lo que nos sale en Insomnia al realizarle cada petición a la aplicación web. 
+
 ### GET
 El método **GET** se utiliza para recuperar información de un servidor. Es una operación de solo lectura, lo que significa que no modifica datos en el servidor. Los datos solicitados generalmente se envían como parte de la URL. Por ejemplo ver los detalles de un producto de una página web. 
- 
+
 ![alt text](img/1-GET.png)
 ### POST
 El método **POST** se utiliza para enviar datos al servidor y generalmente crea nuevos recursos o ejecuta procesos en el servidor. Los datos se envían en el cuerpo de la solicitud. Por ejemplo cunado creamos un usuario en una web.   
