@@ -108,14 +108,14 @@ Poner los PCs en modo DHCP para que cojan las IPs de su VLAN correspondiene.
 
 Comprobamos que hace ping de un equipo al otro de otro departamento.
 
-PC1-Ciber a PC2-RRHH:
+**PC1-Ciber a PC2-RRHH:**
 
 ![imagen](/img/pc1ciber_pc2rrhh.png)
 
-PC2-Desarrollo a PC2-Dirección:
+**PC2-Desarrollo a PC2-Dirección:**
 
 ![imagen](/img/pc2desarrollo_pc2direccion.png)
 
-PC2-Marketing a PC1-Ciber
+**PC2-Marketing a PC1-Ciber:**
 
 ![imagen](/img/pc2marketing_pc1ciber.png)
