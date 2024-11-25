@@ -254,19 +254,22 @@ dns-server {SERVIDOR DNS}
 exit
 ```
 
-## **Configuración de switches y router
+## **Configuración de switches y router**
 
-### Switch_Desarrollo
+En este apartado enseñaremos la configuración que tiene cada uno de los switches de nuestra red. También hemso añadido laconfiguración que tendrá el router. 
 
-### Switch_Operaciones_Ciber
-
-### Switch_Ventas_Marketing
-
-### Switch_RRHH
-
-### Switch_Direccion
+### **Switch_Desarrollo**
 
 
+### **Switch_Operaciones_Ciber**
+ 
+### **Switch_Ventas_Marketing**
+ 
+### **Switch_RRHH**
+ 
+### **Switch_Direccion**
+ 
+ 
 
 
 
