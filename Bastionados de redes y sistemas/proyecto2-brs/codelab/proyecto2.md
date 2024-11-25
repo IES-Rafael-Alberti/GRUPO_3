@@ -101,20 +101,6 @@ name {NOMBRE_VLAN}
 exit
 ```
 
-**Ejemplo:**
-
-```cisco
-enable
-
-configure terminal
-
-vlan 10
-
-name Desarrollo
-
-exit
-```
-
 
 ### **Asignación de puertos a las VLAN**
 
@@ -132,21 +118,6 @@ interface (range) fastEthernet{Nº INTERFAZ / (RANGO INTERFACES)}
 swichport mode access
 
 swichport access vlan {Nº VLAN}
-
-exit
-```
-**Ejemplo:**
-
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-2
-
-swichport mode access
-
-swichport access vlan 10
 
 exit
 ```
@@ -185,20 +156,7 @@ configure terminal
 
 interface fastEthernet{Nº INTERFAZ}
 
-swichport mode trunk
-
-exit
-```
-
-**Ejemplo:**
-```cisco
-enable
-
-configure terminal
-
-interface fastEthernet 0/1
-
-swichport mode trunk
+switchport mode trunk
 
 exit
 ```
@@ -258,8 +216,66 @@ exit
 
 En este apartado enseñaremos la configuración que tiene cada uno de los switches de nuestra red. También hemso añadido laconfiguración que tendrá el router. 
 
+### **Switch_Central**
+
+
 ### **Switch_Desarrollo**
 
+```cisco
+enable
+
+configure terminal
+
+vlan 10
+
+name Desarrollo
+
+exit
+```
+
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 10
+
+exit
+```
+
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+
+switchport port-security maximum 1
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+```
+
+```cisco
+enable
+
+configure terminal
+
+interface fastEthernet 0/1
+
+switchport mode trunk
+
+exit
+```
 
 ### **Switch_Operaciones_Ciber**
  
