@@ -221,18 +221,64 @@ En este apartado enseñaremos la configuración que tiene cada uno de los switch
 
 ### **Switch_Desarrollo**
 
+#### Definicón VLANs
 ```cisco
 enable
 
 configure terminal
 
 vlan 10
-
+ 
 name Desarrollo
 
 exit
 ```
+```cisco
+enable
 
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+```
+
+#### Asignar puertos a las VLANs
 ```cisco
 enable
 
@@ -246,6 +292,8 @@ switchport access vlan 10
 
 exit
 ```
+
+#### Asignar seguridad a los puertos
 
 ```cisco
 enable
@@ -264,6 +312,7 @@ switchport port-security mac-address sticky
 
 exit
 ```
+#### Configurar puertos modo trunk
 
 ```cisco
 enable
