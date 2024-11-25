@@ -33,7 +33,7 @@ Nuestra empresa de cibersguridad está compuesta por 5 departametos clave:
 
 Nosotros hemos realizado la siguiente segmentación de la red: 
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 En el podemos ver como hemos creado diferentes VLANs por cada departamento de nuestra empresa (desarrollo, oper_ciberseguridad, dirección, marketing, RRHH). Donde las tendremos numeradas por VLAN 10, 20, 30, 40, 50
 
