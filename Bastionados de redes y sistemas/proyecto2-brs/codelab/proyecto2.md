@@ -24,7 +24,7 @@ Con esta arquitectura robusta y bien segmentada, G3Ciber se dedica a ofrecer sol
 
 La segmentación de la red se refiere a dividir una red en varias subredes lógicas, normalmente esto se hace en VLANs. Esto lo hacemos para organizar y optimizar el tráfico de una red, aumentar la seguridad, y reducir las colisiones y problemas que puedan surgir. 
 
-Nuestra empresa de cibersguridad está compuesta por 5 departametos clave:
+Nuestra empresa de ciberseguridad está compuesta por 5 departamentos clave:
 - Desarrollo
 - Operaciones de ciberseguridad
 - Marketing y ventas
@@ -41,7 +41,7 @@ En el podemos ver como hemos creado diferentes VLANs por cada departamento de nu
 
 La hemos realizado la segmentación de red por los siguientes motivos:
 
-- La organización lógica de la empresa, donde los departamentos estan dividido según su funcionalidad con lo que agrupamos los dispositivos lógicamente. 
+- La organización lógica de la empresa, donde los departamentos están dividido según su funcionalidad con lo que agrupamos los dispositivos lógicamente. 
 
 - Facilidades a cambios, si hay que hacer un cambio dentro de la red de un departamento se puede resolver más fácilmente dentro de subredes.
 
@@ -56,11 +56,11 @@ La segmentación que hemos mostrado es coherente tanto en  la funcionalidad como
  Al estar todo conectado a un switch central es posible la gestión del tráfico interno entre las distintas VLANs. 
 
 - Seguridad  
- Al segmentar la red aseguramos que los departamentos solo interactúen con otras. Por ejemplo creado ACLs (listas de control de acceso) para que un cierto departamento pueda acceder a ciertos sistemas que son críticos.  
+ Al segmentar la red aseguramos que los departamentos solo interactúen con otras. Por ejemplo, creado ACLs (listas de control de acceso) para que un cierto departamento pueda acceder a ciertos sistemas que son críticos.  
  Mejora de la seguridad debido a que el firewall en vez de tener normas generales a cada VLAN se le aplicaría un firewall específico dependiendo de sus necesidades. 
 
 ## **Calcular el direccionamiento de las ip de cada VLANS**
-Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos definido tendremos que saber cuantos equipos va a haber en cada VLAN. Tras hacer un invetigación hemos definido los siguientes dispositivos por cada VLAN:
+Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos definido tendremos que saber cuantos equipos va a haber en cada VLAN. Tras hacer un investigación hemos definido los siguientes dispositivos por cada VLAN:
 
 - Dirección 15 equipos.
 - RRHH 30 equipos.
@@ -68,7 +68,7 @@ Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos
 - Marketing y ventas 50 equipos.
 - Desarrollo 120 equipos.
 
-Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empezaremos con la VLAN que necesita más direcciones y continuaremos en orden descendente.
+Asignaremos las VLANs en función de la cantidad de equipos que necesiten. Empezaremos con la VLAN que necesita más direcciones y continuaremos en orden descendente.
 
 #### **TABLA DE DIRECCIONAMIENTO**
 ---
@@ -87,7 +87,7 @@ Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empez
 
 ### **Creación VLANs**
 
-Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberiamos sustituir `{NUMERO_VLAN}`por el número en concreto de la vlan. Y para el nombre deberiamos hacer lo mismo donde pone `{NOMBRE_VLAN}`
+Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberíamos sustituir `{NUMERO_VLAN}`por el número en concreto de la vlan. Y para el nombre deberíamos hacer lo mismo donde pone `{NOMBRE_VLAN}`
 
 ```cisco
 enable
@@ -105,7 +105,7 @@ exit
 ### **Asignación de puertos a las VLAN**
 
 
-En cada VLAN tendremos que asignarle a cada puerto que conecta con los PCs la VLAN a la que le pertenece. Pondremos utilizar la opción **range** porque los dos puertos que conectan a a los 2 ordenadores pertenecen a la misma VLAN. 
+En cada VLAN tendremos que asignarle a cada puerto que conecta con los PCs la VLAN a la que le pertenece. Pondremos utilizar la opción **range** porque los dos puertos que conectan a los 2 ordenadores pertenecen a la misma VLAN. 
 
 
 ```cisco
@@ -115,9 +115,9 @@ configure terminal
 
 interface (range) fastEthernet{Nº INTERFAZ / (RANGO INTERFACES)}
 
-swichport mode access
+switchport mode access
 
-swichport access vlan {Nº VLAN}
+switchport access vlan {Nº VLAN}
 
 exit
 ```
@@ -147,7 +147,7 @@ exit
 
 ### **Configuración de enlaces troncales**
 
-Para manejar el trafico de las VLANs entre todos los switch y routers de la red configuraremos las interfaces que conecten switch-switch o switch-router en modo **trunk**. 
+Para manejar el tráfico de las VLANs entre todos los switch y routers de la red configuraremos las interfaces que conectan switch-switch o switch-router en modo **trunk**. 
 
 ```cisco
 enable
@@ -200,12 +200,12 @@ exit
 
 ## **Configuración de switches y router**
 
-En este apartado enseñaremos la configuración que tiene cada uno de los switches de nuestra red. También hemso añadido laconfiguración que tendrá el router. 
+En este apartado enseñaremos la configuración que tiene cada uno de los switches de nuestra red. También hemos añadido la configuración que tendrá el router. 
 
 
 ### **Switch_Central**
 
-- #### **Definicón VLANs**
+- #### **Definición VLANs**
 ```cisco
 enable
 
@@ -279,7 +279,7 @@ exit
 
 ### **Switch_Desarrollo**
 
-- #### **Definicón VLANs**
+- #### **Definición VLANs**
 ```cisco
 enable
 
@@ -377,7 +377,7 @@ exit
 
 ### **Switch_Operaciones_Ciber**
 
-- #### **Definicón VLANs**
+- #### **Definición VLANs**
 ```cisco
 enable
 
@@ -473,7 +473,7 @@ exit
 
 ### **Switch_Marketing**
 
-- #### **Definicón VLANs**
+- #### **Definición VLANs**
 ```cisco
 enable
 
@@ -569,7 +569,7 @@ exit
 
 ### **Switch_RRHH**
 
-- #### **Definicón VLANs**
+- #### **Definición VLANs**
 ```cisco
 enable
 
@@ -665,7 +665,7 @@ exit
 
 ### **Switch_Direccion**
 
-- #### **Definicón VLANs**
+- #### **Definición VLANs**
 ```cisco
 enable
 
@@ -909,7 +909,7 @@ exit
 
 ## **Validación y pruebas finales**
 
-Poner los PCs en modo DHCP para que cojan las IPs de su VLAN correspondiene.
+Poner los PCs en modo DHCP para que cojan las IPs de su VLAN correspondiente.
 
 Comprobamos que hace ping de un equipo al otro de otro departamento.
 
