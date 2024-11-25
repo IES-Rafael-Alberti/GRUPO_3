@@ -102,3 +102,8 @@ El método PATCH se utiliza para modificar un recurso que ya exite. Es parecido 
 El método DELETE se utiliza para eliminar recursos en el servidor. Por ejemplo borrar una cuenta de usuario.  
 
 ![alt text](img/6-DELETE.png)
+
+## Bibliografía
+
+- [Información de insomnia](https://soportedevs.bancolombia.com/hc/es-419/articles/12911357824788--C%C3%B3mo-probar-las-APIs-en-Insomnia#:~:text=Insomnia%20es%20una%20aplicaci%C3%B3n%20de,Interfaz%20de%20Programaci%C3%B3n%20de%20Aplicaciones)
+- [Peticiones HTTP](https://keepcoding.io/blog/tipos-de-peticiones-en-el-navegador-web/)
