@@ -206,7 +206,75 @@ En este apartado enseñaremos la configuración que tiene cada uno de los switch
 ### **Switch_Central**
 
 - #### **Definicón VLANs**
+```cisco
+enable
 
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+```
+
+- #### **Configurar puertos modo trunk**
+
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/1-6
+
+switchport mode trunk
+
+exit
+```
 
 ### **Switch_Desarrollo**
 
@@ -304,19 +372,7 @@ exit
 
 ```
 
-- #### **Configurar puertos modo trunk**
 
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-6
-
-switchport mode trunk
-
-exit
-```
 
 ### **Switch_Operaciones_Ciber**
 
@@ -413,20 +469,6 @@ exit
 
 ```
 
-- #### **Configurar puertos modo trunk**
-
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-6
-
-switchport mode trunk
-
-exit
-```
-
 ### **Switch_Marketing**
 
 - #### **Definicón VLANs**
@@ -520,19 +562,6 @@ switchport port-security mac-address sticky
 
 exit
 
-```
-- #### **Configurar puertos modo trunk**
-
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-6
-
-switchport mode trunk
-
-exit
 ```
 
 
@@ -630,19 +659,6 @@ switchport port-security mac-address sticky
 exit
 
 ```
-- #### **Configurar puertos modo trunk**
-
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-6
-
-switchport mode trunk
-
-exit
-```
 
 
 ### **Switch_Direccion**
@@ -739,19 +755,7 @@ switchport port-security mac-address sticky
 exit
 
 ```
-- #### **Configurar puertos modo trunk**
 
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-6
-
-switchport mode trunk
-
-exit
-```
 
 ### Router
 
@@ -847,7 +851,7 @@ configure terminal
 
 ip dhcp pool Operaciones_Ciber
 
-network 192.168.0.126 255.255.255.128
+network 192.168.0.128 255.255.255.128
 
 default-router 192.168.0.129
 
