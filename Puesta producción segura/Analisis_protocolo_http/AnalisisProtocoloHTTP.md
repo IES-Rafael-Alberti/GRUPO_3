@@ -1,5 +1,17 @@
 # Análisis del protocolo http
 
+## Índice
+
+- [Requisitos](#requisitos)
+- [Código de la aplicación web](#código-de-la-aplicación-web)
+- [Pruebas funcionales con insomnia](#pruebas-funcionales-con-insomnia)
+    - [GET](#get)
+    - [POST](#post)
+    - [OPTIONS](#options)
+    - [PUT](#put)
+    - [PATCH](#patch)
+    - [DELETE](#delete)
+
 ## Requisitos
 
 Para la realización de este proyecto tenemos que tener instalado la versión minima de python 3.7.
