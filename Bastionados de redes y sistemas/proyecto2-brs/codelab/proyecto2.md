@@ -80,15 +80,12 @@ Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empez
 | RRHH               | 30            | 192.168.1.64  | 255.255.255.224 (/27) | 192.168.1.65  | 192.168.1.95   |
 | Dirección          | 15            | 192.168.1.96  | 255.255.255.240 (/28) | 192.168.1.97  | 192.168.1.111  |
 
-<<<<<<< Updated upstream
+
 ## **Configuración Packet Tracer**
 ### **Configuración de las VLANS en los switches**
 
-=======
-## Configuración Packet Tracer
-### Configuración de las VLANS en los switches
 #### Creación VLANs
->>>>>>> Stashed changes
+
 Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberiamos sustituir `{NUMERO_VLAN}`por el número en concreto de la vlan. Y para el nombre deberiamos hacer lo mismo donde pone `{NOMBRE_VLAN}`
 
 ```cisco
