@@ -82,9 +82,10 @@ Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empez
 
 
 ## **Configuración Packet Tracer**
+
 ### **Configuración de las VLANS en los switches**
 
-#### Creación VLANs
+### **Creación VLANs**
 
 Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberiamos sustituir `{NUMERO_VLAN}`por el número en concreto de la vlan. Y para el nombre deberiamos hacer lo mismo donde pone `{NOMBRE_VLAN}`
 
@@ -114,7 +115,9 @@ name Desarrollo
 exit
 ```
 
-#### Asignación de puertos a las VLAN
+
+### **Asignación de puertos a las VLAN**
+
 
 En cada VLAN tendremos que asignarle a cada puerto que conecta con los PCs la VLAN a la que le pertenece. Pondremos utilizar la opción **range** porque los dos puertos que conectan a a los 2 ordenadores pertenecen a la misma VLAN. 
 
@@ -148,7 +151,30 @@ swichport access vlan 10
 exit
 ```
 
-### Configuración de enlaces troncales
+### **Seguridad de puertos**
+
+Aplicaremos seguridad de puertos en las interfaces que hemos configurado como access. Habilitaremos la seguridad de los puertos, defiremos un solo dispositivo por puerto, que guarde la MAC del primer dispositivo que se conecte y que ante una violación de seguridad desactive el puerto.   
+En este comando también podemos utilizar la opción range. 
+
+```cisco
+enable
+
+configure terminal
+
+interface (range) fastEthernet {Nº INTERFAZ}
+
+switchport port-security
+
+switchport port-security maximum {Nº MAX DE DISPOSITIVOS POR PUERTO}
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+```
+
+### **Configuración de enlaces troncales**
 
 Para manejar el trafico de las VLANs entre todos los switch y routers de la red configuraremos las interfaces que conecten switch-switch o switch-router en modo **trunk**. 
 
@@ -177,7 +203,7 @@ swichport mode trunk
 exit
 ```
 
-### **Configuración de enrutamiento con router-on-a-stick**
+### **Configuración de subinterfaces en el router**
 
 Crearemos en el router subinterfaces de cada VLAN que tenemos definida.
 
@@ -209,6 +235,42 @@ ip address 192.168.0.1 255.255.255.128
 
 exit
 ```
+### **Configuración del DHCP en el router**
+Configuraremos los pool de DHCP para cada VLAN en el router.
+
+```cisco
+enable
+
+configure terminal
+
+ip dhcp pool {NOMBRE POOL}
+
+network {RED} {MÁSCARA}
+
+default-router {PUERTA DE ENLACE}
+
+dns-server {SERVIDOR DNS}
+
+exit
+```
+
+## **Configuración de switches y router
+
+### Switch_Desarrollo
+
+### Switch_Operaciones_Ciber
+
+### Switch_Ventas_Marketing
+
+### Switch_RRHH
+
+### Switch_Direccion
+
+
+
+
+
+
 
 ## **Validación y pruebas finales**
 
