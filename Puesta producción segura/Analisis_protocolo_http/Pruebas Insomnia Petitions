@@ -1,23 +1,31 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2024-11-25T07:32:16.781Z",
+  "__export_date": "2024-11-25T08:29:43.459Z",
   "__export_source": "insomnia.desktop.app:v10.1.1",
   "resources": [
     {
-      "_id": "req_506eaf1e087f4cd2b3f8f39e3ed0ba36",
+      "_id": "req_36ea12cd44bb4d4999e7eab93ca1976f",
       "parentId": "wrk_ebda142d69404df2aa7a822bcaab4144",
-      "modified": 1732518517634,
-      "created": 1732193121319,
-      "url": "localhost:8000/petition",
+      "modified": 1732523077930,
+      "created": 1732522836344,
+      "url": "https://peticiones-fastapi.onrender.com/petition",
       "name": "Petición GET",
       "description": "",
       "method": "GET",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"body\": \"PRUEBA\"\n}"
+        "text": "{\n\t\"body\": \"Body Render\" \n}"
       },
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "pair_34f2ceb988b44b56a54b53bd232d8c86",
+          "name": "Example",
+          "value": "Parametro Render",
+          "description": "",
+          "disabled": false
+        }
+      ],
       "headers": [
         {
           "name": "Content-Type",
@@ -29,7 +37,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1732193121319,
+      "metaSortKey": -1732522836344,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -51,23 +59,23 @@
       "_type": "workspace"
     },
     {
-      "_id": "req_f40ecfac00ff460a98e9ae418148496a",
+      "_id": "req_6e817865ffb6475882aac8e3eba9a51e",
       "parentId": "wrk_ebda142d69404df2aa7a822bcaab4144",
-      "modified": 1732518532199,
-      "created": 1732192531264,
-      "url": "localhost:8000/petition",
+      "modified": 1732523121979,
+      "created": 1732523119000,
+      "url": "https://peticiones-fastapi.onrender.com/petition",
       "name": "Petición POST",
       "description": "",
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"body\": \"PRUEBA\"\n}\n"
+        "text": "{\n\t\"body\": \"Body Render\" \n}"
       },
       "parameters": [
         {
-          "id": "pair_1067866f849f4d41a90077ba43546b30",
-          "name": "PARAM",
-          "value": "PRUEBA",
+          "id": "pair_34f2ceb988b44b56a54b53bd232d8c86",
+          "name": "Example",
+          "value": "Parametro Render",
           "description": "",
           "disabled": false
         }
@@ -75,24 +83,15 @@
       "headers": [
         {
           "name": "Content-Type",
-          "value": "application/json",
-          "id": "pair_cac15da03abf4e19b0b25b3da5c903c1"
+          "value": "application/json"
         },
         {
           "name": "User-Agent",
-          "value": "insomnia/10.1.1",
-          "id": "pair_35f8727a6dd0457e868dad480865a17e"
-        },
-        {
-          "id": "pair_d3e88071a42e49ecae711564a4293406",
-          "name": "HEADER",
-          "value": "PRUEBA",
-          "description": "",
-          "disabled": false
+          "value": "insomnia/10.1.1"
         }
       ],
       "authentication": {},
-      "metaSortKey": -1732192531264,
+      "metaSortKey": -1724935185909,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -104,19 +103,27 @@
       "_type": "request"
     },
     {
-      "_id": "req_63179ae7ec6c4159bb53c38573eff8c5",
+      "_id": "req_80ea5c82de6744628183b3830a09489b",
       "parentId": "wrk_ebda142d69404df2aa7a822bcaab4144",
-      "modified": 1732518548058,
-      "created": 1732193277356,
-      "url": "localhost:8000/petition",
+      "modified": 1732523171590,
+      "created": 1732523168599,
+      "url": "https://peticiones-fastapi.onrender.com/petition",
       "name": "Petición OPTIONS",
       "description": "",
       "method": "OPTIONS",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"body\": \"PRUEBA\"\n}\n"
+        "text": "{\n\t\"body\": \"Body Render\" \n}"
       },
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "pair_34f2ceb988b44b56a54b53bd232d8c86",
+          "name": "Example",
+          "value": "Parametro Render",
+          "description": "",
+          "disabled": false
+        }
+      ],
       "headers": [
         {
           "name": "Content-Type",
@@ -128,7 +135,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1732192521935.5,
+      "metaSortKey": -1721141360691.5,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -140,19 +147,27 @@
       "_type": "request"
     },
     {
-      "_id": "req_d324d20e325944eea13de10809949b81",
+      "_id": "req_abe01e4be3e24ae78a0816d542a00659",
       "parentId": "wrk_ebda142d69404df2aa7a822bcaab4144",
-      "modified": 1732518393832,
-      "created": 1732193351162,
-      "url": "localhost:8000/petition",
+      "modified": 1732523201558,
+      "created": 1732523198802,
+      "url": "https://peticiones-fastapi.onrender.com/petition",
       "name": "Petición PUT",
       "description": "",
       "method": "PUT",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"body\": \"PRUEBA\"\n}"
+        "text": "{\n\t\"body\": \"Body Render\" \n}"
       },
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "pair_34f2ceb988b44b56a54b53bd232d8c86",
+          "name": "Example",
+          "value": "Parametro Render",
+          "description": "",
+          "disabled": false
+        }
+      ],
       "headers": [
         {
           "name": "Content-Type",
@@ -164,7 +179,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1732192517271.25,
+      "metaSortKey": -1719244448082.75,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -176,19 +191,27 @@
       "_type": "request"
     },
     {
-      "_id": "req_83d8f90f82ac4fe486eb324be1026a5d",
+      "_id": "req_b18bdc70119f4d6ebf342b39c1c918f8",
       "parentId": "wrk_ebda142d69404df2aa7a822bcaab4144",
-      "modified": 1732518397647,
-      "created": 1732194654534,
-      "url": "localhost:8000/petition",
+      "modified": 1732523297759,
+      "created": 1732523253149,
+      "url": "https://peticiones-fastapi.onrender.com/petition",
       "name": "Petición PATCH",
       "description": "",
       "method": "PATCH",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"body\": \"PRUEBA\"\n}"
+        "text": "{\n\t\"body\": \"Body Render\" \n}"
       },
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "pair_34f2ceb988b44b56a54b53bd232d8c86",
+          "name": "Example",
+          "value": "Parametro Render",
+          "description": "",
+          "disabled": false
+        }
+      ],
       "headers": [
         {
           "name": "Content-Type",
@@ -200,7 +223,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1732192514939.125,
+      "metaSortKey": -1718295991778.375,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
@@ -212,19 +235,27 @@
       "_type": "request"
     },
     {
-      "_id": "req_3d72a3a40b81420cac3de6dc839564eb",
+      "_id": "req_750041c67c864f5a8524139e454f4932",
       "parentId": "wrk_ebda142d69404df2aa7a822bcaab4144",
-      "modified": 1732518581238,
-      "created": 1732194675552,
-      "url": "localhost:8000/petition",
+      "modified": 1732523330633,
+      "created": 1732523326893,
+      "url": "https://peticiones-fastapi.onrender.com/petition",
       "name": "Petición DELETE",
       "description": "",
       "method": "DELETE",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"body\": \"PRUEBA\"\n}"
+        "text": "{\n\t\"body\": \"Body Render\" \n}"
       },
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "pair_34f2ceb988b44b56a54b53bd232d8c86",
+          "name": "Example",
+          "value": "Parametro Render",
+          "description": "",
+          "disabled": false
+        }
+      ],
       "headers": [
         {
           "name": "Content-Type",
@@ -236,7 +267,7 @@
         }
       ],
       "authentication": {},
-      "metaSortKey": -1732192513773.0625,
+      "metaSortKey": -1717821763626.1875,
       "isPrivate": false,
       "pathParameters": [],
       "settingStoreCookies": true,
