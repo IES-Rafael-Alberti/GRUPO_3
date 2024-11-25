@@ -20,15 +20,66 @@ Con esta arquitectura robusta y bien segmentada, G3Ciber se dedica a ofrecer sol
 
 ## Planificación y definición de VLANS
 
-
-
-
 ## Sentido de la segmentación
-### ¿Por qué hemos segmentado la red?
+
+La segmentación de la red se refiere a dividir una red en varias subredes lógicas, normalmente esto se hace en VLANs. Esto lo hacemos para organizar y optimizar el tráfico de una red, aumentar la seguridad, y reducir las colisiones y problemas que puedan surgir. 
+
+Nuestra empresa de cibersguridad está compuesta por 5 departametos clave:
+- Desarrollo
+- Operaciones de ciberseguridad
+- Marketing y ventas
+- Recursos humanos (RRHH) 
+- Dirección
+
+Nosotros hemos realizado la siguiente segmentación de la red: 
+
+![alt text](image.png)
+
+En el podemos ver como hemos creado diferentes VLANs por cada departamento de nuestra empresa (desarrollo, oper_ciberseguridad, dirección, marketing, RRHH). Donde las tendremos numeradas por VLAN 10, 20, 30, 40, 50
+
+#### ¿Por qué hemos segmentado la red?
+
+La hemos realizado la segmentación de red por los siguientes motivos:
+
+- La organización lógica de la empresa, donde los departamentos estan dividido según su funcionalidad con lo que agrupamos los dispositivos lógicamente. 
+
+- Facilidades a cambios, si hay que hacer un cambio dentro de la red de un departamento se puede resolver más fácilmente dentro de subredes.
+
+- Control del tráfico, con lo que los datos solo se enviarán a los departamentos que sean necesarios, con lo que evitaremos que pase por todos los departamentos. 
+
+- Mayor seguridad, debido a la segmentación podemos aplicar políticas de seguridad específicas (filtros, reglas de firewall o restricciones de acceso a VLANs)
+
 ### Coherencia con funcionalidad y seguridad
+La segmentación que hemos mostrado es coherente tanto en  la funcionalidad como en la seguridad:
+- Funcionalidad  
+ Cada departamento tiene sus dispositivos conectados a un switch específico y dedicado, por lo que configurar VLANs específicas para cada área es más fácil de configurar.  
+ Al estar todo conectado a un switch central es posible la gestión del tráfico interno entre las distintas VLANs. 
+
+- Seguridad  
+ Al segmentar la red aseguramos que los departamentos solo interactúen con otras. Por ejemplo creado ACLs (listas de control de acceso) para que un cierto departamento pueda acceder a ciertos sistemas que son críticos.  
+ Mejora de la seguridad debido a que el firewall en vez de tener normas generales a cada VLAN se le aplicaría un firewall específico dependiendo de sus necesidades. 
 
 ## Calcular el direccionamiento de las ip de cada VLANS
-### Tabla de direcionamiento
+Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos definido tendremos que saber cuantos equipos va a haber en cada VLAN. Tras hacer un invetigación hemos definido los siguientes dispositivos por cada VLAN:
+
+- Dirección 15 equipos.
+- RRHH 30 equipos.
+- Operaciones de ciberseguridad 100 equipos.
+- Marketing y ventas 50 equipos.
+- Desarrollo 120 equipos.
+
+Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empezaremos con la VLAN que necesita más direcciones y continuaremos en orden descendente.
+
+#### TABLA DE DIRECCIONAMIENTO
+
+| VLAN               | Dispositivos  | Red           | Máscara               | Primera IP    | Broadcast      |
+|--------------------|---------------|---------------|-----------------------|---------------|----------------|
+| Desarrollo         | 120           | 192.168.0.0   | 255.255.255.128 (/25) | 192.168.0.1   | 192.168.0.127  |
+| Operaciones_Ciber  | 100           | 192.168.0.128 | 255.255.255.128 (/25) | 192.168.0.129 | 192.168.0.255  |
+| Marketing          | 50            | 192.168.1.0   | 255.255.255.192 (/26) | 192.168.1.1   | 192.168.1.63   |
+| RRHH               | 30            | 192.168.1.64  | 255.255.255.224 (/27) | 192.168.1.65  | 192.168.1.95   |
+| Dirección          | 15            | 192.168.1.96  | 255.255.255.240 (/28) | 192.168.1.97  | 192.168.1.111  |
+
 ## Configuración Packet Tracer
 ### Configuración de las VLANS en los switches
 
