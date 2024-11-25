@@ -80,9 +80,15 @@ Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empez
 | RRHH               | 30            | 192.168.1.64  | 255.255.255.224 (/27) | 192.168.1.65  | 192.168.1.95   |
 | Dirección          | 15            | 192.168.1.96  | 255.255.255.240 (/28) | 192.168.1.97  | 192.168.1.111  |
 
+<<<<<<< Updated upstream
 ## **Configuración Packet Tracer**
 ### **Configuración de las VLANS en los switches**
 
+=======
+## Configuración Packet Tracer
+### Configuración de las VLANS en los switches
+#### Creación VLANs
+>>>>>>> Stashed changes
 Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberiamos sustituir `{NUMERO_VLAN}`por el número en concreto de la vlan. Y para el nombre deberiamos hacer lo mismo donde pone `{NOMBRE_VLAN}`
 
 ```cisco
@@ -97,10 +103,115 @@ name {NOMBRE_VLAN}
 exit
 ```
 
+**Ejemplo:**
+
+```cisco
+enable
+
+configure terminal
+
+vlan 10
+
+name Desarrollo
+
+exit
+```
+
+#### Asignación de puertos a las VLAN
+
+En cada VLAN tendremos que asignarle a cada puerto que conecta con los PCs la VLAN a la que le pertenece. Pondremos utilizar la opción **range** porque los dos puertos que conectan a a los 2 ordenadores pertenecen a la misma VLAN. 
+
+
+```cisco
+enable
+
+configure terminal
+
+interface (range) fastEthernet{Nº INTERFAZ / (RANGO INTERFACES)}
+
+swichport mode access
+
+swichport access vlan {Nº VLAN}
+
+exit
+```
+**Ejemplo:**
+
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/1-2
+
+swichport mode access
+
+swichport access vlan 10
+
+exit
+```
+
+### Configuración de enlaces troncales
+
+Para manejar el trafico de las VLANs entre todos los switch y routers de la red configuraremos las interfaces que conecten switch-switch o switch-router en modo **trunk**. 
+
+```cisco
+enable
+
+configure terminal
+
+interface fastEthernet{Nº INTERFAZ}
+
+swichport mode trunk
+
+exit
+```
+
+**Ejemplo:**
+```cisco
+enable
+
+configure terminal
+
+interface fastEthernet 0/1
+
+swichport mode trunk
+
+exit
+```
 
 ### **Configuración de enrutamiento con router-on-a-stick**
 
+Crearemos en el router subinterfaces de cada VLAN que tenemos definida.
 
+```cisco
+enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.{Nº INTERFAZ}
+
+encapsulation dot1Q {Nº VLAN}
+
+ip address {PUERTA ENLACE} {MÁSCARA}
+
+exit
+```
+**Ejemplo:**
+
+```cisco
+enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.10
+
+encapsulation dot1Q 10
+
+ip address 192.168.0.1 255.255.255.128
+
+exit
+```
 
 ## **Validación y pruebas finales**
 
