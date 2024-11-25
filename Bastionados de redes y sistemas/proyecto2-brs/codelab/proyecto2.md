@@ -10,7 +10,7 @@ status: Published
 # Proyecto2 - BRS
 
 
-## Introducción
+## **Introducción**
 
 G3Ciber es una empresa especializada en brindar soluciones de ciberseguridad avanzadas y personalizadas para proteger la infraestructura digital de sus clientes. Con un enfoque en la protección de datos, la prevención de ataques cibernéticos y la seguridad de redes, G3Ciber se posiciona como un líder en el sector, ofreciendo servicios que aseguran un entorno digital confiable y resiliente.
 
@@ -18,9 +18,9 @@ En su infraestructura de red, G3Ciber utiliza un esquema de cinco VLANs (Redes d
 
 Con esta arquitectura robusta y bien segmentada, G3Ciber se dedica a ofrecer soluciones seguras, confiables y adaptadas a las necesidades actuales de seguridad informática.
 
-## Planificación y definición de VLANS
+## **Planificación y definición de VLANS**
 
-## Sentido de la segmentación
+## **Sentido de la segmentación**
 
 La segmentación de la red se refiere a dividir una red en varias subredes lógicas, normalmente esto se hace en VLANs. Esto lo hacemos para organizar y optimizar el tráfico de una red, aumentar la seguridad, y reducir las colisiones y problemas que puedan surgir. 
 
@@ -37,7 +37,7 @@ Nosotros hemos realizado la siguiente segmentación de la red:
 
 En el podemos ver como hemos creado diferentes VLANs por cada departamento de nuestra empresa (desarrollo, oper_ciberseguridad, dirección, marketing, RRHH). Donde las tendremos numeradas por VLAN 10, 20, 30, 40, 50
 
-#### ¿Por qué hemos segmentado la red?
+#### **¿Por qué hemos segmentado la red?**
 
 La hemos realizado la segmentación de red por los siguientes motivos:
 
@@ -49,7 +49,7 @@ La hemos realizado la segmentación de red por los siguientes motivos:
 
 - Mayor seguridad, debido a la segmentación podemos aplicar políticas de seguridad específicas (filtros, reglas de firewall o restricciones de acceso a VLANs)
 
-### Coherencia con funcionalidad y seguridad
+### **Coherencia con funcionalidad y seguridad**
 La segmentación que hemos mostrado es coherente tanto en  la funcionalidad como en la seguridad:
 - Funcionalidad  
  Cada departamento tiene sus dispositivos conectados a un switch específico y dedicado, por lo que configurar VLANs específicas para cada área es más fácil de configurar.  
@@ -59,7 +59,7 @@ La segmentación que hemos mostrado es coherente tanto en  la funcionalidad como
  Al segmentar la red aseguramos que los departamentos solo interactúen con otras. Por ejemplo creado ACLs (listas de control de acceso) para que un cierto departamento pueda acceder a ciertos sistemas que son críticos.  
  Mejora de la seguridad debido a que el firewall en vez de tener normas generales a cada VLAN se le aplicaría un firewall específico dependiendo de sus necesidades. 
 
-## Calcular el direccionamiento de las ip de cada VLANS
+## **Calcular el direccionamiento de las ip de cada VLANS**
 Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos definido tendremos que saber cuantos equipos va a haber en cada VLAN. Tras hacer un invetigación hemos definido los siguientes dispositivos por cada VLAN:
 
 - Dirección 15 equipos.
@@ -70,8 +70,8 @@ Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos
 
 Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empezaremos con la VLAN que necesita más direcciones y continuaremos en orden descendente.
 
-#### TABLA DE DIRECCIONAMIENTO
-
+#### **TABLA DE DIRECCIONAMIENTO**
+---
 | VLAN               | Dispositivos  | Red           | Máscara               | Primera IP    | Broadcast      |
 |--------------------|---------------|---------------|-----------------------|---------------|----------------|
 | Desarrollo         | 120           | 192.168.0.0   | 255.255.255.128 (/25) | 192.168.0.1   | 192.168.0.127  |
@@ -80,8 +80,8 @@ Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empez
 | RRHH               | 30            | 192.168.1.64  | 255.255.255.224 (/27) | 192.168.1.65  | 192.168.1.95   |
 | Dirección          | 15            | 192.168.1.96  | 255.255.255.240 (/28) | 192.168.1.97  | 192.168.1.111  |
 
-## Configuración Packet Tracer
-### Configuración de las VLANS en los switches
+## **Configuración Packet Tracer**
+### **Configuración de las VLANS en los switches**
 
 Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberiamos sustituir `{NUMERO_VLAN}`por el número en concreto de la vlan. Y para el nombre deberiamos hacer lo mismo donde pone `{NOMBRE_VLAN}`
 
@@ -98,11 +98,11 @@ exit
 ```
 
 
-### Configuración de enrutamiento con router-on-a-stick
+### **Configuración de enrutamiento con router-on-a-stick**
 
 
 
-## Validación y pruebas finales
+## **Validación y pruebas finales**
 
 Poner los PCs en modo DHCP para que cojan las IPs de su VLAN correspondiene.
 
@@ -110,12 +110,12 @@ Comprobamos que hace ping de un equipo al otro de otro departamento.
 
 PC1-Ciber a PC2-RRHH:
 
-![imagen]()
+![imagen](/img/pc1ciber_pc2rrhh.png)
 
 PC2-Desarrollo a PC2-Dirección:
 
-![imagen]()
+![imagen](/img/pc2desarrollo_pc2direccion.png)
 
 PC2-Marketing a PC1-Ciber
 
-![imagen]()
+![imagen](/img/pc2marketing_pc1ciber.png)
