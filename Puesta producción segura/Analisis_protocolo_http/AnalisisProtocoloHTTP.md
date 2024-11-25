@@ -14,15 +14,12 @@ Otro de los requisitos mínimos es tener instalado *Postman* o *Insomnia* para p
 
 Para la realización de nuestra aplicación web hemos decidido utilizar el lenguaje de programación Python con el framework FastAPI ya que es un framework que facilita el desarrollo de las APIs.
 
-Para la instalación de FastAPI tenemos que seguir los siguientes comandos: 
+Para la instalación de los requisitos minimos tenemos que irnos a la carpeta peticiones-fastAPI
 
 ```bash
-pip install "fastapi[all]"
+pip install -r requirements.txt
 ```
 
-```bash
-pip install "uvicorn[standard]"
-```
 Creamos un archivo que se llama [petitionRoutes.py](https://github.com/IES-Rafael-Alberti/GRUPO_3/blob/main/Puesta%20producci%C3%B3n%20segura/Analisis_protocolo_http/peticiones-fastAPI/routers/petitionRoutes.py)
 ```python
 from fastapi import APIRouter, Request
