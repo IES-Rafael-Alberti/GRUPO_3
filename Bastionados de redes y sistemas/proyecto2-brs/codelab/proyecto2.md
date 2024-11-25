@@ -178,21 +178,7 @@ ip address {PUERTA ENLACE} {MÁSCARA}
 
 exit
 ```
-**Ejemplo:**
 
-```cisco
-enable
-
-configure terminal
-
-interface GigabitEthernet 0/0/0.10
-
-encapsulation dot1Q 10
-
-ip address 192.168.0.1 255.255.255.128
-
-exit
-```
 ### **Configuración del DHCP en el router**
 Configuraremos los pool de DHCP para cada VLAN en el router.
 
@@ -699,9 +685,9 @@ configure terminal
 interface range fastEthernet 0/2-3
 
 switchport port-security
-
+ 
 switchport port-security maximum 1
-
+ 
 switchport port-security violation shutdown
 
 switchport port-security mac-address sticky
@@ -721,11 +707,154 @@ switchport mode trunk
 
 exit
 ```
- 
 
+### Router
 
+- #### **Configuración subinterfaces**
+```cisco
+enable
 
+configure terminal
 
+interface GigabitEthernet 0/0/0.10
+
+encapsulation dot1Q 10
+
+ip address 192.168.0.1 255.255.255.128
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.20
+
+encapsulation dot1Q 20
+
+ip address 192.168.0.129 255.255.255.128
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.30
+
+encapsulation dot1Q 30
+
+ip address 192.168.1.1 255.255.255.192
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.40
+
+encapsulation dot1Q 40
+
+ip address 192.168.1.64 255.255.255.224
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.50
+
+encapsulation dot1Q 50
+
+ip address 192.168.1.96 255.255.255.240
+
+exit
+```
+
+- #### **Creación de pools**
+
+```cisco
+enable
+
+configure terminal
+
+ip dhcp pool Desarrollo
+
+network 192.168.0.0 255.255.255.128
+
+default-router 192.168.0.1
+
+dns-server 8.8.8.8
+
+exit
+```
+
+```cisco
+enable
+
+configure terminal
+
+ip dhcp pool Operaciones_Ciber
+
+network 192.168.0.126 255.255.255.128
+
+default-router 192.168.0.129
+
+dns-server 8.8.8.8
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+ip dhcp pool Marketing
+
+network 192.168.1.0 255.255.255.192
+
+default-router 192.168.1.1
+
+dns-server 8.8.8.8
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+ip dhcp pool RRHH
+
+network 192.168.1.64 255.255.255.224
+
+default-router 192.168.1.65
+
+dns-server 8.8.8.8
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+ip dhcp pool Direccion
+
+network 192.168.1.96 255.255.255.240
+
+default-router 192.168.1.97
+
+dns-server 8.8.8.8
+
+exit
+```
 
 ## **Validación y pruebas finales**
 
