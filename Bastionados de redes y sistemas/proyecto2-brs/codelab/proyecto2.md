@@ -275,6 +275,7 @@ switchport mode trunk
 
 exit
 ```
+---
 
 ### **Switch_Desarrollo**
 
@@ -372,7 +373,7 @@ exit
 
 ```
 
-
+---
 
 ### **Switch_Operaciones_Ciber**
 
@@ -468,6 +469,7 @@ switchport port-security mac-address sticky
 exit
 
 ```
+---
 
 ### **Switch_Marketing**
 
@@ -563,7 +565,7 @@ switchport port-security mac-address sticky
 exit
 
 ```
-
+---
 
 ### **Switch_RRHH**
 
@@ -659,7 +661,7 @@ switchport port-security mac-address sticky
 exit
 
 ```
-
+---
 
 ### **Switch_Direccion**
 
@@ -756,7 +758,7 @@ exit
 
 ```
 
-
+---
 ### Router
 
 - #### **Configuración subinterfaces**
