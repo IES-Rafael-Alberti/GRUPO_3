@@ -20,7 +20,7 @@ Con esta arquitectura robusta y bien segmentada, G3Ciber se dedica a ofrecer sol
 
 ## **Planificación y definición de VLANS**
 
-## **Sentido de la segmentación**
+### **Sentido de la segmentación**
 
 La segmentación de la red se refiere a dividir una red en varias subredes lógicas, normalmente esto se hace en VLANs. Esto lo hacemos para organizar y optimizar el tráfico de una red, aumentar la seguridad, y reducir las colisiones y problemas que puedan surgir. 
 

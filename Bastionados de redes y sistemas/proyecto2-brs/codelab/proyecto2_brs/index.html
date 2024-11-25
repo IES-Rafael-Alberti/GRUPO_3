@@ -1,0 +1,922 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Proyecto2 - BRS</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="proyecto2_brs"
+                  title="Proyecto2 - BRS"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Introducción" duration="0">
+        <p>G3Ciber es una empresa especializada en brindar soluciones de ciberseguridad avanzadas y personalizadas para proteger la infraestructura digital de sus clientes. Con un enfoque en la protección de datos, la prevención de ataques cibernéticos y la seguridad de redes, G3Ciber se posiciona como un líder en el sector, ofreciendo servicios que aseguran un entorno digital confiable y resiliente.</p>
+<p>En su infraestructura de red, G3Ciber utiliza un esquema de cinco VLANs (Redes de Área Local Virtual), lo cual permite una segmentación eficaz del tráfico y refuerza la seguridad interna. Cada VLAN tiene un propósito específico para optimizar la eficiencia y minimizar los riesgos asociados con posibles amenazas internas y externas. Este enfoque segmentado facilita el control y la protección de datos sensibles, la gestión de accesos y la capacidad de responder rápidamente ante incidentes de seguridad.</p>
+<p>Con esta arquitectura robusta y bien segmentada, G3Ciber se dedica a ofrecer soluciones seguras, confiables y adaptadas a las necesidades actuales de seguridad informática.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Planificación y definición de VLANS" duration="0">
+        <h2 is-upgraded><strong>Sentido de la segmentación</strong></h2>
+<p>La segmentación de la red se refiere a dividir una red en varias subredes lógicas, normalmente esto se hace en VLANs. Esto lo hacemos para organizar y optimizar el tráfico de una red, aumentar la seguridad, y reducir las colisiones y problemas que puedan surgir.</p>
+<p>Nuestra empresa de cibersguridad está compuesta por 5 departametos clave:</p>
+<ul>
+<li>Desarrollo</li>
+<li>Operaciones de ciberseguridad</li>
+<li>Marketing y ventas</li>
+<li>Recursos humanos (RRHH)</li>
+<li>Dirección</li>
+</ul>
+<p>Nosotros hemos realizado la siguiente segmentación de la red:</p>
+<p class="image-container"><img alt="alt text" src="img\\67a4bb2d8482a8bc.png"></p>
+<p>En el podemos ver como hemos creado diferentes VLANs por cada departamento de nuestra empresa (desarrollo, oper_ciberseguridad, dirección, marketing, RRHH). Donde las tendremos numeradas por VLAN 10, 20, 30, 40, 50</p>
+<h3 is-upgraded><strong>¿Por qué hemos segmentado la red?</strong></h3>
+<p>La hemos realizado la segmentación de red por los siguientes motivos:</p>
+<ul>
+<li>La organización lógica de la empresa, donde los departamentos estan dividido según su funcionalidad con lo que agrupamos los dispositivos lógicamente.</li>
+<li>Facilidades a cambios, si hay que hacer un cambio dentro de la red de un departamento se puede resolver más fácilmente dentro de subredes.</li>
+<li>Control del tráfico, con lo que los datos solo se enviarán a los departamentos que sean necesarios, con lo que evitaremos que pase por todos los departamentos.</li>
+<li>Mayor seguridad, debido a la segmentación podemos aplicar políticas de seguridad específicas (filtros, reglas de firewall o restricciones de acceso a VLANs)</li>
+</ul>
+<h2 is-upgraded><strong>Coherencia con funcionalidad y seguridad</strong></h2>
+<p>La segmentación que hemos mostrado es coherente tanto en  la funcionalidad como en la seguridad:</p>
+<ul>
+<li>Funcionalidad<br> Cada departamento tiene sus dispositivos conectados a un switch específico y dedicado, por lo que configurar VLANs específicas para cada área es más fácil de configurar.<br> Al estar todo conectado a un switch central es posible la gestión del tráfico interno entre las distintas VLANs.</li>
+<li>Seguridad<br> Al segmentar la red aseguramos que los departamentos solo interactúen con otras. Por ejemplo creado ACLs (listas de control de acceso) para que un cierto departamento pueda acceder a ciertos sistemas que son críticos.<br> Mejora de la seguridad debido a que el firewall en vez de tener normas generales a cada VLAN se le aplicaría un firewall específico dependiendo de sus necesidades.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Calcular el direccionamiento de las ip de cada VLANS" duration="0">
+        <p>Para realizar el cálculo del direccionamiento de las diferentes VLANs que hemos definido tendremos que saber cuantos equipos va a haber en cada VLAN. Tras hacer un invetigación hemos definido los siguientes dispositivos por cada VLAN:</p>
+<ul>
+<li>Dirección 15 equipos.</li>
+<li>RRHH 30 equipos.</li>
+<li>Operaciones de ciberseguridad 100 equipos.</li>
+<li>Marketing y ventas 50 equipos.</li>
+<li>Desarrollo 120 equipos.</li>
+</ul>
+<p>Asignaremos las VLANs en función de la cantidad de equipos que necesitan. Empezaremos con la VLAN que necesita más direcciones y continuaremos en orden descendente.</p>
+<h3 is-upgraded><strong>TABLA DE DIRECCIONAMIENTO</strong></h3>
+<table>
+<tr><td colspan="1" rowspan="1"><p>VLAN</p>
+</td><td colspan="1" rowspan="1"><p>Dispositivos</p>
+</td><td colspan="1" rowspan="1"><p>Red</p>
+</td><td colspan="1" rowspan="1"><p>Máscara</p>
+</td><td colspan="1" rowspan="1"><p>Primera IP</p>
+</td><td colspan="1" rowspan="1"><p>Broadcast</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Desarrollo</p>
+</td><td colspan="1" rowspan="1"><p>120</p>
+</td><td colspan="1" rowspan="1"><p>192.168.0.0</p>
+</td><td colspan="1" rowspan="1"><p>255.255.255.128 (/25)</p>
+</td><td colspan="1" rowspan="1"><p>192.168.0.1</p>
+</td><td colspan="1" rowspan="1"><p>192.168.0.127</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Operaciones_Ciber</p>
+</td><td colspan="1" rowspan="1"><p>100</p>
+</td><td colspan="1" rowspan="1"><p>192.168.0.128</p>
+</td><td colspan="1" rowspan="1"><p>255.255.255.128 (/25)</p>
+</td><td colspan="1" rowspan="1"><p>192.168.0.129</p>
+</td><td colspan="1" rowspan="1"><p>192.168.0.255</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Marketing</p>
+</td><td colspan="1" rowspan="1"><p>50</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.0</p>
+</td><td colspan="1" rowspan="1"><p>255.255.255.192 (/26)</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.1</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.63</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>RRHH</p>
+</td><td colspan="1" rowspan="1"><p>30</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.64</p>
+</td><td colspan="1" rowspan="1"><p>255.255.255.224 (/27)</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.65</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.95</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Dirección</p>
+</td><td colspan="1" rowspan="1"><p>15</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.96</p>
+</td><td colspan="1" rowspan="1"><p>255.255.255.240 (/28)</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.97</p>
+</td><td colspan="1" rowspan="1"><p>192.168.1.111</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración Packet Tracer" duration="0">
+        <h2 is-upgraded><strong>Configuración de las VLANS en los switches</strong></h2>
+<h2 is-upgraded><strong>Creación VLANs</strong></h2>
+<p>Como tenemos las vlans 10 de Desarrollo,20 de Ciber, 30 de Marketing, 40 de RRHH, 50 de Dirección en los siguientes comandos de packet tracer deberiamos sustituir <code>{NUMERO_VLAN}</code>por el número en concreto de la vlan. Y para el nombre deberiamos hacer lo mismo donde pone <code>{NOMBRE_VLAN}</code></p>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan {NUMERO_VLAN}
+
+name {NOMBRE_VLAN}
+
+exit
+</code></pre>
+<h2 is-upgraded><strong>Asignación de puertos a las VLAN</strong></h2>
+<p>En cada VLAN tendremos que asignarle a cada puerto que conecta con los PCs la VLAN a la que le pertenece. Pondremos utilizar la opción <strong>range</strong> porque los dos puertos que conectan a a los 2 ordenadores pertenecen a la misma VLAN.</p>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface (range) fastEthernet{Nº INTERFAZ / (RANGO INTERFACES)}
+
+swichport mode access
+
+swichport access vlan {Nº VLAN}
+
+exit
+</code></pre>
+<h2 is-upgraded><strong>Seguridad de puertos</strong></h2>
+<p>Aplicaremos seguridad de puertos en las interfaces que hemos configurado como access. Habilitaremos la seguridad de los puertos, defiremos un solo dispositivo por puerto, que guarde la MAC del primer dispositivo que se conecte y que ante una violación de seguridad desactive el puerto.<br> En este comando también podemos utilizar la opción range.</p>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface (range) fastEthernet {Nº INTERFAZ}
+
+switchport port-security
+
+switchport port-security maximum {Nº MAX DE DISPOSITIVOS POR PUERTO}
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+</code></pre>
+<h2 is-upgraded><strong>Configuración de enlaces troncales</strong></h2>
+<p>Para manejar el trafico de las VLANs entre todos los switch y routers de la red configuraremos las interfaces que conecten switch-switch o switch-router en modo <strong>trunk</strong>.</p>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface fastEthernet{Nº INTERFAZ}
+
+switchport mode trunk
+
+exit
+</code></pre>
+<h2 is-upgraded><strong>Configuración de subinterfaces en el router</strong></h2>
+<p>Crearemos en el router subinterfaces de cada VLAN que tenemos definida.</p>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.{Nº INTERFAZ}
+
+encapsulation dot1Q {Nº VLAN}
+
+ip address {PUERTA ENLACE} {MÁSCARA}
+
+exit
+</code></pre>
+<h2 is-upgraded><strong>Configuración del DHCP en el router</strong></h2>
+<p>Configuraremos los pool de DHCP para cada VLAN en el router.</p>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+ip dhcp pool {NOMBRE POOL}
+
+network {RED} {MÁSCARA}
+
+default-router {PUERTA DE ENLACE}
+
+dns-server {SERVIDOR DNS}
+
+exit
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración de switches y router" duration="0">
+        <p>En este apartado enseñaremos la configuración que tiene cada uno de los switches de nuestra red. También hemso añadido laconfiguración que tendrá el router.</p>
+<h2 is-upgraded><strong>Switch_Central</strong></h2>
+<ul>
+<li><h3 is-upgraded><strong>Definicón VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Configurar puertos modo trunk</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/1-6
+
+switchport mode trunk
+
+exit
+</code></pre>
+<h2 is-upgraded><strong>Switch_Desarrollo</strong></h2>
+<ul>
+<li><h3 is-upgraded><strong>Definicón VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar puertos a las VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 10
+
+exit
+
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar seguridad a los puertos</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+
+switchport port-security maximum 1
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+
+</code></pre>
+<h2 is-upgraded><strong>Switch_Operaciones_Ciber</strong></h2>
+<ul>
+<li><h3 is-upgraded><strong>Definicón VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar puertos a las VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 20
+
+exit
+
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar seguridad a los puertos</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+
+switchport port-security maximum 1
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+
+</code></pre>
+<h2 is-upgraded><strong>Switch_Marketing</strong></h2>
+<ul>
+<li><h3 is-upgraded><strong>Definicón VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar puertos a las VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 30
+
+exit
+
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar seguridad a los puertos</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+
+switchport port-security maximum 1
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+
+</code></pre>
+<h2 is-upgraded><strong>Switch_RRHH</strong></h2>
+<ul>
+<li><h3 is-upgraded><strong>Definicón VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar puertos a las VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 40
+
+exit
+
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar seguridad a los puertos</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+
+switchport port-security maximum 1
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+
+</code></pre>
+<h2 is-upgraded><strong>Switch_Direccion</strong></h2>
+<ul>
+<li><h3 is-upgraded><strong>Definicón VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar puertos a las VLANs</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 50
+
+exit
+
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Asignar seguridad a los puertos</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+ 
+switchport port-security maximum 1
+ 
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+
+</code></pre>
+<h2 is-upgraded>Router</h2>
+<ul>
+<li><h3 is-upgraded><strong>Configuración subinterfaces</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.10
+
+encapsulation dot1Q 10
+
+ip address 192.168.0.1 255.255.255.128
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.20
+
+encapsulation dot1Q 20
+
+ip address 192.168.0.129 255.255.255.128
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.30
+
+encapsulation dot1Q 30
+
+ip address 192.168.1.1 255.255.255.192
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.40
+
+encapsulation dot1Q 40
+
+ip address 192.168.1.64 255.255.255.224
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+interface GigabitEthernet 0/0/0.50
+
+encapsulation dot1Q 50
+
+ip address 192.168.1.96 255.255.255.240
+
+exit
+</code></pre>
+<ul>
+<li><h3 is-upgraded><strong>Creación de pools</strong></h3>
+</li>
+</ul>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+ip dhcp pool Desarrollo
+
+network 192.168.0.0 255.255.255.128
+
+default-router 192.168.0.1
+
+dns-server 8.8.8.8
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+ip dhcp pool Operaciones_Ciber
+
+network 192.168.0.128 255.255.255.128
+
+default-router 192.168.0.129
+
+dns-server 8.8.8.8
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+ip dhcp pool Marketing
+
+network 192.168.1.0 255.255.255.192
+
+default-router 192.168.1.1
+
+dns-server 8.8.8.8
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+ip dhcp pool RRHH
+
+network 192.168.1.64 255.255.255.224
+
+default-router 192.168.1.65
+
+dns-server 8.8.8.8
+
+exit
+</code></pre>
+<pre><code language="language-cisco" class="language-cisco">enable
+
+configure terminal
+
+ip dhcp pool Direccion
+
+network 192.168.1.96 255.255.255.240
+
+default-router 192.168.1.97
+
+dns-server 8.8.8.8
+
+exit
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Validación y pruebas finales" duration="0">
+        <p>Poner los PCs en modo DHCP para que cojan las IPs de su VLAN correspondiene.</p>
+<p>Comprobamos que hace ping de un equipo al otro de otro departamento.</p>
+<p><strong>PC1-Ciber a PC2-RRHH:</strong></p>
+<p class="image-container"><img alt="imagen" src="img\\79384bb3b5aa5663.png"></p>
+<p><strong>PC2-Desarrollo a PC2-Dirección:</strong></p>
+<p class="image-container"><img alt="imagen" src="img\\8cb54516d442900e.png"></p>
+<p><strong>PC2-Marketing a PC1-Ciber:</strong></p>
+<p class="image-container"><img alt="imagen" src="img\\ccc68043c1667e00.png"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
