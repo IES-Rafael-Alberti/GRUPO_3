@@ -206,76 +206,8 @@ En este apartado enseñaremos la configuración que tiene cada uno de los switch
 ### **Switch_Central**
 
 - #### **Definicón VLANs**
-```cisco
-enable
 
-configure terminal
 
-vlan 10
- 
-name Desarrollo
-
-exit
-```
-```cisco
-enable
-
-configure terminal
-
-vlan 20
- 
-name Operaciones_Ciber
-
-exit
-```
-```cisco
-enable
-
-configure terminal
-
-vlan 30
- 
-name Ventas_Marketing
-
-exit
-```
-```cisco
-enable
-
-configure terminal
-
-vlan 40
- 
-name RRHH
-
-exit
-```
-```cisco
-enable
-
-configure terminal
-
-vlan 50
- 
-name Direccion
-
-exit
-```
-
-- #### **Configurar puertos modo trunk**
-
-```cisco
-enable
-
-configure terminal
-
-interface range fastEthernet 0/1-6
-
-switchport mode trunk
-
-exit
-```
----
 ### **Switch_Desarrollo**
 
 - #### **Definicón VLANs**
@@ -334,8 +266,8 @@ name Direccion
 
 exit
 ```
-
 - #### **Asignar puertos a las VLANs**
+
 ```cisco
 enable
 
@@ -348,6 +280,7 @@ switchport mode access
 switchport access vlan 10
 
 exit
+
 ```
 
 - #### **Asignar seguridad a los puertos**
@@ -368,7 +301,9 @@ switchport port-security violation shutdown
 switchport port-security mac-address sticky
 
 exit
+
 ```
+
 - #### **Configurar puertos modo trunk**
 
 ```cisco
@@ -376,18 +311,14 @@ enable
 
 configure terminal
 
-interface fastEthernet 0/1
+interface range fastEthernet 0/1-6
 
 switchport mode trunk
 
 exit
 ```
---- 
 
 ### **Switch_Operaciones_Ciber**
- 
- 
-### **Switch_Ventas_Marketing**
 
 - #### **Definicón VLANs**
 ```cisco
@@ -445,8 +376,8 @@ name Direccion
 
 exit
 ```
-
 - #### **Asignar puertos a las VLANs**
+
 ```cisco
 enable
 
@@ -456,13 +387,13 @@ interface range fastEthernet 0/2-3
 
 switchport mode access
 
-switchport access vlan 30
+switchport access vlan 20
 
 exit
+
 ```
 
 - #### **Asignar seguridad a los puertos**
-
 ```cisco
 enable
 
@@ -479,6 +410,116 @@ switchport port-security violation shutdown
 switchport port-security mac-address sticky
 
 exit
+
+```
+
+- #### **Configurar puertos modo trunk**
+
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/1-6
+
+switchport mode trunk
+
+exit
+```
+
+### **Switch_Marketing**
+
+- #### **Definicón VLANs**
+```cisco
+enable
+
+configure terminal
+
+vlan 10
+ 
+name Desarrollo
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 20
+ 
+name Operaciones_Ciber
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 30
+ 
+name Ventas_Marketing
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 40
+ 
+name RRHH
+
+exit
+```
+```cisco
+enable
+
+configure terminal
+
+vlan 50
+ 
+name Direccion
+
+exit
+```
+- #### **Asignar puertos a las VLANs**
+
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport mode access
+
+switchport access vlan 30
+
+exit
+
+```
+
+- #### **Asignar seguridad a los puertos**
+```cisco
+enable
+
+configure terminal
+
+interface range fastEthernet 0/2-3
+
+switchport port-security
+
+switchport port-security maximum 1
+
+switchport port-security violation shutdown
+
+switchport port-security mac-address sticky
+
+exit
+
 ```
 - #### **Configurar puertos modo trunk**
 
@@ -487,13 +528,14 @@ enable
 
 configure terminal
 
-interface fastEthernet 0/1
+interface range fastEthernet 0/1-6
 
 switchport mode trunk
 
 exit
 ```
----
+
+
 ### **Switch_RRHH**
 
 - #### **Definicón VLANs**
@@ -552,8 +594,8 @@ name Direccion
 
 exit
 ```
-
 - #### **Asignar puertos a las VLANs**
+
 ```cisco
 enable
 
@@ -566,10 +608,10 @@ switchport mode access
 switchport access vlan 40
 
 exit
+
 ```
 
 - #### **Asignar seguridad a los puertos**
-
 ```cisco
 enable
 
@@ -586,6 +628,7 @@ switchport port-security violation shutdown
 switchport port-security mac-address sticky
 
 exit
+
 ```
 - #### **Configurar puertos modo trunk**
 
@@ -594,13 +637,14 @@ enable
 
 configure terminal
 
-interface fastEthernet 0/1
+interface range fastEthernet 0/1-6
 
 switchport mode trunk
 
 exit
 ```
----
+
+
 ### **Switch_Direccion**
 
 - #### **Definicón VLANs**
@@ -659,8 +703,8 @@ name Direccion
 
 exit
 ```
-
 - #### **Asignar puertos a las VLANs**
+
 ```cisco
 enable
 
@@ -673,10 +717,10 @@ switchport mode access
 switchport access vlan 50
 
 exit
+
 ```
 
 - #### **Asignar seguridad a los puertos**
-
 ```cisco
 enable
 
@@ -693,6 +737,7 @@ switchport port-security violation shutdown
 switchport port-security mac-address sticky
 
 exit
+
 ```
 - #### **Configurar puertos modo trunk**
 
@@ -701,7 +746,7 @@ enable
 
 configure terminal
 
-interface fastEthernet 0/1
+interface range fastEthernet 0/1-6
 
 switchport mode trunk
 
