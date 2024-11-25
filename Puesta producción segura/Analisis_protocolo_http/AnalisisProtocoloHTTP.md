@@ -11,6 +11,7 @@
     - [PUT](#put)
     - [PATCH](#patch)
     - [DELETE](#delete)
+- [Bibliografía](#bibliografía)
 
 ## Requisitos
 
