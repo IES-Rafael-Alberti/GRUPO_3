@@ -1,5 +1,10 @@
 # API web con CORS, seguridad (JWT) y cliente (React o Vue)
 
+## Repositiorios
+
+- API: [peticiones-fastAPI](https://github.com/vjimcor955/peticiones-fastAPI)
+- Cliente: [fastAPI-client](https://github.com/vjimcor955/fastAPI-client)
+
 ## Indice
 
 1. Aegurar la API (CORS y Token JWT)
