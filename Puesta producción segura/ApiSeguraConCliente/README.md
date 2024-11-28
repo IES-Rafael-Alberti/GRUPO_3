@@ -5,6 +5,11 @@
 - API: [peticiones-fastAPI](https://github.com/vjimcor955/peticiones-fastAPI)
 - Cliente: [fastAPI-client](https://github.com/vjimcor955/fastAPI-client)
 
+## Despliegue
+
+- API: https://peticiones-fastapi.onrender.com/
+- Cliente: https://fastapi-client.netlify.app/
+
 ## Indice
 
 1. Aegurar la API (CORS y Token JWT)
