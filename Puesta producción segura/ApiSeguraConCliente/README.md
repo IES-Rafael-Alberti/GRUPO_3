@@ -496,3 +496,6 @@ Abajo sale un botón donde pone "*Fecth Users*". Si pulsamos nos saldrá en el c
 ![alt text](img/image3.png)
 ## 8. Bibliografía
 
+[JWT token](https://es.wikipedia.org/wiki/JSON_Web_Token)
+[Vue](https://aws.amazon.com/es/what-is/cross-origin-resource-sharing/)
+[¿Qué es Cors?](https://aws.amazon.com/es/what-is/cross-origin-resource-sharing/)
