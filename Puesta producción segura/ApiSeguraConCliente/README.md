@@ -15,7 +15,7 @@ Hecho por:
 5. [Repositorios](#5-repositiorios)
 6. [Despliegue](#6-despliegue)
 7. [Pruebas](#7-pruebas)
-8. [Bibliografía](#8-bibliografía))
+8. [Bibliografía](#8-bibliografía)
 
 ## 1. Asegurar la API (CORS y Token JWT)
 
@@ -483,7 +483,16 @@ async def get_users(token: str = Depends(oauth2_scheme)):
 
 
 ## 7. Pruebas
+Para hacer las pruebas nos meteremos en el cliente. Podremos ver una interfaz donde nos sale un LOGIN donde acceder con nuestro usuarios y contraseña.  
+Abajo sale un botón donde pone "*Fecth Users*". Si pulsamos nos saldrá en el campo de abajo la información de la petición. 
 
+- Si le damos sin estar logueados, es decir, en modo *Invitado* nos dirá el siguiente mensaje: **Token is missing or invalid**. Esto se debe a que no nos hemos logueado por lo que no se ha generado un token. 
 
+![alt text](img/image1.png)
+
+- Si nos registramos con el usuario *User*, al darle al botón si que nos saldrá la información: 
+
+![alt text](img/image2.png)
+![alt text](img/image3.png)
 ## 8. Bibliografía
 
