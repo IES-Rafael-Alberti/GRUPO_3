@@ -64,7 +64,8 @@ Un JWT está compuesto por tres partes esenciales. Primero, el encabezado (Heade
 
     El proceso de funcionamiento de JWT comienza cuando un usuario proporciona sus credenciales al servidor. Este último verifica las credenciales y, si son correctas, genera un JWT. A continuación, el servidor envía este token al cliente, quien lo almacena, generalmente en el almacenamiento local o como una cookie.
 
-- CORS:
+- CORS: es un mecanismo de seguridad implementado en los navegadores para controlar cómo se permite el acceso a recursos desde un dominio distinto al dominio de origen de una solicitud.
+Por defecto, los navegadores bloquean las solicitudes de recursos entre dominios diferentes para proteger a los usuarios de ataques XSS. En el caso de nuestra API, se utiliza para permitir que el cliente web alojado en https://fastapi-client.netlify.app/ pueda interactuar con la API alojada en https://peticiones-fastapi.onrender.com/.
 
 - Vue.js es un framework progresivo de JavaScript de código abierto para construir interfaces de usuario y aplicaciones de una sola página (SPA).Vue se caracteriza por su enfoque en la capa de visualización y su diseño incremental, lo que permite integrarlo fácilmente en proyectos existentes o utilizarlo como base para aplicaciones complejas.
 
