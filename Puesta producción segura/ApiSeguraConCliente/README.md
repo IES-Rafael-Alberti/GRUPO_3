@@ -1,18 +1,16 @@
 # API web con CORS, seguridad (JWT) y cliente (React o Vue)
 
-## Repositiorios
-
-- API: [peticiones-fastAPI](https://github.com/vjimcor955/peticiones-fastAPI)
-- Cliente: [fastAPI-client](https://github.com/vjimcor955/fastAPI-client)
-
-## Despliegue
-
-- API: https://peticiones-fastapi.onrender.com/
-- Cliente: https://fastapi-client.netlify.app/
-
 ## Indice
 
-1. Aegurar la API (CORS y Token JWT)
+1. [Asegurar la API(CORS y Token JWT)](#1-asegurar-la-api-cors-y-token-jwt)
+2. [Desarrollo del cliente (VUE)](#2--desarrollo-del-cliente-vue)
+3. [Definición de conceptos](#3-definición-de-conceptos)
+4. [Desarrollo de código](#4-desarrollo-de-código)
+5. [Repositorios](#5-repositiorios)
+6. [Despliegue](#6-despliegue)
+7. [Hecho por](#7-hecho-por)
+
+## 1. Asegurar la API (CORS y Token JWT)
 
 - JWT:
 
@@ -40,7 +38,7 @@
           allow_headers=["*"],
       )
 
-2.  Desarrollo del cliente (Vue)
+## 2.  Desarrollo del cliente (Vue)
 
 Estructura del cliente:
 
@@ -59,7 +57,7 @@ Estructura del cliente:
         App.vue (archivo principal donde de agrupa todo: Header, RouterView (en este caso solo la vista del home) y Footer)
 
 
-3. Definición de conceptos.
+## 3. Definición de conceptos.
 
 - JWT, o JSON Web Token, es un estándar abierto que permite la transmisión segura de información entre dos partes utilizando un objeto JSON. Este método se utiliza principalmente para la autenticación y autorización en aplicaciones web y móviles, ofreciendo una forma compacta y autónoma de representar datos.
 Un JWT está compuesto por tres partes esenciales. Primero, el encabezado (Header), que proporciona información sobre el tipo de token y el algoritmo de firma que se emplea. Luego, está la carga útil (Payload), donde se incluyen las afirmaciones (claims) sobre el usuario y otros metadatos relevantes. Por último, se encuentra la firma (Signature), que asegura la integridad del token y verifica que no haya sido modificado.
@@ -76,10 +74,11 @@ Un JWT está compuesto por tres partes esenciales. Primero, el encabezado (Heade
 
     El sistema de reactividad de Vue hace que la interfaz se actualice automáticamente cuando los datos cambian, ofreciendo así una experiencia fluida al usuario.
 
-4. Desarrollo de Código.
+## 4. Desarrollo de Código.
 
+### Para el frontend:
 
-[HomeView.vue](https://github.com/vjimcor955/fastAPI-client/blob/main/src/views/HomeView.vue)
+#### [HomeView.vue](https://github.com/vjimcor955/fastAPI-client/blob/main/src/views/HomeView.vue)
 ```JavaScript
 <script>
 import { useUserStore } from "../stores/userStore.js";
@@ -336,7 +335,146 @@ export default {
 </style>
 ``` 
 
-### Hecho por:
+#### [UserStore.js](https://github.com/vjimcor955/fastAPI-client/blob/main/src/stores/userStore.js)
+
+```JavaScript
+
+import { defineStore } from "pinia";
+
+export const useUserStore = defineStore("user", {
+  state: () => ({
+    user: {
+      username: "",
+      password: "",
+      token: "",
+    },
+    isLogged: false,
+  }),
+  actions: {
+    login(user) {
+      this.user = user;
+      this.isLogged = true;
+    },
+    logout() {
+      this.user = {
+        username: "",
+        password: "",
+        token: "",
+      };
+      this.isLogged = false;
+    },
+  },
+  persist: {
+    enabled: true,
+    strategies: [
+      {
+        key: "user",
+        storage: localStorage,
+      },
+    ],
+  },
+});
+
+export default useUserStore;
+```
+
+### Para la parte del backend:
+
+#### [Utils.py](https://github.com/vjimcor955/peticiones-fastAPI/blob/main/utils/utils.py)
+```Python
+import jwt
+from datetime import datetime, timedelta
+
+# Secret key to encode the JWT
+SECRET_KEY = "SECRET_KEY"
+ALGORITHM = "HS256"
+
+def create_access_token(data: dict, expires_delta: timedelta = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=60)
+    to_encode.update({"exp": expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+```
+#### [userRouters.py](https://github.com/vjimcor955/peticiones-fastAPI/blob/main/routers/userRoutes.py)
+
+```Python
+
+from fastapi import APIRouter, HTTPException, Depends
+from models.User import User
+import json
+from typing import List
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from utils.utils import create_access_token
+from datetime import timedelta
+from fastapi.responses import JSONResponse
+from fastapi import status
+
+
+router = APIRouter()
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+
+# Path to the JSON file storing users
+USER_DB_PATH = "users.json"
+
+def load_users():
+    try:
+        with open(USER_DB_PATH, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
+
+def save_users(users):
+    with open(USER_DB_PATH, "w") as file:
+        json.dump(users, file, indent=4)
+
+@router.post("/login")
+async def login(user: User):
+    users = load_users()
+    existing_user = next((u for u in users if u["username"] == user.username), None)
+    if existing_user:
+        return existing_user
+    
+    user_data = {"username": user.username, "password": user.password}
+    user.token = create_access_token(user_data, expires_delta=timedelta(minutes=60))
+    new_user = {"username": user.username, "password": user.password, "token": user.token}
+    users.append(new_user)
+    save_users(users)
+    return new_user
+
+@router.get("/users")
+async def get_users(token: str = Depends(oauth2_scheme)):
+    if not token or token == "undefined":
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Token is missing or invalid"
+        )
+    
+    users = load_users()
+    if not users:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authorized"
+        )
+    return users
+```
+
+## 5. Repositiorios
+
+- API: [peticiones-fastAPI](https://github.com/vjimcor955/peticiones-fastAPI)
+- Cliente: [fastAPI-client](https://github.com/vjimcor955/fastAPI-client)
+
+## 6. Despliegue
+
+- API: https://peticiones-fastapi.onrender.com/
+- Cliente: https://fastapi-client.netlify.app/
+
+
+## 7. Hecho por:
 
 - Víctor Jiménez
 - Israel Valderrama
