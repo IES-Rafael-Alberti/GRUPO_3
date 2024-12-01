@@ -1,5 +1,11 @@
 # API web con CORS, seguridad (JWT) y cliente (React o Vue)
 
+Hecho por:
+
+- Víctor Jiménez
+- Israel Valderrama
+- Alejandro Seoane
+
 ## Indice
 
 1. [Asegurar la API(CORS y Token JWT)](#1-asegurar-la-api-cors-y-token-jwt)
@@ -8,7 +14,8 @@
 4. [Desarrollo de código](#4-desarrollo-de-código)
 5. [Repositorios](#5-repositiorios)
 6. [Despliegue](#6-despliegue)
-7. [Hecho por](#7-hecho-por)
+7. [Pruebas](#7-pruebas)
+8. [Bibliografía](#8-bibliografía))
 
 ## 1. Asegurar la API (CORS y Token JWT)
 
@@ -475,8 +482,8 @@ async def get_users(token: str = Depends(oauth2_scheme)):
 - Cliente: https://fastapi-client.netlify.app/
 
 
-## 7. Hecho por:
+## 7. Pruebas
 
-- Víctor Jiménez
-- Israel Valderrama
-- Alejandro Seoane
+
+## 8. Bibliografía
+
