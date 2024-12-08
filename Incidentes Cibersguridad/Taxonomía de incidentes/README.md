@@ -7,14 +7,17 @@ Grupo formado por:
 - Alejandro Seoane
 - Victor Jiménez
 
+[Enlace a la presentación](https://www.canva.com/design/DAGYvBgn5cs/JfJT0jB1ftkmBrUyTrNwCg/edit?utm_content=DAGYvBgn5cs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## índice
 
-
+indice
 
 # 1. Introducción	
-nosequenosecuataliscua
-# 2. Incidentes	  
+
+Los incidentes de ciberseguridad representan eventos que comprometen la confidencialidad, integridad o disponibilidad de los sistemas de información. Este trabajo presenta una taxonomía de incidentes, describiéndolos y presentando ejemplos reales. Para este ello se han desarrollado 8 incidentes de los presentes en la [Matriz de taxonomía de INCIBE-CERT](https://github.com/flosada/RSITaxonomy_ES/blob/master/humanv1.md).
+
+# 2. Incidentes
 En este apartado se muestran las tablas referentes a cada uno de los incidentes.
 
 ## 2.1. Contenido malicioso  
