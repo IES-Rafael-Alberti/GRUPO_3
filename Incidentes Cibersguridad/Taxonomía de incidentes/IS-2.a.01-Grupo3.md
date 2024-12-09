@@ -196,8 +196,8 @@ En este apartado se muestran las tablas referentes a cada uno de los incidentes.
 | Ejemplo de caso real |||
 |:---:|:---:|:---:|
 | **URL de la noticia/descripción del incidente** | https://www.genbeta.com/actualidad/github-acaba-de-sobrevivir-el-ataque-ddos-mas-grande-de-la-historia | |
-| **Breve descripción** | Github sufrió el mayor ataque DDoS regitrado hasta el momento, llegando a un pico de tráfico 1.35 Terabits por segundo. |
-|| **Agrupación/Tipo** | Ataque DDoS port amplificación de Memcached. | |
+| **Breve descripción** | Github sufrió el mayor ataque DDoS regitrado hasta el momento, llegando a un pico de tráfico 1.35 Terabits por segundo. ||
+| **Agrupación/Tipo** | Ataque DDoS port amplificación de Memcached. | |
 | **Origen** | Servidores que no estaban preparados y además aceptaban todo tipo de solicitudes. | |
 | **Perfiles usuarios afectados** | Usuarios de github en todo el mundo. | |
 | **Número y tipología de sistemas afectados** | Servidores e infraestructura de red. | |
