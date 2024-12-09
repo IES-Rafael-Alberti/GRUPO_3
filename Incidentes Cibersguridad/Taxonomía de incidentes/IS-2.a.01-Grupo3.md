@@ -179,7 +179,7 @@ En este apartado se muestran las tablas referentes a cada uno de los incidentes.
 | **Perfiles usuarios afectados** | Ciudadanos | |
 | **Número y tipología de sistemas afectados** | Sistemas de contratación de telefonía. | |
 | **Categoría (Importancia de los sistemas afectados)** | Alta. Ya que afecta a los sistemas de identificación de personas. | |
-| **Peligrosidad e Impacto del incidente** | Alto ya que la persona que fué afectada tuvo varias denuncias y gastos de hasta 20000 €. | |
+| **Peligrosidad e Impacto del incidente** | Alto ya que la persona que fue afectada tuvo varias denuncias y gastos de hasta 20000 €. | |
 | **Prioridad que tu le darías** | Alta. Debido al impacto tanto legal como financiero que tuvo la víctima | |
 
 ## 2.5. Vulnerable	  
