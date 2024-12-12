@@ -12,7 +12,7 @@ Este informe técnico esta dedicado a un incidente de ciberseguridad que hemos d
 
 | **Título**                     | **Descripción**                                                                                                                                                                                 |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Asunto**                     | Compromiso de máqun ordenaodr de la empresa debido a malware  de una instalación de Windows pirata.                                                                                             |
+| **Asunto**                     | Compromiso de ordenador de la empresa debido a malware  de una instalación de Windows pirata.                                                                                             |
 | **OSE/PSD**                    | Departamento de IT de la empresa.                                                                                                                                                               |
 | **Sector estratégico**         | Servicios de TI y soporte técnico.                                                                                                                                                              |
 | **Fecha y hora del incidente** | [Fecha y hora específica a definir]                                                                                                                                                             |
