@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-11-25T20:38:26+01:00",
+  "id": "proyecto2_brs",
+  "duration": 0,
+  "title": "Proyecto2 - BRS",
+  "summary": "Codelab de guía de segmentación de red",
+  "source": "proyecto2.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "proyecto2_brs"
+}
