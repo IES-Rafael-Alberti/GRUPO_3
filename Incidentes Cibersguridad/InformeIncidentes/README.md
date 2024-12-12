@@ -18,45 +18,80 @@ Hecho por:
 6. [Aspectos adicionales](#6-aspectos-adicionales)
 7. [Anexos](#7-anexos)
 
-## 1. Introducción
+# Informe Técnico de Incidente de Seguridad
 
-Definición y propósito de la notificación.
+---
 
-## 2. Aspectos clave para notificar
+## **1. Introducción**  
 
-Asunto: Breve descripción del incidente.
-OSE/PSD: Identificación del operador de servicios esenciales o proveedor digital.
-Sector estratégico: Áreas afectadas (energía, transporte, etc.).
-Fecha y hora del incidente: Registro temporal del suceso.
-Fecha y hora de detección: Momento en que se detectó el incidente.
-Descripción: Detalle específico de lo sucedido.
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Definición**                 | Informe técnico detallado sobre un incidente de ciberseguridad. Su propósito es documentar los hechos, evaluar el impacto y definir medidas para mitigar futuros riesgos. |
+| **Propósito de la notificación** | Describir el incidente, evaluar su impacto, definir contramedidas y dejar constancia oficial según la Guía Nacional de Notificación y Gestión de Ciberincidentes. |
 
-## 3. Información técnica
+---
 
-Recursos tecnológicos afectados: Detalle de sistemas, IPs, aplicaciones impactadas.
-Origen del incidente: Causa conocida (archivo malicioso, conexión USB, etc.).
-Taxonomía: Clasificación del ciberincidente.
-Nivel de peligrosidad: Grado de amenaza según criterios establecidos.
+## **2. Aspectos clave para notificar**  
 
-## 4. Evaluación del impacto
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Asunto**                    | Breve descripción del incidente |
+| **OSE/PSD**                   | Identificación del operador de servicios esenciales o proveedor digital |
+| **Sector estratégico**        | Áreas afectadas (energía, transporte, financiero, etc.) |
+| **Fecha y hora del incidente**| Registro temporal del suceso |
+| **Fecha y hora de detección** | Momento en que se detectó el incidente |
+| **Descripción**               | Detalle específico de lo sucedido |
 
-Nivel de impacto: Repercusión del incidente.
-Impacto transfronterizo: Afectaciones en otros estados de la UE.
-Afectación: Alcance del incidente (empresa, particular, etc.).
+---
 
-## 5. Acciones y contramedidas
+## **3. Información técnica**  
 
-Plan de acción: Respuesta y medidas implementadas.
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Recursos tecnológicos afectados** | Detalle de sistemas, IPs, aplicaciones o servicios impactados |
+| **Origen del incidente**      | Causa conocida (archivo malicioso, conexión USB, vulnerabilidad explotada, etc.) |
+| **Taxonomía**                 | Clasificación del ciberincidente según la guía |
+| **Nivel de peligrosidad**     | Grado de amenaza según criterios establecidos (bajo, medio, alto, crítico) |
 
-## 6. Aspectos adicionales
+---
 
-Medios necesarios para la resolución (JP).
-Impacto económico estimado (si aplica).
-Extensión geográfica del incidente (local, nacional, internacional).
-Daños reputacionales (si aplica).
+## **4. Evaluación del impacto**  
 
-## 7. Anexos
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Nivel de impacto**          | Repercusión del incidente para la organización |
+| **Impacto transfronterizo**   | Afectación en otros estados miembros de la UE (si aplica) |
+| **Afectación**                | Alcance del incidente (empresas, particulares, instituciones) |
+| **Factores clave**            | Tipo de amenaza, origen del ataque, categoría afectada, perfil de usuarios afectados, número y tipo de sistemas comprometidos |
 
-Documentos adjuntos (capturas, logs, correos, etc.).
-Regulación afectada: ENS, RGPD, NIS, PIC u otros.
-Requiere actuación de FFCCSE: Sí/No.
+---
+
+## **5. Acciones y contramedidas**  
+
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Plan de acción**            | Respuesta inmediata y medidas implementadas |
+| **Contramedidas**             | Medidas preventivas para evitar futuros incidentes |
+| **Proceso de recuperación**   | Pasos realizados para restablecer servicios |
+
+---
+
+## **6. Aspectos adicionales**  
+
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Medios necesarios para la resolución** | Equipos o recursos adicionales requeridos |
+| **Impacto económico estimado** | Costo potencial asociado al incidente (si aplica) |
+| **Extensión geográfica del incidente** | Local, nacional o internacional |
+| **Daños reputacionales**      | Efectos en la imagen pública de la organización (si aplica) |
+| **Normativa afectada**        | ENS, RGPD, NIS, PIC, u otras regulaciones aplicables |
+| **Requiere actuación de FFCCSE** | Indicación de si se requiere intervención de fuerzas de seguridad |
+
+---
+
+## **7. Anexos**  
+
+| **Título**                    | **Descripción**                        |
+|-------------------------------|----------------------------------------|
+| **Documentos adjuntos**       | Capturas de pantalla, logs, correos, configuraciones afectadas |
+| **Referencias a la guía**     | Citas de la documentación oficial utilizada para la elaboración del informe técnico |
