@@ -5,9 +5,9 @@
 
 Hecho por:
 
-- Víctor Jiménez
-- Israel Valderrama
-- Alejandro Seoane
+- Víctor Jiménez (Punto 2)
+- Israel Valderrama (Punto 4)
+- Alejandro Seoane (Punto 3)
 
 ## Indice
 
