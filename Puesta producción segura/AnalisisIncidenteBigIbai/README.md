@@ -15,6 +15,8 @@ Hecho por:
 
 ## 1. Introducción
 
+Este trabajo se centra en el proyecto del "Calendario de Adviento" de Ibai Llanos. Analizaremos primero el proceso previo a la puesta en producción, donde se consideraron aspectos clave para garantizar su éxito. Luego, explicaremos el incidente del ataque de bots que afectó la accesibilidad de la web, lo que generó importantes desafíos para los usuarios. Finalmente, examinaremos las acciones implementadas para la recuperación del sistema, incluyendo la creación de una nueva web más segura y la extensión del periodo de registro. A través de este análisis, se busca ofrecer una visión clara sobre la gestión de proyectos digitales y la respuesta a incidentes en el entorno actual.
+
 ## 2. Análisis previo a la puesta en producción del proyecto
 
 La puesta en producción de un sitio web basado en WordPress debe considerar estrategias específicas para mitigar riesgos asociados a ataques de denegación de servicio (DoS) y denegación de servicio distribuido (DDoS). Tras analizar el caso, estos son los pasos a seguir para una puesta en producción segura del proyecto:
@@ -51,31 +53,6 @@ La puesta en producción de un sitio web basado en WordPress debe considerar est
   - Limitar las solicitudes REST API a direcciones IP confiables.
   - Proteger archivos críticos como `wp-config.php` y deshabilitar el acceso al listado de directorios.
 - **Plugins de seguridad**: Instalar y configurar plugins como Wordfence o iThemes Security, que permiten bloquear tráfico sospechoso automáticamente.
-
-## 3. Análisis del incidente
-
-## 4. Puesta en marcha del sistema tras el incidente
-=======
-# Análisis de incidente desde la perspectiva de puesta en producción
-
-Hecho por:
-
-- Víctor Jiménez
-- Israel Valderrama
-- Alejandro Seoane
-
-## Indice
-
-1. [Introducción](#1-introducción)
-2. [Análisis previo a la puesta en producción del proyecto](#2-análisis-previo-a-la-puesta-en-producción-del-proyecto)
-3. [Análisis del incidente](#3-análisis-del-incidente)
-4. [Puesta en marcha del sistema tras el incidente](#4-puesta-en-marcha-del-sistema-tras-el-incidente)
-
-## 1. Introducción
-
-Este trabajo se centra en el proyecto del "Calendario de Adviento" de Ibai Llanos. Analizaremos primero el proceso previo a la puesta en producción, donde se consideraron aspectos clave para garantizar su éxito. Luego, explicaremos el incidente del ataque de bots que afectó la accesibilidad de la web, lo que generó importantes desafíos para los usuarios. Finalmente, examinaremos las acciones implementadas para la recuperación del sistema, incluyendo la creación de una nueva web más segura y la extensión del periodo de registro. A través de este análisis, se busca ofrecer una visión clara sobre la gestión de proyectos digitales y la respuesta a incidentes en el entorno actual.
-
-## 2. Análisis previo a la puesta en producción del proyecto
 
 ## 3. Análisis del incidente
 
