@@ -15,6 +15,8 @@ Hecho por:
 
 ## 1. Introducción
 
+Este trabajo se centra en el proyecto del "Calendario de Adviento" de Ibai Llanos. Analizaremos primero el proceso previo a la puesta en producción, donde se consideraron aspectos clave para garantizar su éxito. Luego, explicaremos el incidente del ataque de bots que afectó la accesibilidad de la web, lo que generó importantes desafíos para los usuarios. Finalmente, examinaremos las acciones implementadas para la recuperación del sistema, incluyendo la creación de una nueva web más segura y la extensión del periodo de registro. A través de este análisis, se busca ofrecer una visión clara sobre la gestión de proyectos digitales y la respuesta a incidentes en el entorno actual.
+
 ## 2. Análisis previo a la puesta en producción del proyecto
 
 ## 3. Análisis del incidente
