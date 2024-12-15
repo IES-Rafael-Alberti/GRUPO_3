@@ -3,10 +3,18 @@
 
 ## Índice
  [1. Introducción](#introducción) 
- [1. Aspectos claves para notificar](#aspectos) 
- [1. Introducción](#introducción) 
- [1. Introducción](#introducción) 
- [1. Introducción](#introducción) 
+
+ [2. Aspectos claves para notificar](#aspectos-claves-para-notificar) 
+
+ [3. Informe técnico](#información-técnico) 
+
+ [4. Evaluación del impacto](#evaluación-del-impacto) 
+
+ [5. Acciones y contramedidas](#acciones-y-contramedidas) 
+
+ [6. Aspectos adicionales](#aspectos-adicionales)
+ 
+ [7. Anexos](#anexos)
 
 ## Introducción.
 
@@ -20,7 +28,7 @@ El incidente involucra el compromiso de un ordenador de la empresa debido a la i
 
 
 
-## Información técnica
+## Información técnico
 
 El incidente tuvo un impacto directo en servicios críticos internos, poniendo en riesgo la estabilidad de sistemas  para las operaciones de la empresa. La causa principal fue la instalación de un sistema operativo no autorizado, que no contaba con las actualizaciones de seguridad necesarias. Esto dejó la puerta abierta a la introducción de malware, que explotó vulnerabilidades conocidas. La peligrosidad del incidente se clasifica como crítica debido al alto riesgo de acceso no autorizado y a la posibilidad de que el ataque se propague a otros sistemas dentro de la red.
 
