@@ -1,5 +1,13 @@
 # Informe Técnico
   * **Realizado por Israel Valderrama**
+
+## Índice
+ [1. Introducción](#introducción) 
+ [1. Aspectos claves para notificar](#aspectos) 
+ [1. Introducción](#introducción) 
+ [1. Introducción](#introducción) 
+ [1. Introducción](#introducción) 
+
 ## Introducción.
 
 Este informe técnico está basado en un incidente de ciberseguridad detectado en el departamento de IT, donde se identificó una máquina comprometida por la instalación de un sistema operativo Windows no autorizado y un script malicioso. El análisis se centra en un archivo Python diseñado para explotar una vulnerabilidad una aplicación, permitiendo la ejecución de código remoto.
