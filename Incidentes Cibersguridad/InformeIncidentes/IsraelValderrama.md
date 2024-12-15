@@ -275,7 +275,7 @@ print "[+] Creado usuario ihacklabs con password Thack12/"
 s.close()
 ```
 
-Este fragmento de código muestra cómo el atacante aprovechó un desbordamiento de búfer para insertar un payload malicioso. Este código permitió la creación de un usuario no autorizado con privilegios administrativos, otorgando al atacante control total sobre el sistema.
+Este trozo código permitió la creación de un usuario no autorizado con privilegios de adminstrador, dando al atacante control total sobre el sistema.
 
 ### Detalles técnicos del ataque
 
