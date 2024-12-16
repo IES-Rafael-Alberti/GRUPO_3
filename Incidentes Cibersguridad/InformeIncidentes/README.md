@@ -15,8 +15,7 @@ Hecho por:
 3. [Información técnica](#3-información-técnica)
 4. [Evaluación del impacto](#4-evaluación-del-impacto)
 5. [Acciones y contramedidas](#5-acciones-y-contramedidas)
-6. [Aspectos adicionales](#6-aspectos-adicionales)
-7. [Anexos](#7-anexos)
+6. [Anexos](#6-anexos)
 
 # Informe Técnico de Incidente de Seguridad
 
@@ -42,7 +41,7 @@ Podemos apreciar como se han hecho unos cambios den la máquina y que es necesar
 
 ## **3. Información técnica**
 
-- Información técnica**  
+- Scrips Maliciosos en carpeta temporal 
 
 Estos son los incidentes que hemos encontrado y su información correspondiente
 
@@ -55,7 +54,7 @@ Estos son los incidentes que hemos encontrado y su información correspondiente
 | *Detalles* | Configuración no autorizada que permitió la introducción de código malicioso. |
 
 
-- Categoría y etapas del ataque
+- Explotación de vulnerabilidad web para crear usuarios administradores
 
 | Aspecto | Descripción |
 |-|-|
@@ -65,7 +64,7 @@ Estos son los incidentes que hemos encontrado y su información correspondiente
 | *Prioridad* | Emergencia |
 | *Etapas del ataque* | *1. Conexión inicial:* El atacante utiliza el script para establecer una conexión mediante el protocolo TCP en el puerto 8089 del servidor vulnerable.<br><br>*2. Explotación del desbordamiento de búfer:* Se envía un payload malicioso a través de una solicitud HTTP POST, generando el desbordamiento en la biblioteca vulnerable ImageLoad.dll.<br><br>*3. Ejecución del payload:* Se emplea una cadena de gadgets ROP para evadir las protecciones DEP, permitiendo la ejecució...
 
-- Impacto, causa y riesgos
+- Activación de windows mediante KMSpico
 
 | Aspecto | Descripción |
 |-|-|
@@ -81,41 +80,27 @@ Estos son los incidentes que hemos encontrado y su información correspondiente
 
 ## **4. Evaluación del impacto**  
 
-| **Título** | **Descripción** |
-|-|-|
-| **Nivel de impacto** | Repercusión del incidente para la organización |
-| **Impacto transfronterizo** | Afectación en otros estados miembros de la UE (si aplica) |
-| **Afectación** | Alcance del incidente (empresas, particulares, instituciones) |
-| **Factores clave** | Tipo de amenaza, origen del ataque, categoría afectada, perfil de usuarios afectados, número y tipo de sistemas comprometidos |
+El impacto del incidente fue significativo, afectando tanto la integridad como la confidencialidad de los datos corporativos. El atacante logró acceder a sistemas de la empresa, comprometiendo información sensible. Este ataque también representó un riesgo considerable para otros dispositivos conectados a la misma red interna, ya que podrían ser utilizados para infectar el malware a los otros equipos. El personal de IT, que tiene acceso a sistemas críticos, fue especialmente vulnerable durante el incidente. Este ataque destaca la necesidad de mejorar los controles internos y las prácticas de gestión de licencias para prevenir vulnerabilidades similares en el futuro.
 
 ---
 
 ## **5. Acciones y contramedidas**  
 
-| **Título** | **Descripción** |
-|-|-|
-| **Plan de acción** | Respuesta inmediata y medidas implementadas |
-| **Contramedidas** | Medidas preventivas para evitar futuros incidentes |
-| **Proceso de recuperación** | Pasos realizados para restablecer servicios |
+Es necesario aislar completamente el equipo hasta asegurar que esté libre de malware que puedan comprometer los servicios de la empresa, hacer una limpieza exhaustiva del equipo para eliminar los archivos descubiertos en este análisis y concienciar al empleado del uso correcto de las herramientas de trabajo.
 
 ---
 
-## **6. Aspectos adicionales**  
+## **6. Anexos**  
 
-| **Título** | **Descripción** |
+| **Alumno** | **Informe** |
 |-|-|
-| **Medios necesarios para la resolución** | Equipos o recursos adicionales requeridos |
-| **Impacto económico estimado** | Costo potencial asociado al incidente (si aplica) |
-| **Extensión geográfica del incidente** | Local, nacional o internacional |
-| **Daños reputacionales** | Efectos en la imagen pública de la organización (si aplica) |
-| **Normativa afectada** | ENS, RGPD, NIS, PIC, u otras regulaciones aplicables |
-| **Requiere actuación de FFCCSE** | Indicación de si se requiere intervención de fuerzas de seguridad |
+| **Yo** | Capturas de pantalla, logs, correos, configuraciones afectadas |
+| **resto** | Citas de la documentación oficial utilizada para la elaboración del informe técnico |
 
----
+## **Implementación de Consejos**
 
-## **7. Anexos**  
-
-| **Título** | **Descripción** |
-|-------------------------------|----------------------------------------|
-| **Documentos adjuntos** | Capturas de pantalla, logs, correos, configuraciones afectadas |
-| **Referencias a la guía** | Citas de la documentación oficial utilizada para la elaboración del informe técnico |
+| **Consejo** | **Aplicación en el Informe** |
+| - | - |
+| Definir una estructura base | El informe está organizado en secciones claras como "Introducción", "Evaluación del impacto" y "Acciones y contramedidas" |
+| Distinguir hechos de hipótesis | Se incluyen los "aspectos clave para notificar" y "evaluación del impacto", las hipótesis y recomendaciones están en "Acciones y contramedidas". |
+| Documentar todas las actividades realizadas | Se dice cada acción, desde la identificación hasta la recuperación, en "acciones y contramedidas" y "anexos". |
