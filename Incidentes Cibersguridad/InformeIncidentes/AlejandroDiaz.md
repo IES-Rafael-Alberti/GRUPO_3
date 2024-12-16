@@ -1,3 +1,9 @@
+| **Informe de incidentes de seguridad** | **Grupo 3**      |
+|----------------------------------------|------------------|
+|                                        | **Fecha:** 11/12/2024 |
+|                                        | **n.º:** 001A-2024   |
+|                                        | **TLP: AMBER**       |
+
 # Informe Técnico de Incidente de Seguridad
 
 ## **1. Introducción**
