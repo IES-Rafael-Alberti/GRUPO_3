@@ -1,4 +1,5 @@
 # Informe Técnico
+  ### TLP: AMBER
   * **Realizado por Israel Valderrama**
 
 ## Índice
@@ -43,8 +44,6 @@ El impacto del incidente fue significativo, afectando tanto la integridad como l
 ## Acciones y contramedidas
 
 En respuesta al incidente, se adoptaron varias medidas inmediatas para reducir el impacto y restaurar la seguridad del entorno. En primer lugar, se separó la máquina infectada para evitar una posible propagación del malware. Posteriormente, se llevó a cabo un análisis del script malicioso y de las vulnerabilidades explotadas. El sistema operativo fue reinstalado utilizando una versión con licencia y actualizada, asegurándose de incluir todas las medidas de seguridad necesarias. Adicionalmente, se implementaron políticas de gestión de licencias, acompañadas de sesiones de formación para el personal. Finalmente, se restauraron copias de seguridad de los sistemas afectados y se realizó una inspección profunda de la red para descartar cualquier amenaza.
-
-
 
 ## Aspectos adicionales
 
