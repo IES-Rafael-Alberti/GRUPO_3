@@ -13,33 +13,33 @@ Este informe técnico está basado en un incidente de ciberseguridad que hemos d
 
 ## **2. Aspectos clave para notificar**
 
-| **Título**                     | **Descripción**                                                                                                                                                                                 |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Asunto**                     | Compromiso de ordenador de la empresa debido a malware de una instalación de Windows pirata.                                                                                             |
-| **OSE/PSD**                    | Departamento de IT de la empresa.                                                                                                                                                               |
-| **Usuario afectado**           | Jhon Doe                                                                                                                                                                                        |
-| **Sector estratégico**         | Servicios de TI y soporte técnico.                                                                                                                                                              |
-| **Fecha y hora del incidente** | 28/10/2024 9:05:32                                                                                                                                                           |
-| **Fecha y hora de detección**  | 01/11/2024 10:00:21                                                                                                                                                            |
-| **Descripción**                | Se ha detectó actividad sospechosa en una de los ordenadores de la empresa. La investigación nos dió que se había instalado un sistema operativo Windows pirata,y un script malicioso. |
+| **Título** | **Descripción**|
+| - | - |
+| **Asunto** | Compromiso de ordenador de la empresa debido a malware de una instalación de Windows pirata.  |
+| **OSE/PSD** | Departamento de IT de la empresa. |
+| **Usuario afectado** | Jhon Doe |
+| **Sector estratégico** | Servicios de TI y soporte técnico. |
+| **Fecha y hora del incidente** | 28/10/2024 9:05:32 |
+| **Fecha y hora de detección** | 01/11/2024 10:00:21 |
+| **Descripción** | Se ha detectó actividad sospechosa en una de los ordenadores de la empresa. La investigación nos dió que se había instalado un sistema operativo Windows pirata,y un script malicioso. |
 
 
 ## **3. Información técnica**
-| **Título**                          | **Descripción**                                                                                                                  |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **Recursos tecnológicos afectados** | Servicios críticos internos                                     |
-| **Origen del incidente**            | Instalación de un sistema operativo Windows "pirata" sin actualizaciones de seguridad, que ha permitió el poder ejecutar un script malicioso. |
-| **Taxonomía**                       | **Vulnerabilidades / Sistema vulnerable / Malware**                                                                              |
-| **Nivel de peligrosidad**           | **Crítico**, por la posible filtración de datos, acceso no autorizado y riesgo de expansión dentro de la red.                    |
+| **Título** | **Descripción** |
+| - | - |
+| **Recursos tecnológicos afectados** | Servicios críticos internos |
+| **Origen del incidente** | Instalación de un sistema operativo Windows "pirata" sin actualizaciones de seguridad, que ha permitió el poder ejecutar un script malicioso. |
+| **Taxonomía** | **Vulnerabilidades / Sistema vulnerable / Malware** |
+| **Nivel de peligrosidad** | **Crítico**, por la posible filtración de datos, acceso no autorizado y riesgo de expansión dentro de la red. |
 
 
 ## **4. Evaluación del impacto**
 
-| **Título**                  | **Descripción**                                                                        |
-| --------------------------- | -------------------------------------------------------------------------------------- |
-| **Nivel de impacto**        | **Alto**, por el acceso a datos internos y errores en los servicios |
-| **Afectación**              | La máquina comprometida y cualquier sistema que esté dentro de la red interna   |
-| **Factores clave**          |                                                                                        |
+| **Título** | **Descripción** |
+| - | - |
+| **Nivel de impacto** | **Alto**, por el acceso a datos internos y errores en los servicios |
+| **Afectación** | La máquina comprometida y cualquier sistema que esté dentro de la red interna |
+| **Factores clave** | |
 
 - **Tipo de amenaza:** Malware / Instalación de software no autorizado
 - **Origen del ataque:** Vulnerabilidad interna por mala gestión de licencias
@@ -49,20 +49,20 @@ Este informe técnico está basado en un incidente de ciberseguridad que hemos d
 
 ## **5. Acciones y contramedidas**
 
-| **Título**                  | **Descripción**                                                                                                                          |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Plan de acción**          | Aislar la máquina comprometida, analizar el malware que se le ha instalado, reinstalar sistema operativo pero esta vez que sea legal y aplicar políticas de seguridad |
-| **Contramedidas**           | Implementar políticas estrictas de licencias, auditorías y formación en seguridad a el personal de la empresa.                    |
-| **Proceso de recuperación** | Reinstalación del sistema operativo, hacer (si lo hay) una restauración de copias de seguridad y análisis de actividad en la red.            |
+| **Título** | **Descripción** |
+| - | - |
+| **Plan de acción** | Aislar la máquina comprometida, analizar el malware que se le ha instalado, reinstalar sistema operativo pero esta vez que sea legal y aplicar políticas de seguridad |
+| **Contramedidas** | Implementar políticas estrictas de licencias, auditorías y formación en seguridad a el personal de la empresa. |
+| **Proceso de recuperación** | Reinstalación del sistema operativo, hacer (si lo hay) una restauración de copias de seguridad y análisis de actividad en la red. |
 
 
 ## **6. Aspectos adicionales**
 
-| **Título**                               | **Descripción**                                                                                                                   |
-| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Medios necesarios para la resolución** | Equipos de análisis forense, como LastActivityView para poder ver los logs del sistema                                        |
-| **Extensión geográfica del incidente**   | Local, limitado a las instalaciones internas de IT                                                                              |
-| **Daños reputacionales**                 | Potencial impacto reputacional moderado si se cuenta la información del incidente                                                 |
+| **Título** | **Descripción** |
+| - | - |
+| **Medios necesarios para la resolución** | Equipos de análisis forense, como LastActivityView para poder ver los logs del sistema |
+| **Extensión geográfica del incidente** | Local, limitado a las instalaciones internas de IT |
+| **Daños reputacionales** | Potencial impacto reputacional moderado si se cuenta la información del incidente |
 
 
 ## **7. Anexos**
@@ -305,9 +305,9 @@ s.close()
 
 ## **Implementación de Consejos**
 
-| **Consejo**                                 | **Aplicación en el Informe**                                                                                                                                                         |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Definir una estructura base                 | El informe está organizado en secciones claras como "Introducción", "Evaluación del impacto" y "Acciones y contramedidas"                                                          |
-| Distinguir hechos de hipótesis              | Se incluyen los "aspectos clave para notificar" y "evaluación del impacto", las hipótesis y recomendaciones están en "Acciones y contramedidas". |
-| Documentar todas las actividades realizadas | Se dice cada acción, desde la identificación hasta la recuperación, en "acciones y contramedidas" y "anexos".                                                                     |
+| **Consejo** | **Aplicación en el Informe** |
+| - | - |
+| Definir una estructura base | El informe está organizado en secciones claras como "Introducción", "Evaluación del impacto" y "Acciones y contramedidas" |
+| Distinguir hechos de hipótesis | Se incluyen los "aspectos clave para notificar" y "evaluación del impacto", las hipótesis y recomendaciones están en "Acciones y contramedidas". |
+| Documentar todas las actividades realizadas | Se dice cada acción, desde la identificación hasta la recuperación, en "acciones y contramedidas" y "anexos". |
 
