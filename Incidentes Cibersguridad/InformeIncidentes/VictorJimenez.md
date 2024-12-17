@@ -12,6 +12,14 @@ Hecho por:
 4. [Valoración del incidente](#4-valoración-del-incidente)
 5. [Documentación del incidente](#5-documentación-del-incidente)
 
+## Informe Técnico de Incidente de Seguridad
+
+| **Grupo**  | 3          |
+| ---------- | ---------- |
+| **Fecha**  | 16/12/2024 |
+| **TLP**    | AMBER      |
+| **Nombre** | 2.e        |
+
 ## 1. Introducción
 
 Este informe analiza un archivo Python identificado en el sistema, diseñado para explotar una vulnerabilidad en la aplicación **Easy File Sharing Web Server v7.2**. Este exploit permite la ejecución de código remoto (RCE) mediante un desbordamiento de búfer en la función `POST`, aprovechando técnicas como la evasión de DEP (protección de ejecución de datos) a través de cadenas de programación orientadas a retorno (**ROP**, por sus siglas en inglés).
