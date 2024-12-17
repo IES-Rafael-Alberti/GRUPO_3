@@ -8,6 +8,10 @@ Hecho por:
 - Nicolas Ruiz
 - Alejandro Díaz
 
+<br>
+
+- [Enlace a la presetación](https://www.canva.com/design/DAGZeJ_58Ho/w6FlSSOZjVrKWVWXOBSijA/edit?utm_content=DAGZeJ_58Ho&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Informe Técnico de Incidente de Seguridad
 
 | **Grupo**  | 3          |
