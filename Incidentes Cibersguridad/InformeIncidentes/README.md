@@ -56,16 +56,16 @@ Estos son los incidentes que hemos encontrado y su información correspondiente
 - Explotación de vulnerabilidad web para crear usuarios administradores
 - Activación de windows mediante KMSpico
 
-| **Aspecto**         | **Scripts maliciosos en carpeta temporal**                                                   | **Explotación de vulnerabilidad web para crear usuarios administradores**                                                    | **Activación de Windows mediante KMSpico**                                                                             |
-| ------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **Categoría**       | Contenido malicioso - Configuración de malware                                               | Ejecución remota de código (RCE)                                                                                             | Malware introducido por software no autorizado                                                                         |
-| **Impacto**         | Bajo                                                                                         | Crítico                                                                                                                      | Crítico                                                                                                                |
-| **Peligrosidad**    | Muy alta                                                                                     | Crítica                                                                                                                      | Crítica                                                                                                                |
-| **Prioridad**       | Media                                                                                        | Emergencia                                                                                                                   | Emergencia                                                                                                             |
-| **Detalles**        | Configuración no autorizada que permitió la introducción de código malicioso.                | El atacante empleó un payload malicioso mediante un desbordamiento de búfer para crear usuarios administradores.             | Introducción de malware a través de KMSpico, un software ilegal para activar Windows sin licencia.                     |
-| **Causa principal** | Configuración insegura que permitió introducir scripts maliciosos en carpetas temporales.    | Vulnerabilidad en la biblioteca ImageLoad.dll que permitió el desbordamiento de búfer y ejecución de código remoto.          | Instalación de un sistema operativo no autorizado sin las actualizaciones de seguridad necesarias.                     |
-| **Consecuencia**    | Ejecución de scripts maliciosos sin autorización.                                            | Creación de cuentas administradoras con acceso total al sistema comprometido.                                                | Introducción de malware que explotó vulnerabilidades conocidas.                                                        |
-| **Riesgos**         | 1. Riesgo de ejecución adicional de código malicioso.<br>2. Posible escalada de privilegios. | 1. Riesgo de pérdida total del control del servidor.<br>2. Propagación del ataque hacia otros servicios y sistemas críticos. | 1. Alto riesgo de acceso no autorizado.<br>2. Posibilidad de propagación del ataque a otros sistemas dentro de la red. |
+| **Aspecto** | **Scripts maliciosos en carpeta temporal** | **Explotación de vulnerabilidad web para crear usuarios administradores** | **Activación de Windows mediante KMSpico** |
+| - | - | - | - |
+| **Categoría** | Contenido malicioso - Configuración de malware | Intento de intrusión - Explotación de vulnerabilidades conocidas | Fraude - Uso no autorizado de recursos |
+| **Impacto** | Bajo | Medio | Bajo |
+| **Peligrosidad** | Muy alta | Media | Media |
+| **Prioridad** | Media | Media | Baja |
+| **Detalles** | Configuración no autorizada que permitió la introducción de código malicioso. | El atacante empleó un payload malicioso mediante un desbordamiento de búfer para crear usuarios administradores. | Introducción de malware a través de KMSpico, un software ilegal para activar Windows sin licencia. |
+| **Causa principal** | Configuración insegura que permitió introducir scripts maliciosos en carpetas temporales. | Vulnerabilidad en la biblioteca ImageLoad.dll que permitió el desbordamiento de búfer y ejecución de código remoto. | Instalación de un sistema operativo no autorizado sin las actualizaciones de seguridad necesarias. |
+| **Consecuencia** | Ejecución de scripts maliciosos sin autorización. | Creación de cuentas administradoras con acceso total al sistema comprometido. | Introducción de malware que explotó vulnerabilidades conocidas. |
+| **Riesgos** | 1. Riesgo de ejecución adicional de código malicioso.<br>2. Posible escalada de privilegios. | 1. Riesgo de pérdida total del control del servidor.<br>2. Propagación del ataque hacia otros servicios y sistemas críticos. | 1. Alto riesgo de acceso no autorizado.<br>2. Posibilidad de propagación del ataque a otros sistemas dentro de la red. |
 
 ## **4. Evaluación del impacto**
 
@@ -109,8 +109,8 @@ Implementaremos un servicio de monitoreo ante actividad inusual en el equipo y l
 
 ## **Implementación de Consejos**
 
-| **Consejo**                                 | **Aplicación en el Informe**                                                                                                                     |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Definir una estructura base                 | El informe está organizado en secciones claras como "Introducción", "Evaluación del impacto" y "Acciones y contramedidas"                        |
-| Distinguir hechos de hipótesis              | Se incluyen los "aspectos clave para notificar" y "evaluación del impacto", las hipótesis y recomendaciones están en "Acciones y contramedidas". |
-| Documentar todas las actividades realizadas | Se dice cada acción, desde la identificación hasta la recuperación, en "acciones y contramedidas" y "anexos".                                    |
+| **Consejo** | **Aplicación en el Informe** |
+| - | - |
+| Definir una estructura base | El informe está organizado en secciones claras como "Introducción", "Evaluación del impacto" y "Acciones y contramedidas" |
+| Distinguir hechos de hipótesis | Se incluyen los "aspectos clave para notificar" y "evaluación del impacto", las hipótesis y recomendaciones están en "Acciones y contramedidas". |
+| Documentar todas las actividades realizadas | Se dice cada acción, desde la identificación hasta la recuperación, en "acciones y contramedidas" y "anexos". |
