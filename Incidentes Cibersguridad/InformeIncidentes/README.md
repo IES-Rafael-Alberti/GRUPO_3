@@ -29,7 +29,7 @@ Este documento recoge la imformación obtenida de los informes realizados por el
 
 ## **2. Estado y contexto inicial**  
 
-Somos citados por la empresa el día *13 de diciembre de 2024* a las 09:00 de la mañana, nos informan que, un equipo del departamento de informática ha sido comprometido. Decidimos hablar con el dueño de la máquina, John Doe, el cual no nos aclara nada de lo que podría a ver pasado en el equipo.
+Somos citados por la empresa el día *13 de diciembre de 2024* a las 09:00 de la mañana, nos informan que, un equipo del departamento de informática ha sido comprometido. Decidimos hablar con el dueño de la máquina, John Doe, el cual no nos aclara nada de lo que podría haber pasado en el equipo.
 
 Al llegar al puesto de trabajo, nos lo encontramos el equipo de la siguiente manera:
 
