@@ -8,18 +8,6 @@ Hecho por:
 - Nicolas Ruiz
 - Alejandro Díaz
 
-<br>
-
-- [Enlace a la presetación](https://www.canva.com/design/DAGZeJ_58Ho/w6FlSSOZjVrKWVWXOBSijA/edit?utm_content=DAGZeJ_58Ho&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
-## Informe Técnico de Incidente de Seguridad
-
-| **Grupo**  | 3          |
-| ---------- | ---------- |
-| **Fecha**  | 16/12/2024 |
-| **TLP**    | AMBER      |
-| **Nombre** | 2.e        |
-
 ## Indice
 
 1. [Introducción](#1-introducción)
@@ -72,15 +60,13 @@ El impacto del incidente fue significativo, afectando tanto la integridad como l
 
 ## **5. Acciones y contramedidas**
 
-Es necesario aislar completamente el equipo hasta asegurar que esté libre de malware que puedan comprometer los servicios de la empresa, hacer una limpieza exhaustiva del equipo para eliminar los archivos descubiertos en este análisis y concienciar al empleado del uso correcto de las herramientas de trabajo.
-
 ### Acciones en la contención del incidente
 
 - Identificación y aislamiento del equipo: deberemos desconectar de la red el equipo para evitar la propagación del malware a otros sistemas de la empresa.   
 Realizaremos un análisis para determinar el alcance del ataque y los archivos que están involucrados
 
 - Análisis del malware: investigaremos sobre los scripts que se han encontrado en la carpeta temporal, donde los enviaremos a una máquina virtual para su análisis detallado.  
-También hemos identificado en el script `create_user.py` realizaba conexiones al puerto 8089 por lo que en el firewall hemos bloqueado dicho puerto.
+También hemos identificado que el script `create_user.py` realizaba conexiones al puerto 8089 por lo que en el firewall hemos bloqueado dicho puerto.
 
 - Eliminar software no autorizado: desinstalaremos la aplicación KMSpico y el sistema Windows que activamos con dicha aplicación.  
 Haremos una reinstalación de Windows autorizado con las últimas actualizaciones.
@@ -90,13 +76,13 @@ Implementaremos un servicio de monitoreo ante actividad inusual en el equipo y l
 
 ### Contramedidas preventivas
 
-- Gestión de licencias y software autorizado: implementaremos políticas de uso de softwares autorizados y con licencia. Se pueden realizar periodicamente auditorías para comprobar el cumplimiento de estas políticas.
+- Gestión de licencias y software autorizado: implementaremos políticas de uso de softwares autorizados y con licencia. Se pueden realizar periódicamente auditorías para comprobar el cumplimiento de estas políticas.
 
 - Actualización del sistema: establecer un proceso de actualizaciones del sistemas y las aplicaciones. 
 
-- Capacitación del personal: establecer programas de formación a los empleados para concieciar sobre este tipo de malwares  y vulnerabilidades. 
+- Capacitación del personal: establecer programas de formación a los empleados para concienciar sobre este tipo de malwares  y vulnerabilidades. 
 
-- Plan de resiliencia: amte posibles ataques lo ideal es tener un plan de resiliencia para evitar la interrupción de la acitividad (realizar copias de seguridad podría ser un ejemplo). 
+- Plan de resiliencia: ante posibles ataques lo ideal es tener un plan de resiliencia para evitar la interrupción de la actividad (realizar copias de seguridad podría ser un ejemplo). 
 
 
 
