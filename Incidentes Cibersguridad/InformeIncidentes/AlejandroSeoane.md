@@ -57,7 +57,8 @@ En la máquina hemos utilizado algunas herramientas como WRR donde permite leer 
 Viendo en los Softwares que están instalados y vemos a MSpico instalado el cuál activa Windows de manera ilegal.
 ![alt text](img/img_ale/1.png)
 
-Utilizando la herramienta **LastACtivityView** la cuál nos permite ver la actividad que se ha ejecutado en el sistema hemos encontrado cunado se ejecutó dicha aplicación. 
+Utilizando la herramienta **LastACtivityView** la cuál nos permite ver la actividad que se ha ejecutado en el sistema hemos encontrado cunado se ejecutó dicha aplicación.   
+
 ![alt text](img/img_ale/2.png)
 
 Hay que tenber cierto cuidado con este tipo de aplicaciones ya que puede contener en su ejecución malwares que se ejecutenb en nuestro dispositivo como puede ser el script que veremos posteriormente. 
@@ -304,5 +305,6 @@ En LastActivityView podemos ver cuando se ejecuto dicho script.
 
 ## Fuentes
 
-Hemos utilizado [chatgpt](https://chatgpt.com/) para el análsisis del script,
+Hemos utilizado [chatgpt](https://chatgpt.com/) para el análsisis del script.  
+
 Hemos utilizado las referencias de la unidad para seguir una estructura.
