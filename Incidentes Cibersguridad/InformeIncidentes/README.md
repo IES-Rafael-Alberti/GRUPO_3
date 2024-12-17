@@ -8,6 +8,14 @@ Hecho por:
 - Nicolas Ruiz
 - Alejandro Díaz
 
+## Informe Técnico de Incidente de Seguridad
+
+| **Grupo**  | 3          |
+| ---------- | ---------- |
+| **Fecha**  | 16/12/2024 |
+| **TLP**    | AMBER      |
+| **Nombre** | 2.e        |
+
 ## Indice
 
 1. [Introducción](#1-introducción)
