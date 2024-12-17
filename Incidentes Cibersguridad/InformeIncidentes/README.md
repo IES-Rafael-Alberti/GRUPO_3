@@ -45,7 +45,7 @@ Apreciamos varias cosas importantes:
 
 ## **3. Información técnica**
 
-- Scrips Maliciosos en carpeta temporal 
+- Scripts maliciosos en carpeta temporal 
 
 Estos son los incidentes que hemos encontrado y su información correspondiente
 
