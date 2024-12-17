@@ -11,7 +11,7 @@ Hecho por:
 ## Indice
 
 1. [Introducción](#1-introducción)
-2. [Estado inicial](#2-estado-inicial)
+2. [Estado inicial](#2-estado-y-contexto-inicial)
 3. [Información técnica](#3-información-técnica)
 4. [Evaluación del impacto](#4-evaluación-del-impacto)
 5. [Acciones y contramedidas](#5-acciones-y-contramedidas)
@@ -27,15 +27,19 @@ Este documento recoge la imformación obtenida de los informes realizados por el
 
 ---
 
-## **2. Estado inicial**  
+## **2. Estado y contexto inicial**  
 
-Somos citados por la empresa el día 13 de diciembre de 2024 a las 09:00 de la mañana, nos informan que, un equipo del departamento de informática ha sido comprometido. Tras hablar con John Doe, el dueño del equipo, no hemos sacado nada de información de lo ocurrido en el dispositivo.
+Somos citados por la empresa el día *13 de diciembre de 2024* a las 09:00 de la mañana, nos informan que, un equipo del departamento de informática ha sido comprometido. Decidimos hablar con el dueño de la máquina, John Doe, el cual no nos aclara nada de lo que podría a ver pasado en el equipo.
 
-Al llegar al ordenador, nos lo encontramos de la siguiente manera:
+Al llegar al puesto de trabajo, nos lo encontramos el equipo de la siguiente manera:
 
-![](image/cap1.png)
- 
-Podemos apreciar como se han hecho unos cambios den la máquina y que es necesario reiniciar para aplicar, un error ocasionado por un script y dos archivos extraños en el escritorio.  
+![PlaceHolder](image/cap1.png)
+
+Apreciamos varias cosas importantes:
+
+- Dos archivos en el escritorio
+- Una ventana que precisa reiniciar la máquina para aplicar la configuración
+- Una ventana de error de un script en una carpeta temporal
 
 ---
 
