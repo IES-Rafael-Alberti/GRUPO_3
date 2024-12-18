@@ -50,6 +50,7 @@ El kernel de Linux puede ser configurado para evitar accesos innecesarios y limi
    sudo sysctl -p
    ```
 
+   ![](img_linux/1.png)
 ---
 
 ### **2. Eliminación de servicios innecesarios**
@@ -113,12 +114,14 @@ Los servicios que no son esenciales deben ser deshabilitados para minimizar el r
    sudo apt install apparmor apparmor-utils
    sudo aa-status
    ```
-
+   
    Para restringir un servicio como NGINX:  
    ```bash
    sudo aa-enforce /etc/apparmor.d/usr.sbin.nginx
    ```
 
+   ![](img_linux/2.png)
+   ![](img_linux/3.png)
 ---
 
 ### **5. Actualización del sistema**
