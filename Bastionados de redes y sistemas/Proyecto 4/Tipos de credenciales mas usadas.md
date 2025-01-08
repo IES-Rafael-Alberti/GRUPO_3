@@ -6,7 +6,7 @@ Para un vistazo más detallado, hacer clic [aquí](https://www.canva.com/design/
 
 ## Físicas
 <img src="./image/FISICAS.png" alt="Portada" width="600"/>
-Utilizan dispositivos físicos o elementos tangibles que se usan para identificar la identidad de una persona. Estas credenciales están asociadas a mecanismos de control de acceso y pueden incorporar tecnologías como chips, códigos de barras o bandas magnéticas para aumentar su seguridad.
+Utilizan dispositivos físicos o elementos tangibles que se usan para identificar la identidad de una persona. Estas credenciales están asociadas a mecanismos de control de acceso y pueden incorporar tecnologías como chips, códigos de barras o bandas magnéticas para aumentar su seguridad.<br>
 Hemos encontrado estos 4 ejemplos de credenciales físicas:
 <br><br>
 
@@ -17,7 +17,7 @@ Hemos encontrado estos 4 ejemplos de credenciales físicas:
 
 ## Digitales
 <img src="./image/DIGITALES.png" alt="Portada" width="600"/>
-Hemos encontrado estos 4 ejemplos de credenciales físicas:
+Hemos encontrado estos 4 ejemplos de credenciales fisicas:
 <br><br>
 
 - Tarjeta de identificación
@@ -27,7 +27,7 @@ Hemos encontrado estos 4 ejemplos de credenciales físicas:
 
 ## Autenticación
 <img src="./image/AUTENTICACION.png" alt="Portada" width="600"/>
-Hemos encontrado estos 4 ejemplos de credenciales físicas:
+Hemos encontrado estos 4 ejemplos de autenticación:
 <br><br>
 
 - Tarjeta de identificación
@@ -37,13 +37,7 @@ Hemos encontrado estos 4 ejemplos de credenciales físicas:
 
 ## Dominio y genérica
 <img src="./image/DOMINIOSYGENERICAS.png" alt="Portada" width="600"/>
-Hemos encontrado estos 4 ejemplos de credenciales físicas:
-<br><br>
-
-- Tarjeta de identificación
-- Tarjetas de acceso NFT
-- Diplomas y certificados
-- Tarjetas inteligentes
+Las credenciales de dominio
 
 ## Aplicación
 <img src="./image/APLICACIONES.png" alt="Portada" width="600"/>
