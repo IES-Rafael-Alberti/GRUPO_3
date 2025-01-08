@@ -11,6 +11,6 @@ Para un vistazo más detallado, hacer clic [aquí](https://www.canva.com/design/
 ## Autenticación
 ![Portada](./image/AUTENTICACION.png)
 ## Dominio y genérica
-![Portada](./image/DOMINIOYGENERICAS.png)
+![Portada](./image/DOMINIOSYGENERICAS.png)
 ## Aplicación
-![Portada](./image/APLICACION.png)
+![Portada](./image/APLICACIONES.png)
