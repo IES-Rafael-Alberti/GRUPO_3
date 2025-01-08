@@ -1,54 +1,110 @@
-# Políticas de Autenticación
+# Políticas
 
-## Basada en contraseñas y frases de paso
+## 1. Contraseñas y frases de paso
 
-1. Las contraseñas deben ser lo suficientemente largas y seguras, con un mínimo de 12 caracteres que incluyan una mezcla de letras mayúsculas, minúsculas, números y caracteres especiales. Esto ayuda a evitar que sean fácilmente adivinadas.
-2. Se establecerá un sistema que facilite a los usuarios la creación y almacenamiento de contraseñas complejas, como un gestor de contraseñas accesible para todos los empleados.
-3. Cada 90 días será necesario cambiar la contraseña, pero también se avisará a los usuarios con antelación para evitar inconvenientes.
-4. Para accesos más importantes, como servidores o sistemas confidenciales, será obligatorio usar frases de paso. Estas frases deberán tener al menos 16 caracteres y estar formadas por palabras que no estén relacionadas, por ejemplo: "ElefantePianoAzul2023".
-5. Las contraseñas antiguas no podrán ser reutilizadas y se verificará que ninguna de las nuevas haya sido filtrada previamente en ataques a otras plataformas.
-6. Todos los empleados recibirán capacitaciones regulares para aprender cómo crear contraseñas fuertes y cómo mantenerlas seguras, evitando compartirlas.
-7. Se harán auditorías cada año para asegurarse de que estas políticas están funcionando y detectar si hay puntos débiles que mejorar.
-8. Las cuentas que detecten múltiples intentos fallidos de inicio de sesión serán bloqueadas temporalmente para evitar ataques de fuerza bruta.
-9. En el caso de olvidar la contraseña, se implementará un proceso de recuperación que sea sencillo pero que también garantice la identidad del usuario antes de restablecer el acceso.
-10. Se fomentará el uso de autenticación multifactor (MFA) en combinación con contraseñas, para proporcionar una capa adicional de seguridad.
+### 1.1. Longitud y complejidad de contraseñas
 
-## Basada en certificados digitales y tarjetas inteligentes
+Las contraseñas deben ser lo suficientemente largas y difíciles para evitar que alguien las adivine fácilmente. Por ejemplo:
 
-1. Se emplearán certificados digitales que cumplan con estándares actuales como RSA de 2048 bits o equivalentes más seguros. Esto asegura que los datos estén protegidos de manera adecuada.
-2. Las tarjetas inteligentes serán obligatorias para cualquier persona que acceda a sistemas sensibles o información clasificada dentro de la organización.
-3. Un sistema de gestión de certificados (PKI) se encargará de administrar de forma segura la emisión, renovación y revocación de certificados digitales.
-4. En los procesos más críticos se requerirá una autenticación de doble factor, combinando el certificado digital con algo adicional, como un PIN único.
-5. Los certificados se revisarán anualmente para confirmar que siguen siendo seguros y para aplicar actualizaciones cuando sea necesario.
-6. Si una tarjeta inteligente se pierde o se ve comprometida, se deberá reportar de inmediato y el certificado asociado será revocado para prevenir accesos no autorizados.
-7. Se simularán ataques para evaluar cómo responde el sistema y detectar posibles fallos en la seguridad de los certificados.
-8. Los empleados recibirán formación sobre cómo proteger sus tarjetas inteligentes y evitar el uso indebido.
-9. Habrá un sistema de respaldo que permita la autenticación en caso de que las tarjetas inteligentes no estén disponibles temporalmente.
-10. Se implementarán medidas para garantizar que las claves privadas asociadas a los certificados nunca salgan del hardware seguro donde se generan.
+- Tener al menos 12 caracteres.
+- Incluir mayúsculas, minúsculas, números y símbolos especiales (como @, # o &).
 
-## Basada en tokens y OTPs
+*Ejemplo:* Una buena contraseña sería: `C0ntr@s3ñA!2025`
 
-1. Los tokens, tanto físicos como digitales, deberán generar contraseñas de un solo uso (OTP) que caduquen rápidamente, preferiblemente en 30 o 60 segundos.
-2. Este tipo de autenticación será obligatorio para accesos remotos, como conexiones VPN o sistemas de pago, donde los riesgos son mayores.
-3. Los dispositivos o aplicaciones que generan los tokens serán revisados regularmente para asegurarse de que no tienen vulnerabilidades.
-4. Si un token es perdido, el usuario deberá reportarlo inmediatamente, y se desactivará para evitar que sea utilizado por personas no autorizadas.
-5. Un sistema de supervisión verificará en tiempo real el uso de los OTP, detectando intentos de reutilización o interceptación.
-6. Los empleados serán capacitados para usar sus tokens de forma segura y entender cómo reportar problemas relacionados con ellos.
-7. Se implementará un sistema de respaldo que permita el acceso temporal en caso de que el token no esté disponible, sin comprometer la seguridad.
-8. Todos los registros de uso de tokens serán revisados periódicamente para identificar actividades sospechosas o fuera de lo común.
-9. Las soluciones basadas en tokens deberán cumplir con estándares abiertos como TOTP (Time-based One-Time Password) para garantizar su interoperabilidad.
-10. En accesos críticos, los tokens serán utilizados junto a otros métodos de autenticación, como biometría o contraseñas seguras.
+### 1.2. No reciclar contraseñas antiguas
 
-## Basada en características biométricas
+Para tener todo más seguro, no puedes usar las últimas 5 contraseñas que ya hayas usado.
 
-1. Se preferirán tecnologías biométricas confiables como huellas dactilares, reconocimiento facial o escaneo de iris para áreas donde se necesita máxima seguridad.
-2. Los dispositivos biométricos tendrán que cumplir con estándares altos de precisión y evitar falsos positivos, como que alguien no autorizado pueda acceder.
-3. Los datos biométricos se tratarán como información extremadamente confidencial y serán almacenados solo en sistemas cifrados.
-4. Nunca se almacenarán datos biométricos en su forma original; siempre estarán protegidos por algoritmos avanzados de cifrado.
-5. Si un sistema biométrico detecta una anomalía, como intentos repetidos de acceso, se activarán alertas automáticas y se investigará el incidente.
-6. En caso de fallos o problemas técnicos con la autenticación biométrica, se dispondrá de métodos alternativos que garanticen la continuidad del acceso.
-7. Los usuarios serán informados sobre cómo se manejarán sus datos biométricos y tendrán derechos sobre estos, como la posibilidad de eliminarlos si ya no trabajan en la organización.
-8. Se harán pruebas regulares para comprobar que los sistemas biométricos son resistentes a ataques de suplantación, como el uso de fotos o videos.
-9. La implementación de esta tecnología respetará todas las normativas legales relacionadas con la protección de datos personales.
-10. La biometría se combinará con otros métodos, como contraseñas o tokens, en situaciones donde se necesite doble verificación.
+*Ejemplo:* Si tu contraseña anterior era `Abc12345!`, no podrás volver a usarla hasta que cambies 5 veces.
+
+### 1.3. Revisar contraseñas expuestas
+
+Usaremos herramientas para asegurarnos de que tus contraseñas no estén en listas de filtraciones de internet.
+
+*Ejemplo:* Si una herramienta detecta que tu contraseña `M1C0ntr@s3ñA` aparece en una filtración, deberás cambiarla de inmediato.
+
+### 1.4. Guardar contraseñas de forma segura
+
+Las contraseñas se almacenarán encriptadas utilizando tecnologías como bcrypt o Argon2. Esto implica que si alguien roba la información, no podrá entenderlas fácilmente.
+
+*Ejemplo:* Aunque alguien consiga acceso al servidor, no podrá ver tu contraseña real, solo su versión cifrada.
+
+## 2. Certificados digitales y tarjetas inteligentes
+
+### 2.1. Certificados fuertes
+
+Los certificados digitales que usamos deben ser seguros. Por ejemplo, con RSA de 3072 bits.
+
+*Ejemplo:* Un certificado digital es lo que asegura que eres quien dices ser.
+
+### 2.2. Caducidad de certificados
+
+Un certificado solo durará 1 año. Cuando esté a punto de vencer, tendrás que renovarlo.
+
+*Ejemplo:* Si tu certificado expira el 31 de diciembre, deberás renovarlo antes de esa fecha para seguir entrando al sistema.
+
+### 2.3. Gestión centralizada (PKI)
+
+Todos los certificados serán gestionados desde un sistema centralizado para que nadie pueda usarlos de forma ilegal.
+
+*Ejemplo:* Si alguien trata de usar un certificado anulado, el sistema centralizado lo detendrá de forma automática.
+
+### 2.4. Proteger las tarjetas inteligentes
+
+Si utilizas una tarjeta inteligente, ponla en un lugar seguro y no la dejes abandonada.
+
+*Ejemplo:* Guarda tu tarjeta en un bolsillo seguro o en un estuche, no la dejes sobre tu mesa.
+
+## 3. Tokens y códigos de un solo uso (OTP)
+
+### 3.1. Tiempo de vida de los OTP
+
+Los códigos de un solo uso (OTP) deben expirar en 30 segundos. Así evitamos que alguien los use después de habértelos robado.
+
+*Ejemplo:* Si obtienes un OTP por SMS, debes utilizarlo pronto antes de que se agote el tiempo.
+
+### 3.2. Protege los dispositivos que generan OTP
+
+Los dispositivos o apps que generan estos códigos deben estar protegidos con un PIN o biometría.
+
+*Ejemplo:* Configura tu aplicación de autenticación (como Google Authenticator) para que pida tu huella antes de mostrar el código.
+
+### 3.3. No reutilizar OTP
+
+Un código usado ya no sirve, aunque alguien intente usarlo de nuevo.
+
+*Ejemplo:* Si intentas iniciar sesión dos veces con el mismo OTP, el sistema lo rechazará.
+
+### 3.4. Enseñar a usar tokens
+
+Se llevará a cabo una formación para que todos aprendan a utilizar sus tokens y qué hacer si los pierden.
+
+*Ejemplo:* Si pierdes tu token físico, debes reportarlo al soporte técnico inmediatamente para que lo desactiven.
+
+## 4. Biometría
+
+### 4.1. Validar los dispositivos biométricos
+
+Los escáneres de huellas o reconocimiento facial deben ser seguros y seguir normas internacionales.
+
+*Ejemplo:* Asegúrate de que el lector de huellas de tu portátil sea compatible con los estándares ISO.
+
+### 4.2. Cifrado de datos biométricos
+
+Tu huella digital o rostro será almacenado cifrado para proteger tu privacidad.
+
+*Ejemplo:* Aunque alguien acceda a la base de datos, no podrá ver tus datos biométricos reales.
+
+### 4.3. Pruebas contra fraudes
+
+Haremos pruebas para prevenir que alguien use una foto, máscara o video para hacerse pasar por ti.
+
+*Ejemplo:* Probaremos si el sistema puede detectar una foto de tu rostro en lugar de tu cara real.
+
+### 4.4. Alternativas a la biometría
+
+Habrá otras opciones si no puedes usar biometría, como tokens o códigos.
+
+*Ejemplo:* Si tienes problemas con el lector de huellas, podrás usar un código enviado a tu móvil.
+
 
