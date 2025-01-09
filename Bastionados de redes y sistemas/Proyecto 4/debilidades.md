@@ -1,29 +1,47 @@
-Apartado: Digitales
+# Introducción
 
-    Certificados digitales
-    Perfiles de redes sociales
-    Blockchain
+Este documento recoge las principales vulnerabilidades, tipos de ataque y sus respectivas estrategias de mitigación de los tipos de credenciales mas utilidados.
 
-Apartado: Físicas
+## Digitales
 
-    Tarjetas de identificación
-    Diplomas y certificados físicos
-    Tarjetas de acceso NFC
+### Certificados digitales
 
-Apartado: Autenticación
+### Perfiles de redes sociales
 
-    Códigos QR
-    One Time Password (OTP/TOTP)
-    Reconocimiento biométrico
-    Autenticación de dos factores (2FA)
+### Blockchain
 
-Apartado: Dominio y Genéricas
+### Microcredenciales
 
-    Credenciales de dominio
-    Credenciales genéricas
+## Fisicas
 
-Apartado: Aplicaciones
+### Targeta de identificación
 
-    Tokens de acceso
-    API Keys
-    Certificados digitales
+### Diplomas y Certificados físicos
+
+### Targetas inteligentes
+
+### Targetas de acceso NFC
+
+## Autenticación
+
+### Códigos QR
+
+### Autenticación de dos factores (2FA)
+
+### Biometría
+
+### One Time Password (OTP) SMS
+
+## Dominio y Genéricas
+
+### Credenciales de dominio
+
+### Credenciales genéricas
+
+## Aplicaciones
+
+### Tokens de acceso
+
+### API keys
+
+### Certificados digitales
