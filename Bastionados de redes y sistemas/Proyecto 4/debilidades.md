@@ -6,21 +6,70 @@ Este documento recoge las principales vulnerabilidades, tipos de ataque y sus re
 
 ### Certificados digitales
 
+- **Vulnerabilidades**: Un atacante puede crear un certificado falso para hacerse pasar por un sitio web seguro, lo que puede perder la confianza de los usuarios. Las claves privadas almacenadas en servidores inseguros también son un riesgo, ya que pueden ser robadas para acceder a información cifrada.
+
+- **Tipos de ataque**: El uso de certificados falsificados suele darse a través de phishing, mientras que el robo de claves privadas puede ser mediante malware o accesos no autorizados a servidores.
+
+- **Mitigación**: Implementar una PKI confiable con control sobre la emisión de certificados y monitorear su uso. Para proteger las claves privadas, deben almacenarse en dispositivos seguros como módulos HSM o TPM.
+
 ### Perfiles de redes sociales
+
+- **Vulnerabilidades**: Las cuentas pueden ser robadas mediante phishing o por unas malas configuraciones de privacidad que comprometa información sensible.
+
+- **Tipos de ataque**: Los atacantes usan correos electrónicos o mensajes fraudulentos para engañar a los usuarios y obtener sus credenciales. También pueden realizar ingeniería social para atacar malasm coinfigraciones.
+
+- **Mitigación**: Activar la autenticación multifactor para proteger las cuentas, establecer políticas estrictas de privacidad y limitar la información compartida.
 
 ### Blockchain
 
+- **Vulnerabilidades**: Las claves privadas de wallets pueden ser robadas, permitiendo a los atacantes manipular transacciones. Las blockchains mal configuradas también son sensibñes a ataques de doble gasto.
+
+- **Tipos de ataque**: Phishing o malware son las más comunes para comprometer wallets, mientras que el doble gasto ocurre cuando un atacante logra revertir transacciones confirmadas.
+
+- **Mitigación**: Usar wallets con autenticación robusta (hardware wallets) y configurar blockchains con algoritmos de consenso seguros como Proof of Stake (PoS).
+
 ### Microcredenciales
+
+- **Vulnerabilidades**: Las microcredenciales pueden ser usadas para difundir información maliciosa o acceder a datos sensibles compartidos por los usuarios.
+
+- **Tipos de ataque**: Los atacantes pueden realizar suplantaciones de identidad o aprovechar configuraciones incorrectas para acceder a información sensible.
+
+- **Mitigación**: Configurar permisos de acceso adecuados y realizar auditorías periódicas de seguridad.
 
 ## Fisicas
 
 ### Targeta de identificación
 
+- **Vulnerabilidades**: Las tarjetas pueden ser falsificadas o robadas, lo que permite su uso indebido para acceder a instalaciones restringidas.
+
+- **Tipos de ataque**: Las falsificaciones suelen ocurrir cuando las tarjetas no tienen características de seguridad, mientras que el robo puede facilitar accesos no autorizados.
+
+- **Mitigación**: Usar hologramas y chips inteligentes para prevenir falsificaciones y establecer políticas para reportar y desactivar tarjetas extraviadas rápidamente.
+
 ### Diplomas y Certificados físicos
+
+- **Vulnerabilidades**: Los diplomas y certificados físicos pueden ser falsificados, permitiendo a los atacantes obtener beneficios no autorizados.
+
+- **Tipos de ataque**: La falsificación de estos documentos facilita accesos indebidos a trabajos o becas.
+
+- **Mitigación**: Implementar sistemas de verificación digital vinculados a los documentos físicos y emplear sellos de agua o firmas digitales.
 
 ### Targetas inteligentes
 
+- **Vulnerabilidades**: Las tarjetas inteligentes pueden ser manipuladas si el chip no cuenta con protección adecuada. Además, si no están cifradas, pueden ser atacados por lectura no autorizada.
+
+- **Tipos de ataque**: Lectura o clonación de datos del chip mediante dispositivos especializados, ataques de fuerza bruta para descifrar datos, o ingeniería inversa para explotar vulnerabilidades en el hardware.
+
+- **Mitigación**: Usar cifrado avanzado en los datos almacenados en las tarjetas, implementar mecanismos de autenticación en el chip, y auditar regularmente las tarjetas para garantizar su integridad.
+
 ### Targetas de acceso NFC
+
+- **Vulnerabilidades**: Los datos de las tarjetas NFC pueden ser clonados.
+
+- **Tipos de ataque**: Los atacantes pueden clonar tarjetas NFC para obtener accesos no autorizados.
+
+- **Mitigación**: Usar tarjetas con cifrado avanzado como MIFARE DESFire y combinar su uso con autenticación biométrica.
+
 
 ---
 
