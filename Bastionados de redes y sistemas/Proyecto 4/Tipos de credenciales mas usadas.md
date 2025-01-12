@@ -40,6 +40,7 @@ Hemos investigado los 4 siguientes ejemplos:
 ## Dominio y genérica
 <img src="./image/DOMINIOSYGENERICAS.png" alt="Portada" width="600"/>
 Las credenciales de dominio se emplean para validar la identidad de un usuario en un entorno de red centralizado, comúnmente administrado por un servidor de dominio.
+
 Por otro lado, las credenciales genéricas son gestionadas y autenticadas por aplicaciones específicas, como los nombres de usuario y contraseñas utilizados para acceder a sitios web.
 
 ## Aplicación
