@@ -17,34 +17,37 @@ Hemos encontrado estos 4 ejemplos de credenciales físicas:
 
 ## Digitales
 <img src="./image/DIGITALES.png" alt="Portada" width="600"/>
-Hemos encontrado estos 4 ejemplos de credenciales fisicas:
+Utilizan elementos intangibles o virtuales que sirven para verificar la identidad de una persona en entornos digitales. Estas credenciales están ligadas a sistemas de control de acceso y pueden incluir tecnologías como contraseñas, certificados digitales o autenticación biométrica para reforzar su seguridad.<br>
+Hemos identificado estos 4 ejemplos de credenciales digitales:
 <br><br>
 
-- Tarjeta de identificación
-- Tarjetas de acceso NFT
-- Diplomas y certificados
-- Tarjetas inteligentes
+- Certificados digitales
+- Microcredenciales
+- Perfiles de redes sociales
+- Blockchain
 
 ## Autenticación
 <img src="./image/AUTENTICACION.png" alt="Portada" width="600"/>
-Hemos encontrado estos 4 ejemplos de autenticación:
+Es en el proceso de verificar la identidad de un usuario o sistema antes de permitir el acceso a recursos protegidos. La autenticación puede utilizar diversos métodos para asegurar que solo personas o entidades autorizadas puedan acceder, garantizando la seguridad de la información.<br>
+Hemos investigado los 4 siguientes ejemplos:
 <br><br>
 
-- Tarjeta de identificación
-- Tarjetas de acceso NFT
-- Diplomas y certificados
-- Tarjetas inteligentes
+- Códigos QR
+- OTP password
+- 2FA
+- Biometría
 
 ## Dominio y genérica
 <img src="./image/DOMINIOSYGENERICAS.png" alt="Portada" width="600"/>
-Las credenciales de dominio
+Las credenciales de dominio se emplean para validar la identidad de un usuario en un entorno de red centralizado, comúnmente administrado por un servidor de dominio.
+Por otro lado, las credenciales genéricas son gestionadas y autenticadas por aplicaciones específicas, como los nombres de usuario y contraseñas utilizados para acceder a sitios web.
 
 ## Aplicación
 <img src="./image/APLICACIONES.png" alt="Portada" width="600"/>
-Hemos encontrado estos 4 ejemplos de credenciales físicas:
+Por último, tenemos las credenciales de aplicaciones, que son un mecanismo que proporcionan las propias aplicaciones para autenticarte en estas aplicaciones.
+Hemos encontrado estos 3 ejemplos de credenciales en aplicaciones:
 <br><br>
 
-- Tarjeta de identificación
-- Tarjetas de acceso NFT
-- Diplomas y certificados
-- Tarjetas inteligentes
+- Tokens de acceso
+- API keys
+- Certificados digitales
