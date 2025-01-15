@@ -19,11 +19,12 @@ Este repositorio contiene los entregables relacionados con el Proyecto 4, cuyo o
 ```
 Proyecto 4/
 |
-├── Tipos de credenciales mas usadas.md
-├── clasificacion_metodos.png
-├── protocolos.md
-├── politica.md
-├── debilidades.md
+├── image
+├── Tipos de credenciales mas usadas.md (Nicolas Ruiz)
+├── clasificacion_metodos.png (Alejandro Díaz)
+├── protocolos.md (Alejandro Seoane)
+├── politica.md (Israel Valderrama)
+├── debilidades.md (Victor Jiménez)
 └── README.md
 ```
 
