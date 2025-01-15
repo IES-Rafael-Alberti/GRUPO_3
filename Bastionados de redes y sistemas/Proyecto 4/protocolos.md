@@ -10,7 +10,7 @@ En este apartado definiremos protocolos para cada tipo de acceso que nos piden. 
 
  - Los empleados accederán a dichos portales con su usuario único. Posteriormente introducirán su contraseña. 
 
- - Esta contraseña debera ser segura y robusta. Deberá tener al menso 10 caracteres y no debe tener información personal. A parte deberá contener al menos un mayúscula, una minúscula, un número y un símbolo. Estas tendrán que renovarse trimestralmente.
+ - Esta contraseña deberá ser segura y robusta. Deberá tener al menso 10 caracteres y no debe tener información personal. A parte deberá contener al menos un mayúscula, una minúscula, un número y un símbolo. Estas tendrán que renovarse trimestralmente.
 
  - Si las credenciales concuerdan con la base de datos se le dará acceso al empleado. 
 ---
@@ -18,14 +18,14 @@ En este apartado definiremos protocolos para cada tipo de acceso que nos piden. 
 
 ### - Software o infraestructura
 
- - Active Directory donde estarám registrados todos los usuarios del dominio de la empresa con sus respectivas contraseñas.
- - Herramientan que permitan la gestión de contraseñas como Kaspersky o Bitwarden.
+ - Active Directory donde estarán registrados todos los usuarios del dominio de la empresa con sus respectivas contraseñas.
+ - Herramientas que permitan la gestión de contraseñas como Kaspersky o Bitwarden.
 
 ## Certificados digitales y tarjetas inteligentes
 
 ### - Pasos 
  - Para realizar cambios en la información de las cuentas de los usuarios los empleados deberán hacer uso del certificado digital que le ha dado la empresa para realizar dichas acciones. 
- - Si por ejemplo quieres cambiar el correo del perfil de la empresa el portal te pedirá que introduzcas el certficicado digital. 
+ - Si por ejemplo quieres cambiar el correo del perfil de la empresa el portal te pedirá que introduzcas el certificado digital. 
  - El sistema comprueba el certificado y si ve que es válido permitirá hacer el cambio. 
 
 ---
@@ -56,7 +56,7 @@ En este apartado definiremos protocolos para cada tipo de acceso que nos piden. 
 
 
 
-## Caracteristicas biométricas
+## Características biométricas
 
 ### - Pasos 
 
@@ -65,9 +65,9 @@ En este apartado definiremos protocolos para cada tipo de acceso que nos piden. 
     - Huella dactilar: pondrán el dedo en el lector de huellas dactilares.
     - Reconociemiento facial: la cámara captura la cara de la persona. 
  - Para poder acceder habrá que realizar una de estas dos validaciones.
- - El sistema comprobrará los resultados de las características biométricas con la base de detos donde tenga almacenada la empresa dicha información.
+ - El sistema comprobará los resultados de las características biométricas con la base de datos donde tenga almacenada la empresa dicha información.
  - Si coincide se permitirá el acceso al dispositivo.
 
 ### - Software o infraestructura
 
-- Harán falta lectores biométricos tanto de huellas como de reconocimento facial. 
+- Harán falta lectores biométricos tanto de huellas como de reconocimiento facial. 
