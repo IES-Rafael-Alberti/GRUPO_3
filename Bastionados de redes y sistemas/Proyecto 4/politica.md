@@ -107,4 +107,23 @@ Habrá otras opciones si no puedes usar biometría, como tokens o códigos.
 
 *Ejemplo:* Si tienes problemas con el lector de huellas, podrás usar un código enviado a tu móvil.
 
+## 5. Seguridad de redes sociales
+
+### 5.1. Privacidad y configuración
+
+Las cuentas de redes sociales deben tener configuraciones estrictas de privacidad para proteger la información sensible.
+
+*Ejemplo:* Configura tu perfil para que solo personas de confianza puedan ver tus publicaciones.
+
+### 5.2. Autenticación robusta
+
+Se debe habilitar la autenticación multifactor (MFA) para proteger las cuentas de accesos no autorizados.
+
+*Ejemplo:* Vincula tu cuenta de redes sociales a una aplicación de autenticación para mayor seguridad.
+
+### 5.3. Capacitación contra phishing
+
+Es necesario entrenar a los usuarios para identificar mensajes o correos falsos que intenten robar credenciales.
+
+*Ejemplo:* Si recibes un enlace sospechoso, verifica su origen antes de hacer clic.
 
