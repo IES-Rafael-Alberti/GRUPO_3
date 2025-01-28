@@ -30,7 +30,7 @@ Comprobamos que los hashes MD5 y SHA256 no coinciden con los proporcionados en e
 
 Para comprobar la existencia del usuario Richard, debemos extraer el archivo *SAM* del directorio *C://windows/system32/config* y importarlo a la herramienta WRR.
 
-![[Pasted image 20250128183202.png]]
+!()[./images/Pasted image 20250128183202.png]
 
 Vemos que el único usuario de la máquina es Richard, el resto son usuario que crea Windows por defecto, y también observamos que el último inicio de sesión es el día 22 de febrero de 2023 a las 13 horas, 55 minutos y 18 segundos.
 
@@ -40,11 +40,11 @@ Vemos que el único usuario de la máquina es Richard, el resto son usuario que 
 
 Para identificar el nombre y la versión del equipo, debemos extraer los archivos *software* y *system* del directorio *C://windows/system32/config*. 
 
-![[Pasted image 20250128183555.png]]
+!()[./images/Pasted image 20250128183555.png]
 
 Aquí podemos comprobar la versión de Windows 10 que tiene instalado el disco: **Pro Education N**.
 
-![[Pasted image 20250128183808.png]]
+!()[./images/Pasted image 20250128183808.png]
 
 Y aquí el nombre del equipo: **LADRONERA**.
 
@@ -54,11 +54,11 @@ Y aquí el nombre del equipo: **LADRONERA**.
 
 Para identificar los dispositivos USB del equipo, debemos extraer el archivo *system* del directorio *C:windows/system32/config*. 
 
-![[Pasted image 20250128185419.png]]
+!()[./images/Pasted image 20250128185419.png]
 
-![[Pasted image 20250128190514.png]]
+!()[./images/Pasted image 20250128190514.png]
 
-![[Pasted image 20250128190909.png]]
+!()[./images/Pasted image 20250128190909.png]
 
 En esta serie de imágenes, podemos comprobar que se introdujo un dispositivo USB con el siguiente id: **{4D36E967-E325-11CE-BFC1-08002BE10318}**, y cuya última conexión fue el 22 de febrero de 2023 a las 00 horas, 27 minutos y 42 segundos.
 
@@ -66,32 +66,32 @@ En esta serie de imágenes, podemos comprobar que se introdujo un dispositivo US
 
 5. Dado el interés conocido de Richard por el fútbol y la música rock y heavy, investigar su actividad en línea relacionada con estos intereses. Además, verificar si ha visualizado contenido en línea que pueda justificar un despido procedente, como la visualización de una película online. Documentar cualquier hallazgo relevante.
 
-![[Pasted image 20250128194536.png]]
+!()[./images/Pasted image 20250128194536.png]
 
 Hemos encontrado esta URL en el historial de navegación que proviene del video titulado: **El truco con nata y monedas que le vuela la cabeza a Jennifer Aniston**
 
-![[Pasted image 20250128195050.png]]
+!()[./images/Pasted image 20250128195050.png]
 
 Accedió a CUEVANAHD para ver la película *Trabajo basura*.
 
-![[Pasted image 20250128195606.png]]
+!()[./images/Pasted image 20250128195606.png]
 
 Entró en Amazon y buscó dispositivos pendrive.
 
-![[Pasted image 20250128195701.png]]
+!()[./images/Pasted image 20250128195701.png]
 
 Hizo búsquedas sobre *Equipo de futbol* en internet
 
-![[Pasted image 20250128200416.png]]
+!()[./images/Pasted image 20250128200416.png]
 
 Si exportamos el archivo *places.sqlite* del directorio *C://Users/Richard/AppData/Roaming/Mozilla/Firefox/Profiles/mt13hmmn.default-release* veremos las páginas que ha visitado en firefox.
 
-![[Pasted image 20250128201111.png]]
-![[Pasted image 20250128201131.png]]
-![[Pasted image 20250128201143.png]]
-![[Pasted image 20250128201201.png]]
-![[Pasted image 20250128201217.png]]
-![[Pasted image 20250128201235.png]]
+!()[./images/Pasted image 20250128201111.png]
+!()[./images/Pasted image 20250128201131.png]
+!()[./images/Pasted image 20250128201143.png]
+!()[./images/Pasted image 20250128201201.png]
+!()[./images/Pasted image 20250128201217.png]
+!()[./images/Pasted image 20250128201235.png]
 
 Por último, podemos ver todo el historial del navegador *Opera*, en el cual hace numerosas búsquedas relacionadas con futbol y videos de YouTube.
 
@@ -99,13 +99,13 @@ Por último, podemos ver todo el historial del navegador *Opera*, en el cual hac
 
 Como vemos en la imagen:
 
-![[Pasted image 20250128201201.png]]
+!()[./images/Pasted image 20250128201201.png]
 
 Apreciamos que *Richard* buscó vuelos baratos a las ciudades europea y hoteles en *Las Palmas de Gran Canaria*.
 
 7. Comprobar si existe algún navegador web, aparte de los proporcionados por Microsoft, configurado para ejecutarse al iniciar sesión Richard.
 
-![[Pasted image 20250128203533.png]]
+!()[./images/Pasted image 20250128203533.png]
 
 Si importamos el **NTUSER.DAT** en *regedit* vemos que los navegadores que se inician al arrancar son Edge y Opera.
 
@@ -113,12 +113,12 @@ Si importamos el **NTUSER.DAT** en *regedit* vemos que los navegadores que se in
 
 Tras exportar la carpeta *C://Users/Richard/AppData/Roaming/Thunderbird/Profiles/tvtlv94f.default-release/*, e importar el archivo *ImapMail/imap.gmail.com/INBOX* en el programa **Mail Viewer**, encontramos los siguientes correos relevantes.
 
-![[Pasted image 20250128212343.png]]
-![[Pasted image 20250128212501.png]]
-![[Pasted image 20250128212601.png]]
-![[Pasted image 20250128212632.png]]
-![[Pasted image 20250128212725.png]]
-![[Pasted image 20250128212738.png]]
+!()[./images/Pasted image 20250128212343.png]
+!()[./images/Pasted image 20250128212501.png]
+!()[./images/Pasted image 20250128212601.png]
+!()[./images/Pasted image 20250128212632.png]
+!()[./images/Pasted image 20250128212725.png]
+!()[./images/Pasted image 20250128212738.png]
 
 Apreciamos que:
 
