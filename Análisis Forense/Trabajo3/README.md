@@ -2,6 +2,8 @@
 
 ## 1. Resumen Ejecutivo  
 
+El análisis forense del disco duro de Richard Warner confirma múltiples violaciones a las políticas de seguridad de InnovaTech Solutions, incluyendo el uso de dispositivos USB no autorizados, la instalación de software no permitido y la navegación en sitios ajenos a su labor durante el horario de trabajo. A través de la verificación de hashes, se detectaron inconsistencias que sugieren una posible manipulación de la imagen forense. Además, se identificaron comunicaciones con una empresa competidora en las que Warner facilitó información confidencial a cambio de beneficios económicos, empleando métodos como almacenamiento en la nube y correos electrónicos encriptados. Se realizó un análisis detallado de la línea de tiempo, el historial de navegación y las actividades del usuario en el sistema, permitiendo evidenciar la exfiltración de datos y el incumplimiento de normativas internas. Toda la evidencia ha sido documentada para respaldar posibles acciones disciplinarias o legales y garantizar la integridad del proceso investigativo.
+
 ## 2. Glosario de términos
 
 - **Hash**: Función criptográfica que convierte datos en una cadena única de caracteres. Se usa para verificar la integridad de archivos y detectar manipulaciones.
@@ -95,3 +97,11 @@ El análisis forense del disco duro de Richard Warner confirma múltiples violac
 ## 8. Anexos  
 
 La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en los anexos adjuntos.  
+
+
+
+Firma :
+
+![firma victor](img/Firma%20Victor.png)
+![firma Isra](img/firma%20isra.png)
+

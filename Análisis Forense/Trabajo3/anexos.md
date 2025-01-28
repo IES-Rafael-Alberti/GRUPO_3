@@ -1,0 +1,83 @@
+# Informe Pericial - Anexos
+
+## Declaración de abstención y tacha
+
+Nosotros, Grupo 3, con identificación _011002-A_, en calidad de Equipo Pericial Informático, declaramos formalmente lo siguiente:
+
+### 1. Abstención:
+No tenemos interés directo ni indirecto en los hechos objeto del presente informe pericial, ni relación alguna con las partes involucradas que pueda comprometer nuestra imparcialidad, conforme a lo establecido en la normativa _ISO-27000_.
+
+### 2. Tacha:
+Declaramos que no existen motivos de tacha que afecten nuestra idoneidad, independencia o credibilidad como peritos en este caso. No poseemos vínculos familiares, laborales ni de cualquier otra índole con las partes intervinientes.
+
+### 3. Confirmación de Imparcialidad:
+Nuestros análisis, conclusiones y opiniones periciales se fundamentan exclusivamente en las evidencias digitales recibidas y en las metodologías técnicas reconocidas por la disciplina de informática forense, sin influencia externa de ningún tipo.
+
+En virtud de lo anterior, asumimos la responsabilidad de actuar con total objetividad y profesionalismo en la elaboración y presentación del presente informe.
+
+## Juramento de promesa
+
+Nosotros, Grupo 3, identificados con _011002-A_, en calidad de Equipo de Peritaje Forense Informático, bajo juramento, prometemos solemnemente lo siguiente:
+
+1. Realizar el análisis técnico del presente caso conforme a los principios de objetividad, veracidad y rigurosidad científica propios de la disciplina de informática forense.
+2. Garantizar que todas las conclusiones presentadas en el informe pericial se sustenten exclusivamente en las evidencias digitales analizadas y las metodologías técnicamente válidas, sin alteraciones ni omisiones deliberadas.
+3. Actuar de manera independiente e imparcial, sin recibir presiones, influencias externas o intereses personales que puedan comprometer la integridad de mi labor.
+4. Cumplir con las disposiciones legales y éticas vigentes aplicables al ejercicio de la pericia forense en el marco del acuerdo, la confidencialidad de los datos y cumplimiento de los requisitos del proceso.
+
+## Figuras
+
+### Hallazgo 1
+![Hallazgo 1](img/image.png)
+
+### Hallazgo 2
+![Hallazgo 2](img/image%20copy.png)
+
+### Hallazgo 3
+![Hallazgo 3](img/image%20copy%202.png)
+
+### Hallazgo 4
+![Hallazgo 4](img/image%20copy%203.png)
+
+### Hallazgo 5
+![Hallazgo 5](img/image%20copy%204.png)
+
+### Hallazgo 6
+![Hallazgo 6](img/image%20copy%205.png)
+
+### Hallazgo 7
+![Hallazgo 7](img/image%20copy%206.png)
+
+### Hallazgo 8
+![Hallazgo 8](img/image%20copy%207.png)
+
+### Hallazgo 9
+![Hallazgo 9](img/image%20copy%208.png)
+
+### Hallazgo 10
+![Hallazgo 10](img/image%20copy%209.png)
+
+### Hallazgo 11
+![Hallazgo 11](img/image%20copy%2010.png)
+
+### Hallazgo 12
+![Hallazgo 12](img/image%20copy%2011.png)
+
+### Hallazgo 13
+![Hallazgo 13](img/image%20copy%2012.png)
+
+### Hallazgo 14
+![Hallazgo 14](img/image%20copy%2013.png)
+
+### Hallazgo 15
+![Hallazgo 15](img/image%20copy%2014.png)
+
+### Hallazgo 16
+![Hallazgo 16](img/image%20copy%2015.png)
+
+### Hallazgo 17
+![Hallazgo 17](img/image%20copy%2016.png)
+
+
+
+![firma victor](img/Firma%20Victor.png)
+![firma Isra](img/firma%20isra.png)
