@@ -34,7 +34,7 @@ Comprobamos que los hashes MD5 y SHA256 no coinciden con los proporcionados en e
 
 Para comprobar la existencia del usuario Richard, debemos extraer el archivo *SAM* del directorio `C://windows/system32/config` y importarlo a la herramienta WRR.
 
-![Usuario Richard](./images/Pasted_image_20250128183202.png)
+![Usuario Richard](./images/Pastedimage20250128183202.png)
 
 Vemos que el único usuario de la máquina es Richard. El resto son usuarios que Windows crea por defecto, y también observamos que el último inicio de sesión es el día **22 de febrero de 2023 a las 13:55:18**.
 
@@ -44,11 +44,11 @@ Vemos que el único usuario de la máquina es Richard. El resto son usuarios que
 
 Para identificar el nombre y la versión del equipo, debemos extraer los archivos *software* y *system* del directorio `C://windows/system32/config`.
 
-![Versión de Windows](./images/Pasted_image_20250128183555.png)
+![Versión de Windows](./images/Pastedimage20250128183555.png)
 
 Aquí podemos comprobar la versión de Windows 10 que tiene instalado el disco: **Pro Education N**.
 
-![Nombre del equipo](./images/Pasted_image_20250128183808.png)
+![Nombre del equipo](./images/Pastedimage20250128183808.png)
 
 Y aquí el nombre del equipo: **LADRONERA**.
 
@@ -58,9 +58,9 @@ Y aquí el nombre del equipo: **LADRONERA**.
 
 Para identificar los dispositivos USB del equipo, debemos extraer el archivo *system* del directorio `C://windows/system32/config`.
 
-![Dispositivo USB 1](./images/Pasted_image_20250128185419.png)
-![Dispositivo USB 2](./images/Pasted_image_20250128190514.png)
-![Dispositivo USB 3](./images/Pasted_image_20250128190909.png)
+![Dispositivo USB 1](./images/Pastedimage20250128185419.png)
+![Dispositivo USB 2](./images/Pastedimage20250128190514.png)
+![Dispositivo USB 3](./images/Pastedimage20250128190909.png)
 
 En esta serie de imágenes, podemos comprobar que se introdujo un dispositivo USB con el siguiente id: **{4D36E967-E325-11CE-BFC1-08002BE10318}**, y cuya última conexión fue el **22 de febrero de 2023 a las 00:27:42**.
 
@@ -68,32 +68,32 @@ En esta serie de imágenes, podemos comprobar que se introdujo un dispositivo US
 
 ### 5. Dado el interés conocido de Richard por el fútbol y la música rock y heavy, investigar su actividad en línea relacionada con estos intereses. Además, verificar si ha visualizado contenido en línea que pueda justificar un despido procedente, como la visualización de una película online. Documentar cualquier hallazgo relevante.
 
-![Historial de navegación](./images/Pasted_image_20250128194536.png)
+![Historial de navegación](./images/Pastedimage20250128194536.png)
 
 Hemos encontrado esta URL en el historial de navegación que proviene del video titulado: **El truco con nata y monedas que le vuela la cabeza a Jennifer Aniston**.
 
-![Cuevana](./images/Pasted_image_20250128195050.png)
+![Cuevana](./images/Pastedimage20250128195050.png)
 
 Accedió a CUEVANAHD para ver la película *Trabajo basura*.
 
-![Amazon](./images/Pasted_image_20250128195606.png)
+![Amazon](./images/Pastedimage20250128195606.png)
 
 Entró en Amazon y buscó dispositivos pendrive.
 
-![Búsqueda de fútbol](./images/Pasted_image_20250128195701.png)
+![Búsqueda de fútbol](./images/Pastedimage20250128195701.png)
 
 Hizo búsquedas sobre *Equipo de futbol* en internet.
 
-![Historial Firefox](./images/Pasted_image_20250128200416.png)
+![Historial Firefox](./images/Pastedimage20250128200416.png)
 
 Si exportamos el archivo *places.sqlite* del directorio `C://Users/Richard/AppData/Roaming/Mozilla/Firefox/Profiles/mt13hmmn.default-release`, veremos las páginas que ha visitado en Firefox.
 
-![Historial Firefox 1](./images/Pasted_image_20250128201111.png)
-![Historial Firefox 2](./images/Pasted_image_20250128201131.png)
-![Historial Firefox 3](./images/Pasted_image_20250128201143.png)
-![Historial Firefox 4](./images/Pasted_image_20250128201201.png)
-![Historial Firefox 5](./images/Pasted_image_20250128201217.png)
-![Historial Firefox 6](./images/Pasted_image_20250128201235.png)
+![Historial Firefox 1](./images/Pastedimage20250128201111.png)
+![Historial Firefox 2](./images/Pastedimage20250128201131.png)
+![Historial Firefox 3](./images/Pastedimage20250128201143.png)
+![Historial Firefox 4](./images/Pastedimage20250128201201.png)
+![Historial Firefox 5](./images/Pastedimage20250128201217.png)
+![Historial Firefox 6](./images/Pastedimage20250128201235.png)
 
 Por último, podemos ver todo el historial del navegador *Opera*, en el cual hace numerosas búsquedas relacionadas con fútbol y videos de YouTube.
 
@@ -103,7 +103,7 @@ Por último, podemos ver todo el historial del navegador *Opera*, en el cual hac
 
 Como vemos en la imagen:
 
-![Búsqueda de vuelos](./images/Pasted_image_20250128201201.png)
+![Búsqueda de vuelos](./images/Pastedimage20250128201201.png)
 
 Apreciamos que *Richard* buscó vuelos baratos a ciudades europeas y hoteles en *Las Palmas de Gran Canaria*.
 
@@ -111,7 +111,7 @@ Apreciamos que *Richard* buscó vuelos baratos a ciudades europeas y hoteles en 
 
 ### 7. Comprobar si existe algún navegador web, aparte de los proporcionados por Microsoft, configurado para ejecutarse al iniciar sesión Richard.
 
-![Navegadores al inicio](./images/Pasted_image_20250128203533.png)
+![Navegadores al inicio](./images/Pastedimage20250128203533.png)
 
 Si importamos el archivo **NTUSER.DAT** en *regedit*, vemos que los navegadores que se inician al arrancar son **Edge** y **Opera**.
 
@@ -121,12 +121,12 @@ Si importamos el archivo **NTUSER.DAT** en *regedit*, vemos que los navegadores 
 
 Tras exportar la carpeta `C://Users/Richard/AppData/Roaming/Thunderbird/Profiles/tvtlv94f.default-release/` e importar el archivo *ImapMail/imap.gmail.com/INBOX* en el programa **Mail Viewer**, encontramos los siguientes correos relevantes:
 
-![Correo 1](./images/Pasted_image_20250128212343.png)
-![Correo 2](./images/Pasted_image_20250128212501.png)
-![Correo 3](./images/Pasted_image_20250128212601.png)
-![Correo 4](./images/Pasted_image_20250128212632.png)
-![Correo 5](./images/Pasted_image_20250128212725.png)
-![Correo 6](./images/Pasted_image_20250128212738.png)
+![Correo 1](./images/Pastedimage20250128212343.png)
+![Correo 2](./images/Pastedimage20250128212501.png)
+![Correo 3](./images/Pastedimage20250128212601.png)
+![Correo 4](./images/Pastedimage20250128212632.png)
+![Correo 5](./images/Pastedimage20250128212725.png)
+![Correo 6](./images/Pastedimage20250128212738.png)
 
 Apreciamos que:
 
