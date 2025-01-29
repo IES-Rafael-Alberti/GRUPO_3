@@ -103,7 +103,7 @@ Por último, podemos ver todo el historial del navegador *Opera*, en el cual hac
 
 Como vemos en la imagen:
 
-![Búsqueda de vuelos](./img/Hallazgos/Hallazgo%2018.png)
+![Búsqueda de vuelos](./img/Hallazgos/Hallazgo%2015.png)
 
 Apreciamos que *Richard* buscó vuelos baratos a ciudades europeas y hoteles en *Las Palmas de Gran Canaria*.
 
@@ -111,7 +111,7 @@ Apreciamos que *Richard* buscó vuelos baratos a ciudades europeas y hoteles en 
 
 ### 7. Comprobar si existe algún navegador web, aparte de los proporcionados por Microsoft, configurado para ejecutarse al iniciar sesión Richard.
 
-![Navegadores al inicio](./img/Hallazgos/Hallazgo%2019.png)
+![Navegadores al inicio](./img/Hallazgos/Hallazgo%2018.png)
 
 Si importamos el archivo **NTUSER.DAT** en *regedit*, vemos que los navegadores que se inician al arrancar son **Edge** y **Opera**.
 
@@ -121,12 +121,12 @@ Si importamos el archivo **NTUSER.DAT** en *regedit*, vemos que los navegadores 
 
 Tras exportar la carpeta `C://Users/Richard/AppData/Roaming/Thunderbird/Profiles/tvtlv94f.default-release/` e importar el archivo *ImapMail/imap.gmail.com/INBOX* en el programa **Mail Viewer**, encontramos los siguientes correos relevantes:
 
-![Correo 1](./img/Hallazgos/Hallazgo%2020.png)
-![Correo 2](./img/Hallazgos/Hallazgo%2021.png)
-![Correo 3](./img/Hallazgos/Hallazgo%2022.png)
-![Correo 4](./img/Hallazgos/Hallazgo%2023.png)
-![Correo 5](./img/Hallazgos/Hallazgo%2024.png)
-![Correo 6](./img/Hallazgos/Hallazgo%2025.png)
+![Correo 1](./img/Hallazgos/Hallazgo%2019.png)
+![Correo 2](./img/Hallazgos/Hallazgo%2020.png)
+![Correo 3](./img/Hallazgos/Hallazgo%2021.png)
+![Correo 4](./img/Hallazgos/Hallazgo%2022.png)
+![Correo 5](./img/Hallazgos/Hallazgo%2023.png)
+![Correo 6](./img/Hallazgos/Hallazgo%2024.png)
 
 Apreciamos que:
 
