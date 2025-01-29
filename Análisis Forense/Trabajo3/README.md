@@ -1,4 +1,8 @@
-# Informe Pericial - Proyecto 3: Unfaithful Employee
+# Informe Pericial
+**Código**: P03
+**Nombre**: Unfaithful Employee
+**Equipo pericial**: Grupo 3
+**Fecha**: 28/01/2025
 
 ## 1. Resumen Ejecutivo  
 
