@@ -88,7 +88,7 @@ Tras el cálculo de los hashes de tipo MD5, SHA-1 y SHA-256, hemos llegado a la 
 
 Primero se le ha calculado el hash del disco duro que se nos ha entregado, para mantener la integridad de los datos que contiene. Se ha hecho uso de la herramienta FTK imager en su versión 4.2.0.13 y MiTeC WIndows Registry Recovery con su versión 1.6.1.0 para obtener la información referente al caso y calcular los hashes de las evidencias presentadas.
 
-Posteriormente, se realizó un análisis forense de la imagen del disco, incluyendo una inspección del sistema operativo, historial de navegación, los archivos eliminados y de los correos del usuario.
+Posteriormente, se realizó un análisis forense de la imagen del disco, incluyendo una inspección del sistema operativo, historial de navegación y de los correos del usuario.
 
 ## 6. Procesos
 
@@ -97,6 +97,14 @@ Posteriormente, se realizó un análisis forense de la imagen del disco, incluye
 ### 6.2 Navegación a traves de internet
 
 ### 6.3 Correos electrónicos
+
+Hemos encontrado 32 correos del usuario de los cuales sólo son relevantes 6 correos los cuales parecen que estan todos relacionados ya que como podemos ver en los hallazgo del x al x, Richard tiene una conversación con Tom y hablan para que Richard se vaya a la empresa de Tom y además parece que hablan de una posible filtración de datos por parte de Richard a la empresa de Tom y por ello le pagan un plus. 
+
+Como se ve en el hallazgo x tenemos que el usuario Richard le pasa una cartera de bitcoin y un enlace a un drive pero necesita una contraseña para acceder al contenido. Richard le dice que hasta que no le paguen no le pasa la contraseña para acceder al contenido y Tom le contesta diciendo que ya está todo pagado.
+
+Tambien tiene otra conversación con un compañero de trabajo en la que dice que se viene una gorda en la empresa y que se va a ir de la empresa y que desaparecerá durante un tiempo  y luego se irá de vacaciones como podemos ver en el hallazgos x y x
+
+ 
 
 ### 6.4 Línea del tiempo
 
