@@ -90,9 +90,16 @@ Tras el cálculo de los hashes de tipo MD5, SHA-1 y SHA-256, hemos llegado a la 
 
 Primero se le ha calculado el hash del disco duro que se nos ha entregado, para mantener la integridad de los datos que contiene. Se ha hecho uso de la herramienta FTK imager en su versión 4.2.0.13 y MiTeC WIndows Registry Recovery con su versión 1.6.1.0 para obtener la información referente al caso y calcular los hashes de las evidencias presentadas.
 
+Posteriormente, se realizó un análisis forense de la imagen del disco, incluyendo una inspección del sistema operativo, historial de navegación, los archivos eliminados y de los correos del usuario.
+
 ## 6. Procesos
 
-### 6.1 Línea del tiempo
+### 6.1 Archivos eliminados
+### 6.2 Sistema Operativo
+### 6.3 Navegación a traves de internet
+### 6.4 Correos electrónicos
+
+### 6.5 Línea del tiempo
 
 En este apartado se ha creado una línea de tiempo de los pasos más importantes que se han identificado que realizó el usuario del ordenador.
 
