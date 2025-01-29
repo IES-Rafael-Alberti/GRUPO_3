@@ -68,15 +68,15 @@ En esta serie de imágenes, podemos comprobar que se introdujo un dispositivo US
 
 ### 5. Dado el interés conocido de Richard por el fútbol y la música rock y heavy, investigar su actividad en línea relacionada con estos intereses. Además, verificar si ha visualizado contenido en línea que pueda justificar un despido procedente, como la visualización de una película online. Documentar cualquier hallazgo relevante.
 
-![Historial de navegación](**./img/Hallazgos/Hallazgo%208.png**)
+![Historial de navegación](./img/Hallazgos/Hallazgo%208.png)
 
 Hemos encontrado esta URL en el historial de navegación que proviene del video titulado: **El truco con nata y monedas que le vuela la cabeza a Jennifer Aniston**.
 
-![Cuevana](**./img/Hallazgos/Hallazgo%209.png**)
+![Cuevana](./img/Hallazgos/Hallazgo%209.png)
 
 Accedió a CUEVANAHD para ver la película *Trabajo basura*.
 
-![Amazon](**./img/Hallazgos/Hallazgo%2010.png**)
+![Amazon](./img/Hallazgos/Hallazgo%2010.png)
 
 Entró en Amazon y buscó dispositivos pendrive.
 
