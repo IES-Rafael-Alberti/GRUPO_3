@@ -117,6 +117,58 @@ Fdo:
 
 ![Hallazgo 17](img/Hallazgos/Hallazgo%2017.png)
 
+### Hallazgo 18
+
+![Hallazgo 18](img/Hallazgos/Hallazgo%2018.png)
+
+### Hallazgo 19
+
+![Hallazgo 19](img/Hallazgos/Hallazgo%2019.png)
+
+### Hallazgo 20
+
+![Hallazgo 20](img/Hallazgos/Hallazgo%2020.png)
+
+### Hallazgo 21
+
+![Hallazgo 21](img/Hallazgos/Hallazgo%2021.png)
+
+### Hallazgo 22
+
+![Hallazgo 22](img/Hallazgos/Hallazgo%2022.png)
+
+### Hallazgo 23
+
+![Hallazgo 23](img/Hallazgos/Hallazgo%2023.png)
+
+### Hallazgo 24
+
+![Hallazgo 24](img/Hallazgos/Hallazgo%2024.png)
+
+### Hallazgo 25
+
+![Hallazgo 25](img/Hallazgos/Hallazgo%2025.png)
+
+### Hallazgo 26
+
+![Hallazgo 26](img/Hallazgos/Hallazgo%2026.png)
+
+### Hallazgo 27
+
+![Hallazgo 27](img/Hallazgos/Hallazgo%2027.png)
+
+### Hallazgo 28
+
+![Hallazgo 28](img/Hallazgos/Hallazgo%2028.png)
+
+### Hallazgo 29
+
+![Hallazgo 29](img/Hallazgos/Hallazgo%2029.png)
+
+### Hallazgo 30
+
+![Hallazgo 30](img/Hallazgos/Hallazgo%2030.png)
+
 ---
 
 <img src="img/firma_Victor.png" alt="firma victor" width="150"/>

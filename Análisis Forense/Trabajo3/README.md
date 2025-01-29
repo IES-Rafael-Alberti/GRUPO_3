@@ -113,11 +113,11 @@ Tras realizar un estudio de la navegación a través de internet por parte de **
 
 ### 6.3 Correos electrónicos
 
-Hemos encontrado 32 correos del usuario de los cuales sólo son relevantes 6 correos los cuales parecen que estan todos relacionados ya que como podemos ver en los hallazgo del x al x, Richard tiene una conversación con Tom y hablan para que Richard se vaya a la empresa de Tom y además parece que hablan de una posible filtración de datos por parte de Richard a la empresa de Tom y por ello le pagan un plus. 
+Hemos encontrado 32 correos del usuario de los cuales sólo son relevantes 6 correos los cuales parecen que estan todos relacionados ya que como podemos ver en los hallazgo del 25 al 27, Richard tiene una conversación con Tom y hablan para que Richard se vaya a la empresa de Tom y además parece que hablan de una posible filtración de datos por parte de Richard a la empresa de Tom y por ello le pagan un plus. 
 
-Como se ve en el hallazgo x tenemos que el usuario Richard le pasa una cartera de bitcoin y un enlace a un drive pero necesita una contraseña para acceder al contenido. Richard le dice que hasta que no le paguen no le pasa la contraseña para acceder al contenido y Tom le contesta diciendo que ya está todo pagado.
+Como se ve en el hallazgo 29 tenemos que el usuario Richard le pasa una cartera de bitcoin y un enlace a un drive pero necesita una contraseña para acceder al contenido. Richard le dice que hasta que no le paguen no le pasa la contraseña para acceder al contenido y Tom le contesta diciendo que ya está todo pagado.
 
-Tambien tiene otra conversación con un compañero de trabajo en la que dice que se viene una gorda en la empresa y que se va a ir de la empresa y que desaparecerá durante un tiempo  y luego se irá de vacaciones como podemos ver en el hallazgos x y x
+Tambien tiene otra conversación con un compañero de trabajo en la que dice que se viene una gorda en la empresa y que se va a ir de la empresa y que desaparecerá durante un tiempo  y luego se irá de vacaciones como podemos ver en el hallazgos 28 y 30
 
  
 
