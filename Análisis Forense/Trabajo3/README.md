@@ -1,4 +1,4 @@
-# Informe Pericial
+# Proyecto 3: Unfaithful Employee - Informe Pericial
 
 **Código**: P03
 
@@ -40,7 +40,7 @@ Los objetivos son identificar cualquier información relevante que confirme o de
 
 ### 3.4. Verificación
 
-Tras el cálculo de los hashes de tipo MD5, SHA-1 y SHA-256, hemos llegado a la conclusión de que existen discrepancias entre los hashes resultantes de nuestros cálculos y los entregados junto a la copia de la imagen. Pueden verse en las Figuras X y X.
+Tras el cálculo de los hashes de tipo MD5, SHA-1 y SHA-256, hemos llegado a la conclusión de que existen discrepancias entre los hashes resultantes de nuestros cálculos y los entregados junto a la copia de la imagen. Pueden verse en la Figura 1.
 
 ## 4. Fuente de información
 
@@ -123,9 +123,9 @@ El análisis forense del disco duro de Richard Warner confirma múltiples violac
 
 ## 8. Anexos
 
-La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en los anexos adjuntos.
+La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en el siguiente anexo:
 
-Firma:
+[Proyecto 3: Unfaithful Employee - Anexos](./anexos.md)
 
 <img src="img/firma_Victor.png" alt="firma victor" width="150"/>
 <img src="img/firma_Israel.png" alt="firma Isra" width="200"/>
