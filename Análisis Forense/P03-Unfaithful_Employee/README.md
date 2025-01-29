@@ -10,7 +10,7 @@
 
   Detalles del análisis forense y conclusiones.
 
-- ### [Anexos](./anexos.md)
+- ### [Anexos](./Anexos.md)
 
   Hallazgos encontrados durante la investigación.
 
