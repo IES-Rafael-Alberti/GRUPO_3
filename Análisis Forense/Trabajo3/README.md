@@ -1,10 +1,19 @@
-# INDICE
+# Proyecto 3: Unfaithful Employee
 
-## [Informe Pericial](./Informe_Pericial.md)
-Detalles del análisis forense y conclusiones.  
+## Documentos
 
-## [Investigación del Incidente](./Investigación_del_incidente.md)
-Respuesta a las preguntas planteadas.  
+- ### [Investigación del Incidente](./Investigación_del_incidente.md)
 
-## [Anexos](./anexos.md)
-Hallazgos encontrados durante la investigación. 
+  Respuesta a las preguntas planteadas.
+
+- ### [Informe Pericial](./Informe_Pericial.md)
+
+  Detalles del análisis forense y conclusiones.
+
+- ### [Anexos](./anexos.md)
+
+  Hallazgos encontrados durante la investigación.
+
+---
+
+Hecho por el Grupo 3.
