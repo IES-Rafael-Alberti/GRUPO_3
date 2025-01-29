@@ -34,7 +34,7 @@ Comprobamos que los hashes MD5 y SHA256 no coinciden con los proporcionados en e
 
 Para comprobar la existencia del usuario Richard, debemos extraer el archivo *SAM* del directorio `C://windows/system32/config` y importarlo a la herramienta WRR.
 
-![Usuario Richard](./images/Pastedimage20250128183202.png)
+![Usuario Richard](./img/Hallazgos/Hallazgo%202.png)
 
 Vemos que el único usuario de la máquina es Richard. El resto son usuarios que Windows crea por defecto, y también observamos que el último inicio de sesión es el día **22 de febrero de 2023 a las 13:55:18**.
 
