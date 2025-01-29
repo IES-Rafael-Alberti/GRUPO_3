@@ -133,7 +133,7 @@ El análisis forense del disco duro de Richard Warner confirma múltiples violac
 
 La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en el siguiente anexo:
 
-[Proyecto 3: Unfaithful Employee - Anexos](./anexos.md)
+[Proyecto 3: Unfaithful Employee - Anexos](./Anexos.md)
 
 <img src="img/firma_Victor.png" alt="firma victor" width="150"/>
 <img src="img/firma_Israel.png" alt="firma Isra" width="200"/>
