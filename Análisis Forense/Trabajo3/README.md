@@ -57,10 +57,10 @@ Tras el cálculo de los hashes de tipo MD5, SHA-1 y SHA-256, hemos llegado a la 
 
 #### **2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL**
 
-| **Sección**                   | **Campo**                                                                                                                                                      |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Tipo de Dispositivo           | Imagen de disco (53687091200 bytes \= 53.69 GB)                                                                                                                |
-| Hash de la Evidencia Original | MD5: dfdfba2231e3fa409676b1b737474208 SHA1: f476a81089a10f9d5393aa8c2f8bbccdb87f7d3c SHA-256: 66d6ee7a61ea7a986e8f6bb54b9986f79d95b5a0278bef86678ed42ace320d96 |
+| **Sección**                   | **Campo**                                                                                                                                                                |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Tipo de Dispositivo           | Imagen de disco (53687091200 bytes \= 53.69 GB)                                                                                                                          |
+| Hash de la Evidencia Original | MD5: dfdfba2231e3fa409676b1b737474208 <br> SHA1: f476a81089a10f9d5393aa8c2f8bbccdb87f7d3c <br> SHA-256: 66d6ee7a61ea7a986e8f6bb54b9986f79d95b5a0278bef86678ed42ace320d96 |
 
 #### **3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL**
 
@@ -94,7 +94,22 @@ Posteriormente, se realizó un análisis forense de la imagen del disco, incluye
 
 ### 6.1 Sistema Operativo
 
-### 6.2 Navegación a traves de internet
+Se han extraído los archivos del referentes al sistema operativo, a partir de los cuales se ha podido extraer la siguiente información:
+
+- El sistema operativo es un **Windows 10 Pro Education N**.
+- El nombre del equipo es **LADRONERA**.
+- El único usuario del equipo es **Richard** y su ultimo inicio de sesión fue el día **22 de Febrero de 2023 a las 13:55:18**.
+- Dicho usuario introdujo un dispositivo USB con id **4D36E967-E325-11CE-BFC1-08002BE10318** y cuya última conexión fue el **22 de Febrero de 2023 a las 00:27:42**.
+
+### 6.2 Navegación a través de internet
+
+Tras realizar un estudio de la navegación a través de internet por parte de **Richard** hemos podido recoger la siguiente información:
+
+- Accedió a páginas como _redeldemule.com_, _cine24h.com_ y _mi.com_ para ver la película _Trabajo basura_.
+- Buscaba dispositivos USB en Amazon.
+- Su historial de navegación de Opera refleja numerosas búsquedas relacionadas con **fútbol** y **videos de YouTube**.
+- Tras su salida de la empresa, Richard buscó vuelos baratos a **ciudades europeas** y hoteles en **Las Palmas de Gran Canaria**.
+- Los navegadores que se inician al arrancar el equipo son **Microsoft Edge** y **Opera**.
 
 ### 6.3 Correos electrónicos
 
@@ -110,8 +125,7 @@ El análisis forense del disco duro de Richard Warner confirma múltiples violac
 
 La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en los anexos adjuntos.
 
-Firma :
+Firma:
 
-![Firma Victor](img/Firma%20Victor.png){ height=150px }
-
-![Firma Isra](img/firma%20isra.png){ height=150px }
+<img src="img/firma_Victor.png" alt="firma victor" width="150"/>
+<img src="img/firma_Israel.png" alt="firma Isra" width="200"/>
