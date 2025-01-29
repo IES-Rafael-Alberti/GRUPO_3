@@ -121,7 +121,9 @@ Tambien tiene otra conversación con un compañero de trabajo en la que dice que
 
 ### 6.4 Línea del tiempo
 
-En este apartado se ha creado una línea de tiempo de los pasos más importantes que se han identificado que realizó el usuario del ordenador.
+En este apartado se ha creado una línea de tiempo de los pasos más importantes que se han identificado que realizó el usuario del ordenador.  
+
+<img src="img/Linea_tiempo.png" alt="linea del tiempo" width="550" />
 
 ## 7. Conclusión
 
