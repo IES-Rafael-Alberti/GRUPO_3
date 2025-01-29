@@ -38,7 +38,7 @@ En Cádiz a 28 de Enero de 2025
 
 Fdo:
 
-<img src="img/Firma%20Victor.png" alt="firma victor" width="150"/>
+<img src="img/firma_Victor.png" alt="firma victor" width="150"/>
 <img src="img/firma_Israel.png" alt="firma Isra" width="200"/>
 
 ## Figuras
@@ -119,5 +119,5 @@ Fdo:
 
 ---
 
-<img src="img/Firma%20Victor.png" alt="firma victor" width="150"/>
+<img src="img/firma_Victor.png" alt="firma victor" width="150"/>
 <img src="img/firma_Israel.png" alt="firma Isra" width="200"/>
