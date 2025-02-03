@@ -21,3 +21,5 @@ Hecho por:
 - Víctor Jiménez
 - Alejandro Seoane
 - Israel Valderrama
+- Nicolas Ruiz
+- Alejandro Díaz 
