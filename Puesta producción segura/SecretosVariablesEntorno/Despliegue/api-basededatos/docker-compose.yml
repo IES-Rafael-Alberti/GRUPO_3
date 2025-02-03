@@ -1,18 +1,17 @@
-version: '3.8'
+version: "3.8"
 
 services:
-  api:
-    build: .
+  fastapi:
+    image: tiangolo/uvicorn-gunicorn-fastapi:python3.8
     container_name: fastapi_app
     ports:
-      - "8000:8000"
-    depends_on:
-      - mongo
-    environment:
-      - MONGO_URI=mongodb://mongo:27017/mi_base_de_datos
+      - "8000:80"
     volumes:
       - .:/app
-    restart: always
+    env_file:
+      - .env
+    depends_on:
+      - mongo
 
   mongo:
     image: mongo:latest
@@ -21,8 +20,6 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
-    restart: always
 
 volumes:
   mongo_data:
-
