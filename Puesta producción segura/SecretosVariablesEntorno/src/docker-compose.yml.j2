@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  fastapi:
+    build: .
+    container_name: fastapi_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+    environment:
+      SECRET_KEY: "{{ SECRET_KEY }}"
+      ALGORITHM: "HS256"
+      MONGO_USER: "{{ MONGO_USER }}"
+      MONGO_PASSWORD: "{{ MONGO_PASSWORD }}"
+      MONGO_DB: "{{ MONGO_DB }}"
+      MONGO_AUTH_SOURCE: "{{ MONGO_AUTH_SOURCE }}"
+      MONGO_CONN_STR: "mongodb://{{ MONGO_USER }}:{{ MONGO_PASSWORD }}@mongo:27017/{{ MONGO_DB }}?authSource={{ MONGO_AUTH_SOURCE }}"
+    networks:
+      - screct_api
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "{{ MONGO_USER }}"
+      MONGO_INITDB_ROOT_PASSWORD: "{{ MONGO_PASSWORD }}"
+      MONGO_INITDB_DATABASE: "{{ MONGO_DB }}"
+    networks:
+      - screct_api
+
+volumes:
+  mongo_data:
+
+networks:
+  screct_api:
+    driver: bridge

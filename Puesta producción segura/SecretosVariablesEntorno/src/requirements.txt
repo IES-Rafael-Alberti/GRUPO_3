@@ -2,3 +2,5 @@ fastapi[standard]
 uvicorn
 pydantic
 pyjwt
+motor
+passlib

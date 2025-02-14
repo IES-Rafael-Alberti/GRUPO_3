@@ -1,18 +1,24 @@
-# Generate token with JWT
-
+import os
+from datetime import timedelta, datetime
+from fastapi import HTTPException
 import jwt
-from datetime import datetime, timedelta
+from passlib.context import CryptContext
 
-# Secret key to encode the JWT
-SECRET_KEY = "SECRET_KEY"
-ALGORITHM = "HS256"
+# obtener variables de entorno para jwt
+SECRET_KEY = os.getenv("SECRET_KEY", "default_secret_key")
+ALGORITHM = os.getenv("ALGORITHM", "HS256")
 
-def create_access_token(data: dict, expires_delta: timedelta = None):
+# configuración del contexto de cifrado para contraseñas
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    return pwd_context.verify(plain_password, hashed_password)
+
+def get_password_hash(password: str) -> str:
+    return pwd_context.hash(password)
+
+def create_access_token(data: dict, expires_delta: timedelta = None) -> str:
     to_encode = data.copy()
-    if expires_delta:
-        expire = datetime.utcnow() + expires_delta
-    else:
-        expire = datetime.utcnow() + timedelta(minutes=60)
+    expire = datetime.utcnow() + (expires_delta if expires_delta else timedelta(minutes=60))
     to_encode.update({"exp": expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-    return encoded_jwt
+    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
