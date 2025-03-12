@@ -1,0 +1,23 @@
+# ISO/IEC 27042:2015
+
+La ISO/IEC 27042:2015 es una norma internacional que da una guía para el análisis e interpretación de evidencias. Su objetivo es garantizar que las evidencias sean controladas de manera que preserve su integridad
+
+
+## Aspectos:
+
+### Buenas prácticas
+
+La norma da una serie de buenas prácticas relacionadas con la selección, diseño e implementación de procesos para manejar las evidencias. Esto asegura que los métodos sean reproducibles, manteniendo la confiabilidad de los resultados
+
+### Justificación de métodos
+
+Para un mismo problema, pueden existir muchas formas de abordarlo usando los mismos recursos. Por eso, es responsabilidad del equipo justificar la elección de un método específico y demostrar porque es la mejor elección respecto a las demás
+
+### Imparcialidad de la evidencia
+
+Se destaca la importancia de la evidencia en procesos jurídicos por su naturaleza objetiva. Al ser imparcial, la evidencia no se posiciona a favor de ninguna de las partes, se limita a decir qué ocurrió
+
+### Relación entre evidencia y método
+
+La norma dice que el uso de un método concreto puede influir en la interpretación de la evidencia procesada. Por eso, hay que encargar a el equipo investigador que seleccione el método más adecuado
+
