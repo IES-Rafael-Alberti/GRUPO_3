@@ -63,8 +63,8 @@ La metodología UNE 71506:2013 se compone de cinco fases principales:
 
 La UNE 71506:2013 se complementa con otras normas relevantes en el campo de la forensia digital:
 
-- UNE 71505: Se enfoca en el sistema de gestión de evidencias electrónicas[3].
-- UNE 197010:2015: Especifica criterios para la realización de informes periciales informáticos[3].
-- ISO/IEC 27037:2016: Describe métodos para la obtención y presentación de evidencias electrónicas a nivel internacional[4].
+- UNE 71505: Se enfoca en el sistema de gestión de evidencias electrónicas.
+- UNE 197010:2015: Especifica criterios para la realización de informes periciales informáticos.
+- ISO/IEC 27037:2016: Describe métodos para la obtención y presentación de evidencias electrónicas a nivel internacional.
 
 En conclusión, la metodología UNE 71506:2013 proporciona un marco valioso y detallado para la gestión de evidencias electrónicas en el ámbito forense, ofreciendo beneficios significativos en términos de estandarización, calidad y trazabilidad en el proceso de análisis forense digital.
