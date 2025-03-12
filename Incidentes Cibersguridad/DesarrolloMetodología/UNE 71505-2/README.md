@@ -8,4 +8,7 @@ Esta norma consiste en proporcionar controles para la gestión de la seguridad d
 
 - Garantiza la Confidencialidad, integridad y disponibilidad(CIA) de de las evidencias electrónicas.
 - Asegura que la gestión de información se realiza conforme a la ley.
-- Mejora la gestion
+- Mejora la planificación, implementación y mantenimiento de procesos para las evidencias electrónicas.
+
+## Componentes clave
+
