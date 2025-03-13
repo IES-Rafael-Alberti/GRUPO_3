@@ -14,5 +14,6 @@ http://<sitio>/debug/
 
 ## 4) Escalar privilegios mediante el payload de un token jwt
 Se encuentra una contraseña escondida en un directorio
+
 Con el token de session de las cookies modificar el payload de este. Cambiar el role de user a admin para escalar priv con la contraseña de ese token
 Se podría hacer sino fuerza bruta a el token 
