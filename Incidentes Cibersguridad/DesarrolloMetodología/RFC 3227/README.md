@@ -58,4 +58,3 @@ La RFC 3227 no especifica herramientas particulares, pero sugiere el uso de:
 - Herramientas para calcular sumas de comprobación: Como `md5sum` o `sha256sum`.
 - Herramientas de documentación: Software de procesamiento de texto o herramientas especializadas de gestión de casos forenses.
 
-Es importante notar que las herramientas específicas deben seleccionarse según las necesidades particulares de cada investigación y deben estar actualizadas al momento de su uso (recordemos que la fecha actual es 12 de marzo de 2025).
