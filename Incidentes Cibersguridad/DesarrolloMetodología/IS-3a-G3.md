@@ -52,6 +52,14 @@
 
 ## 10. Bibliografía
 
+1. [Norma Española UNE 197001, Criterios generales para la elaboración de informes y dictámenes periciales](https://educacionadistancia.juntadeandalucia.es/centros/cadiz/pluginfile.php/700890/mod_resource/content/0/UNE_1970012011.pdf)
+2. [peritoinformaticocolegiado.es, Estándares nacionales e internacionales que puede seguir un perito informático para realizar el análisis forense de una evidencia y para la elaboración de un peritaje informático](https://peritoinformaticocolegiado.es/blog/estandares-nacionales-e-internacionales-que-puede-seguir-un-perito-informatico-para-realizar-el-analisis-forense-de-una-evidencia-y-para-la-elaboracion-de-un-peritaje-informatico/)
+3. [cristiancuerdaperito.es, Aplicación de la norma UNE 197010 a la elaboración de Informes Periciales Informáticos](https://cristiancuerdaperito.es/2023/02/28/aplicacion-de-la-norma-une-197010-a-la-elaboracion-de-informes-periciales-informaticos/)
+4. [acta.es, Importancia del método de la prueba pericial en materias de tecnología y su impacto en la agilidad del proceso judicial](https://www.acta.es/medios/articulos/cultura_y_sociedad/059001.pdf)
+5. [josedelgado.net, Qué es el Informe Pericial](https://josedelgado.net/que-es-el-informe-pericial/)
+6. [peritosinformaticos.es, ISO 197010/2015. Normas Generales para la elaboración de informes y dictámenes periciales sobre TIC.](https://peritosinformaticos.es/iso-197010-perito-informatico/)
+7. [indalics.com, Informe pericial informático](https://indalics.com/informe-pericial-informatico)
+
 ---
 
 Documento redactado por el Grupo 3, compuesto por:
