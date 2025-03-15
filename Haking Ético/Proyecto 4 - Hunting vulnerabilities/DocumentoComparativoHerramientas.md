@@ -3,12 +3,12 @@
 ## Índice
 
 1. [Introducción](#1-introducción)
-2. [Herramientas](#2-herramientas)
-   2.1. [Nessus](#21-nessus)
+2. [Herramientas](#2-herramientas)  
+   2.1. [Nessus](#21-nessus)  
    2.2. [Openvas](#22-openvas)
-3. [Comparación técnica](#3-comparación-técnica)
-   3.1. [Funcionamiento](#31-funcionamiento)
-   3.2. [Detección de vulnerabilidades](#32-detección-de-vulnerabilidades)
+3. [Comparación técnica](#3-comparación-técnica)  
+   3.1. [Funcionamiento](#31-funcionamiento)  
+   3.2. [Detección de vulnerabilidades](#32-detección-de-vulnerabilidades)  
    3.3. [Rendimiento](#33-rendimiento)
 4. [Licenciamiento](#4-licenciamiento)
 5. [Casos de uso](#5-casos-de-uso)

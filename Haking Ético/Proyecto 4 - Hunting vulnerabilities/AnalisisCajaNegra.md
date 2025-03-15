@@ -10,10 +10,10 @@
 ## Índice
 
 1. [Resumen Ejecutivo](#1-resumen-ejecutivo)
-2. [Introducción](#2-introducción)
-   2.1. [Antecedentes](#21-antecedentes)
-   2.2. [Objetivo](#22-objetivo)
-   2.3. [Alcance](#23-alcance)
+2. [Introducción](#2-introducción)  
+   2.1. [Antecedentes](#21-antecedentes)  
+   2.2. [Objetivo](#22-objetivo)  
+   2.3. [Alcance](#23-alcance)  
    2.4. [Incidencias](#24-incidencias)
 3. [Metodología](#3-metodología)
 4. [Resultados Obtenidos](#4-resultados-obtenidos)
