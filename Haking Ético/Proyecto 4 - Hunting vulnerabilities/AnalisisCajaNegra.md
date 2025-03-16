@@ -18,8 +18,6 @@
 3. [Metodología](#3-metodología)
 4. [Resultados Obtenidos](#4-resultados-obtenidos)
 5. [Conclusiones y Recomendaciones](#5-conclusiones-y-recomendaciones)
-6. [Glosario de Términos](#6-glosario-de-términos)
-7. [Anexos](#7-anexos)
 
 ## 1. Resumen Ejecutivo
 
@@ -79,6 +77,8 @@ Después de realizar los análisis de los dos servidores hemos identificado las 
 
 - ### Windows Server 2008
 
+***
+
    #### Vulnerability in DNS Resolution
 
    - Explicación:  fallo en la resolución DNS que permitía ejecución remota de código. 
@@ -104,30 +104,154 @@ Después de realizar los análisis de los dos servidores hemos identificado las 
 
    #### Apache HTTP Server SEoL (2.1.x <= x <= 2.2.x)
 
-- Explicación: la versión de Apache HTTP Server 
+- Explicación: la versión de Apache HTTP Server no tiene soporte para esas versión.  
    - Gravedad: Crítica
    - CVSS: 10.0
    - Sistemas afectados: Todas las versiones de Apache HTTP Server desde 2.1.x hasta 2.2.x
    - Solución: Actualizar a una versión de Apache HTTP Server que este soportada
 
+   #### Unsupported Windows OS (remote)
 
+- Explicación:  vulnerabilidad que afecta a componentes de PHP y permite la ejecución de código arbitrario y el acceso no autorizado a directorios restringidos. 
+   - Gravedad: Crítica
+   - CVSS: 10.0
+   - Sistemas afectados: Versiones antiguas de Windows Server. 
+   - Solución: Actualizar a versiones de Windows Server con soporte activo. 
 
+   #### Microsoft RDP RCE (CVE-2019-0708) (BlueKeep) (uncredentialed check)
+
+- Explicación: vulnerabilidad llamada BlueKeep permite la ejecución remota de código en el servicio de RDP de Windows.
+   - Gravedad: Crítica
+   - CVE: CVE-2012-2688, CVE-2012-3365
+   - CVSS: 9.8
+   - Sistemas afectados: Windows XP, Windows Server 2003, Windows 7, Windows Server 2008
+   - Solución: Instalar las actualizaciones de seguridad proporcionadas por Microsoft para los sistemas operativos afectados
+
+   #### Apache 2.2.x < 2.2.34 Multiple Vulnerabilities
+
+- Explicación: vulnerabilidades que permiten a atacantes remotos no autenticados realizar diversas acciones maliciosas
+   - Gravedad: Crítica
+   - CVE: CVE-2017-3167, CVE-2017-3169, CVE-2017-7668, CVE-2017-7679, CVE-2017-9788
+   - CVSS: 9.8
+   - Sistemas afectados: Apache HTTP Server 2.2.x < 2.2.34
+   - Solución: Actualizar a Apache versión 2.2.34 o posterior
+
+   #### SSL RC4 Cipher Suites Supported (Bar Mitzvah)
+
+ - Explicación: vulnerabilidades llamada Bar Mitzvah que permite a atacantes realizar ataques de recuperación de texto plano
+   - Gravedad: Alta
+   - CVE: CVE-2013-2566, CVE-2015-2808
+   - CVSS: 7.5
+   - Sistemas afectados: Servidores que soportan el uso de RC4 en suites de cifrado SSL/TLS
+   - Solución: Reconfigurar la aplicación para evitar el uso de cifrados RC4 y considerar el uso de TLS
+
+   ####  SNMP Agent Default Community Name (public)
+
+ - Explicación: vulnerabilidad permite a un atacante obtener la cadena de comunidad predeterminada ("public") del servidor SNMP remoto. 
+   - Gravedad: Alta
+   - CVE: CVE-2013-2566, CVE-2015-2808
+   - CVSS: 7.5
+   - Sistemas afectados:  Dispositivos con SNMP habilitado usando la comunidad predeterminada "public"
+   - Solución: Deshabilitar el servicio SNMP si no se usa, filtrar paquetes UDP entrantes al puerto SNMP, o cambiar la cadena de comunidad predeterminada
+
+   #### Remote Desktop Protocol Server Man-in-the-Middle Weakness
+
+ - Explicación: vulnerabilidad permite a un atacante realizar un ataque de MitM en conexiones RDP. 
+   - Gravedad: Media
+   - CVE: CVE-2005-1794
+   - CVSS: 6.5
+   - Sistemas afectados:  Servidores Windows que ejecutan RDP
+   - Solución: Forzar el uso de SSL como capa de transporte y/o habilitar la autenticación de nivel de red  
+
+   #### PHP < 7.3.28 Email Header Injection
+
+ - Explicación: vulnerabilidad permite a un atacante remoto no autenticado inyectar encabezados de correo electrónico maliciosos
+   - Gravedad: Media
+   - CVE: CVE-2021-21705
+   - CVSS: 5.3
+   - Sistemas afectados:  Versiones de PHP anteriores a 7.3.28
+   - Solución: Actualizar a PHP versión 7.3.28 o posterior
+
+- ### Ubuntu Server 14.04
+
+   #### Drupal Coder Module Deserialization RCE
+
+ - Explicación: vulnerabilidad permite a un atacante remoto no autenticado ejecutar código PHP arbitrario en el servidor web que ejecuta Drupal con el módulo Coder vulnerable.
+   - Gravedad: Crítica
+   - CVE: CVE-2016-10045
+   - CVSS: 9.8
+   - Sistemas afectados: Drupal con el módulo Coder instalado, versiones anteriores a 7.x-1.3 / 7.x-2.6
+   - Solución: Actualizar el módulo Coder a la versión 7.x-1.3 / 7.x-2.6 o posterior
+
+   #### PHP Unsupported Version Detection
+
+- Explicación: vulnerabilidad surge porque la instalación de PHP en el servidor remoto está utilizando una versión que ya no recibe soporte oficial
+   - Gravedad: Crítica
+   - CVSS: 10.0
+   - Sistemas afectados: Instalaciones de PHP en versiones no soportadas 
+   - Solución: Actualizar a una versión de PHP actualmente soportada
+
+   #### PHP 5.4.x < 5.4.38 Multiple Vulnerabilities (GHOST)
+
+ - Explicación: múltiples vulnerabilidades que permiten ejecutar código arbitrario, DoS y exposición de información sensible del sistema. 
+   - Gravedad: Crítica
+   - CVE: CVE-2014-9705, CVE-2015-0235 (GHOST), CVE-2015-0273
+   - CVSS: 9.8
+   - Sistemas afectados: Instalaciones de PHP 5.4.x anteriores a 5.4.38
+   - Solución: Actualizar a PHP versión 5.4.38 o posterior
+
+   #### PHP 5.4.x < 5.4.43 Multiple Vulnerabilities (BACKRONYM)
+
+ - Explicación: estas vulnerabilidades pdrían comprometer gravemente el sistema, incluyendo la ejecución de código malicioso, denegación de servicio y divulgación de datos sensibles
+   - Gravedad: Crítica
+   - CVE: CVE-2014-9705, CVE-2015-0235 (GHOST), CVE-2015-0273
+   - CVSS: 9.8
+   - Sistemas afectados: PHP 5.4.x antes de la versión 5.4.43
+   - Solución: Actualizar a PHP versión 5.4.43 o posterior
+
+   #### Drupal Database Abstraction API SQLi
+
+ - Explicación: vulnerabilidad afecta a la API de abstracción de base de datos en Drupal Core
+   - Gravedad: Alta
+   - CVE: CVE-2014-3704
+   - CVSS: 7.5
+   - Sistemas afectados: Drupal Core 7.x antes de la versión 7.32
+   - Solución: Actualizar Drupal a la versión 7.32 o posterior
+
+   #### SSL Medium Strength Cipher Suites Supported (SWEET32)
+
+ - Explicación: vulnerabilidad que permite que un atacante pueda explotar esta debilidad para recuperar pequeñas porciones de texto plano cifrado
+   - Gravedad: Alta
+   - CVE: CVE-2016-2183
+   - CVSS: 7.5
+   - Sistemas afectados: Servidores que soportan cifrados SSL/TLS de fuerza media
+   - Solución: Reconfigurar la aplicación afectada para evitar el uso de cifrados de fuerza media
+
+   #### SSL Self-Signed Certificate
+
+- Explicación: vulnerabilidad surge cuando un servidor utiliza un certificado SSL autofirmado en lugar de uno emitido por una Autoridad Certificadora (CA) reconocida. 
+   - Gravedad: Media
+   - CVSS: 6.5
+   - Sistemas afectados: Servidores que utilizan certificados SSL autofirmados
+   - Solución: Adquirir o generar un certificado SSL apropiado emitido por una Autoridad Certificadora
+
+   #### SMB Signing not required
+
+- Explicación: La falta de firma en los mensajes SMB permite a un atacante remoto no autenticado realizar ataques de MITM
+   - Gravedad: Media
+   - CVSS: 5.3
+   - Sistemas afectados: Servidores SMB con la firma de mensajes deshabilitada o no requerida
+   - Solución: Habilitar y requerir la firma de mensajes SMB en la configuración del servidor y cliente
 
 
 ## 5. Conclusiones y Recomendaciones
 
-- Resumen de los resultados y su interpretación.
-- Sugerencias de mejora o acciones correctivas, indicando el nivel de esfuerzo requerido para su implementación.
+Una vez hemos realizado el análisis de vulnerabilidades de ambos servidores. Podemos recoger que se han detectado numerosas vulnerabilidades en ambos servidores en diferentes servicios. 
+Esto desencadena en la poca confianza y fiabilidad que generan estos servidores.
 
-## 6. Glosario de Términos
+Durante la explicación de las vulnerabilidades nos ido fijando en que la mayoría eran por usos de servicios desactualizados o mal configurados. Es por ellos que aconsejamos a la empresa que debido a que hay servicios que carecen de soporte y actualizaciones, por lo que la solución más óptima sería actualizar los dos servidores a versiones más actuales, el Windows Server 2008 a la versión 2019 o 2022 y el Ubuntu Server a la versión 22 o 24. 
 
-- Listado alfabético de términos técnicos o acrónimos utilizados en el informe, junto con sus definiciones.
-
-## 7. Anexos
-
-- Documentación adicional que complemente el informe, como evidencias detalladas, scripts, registros de sistemas, capturas de pantalla, etc.
-
----
+***
 
 Documento redactado por el Grupo 3, compuesto por:
 
