@@ -88,11 +88,11 @@ ___
 
 ### Preservación y almacenamiento de la evidencia
 
-Para la fase de prevención hemos  nos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
+Para la fase de preservación, nos hemos basamos en la UNE 71506:2013. Consideramos que de todos los documentos que hay es donde mejor explica y desarrolla lo que es la preservación y almacenamiento de evidencias. Veremos como el documento nos da un enfoque detallado y práctico para mantener una correcta integridad de laas evidencias que recopilaremos. 
 
-Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos las encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanalisis o alguna revisión.  
+Como factor fundamental nos comentan la importancia de preservar la información digital tal y como nos las encontramos originalmente (sin modificarlas), asegurando así su validez y confiabilidad. ¿Para qué es importante esto? Bueno, es especialmente importante cuando en un caso forense los datos se mantengan intactos, así garantizamos que cualquier análisis que se haga posteriormente puedan utilizar los mismos datos por si en algún momento se necesita un contraanalisis o alguna revisión.
 Toda organización o empresa debe tener en consideración los siguientes principios al manejar datos o evidencias electrónicas que puedan ser sometidas a un análisis forense:
-1.  Se deben establecer protocolos claros y detallados para la protección de la evidencias digitales durante el análisis forense. Esto es para garantizar que no se altera la evidencia de niguna manera, ya sea de manera internacional o accidental. Estos nos pueden ayudar a prevenir situaciones como:  
+1.  Se deben establecer protocolos claros y detallados para la protección de la evidencias digitales durante el análisis forense. Esto es para garantizar que no se altera la evidencia de niguna manera, ya sea de manera intencional o accidental. Estos nos pueden ayudar a prevenir situaciones como:  
     + **Tampering** (manipulación intencionado): evitamos que alguien manipule las evidencias de manera intencionada.
     + **Descargas electroestáticas**: proteger las evidencias de posibles descargas electroestáticas capaces de corromper los datos.
     + **Campos magnéticos**: proteger las evidencias de posibles campos electrmagnéticos capaces de alterar la información.

@@ -47,10 +47,25 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 Para la recolección de evidencias digitales, nos hemos basado en la ISO 27037-2012 ya que se puede aplicar a nivel internacional, pudiendo usarla tanto en España como en el extrangero.
 Esta sección se centra en *identificar* posibles dispositivos digitales y objetos relacionados, como pendrives, notas en los equipos, etc; y en la propia *adquisición* de estos.
 Cuando se identifiquen las posibles fuentes de evidencias, debemos *evidenciar* el estado inicial de estas con una fotografía y anotando su estado inicial, si está encendido o apagado, que programas tiene abiertos, etc; y localización en la compañía, departamentos, salas, etc. Es importante que se respete el estado de dichos dispositivos y que nadie no a autorizado los manipule.
+Por último, debemos diferenciar entre un equipo encendido de una apagado.
 
+### Recolección de evidencias en un equipo *encendido*
 
+Lo primero que debemos hacer es la adquisición de memoria volátil(RAM), documentando todo el proceso y utilizando herramientas propias como **Dumpit**.
+Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos.
+Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
+
+### Recolección de evidencias en un equipo *apagado*
+
+En estos casos, la memoria volátil ha quedado completamente en blanco, por lo que solo podremos hacer la adquisición del disco. Para ello, debemos extraer el disco y usar herramientas que **NO** lo modifiquen, como **FTK imager** o **Autopsy**, y esperar que los discos no esten cifrados. En caso que lo estén, solo podríamos hacer pruebas de fuerza bruta en la copia, no en original. Por último, podremos proceder con la etiquetación y el almacenaje de estos.
+
+  Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza.
+  Toda copia de datos que se haga, se debe hacer en discos nuevos o debidamente formateados.
 
 ## 5. Procedimiento de Almacenado
+
+Para el proceso de almacenaje, nos hemos basado en el UNE 71506-2013, la cuál pensamos que es la que mejor explica el procedimiento de preservación y el almacenaje.
+
 
 ## 6. Procedimiento de Análisis de evidencias
 
