@@ -127,8 +127,6 @@ Por último, y antes de empezar el análisis, debemos proceder con la verificaci
 
 ## 6. Procedimiento de análisis de evidencias
 
-Para la fase de análisis de evidencias, volvemos a usar la UNE 71506
-
 ## 7. Presentación de resultados del análisis de evidencias
 
 ## 8. Herramientas a usar
