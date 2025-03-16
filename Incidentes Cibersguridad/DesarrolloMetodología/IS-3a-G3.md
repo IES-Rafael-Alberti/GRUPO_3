@@ -44,6 +44,12 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 
 ## 4. Procedimiento de Recolección
 
+Para la recolección de evidencias digitales, nos hemos basado en la ISO 27037-2012 ya que se puede aplicar a nivel internacional, pudiendo usarla tanto en España como en el extrangero.
+Esta sección se centra en *identificar* posibles dispositivos digitales y objetos relacionados, como pendrives, notas en los equipos, etc; y en la propia *adquisición* de estos.
+Cuando se identifiquen las posibles fuentes de evidencias, debemos *evidenciar* el estado inicial de estas con una fotografía y anotando su estado inicial, si está encendido o apagado, que programas tiene abiertos, etc; y localización en la compañía, departamentos, salas, etc. Es importante que se respete el estado de dichos dispositivos y que nadie no a autorizado los manipule.
+
+
+
 ## 5. Procedimiento de Almacenado
 
 ## 6. Procedimiento de Análisis de evidencias
