@@ -19,22 +19,22 @@
 
 - Normas ISO (International Organization for Standardization):
 
-  1. ISO 27001
-  2. ISO 27002
-  3. ISO 27037-2012
-  4. ISO 27042-2015
+  1. ISO 27001(Sistema de Gestión de Seguridad de la Información (SGSI).)
+  2. ISO 27002(Controles de seguridad de la información.)
+  3. ISO 27037-2012(Directrices para la identificación, recolección y adquisición de evidencias digitales.)
+  4. ISO 27042-2015(Directrices para el análisis e interpretación de evidencias digitales.)
 
 - Normas UNE (Una Norma Española):
 
-  1. UNE 7106-2013
-  2. UNE 71505-2
-  3. UNE 71505-3
-  4. UNE 197001-2011
-  5. UNE 197010-2015
+  1. UNE 7106-2013(Gestión de incidentes de seguridad de la información.)
+  2. UNE 71505-2(Buenas prácticas en la gestión de evidencias electrónicas.)
+  3. UNE 71505-3(Formatos y mecanismos técnicos para evidencias electrónicas.)
+  4. UNE 197001-2011(Criterios generales para la elaboración de informes y dictámenes periciales.)
+  5. UNE 197010-2015(Criterios generales para la elaboración de informes y dictámenes periciales sobre TIC.)
 
 - Publicaciónes para el desarrollo de un estándar de Internet (Request for Comments):
 
-  1. RFC 3227
+  1. RFC 3227(Directrices para la recopilación y archivo de evidencias.)
 
 ## 3. Puntos relevantes y Principios identificados durante la investigación
 
