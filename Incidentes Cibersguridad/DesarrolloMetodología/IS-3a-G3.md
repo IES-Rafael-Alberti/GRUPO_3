@@ -42,7 +42,7 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 
 ## 3. Puntos relevantes y Principios identificados durante la investigación
 
-## 4. Procedimiento de Recolección
+## 4. Procedimiento de recolección
 
 Para la recolección de evidencias digitales, nos hemos basado en la ISO 27037-2012 ya que se puede aplicar a nivel internacional, pudiendo usarla tanto en España como en el extrangero.
 Esta sección se centra en *identificar* posibles dispositivos digitales y objetos relacionados, como pendrives, notas en los equipos, etc; y en la propia *adquisición* de estos.
@@ -59,15 +59,75 @@ Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarl
 
 En estos casos, la memoria volátil ha quedado completamente en blanco, por lo que solo podremos hacer la adquisición del disco. Para ello, debemos extraer el disco y usar herramientas que **NO** lo modifiquen, como **FTK imager** o **Autopsy**, y esperar que los discos no esten cifrados. En caso que lo estén, solo podríamos hacer pruebas de fuerza bruta en la copia, no en original. Por último, podremos proceder con la etiquetación y el almacenaje de estos.
 
-  Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza.
+  Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza(cadena de custodia).
   Toda copia de datos que se haga, se debe hacer en discos nuevos o debidamente formateados.
 
-## 5. Procedimiento de Almacenado
+## 5. Procedimiento de almacenado
 
-Para el proceso de almacenaje, nos hemos basado en el UNE 71506-2013, la cuál pensamos que es la que mejor explica el procedimiento de preservación y el almacenaje.
+Para el proceso de almacenaje, nos hemos basado en el UNE 71506-2013, la cuál pensamos que es la que mejor explica el procedimiento de preservación y el almacenaje de evidencias digitales.
+Una vez acabado el proceso de recolección de evidencias, debemos asegurar que los dispositivos estén correctamente protegidos y almacenados hasta la llegada al laboratorio forense. Para ello, hacemos uso del siguiente material:
 
+- Bolsas antiestáticas y cajas de seguridad selladas, para los dispositivos de almacenamiento como discos duros, pendrives, tarjetas SD, etc
+- Contenedores acolchados y sellados, para ordenadores, portátiles o móviles.
+- También podemos incluir algún material que no deje pasar las altas temperaturas.
+- Para los dispositivos que requiran energía, debemos conectarlos a un SAI hasta la llegada al laboratorio.
 
-## 6. Procedimiento de Análisis de evidencias
+Además, debemos tener en cuenta los siguientes principios a la hora de manejar datos:
+
+1. Documentar todo el proceso de almacenado.
+La documentación en estos casos es clave, de esta forma, queda registrado todo el material adquirido, fecha y hora y *dueño* de los datos en cada momento, lo que se conoce como **la cadena de custodia**.
+Un ejemplo de cadena de custodia es:
+
+---
+### Datos del caso
+
+|||
+|-|-|
+| Número de caso: | |
+| Fecha de apertura: | |
+| Hora de apertura: | |
+---
+### Datos de la evidencia
+
+|||
+|-|-|
+| Tipo de evidencia | Disco duro, Pendrive, Ordenador, Móvil, etc. |
+| Identificador | Número de la etiqueta |
+| Descripción | |
+| Ubicación de recolección: | |
+| Persona que recolecta la evidencia: | Nombre + Firma |
+| Fecha y hora de recolección: | |
+| HASH MD5 | Si es necesario |
+| HASH sha256 | Si es necesario |
+---
+### Observaciones
+
+|||
+|-|-|
+| Nombre del responsable de la cadena de custodia: | |
+| Firma del responsable de la cadena de custodia: | |
+| Fecha de cierre de la cadena de custodia: | |
+---
+
+2. Securizar las evidencias en todo momento.
+Ahora que tenemos todas las evidencias guardadas y registradas, debemos asegurarnos de que la copia original llegue al laboratorio en las mismas condiciones. Para ello, debemos tener en cuenta los siguientes aspectos:
+
+- Evitar accesos no autorizados.
+Podemos implementar pequeños controles de acceso donde solo el personal autorizado pueda acceder, o en caso del transporte que nadie pueda acceder a estos hasta llegar al laboratorio.
+
+- Evitar zonas de peligro.
+Zonas electromagnéticas o zonas de calor, pueden dañar significativamente los dispositivos digitales, por lo que es muy importante mantenerlos en sus recipientes sellados hasta que sea necesario.
+
+3. Llegada al laboratorio.
+Por último, y antes de empezar el análisis, debemos proceder con la verificación del estado de las evidencias. Debemos seguir el siguiente esquema:
+
+- Verificar el estado de los recipientes sellados y comprobar que no haya habido alguna alteración en el transporte.
+- Comprobar los hashes que hicimos en la ubicación inicial.
+- Rellenar la cadena de custodia con los nuevos datos.
+
+## 6. Procedimiento de análisis de evidencias
+
+Para la fase de análisis de evidencias, volvemos a usar la UNE 71506
 
 ## 7. Presentación de resultados del análisis de evidencias
 
