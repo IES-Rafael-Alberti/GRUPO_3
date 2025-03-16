@@ -19,6 +19,8 @@ Para esta tarea, se nos ha pedido que desarrollemos una metodología propia para
 
 ## 2. Normas investigadas
 
+A continueación, presentamos las normativas y estandares que hemos análiazado, dividiendolos en **Normas ISO**, **Normas UNE** y **RFC**:
+
 - Normas ISO (International Organization for Standardization):
 
   1. ISO 27001(Sistema de Gestión de Seguridad de la Información (SGSI).)
