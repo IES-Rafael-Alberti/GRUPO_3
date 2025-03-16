@@ -1,0 +1,60 @@
+# GUÍA
+
+## Introducción
+
+La RFC 3227, titulada "Directrices para la recopilación y el archivo de pruebas", es un documento fundamental en el campo de la seguridad informática y la forensia digital. Publicada en febrero de 2002, esta RFC proporciona un marco de referencia para la gestión de incidentes de seguridad y la recopilación de evidencia digital. Su objetivo principal es asegurar que las pruebas digitales se recopilen, almacenen y manejen de manera que sean admisibles en procedimientos legales. Esto es crucial en un mundo donde los delitos informáticos y las brechas de seguridad son cada vez más comunes y sofisticados.
+
+## Normas investigadas
+
+La principal norma investigada es la RFC 3227. Esta RFC forma parte de una serie de documentos que establecen estándares y mejores prácticas en Internet y tecnologías relacionadas. Aunque no es una ley en sí misma, la RFC 3227 es ampliamente reconocida y utilizada en el campo de la seguridad informática y la investigación forense digital.
+
+## Puntos relevantes y Principios identificados durante la investigación
+
+- Importancia de la recopilación forense de pruebas: La RFC 3227 enfatiza la necesidad de recopilar evidencia de manera que preserve su integridad y valor probatorio.
+- Mantenimiento de la integridad de las pruebas: Se subraya la importancia de no alterar la evidencia durante su recopilación y almacenamiento.
+- Establecimiento de una cadena de custodia: La RFC proporciona directrices para mantener un registro detallado de cómo se ha manejado la evidencia desde su recopilación hasta su presentación.
+- Consideración del orden de volatilidad de los datos: Se establece una jerarquía de volatilidad de datos, priorizando la recopilación de información más efímera.
+- Respeto a las consideraciones legales y de privacidad: La RFC advierte sobre la importancia de respetar las leyes y políticas de privacidad aplicables durante la investigación.
+
+## Procedimiento de Recolección
+
+- Seguir el orden de volatilidad: Comenzar por los datos más volátiles, como registros y caché, seguidos por tablas de enrutamiento, procesos en ejecución, etc.
+- Capturar una imagen precisa del sistema: Utilizar herramientas forenses para crear una copia bit a bit del sistema.
+- Mantener notas detalladas: Documentar cada acción realizada, incluyendo fechas, horas y herramientas utilizadas.
+- Minimizar los cambios en los datos recopilados: Evitar modificar los datos originales durante la recopilación.
+- Adoptar un enfoque metódico: Seguir un procedimiento sistemático para cada dispositivo investigado.
+- Documentar cada paso: Mantener un registro detallado de todas las acciones realizadas durante la recopilación.
+
+## Procedimiento de Almacenado
+
+- Almacenar las pruebas de forma segura: Utilizar medios de almacenamiento confiables y seguros.
+- Proteger las pruebas del acceso no autorizado: Implementar medidas de seguridad física y lógica para proteger la evidencia.
+- Utilizar sumas de comprobación: Calcular y registrar hashes criptográficos para verificar la integridad de los datos.
+- Mantener una cadena de custodia documentada: Registrar cada transferencia o acceso a la evidencia.
+
+## Procedimiento de Análisis de evidencias
+
+Aunque la RFC 3227 no se centra específicamente en el análisis de evidencias, sugiere:
+
+1. Utilizar herramientas forenses confiables: Emplear software y hardware forense desde medios protegidos y verificados.
+2. Evitar confiar en los programas del sistema comprometido: Usar herramientas forenses independientes y confiables.
+3. Realizar el análisis de manera que preserve la integridad de las evidencias: Trabajar sobre copias de la evidencia y documentar todo el proceso.
+
+## Presentación de resultados del análisis de evidencias
+
+La RFC 3227 enfatiza la importancia de asegurar que la evidencia sea:
+
+- Admisible: Cumplir con las reglas legales para ser presentada en un tribunal.
+- Auténtica: Poder probar que la evidencia es lo que se afirma que es.
+- Completa: Contar la historia completa, no solo una perspectiva particular.
+- Fiable: No debe haber dudas sobre cómo se recopiló y manejó la evidencia.
+- Creíble: Debe ser creíble y comprensible para un jurado.
+
+## Herramientas a usar
+
+La RFC 3227 no especifica herramientas particulares, pero sugiere el uso de:
+
+- Herramientas forenses desde medios protegidos: Como FTK Imager o `dd` para Unix/Linux.
+- Herramientas para calcular sumas de comprobación: Como `md5sum` o `sha256sum`.
+- Herramientas de documentación: Software de procesamiento de texto o herramientas especializadas de gestión de casos forenses.
+

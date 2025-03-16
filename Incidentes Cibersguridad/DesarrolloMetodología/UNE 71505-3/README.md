@@ -1,0 +1,23 @@
+# UNE 71505-3
+
+La parte tres de la UNE 71505 se basa en la preservación y el intercambio de la adquisición, también abarca aspectos de la adquisición, ofreciendo un formato que ayuda a garantizar que la información se capture de manera íntegra desde el inicio.
+
+
+El documento nos da 3 campos:
+
+- La cabecera, que se tienen que meter datos como identificadores, fechas e información para dar contexto a la evidencia.
+
+- El contenido, que contiene la información de la evidencia, ya sea en formato “raw” o en otros formatos estandarizados.
+
+- Las credenciales de seguridad, que incluye la firma electrónica y sellos de tiempo, para que solo puedan acceder a la evidencia el personal autorizado
+
+
+### Ejemplo
+
+1. Se crea una imagen del disco
+
+2. Se genera un archivo de cabecera siguiendo el formato de la norma UNE 71505-3, donde se pone un identificador (por ejemplo, "ES_000000001") y la fecha de creación (por ejemplo, "20240311T15:30:00").
+
+3. Se utiliza un mecanismo de firma electrónica
+
+4. La evidencia firmada y el archivo con la cabecera se guardan en un dispositivo seguro
