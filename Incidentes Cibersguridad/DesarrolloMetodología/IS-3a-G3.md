@@ -15,6 +15,8 @@
 
 ## 1. Introducción
 
+Para esta tarea, se nos ha pedido que desarrollemos una metodología propia para la recolección, el almacenamiento y el análisis de evidencias digitales. Para ello, debemos analizar las normativas y estandares ya creados y crear una metodología nosostros mismos.
+
 ## 2. Normas investigadas
 
 - Normas ISO (International Organization for Standardization):
@@ -37,8 +39,6 @@
   1. RFC 3227(Directrices para la recopilación y archivo de evidencias.)
 
 ## 3. Puntos relevantes y Principios identificados durante la investigación
-
-Para esta tarea, se nos ha pedido que desarrollemos una metodología propia para la recolección, el almacenamiento y el análisis de evidencias digitales. Para ello, debemos analizar las normativas y estandares ya creados y crear una metodología nosostros mismos.
 
 ## 4. Procedimiento de Recolección
 
