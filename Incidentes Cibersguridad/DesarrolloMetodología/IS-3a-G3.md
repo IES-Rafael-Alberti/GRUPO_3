@@ -39,7 +39,7 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 - Publicaciónes para el desarrollo de un estándar de Internet (Request for Comments):
 
   1. RFC 3227(Directrices para la recopilación y archivo de evidencias.)
- 
+
 Para más detalles revisar la [tabla comparativa](TablaResumen.md)
 
 ## 3. Puntos relevantes y Principios identificados durante la investigación
@@ -47,22 +47,22 @@ Para más detalles revisar la [tabla comparativa](TablaResumen.md)
 ## 4. Procedimiento de recolección
 
 Para la recolección de evidencias digitales, nos hemos basado en la ISO 27037-2012 ya que se puede aplicar a nivel internacional, pudiendo usarla tanto en España como en el extrangero.
-Esta sección se centra en *identificar* posibles dispositivos digitales y objetos relacionados, como pendrives, notas en los equipos, etc; y en la propia *adquisición* de estos.
-Cuando se identifiquen las posibles fuentes de evidencias, debemos *evidenciar* el estado inicial de estas con una fotografía y anotando su estado inicial, si está encendido o apagado, que programas tiene abiertos, etc; y localización en la compañía, departamentos, salas, etc. Es importante que se respete el estado de dichos dispositivos y que nadie no a autorizado los manipule.
+Esta sección se centra en _identificar_ posibles dispositivos digitales y objetos relacionados, como pendrives, notas en los equipos, etc; y en la propia _adquisición_ de estos.
+Cuando se identifiquen las posibles fuentes de evidencias, debemos _evidenciar_ el estado inicial de estas con una fotografía y anotando su estado inicial, si está encendido o apagado, que programas tiene abiertos, etc; y localización en la compañía, departamentos, salas, etc. Es importante que se respete el estado de dichos dispositivos y que nadie no a autorizado los manipule.
 Por último, debemos diferenciar entre un equipo encendido de una apagado.
 
-### Recolección de evidencias en un equipo *encendido*
+### Recolección de evidencias en un equipo _encendido_
 
 Lo primero que debemos hacer es la adquisición de memoria volátil(RAM), documentando todo el proceso y utilizando herramientas propias como **Dumpit**.
 Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos.
 Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
 
-### Recolección de evidencias en un equipo *apagado*
+### Recolección de evidencias en un equipo _apagado_
 
 En estos casos, la memoria volátil ha quedado completamente en blanco, por lo que solo podremos hacer la adquisición del disco. Para ello, debemos extraer el disco y usar herramientas que **NO** lo modifiquen, como **FTK imager** o **Autopsy**, y esperar que los discos no esten cifrados. En caso que lo estén, solo podríamos hacer pruebas de fuerza bruta en la copia, no en original. Por último, podremos proceder con la etiquetación y el almacenaje de estos.
 
-  Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza(cadena de custodia).
-  Toda copia de datos que se haga, se debe hacer en discos nuevos o debidamente formateados.
+Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza(cadena de custodia).
+Toda copia de datos que se haga, se debe hacer en discos nuevos o debidamente formateados.
 
 ## 5. Procedimiento de almacenado
 
@@ -76,56 +76,57 @@ Una vez acabado el proceso de recolección de evidencias, debemos asegurar que l
 
 Además, debemos tener en cuenta los siguientes principios a la hora de manejar datos:
 
-1. Documentar todo el proceso de almacenado.
-La documentación en estos casos es clave, de esta forma, queda registrado todo el material adquirido, fecha y hora y *dueño* de los datos en cada momento, lo que se conoce como **la cadena de custodia**.
-Un ejemplo de cadena de custodia es:
+1. Documentar todo el proceso de almacenado
 
----
-### Datos del caso
+   La documentación en estos casos es clave, de esta forma, queda registrado todo el material adquirido, fecha y hora y _dueño_ de los datos en cada momento, lo que se conoce como **la cadena de custodia**.
+   Un ejemplo de cadena de custodia es:
 
-|||
-|-|-|
-| Número de caso: | |
-| Fecha de apertura: | |
-| Hora de apertura: | |
----
-### Datos de la evidencia
+   - Datos del caso
 
-|||
-|-|-|
-| Tipo de evidencia | Disco duro, Pendrive, Ordenador, Móvil, etc. |
-| Identificador | Número de la etiqueta |
-| Descripción | |
-| Ubicación de recolección: | |
-| Persona que recolecta la evidencia: | Nombre + Firma |
-| Fecha y hora de recolección: | |
-| HASH MD5 | Si es necesario |
-| HASH sha256 | Si es necesario |
----
-### Observaciones
+   |                    |     |
+   | ------------------ | --- |
+   | Número de caso:    |     |
+   | Fecha de apertura: |     |
+   | Hora de apertura:  |     |
 
-|||
-|-|-|
-| Nombre del responsable de la cadena de custodia: | |
-| Firma del responsable de la cadena de custodia: | |
-| Fecha de cierre de la cadena de custodia: | |
----
+   - Datos de la evidencia
 
-2. Securizar las evidencias en todo momento.
-Ahora que tenemos todas las evidencias guardadas y registradas, debemos asegurarnos de que la copia original llegue al laboratorio en las mismas condiciones. Para ello, debemos tener en cuenta los siguientes aspectos:
+   |                                     |                                              |
+   | ----------------------------------- | -------------------------------------------- |
+   | Tipo de evidencia                   | Disco duro, Pendrive, Ordenador, Móvil, etc. |
+   | Identificador                       | Número de la etiqueta                        |
+   | Descripción                         |                                              |
+   | Ubicación de recolección:           |                                              |
+   | Persona que recolecta la evidencia: | Nombre + Firma                               |
+   | Fecha y hora de recolección:        |                                              |
+   | HASH MD5                            | Si es necesario                              |
+   | HASH sha256                         | Si es necesario                              |
 
-- Evitar accesos no autorizados.
-Podemos implementar pequeños controles de acceso donde solo el personal autorizado pueda acceder, o en caso del transporte que nadie pueda acceder a estos hasta llegar al laboratorio.
+   - Observaciones
 
-- Evitar zonas de peligro.
-Zonas electromagnéticas o zonas de calor, pueden dañar significativamente los dispositivos digitales, por lo que es muy importante mantenerlos en sus recipientes sellados hasta que sea necesario.
+   |                                                  |     |
+   | ------------------------------------------------ | --- |
+   | Nombre del responsable de la cadena de custodia: |     |
+   | Firma del responsable de la cadena de custodia:  |     |
+   | Fecha de cierre de la cadena de custodia:        |     |
 
-3. Llegada al laboratorio.
-Por último, y antes de empezar el análisis, debemos proceder con la verificación del estado de las evidencias. Debemos seguir el siguiente esquema:
+2. Securizar las evidencias en todo momento
 
-- Verificar el estado de los recipientes sellados y comprobar que no haya habido alguna alteración en el transporte.
-- Comprobar los hashes que hicimos en la ubicación inicial.
-- Rellenar la cadena de custodia con los nuevos datos.
+   Ahora que tenemos todas las evidencias guardadas y registradas, debemos asegurarnos de que la copia original llegue al laboratorio en las mismas condiciones. Para ello, debemos tener en cuenta los siguientes aspectos:
+
+   - Evitar accesos no autorizados.
+     Podemos implementar pequeños controles de acceso donde solo el personal autorizado pueda acceder, o en caso del transporte que nadie pueda acceder a estos hasta llegar al laboratorio.
+
+   - Evitar zonas de peligro.
+     Zonas electromagnéticas o zonas de calor, pueden dañar significativamente los dispositivos digitales, por lo que es muy importante mantenerlos en sus recipientes sellados hasta que sea necesario.
+
+3. Llegada al laboratorio
+
+   Por último, y antes de empezar el análisis, debemos proceder con la verificación del estado de las evidencias. Debemos seguir el siguiente esquema:
+
+   - Verificar el estado de los recipientes sellados y comprobar que no haya habido alguna alteración en el transporte.
+   - Comprobar los hashes que hicimos en la ubicación inicial.
+   - Rellenar la cadena de custodia con los nuevos datos.
 
 ## 6. Procedimiento de análisis de evidencias
 
