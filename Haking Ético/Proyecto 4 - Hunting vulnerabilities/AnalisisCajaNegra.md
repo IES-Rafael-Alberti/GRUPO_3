@@ -75,6 +75,7 @@ Después de realizar los análisis de los dos servidores hemos identificado las 
 
 - ### Windows Server 2008
 
+Nombraremos algunos análsisi que nos ha detectado Nessus sobre Windows Server, pero para ver en su totalidad el escaneo dejaremos un archivo en [Anexo](AnexosAnálisis.md) con todas las vulnerabilidades. 
 ***
 
 #### Vulnerability in DNS Resolution
@@ -171,6 +172,9 @@ Después de realizar los análisis de los dos servidores hemos identificado las 
   - Solución: Actualizar a PHP versión 7.3.28 o posterior
 
 - ### Ubuntu Server 14.04
+
+En este apartado nombraremos alguna de las vulnerabilidades detectadas en el UBuntu Server pero para ver la totalidad de las vulnerabilidades escaneadas dejaremos un archivo en [Anexo](AnexosAnálisis.md) con todas las vulnerabilidades.
+***
 
   #### Drupal Coder Module Deserialization RCE
 

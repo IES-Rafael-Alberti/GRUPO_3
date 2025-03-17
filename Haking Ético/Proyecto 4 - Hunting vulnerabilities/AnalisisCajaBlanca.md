@@ -24,12 +24,11 @@
 Este informe presenta los resultados del análisis de vulnerabilidades en modo caja blanca realizado a los servidores Windows y Linux de la empresa SecureLogistics.  
 El escaneo lo ejecutamos con las credenciales (credenciales: vagrant/vagrant) mediante la aplicación de Nessus , permitiendo una evaluación extensa de las configuraciones internas y vulnerabilidades no visibles dedsde un análisis externo de caja negra.
 
-
 ## 2. Introducción
 
 ### 2.1 Antecedentes
 
-La empresa de logística SecureLogistics nos ha solicitado una evaluación de vulnerabilidades de dos de sus servidores. Esta vez quieren que realicemos el analisis con los credenciales para ver si el análisis detecta más vulnerabilidades que las que se han encontrado sin las credenciales. 
+La empresa de logística SecureLogistics nos ha solicitado una evaluación de vulnerabilidades de dos de sus servidores. Esta vez quieren que realicemos el analisis con los credenciales para ver si el análisis detecta más vulnerabilidades que las que se han encontrado sin las credenciales.
 
 ### 2.2 Objetivo
 
@@ -45,34 +44,34 @@ El análisis tuvimos que plantearlo para hacerlo en un entorno local, para asegu
 
 ## 3. Metodología
 
-Para este ejercicio hemos utilizado una herramientas basada en detección de vulnerabilidades la cuál la hemso dividido en 3 fases. Hemos querido hacer una metodología estructurada, en la que seguimos unas fases y hacemos uso de harramientas especializadas. 
+Para este ejercicio hemos utilizado una herramientas basada en detección de vulnerabilidades la cuál la hemso dividido en 3 fases. Hemos querido hacer una metodología estructurada, en la que seguimos unas fases y hacemos uso de harramientas especializadas.
 
-- Fase 1 - Recopilación de información: 
-   **Objetivos**: Lo primero que haremos es determinar cuales van a ser nuestros objetivos, a los que vamos a realizarles las pruebas. 
+- Fase 1 - Recopilación de información:
+   **Objetivos**: Lo primero que haremos es determinar cuales van a ser nuestros objetivos, a los que vamos a realizarles las pruebas.
    - Determinaremos si el escaner se realizara con credenciales o sin ellas (caja blaca o caja negra).
    - La dirección IP del objetivo.
    - Nos proporcionarán los credenciales de acceso de los dos servidores.
 
 - Fase 2 - Escaneo de puertos y enumeración de servicios:
-   Haremos una evaluación de los objetivos ya identificados para realizar posteriormente el escaner. 
-   - **Herramientas**: Usaremos la herramienta Nessus, es un programa de escaneo de vulnerabilidades en diversos sistemas operativos. 
+   Haremos una evaluación de los objetivos ya identificados para realizar posteriormente el escaner.
+   - **Herramientas**: Usaremos la herramienta Nessus, es un programa de escaneo de vulnerabilidades en diversos sistemas operativos.
    - **Proceso**:  
       La propia herramientas de Nessus nos permite a través de la IP del objetivo realizar un escaneo de puertos para ver que servicios tiene abiertos al exterior.
-      La aplicación nos permite en una pestaña seleccionar si queremos hacer el escaner con los credenciales. 
-      Nos aparecerán al realizar el escaner consultad "Info" las cuales nos avisan de que hay un servicio activo. 
+      La aplicación nos permite en una pestaña seleccionar si queremos hacer el escaner con los credenciales.
+      Nos aparecerán al realizar el escaner consultad "Info" las cuales nos avisan de que hay un servicio activo.
 
 - Fase 3 - Evaluación de vulnerabilidades
-   Detectaremos vulnerabilidades potenciales en los equipos analizados. 
-   - **Herramienta**: De nuevo utilizaremos Nessus. 
-   - **Proceso**: Nessus tiene la funcionalidad de escanear los servicios en busca de vulnerabilidades que contiene en su base de datos. 
-      Lo primero seleccionaremos el equipo objetivo para analizar.    
+   Detectaremos vulnerabilidades potenciales en los equipos analizados.
+   - **Herramienta**: De nuevo utilizaremos Nessus.
+   - **Proceso**: Nessus tiene la funcionalidad de escanear los servicios en busca de vulnerabilidades que contiene en su base de datos.
+      Lo primero seleccionaremos el equipo objetivo para analizar
       Utilizaremos el escaner de vulnerabilidades que nos brinda Nessus.
-      Automáticamente Nesssus nos clasificará las vulnerabilidades por grupos, calculando su nivel de riesgo, su CVV, etc. A parte también nos proporcionará al pinchar en la vulnerabilidad las posibles soluciones con las que solventar la vulnerabilidad. 
+      Automáticamente Nesssus nos clasificará las vulnerabilidades por grupos, calculando su nivel de riesgo, su CVV, etc. A parte también nos proporcionará al pinchar en la vulnerabilidad las posibles soluciones con las que solventar la vulnerabilidad.
 
 
 ## 4. Resultados Obtenidos
 
-Después de realizar los análisis de los dos servidores hemos identificado las siguiente vulnerabilidades: 
+Después de realizar los análisis de los dos servidores hemos identificado las siguiente vulnerabilidades:
 
 - ### Windows Server 2008
 
@@ -160,6 +159,8 @@ Como hemos realizado un análisis de caja blanca del mismo servidor las vulnerab
 - Solución: Aplicar los parches de seguridad según el aviso de actualización crítica de Oracle de abril de 2023.
 
 - ### Ubuntu Server 14.04
+
+Al igual que con el escaneo de Windows al ejecutar un escaneo con credenciales en el servidor Ubuntu nos va a detectar muchas más vulnerabilidades por lo que vamos a mencionar varias de ellas pero no todas. El informe de todas la vulnerabilidades detectadas se podrá encontrar en el [Anexo](AnexosAnálisis.md)
 
 #### Canonical Ubuntu Linux SEoL (14.04.x)
 
