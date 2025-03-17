@@ -44,7 +44,7 @@ El análisis tuvimos que plantearlo para hacerlo en un entorno local, para asegu
 
 ## 3. Metodología
 
-Para este ejercicio hemos utilizado una herramientas basada en detección de vulnerabilidades la cuál la hemso dividido en 3 fases. Hemos querido hacer una metodología estructurada, en la que seguimos unas fases y hacemos uso de harramientas especializadas.
+Para este ejercicio hemos utilizado una herramientas basada en detección de vulnerabilidades la cuál la hemos dividido en 3 fases. Hemos querido hacer una metodología estructurada, en la que seguimos unas fases y hacemos uso de harramientas especializadas.
 
 - Fase 1 - Recopilación de información:
    **Objetivos**: Lo primero que haremos es determinar cuales van a ser nuestros objetivos, a los que vamos a realizarles las pruebas.
