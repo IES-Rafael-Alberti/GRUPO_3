@@ -147,6 +147,22 @@ Este proceso busca recuperar archivos eliminados de almacenamientos. Además se 
 
 ### 4.4. Presentación
 
+Para garantizar la integridad y fiabilidad del análisis forense, seguimos las normativas **ISO 27042:2015**, **UNE 197001-2011**, **UNE 197010-2015** y **RFC 3227**, asegurando que la presentación de resultados sea clara y verificable.
+
+#### 1 Estructura del informe
+
+1. **Portada**: Datos del caso y analista.
+2. **Introducción**: Contexto, objetivos y normativas aplicadas.
+3. **Descripción de evidencias**: Métodos de adquisición, estado y hashes.
+4. **Metodología de análisis**: Herramientas y técnicas empleadas.
+5. **Resultados**: Hallazgos clave, línea de tiempo y actividad sospechosa.
+6. **Conclusiones y recomendaciones**: Impacto del incidente y medidas correctivas.
+7. **Anexos**: Capturas, logs y verificación de integridad.
+
+#### 2 Validación y entrega
+
+El informe debe estar firmado y contener un hash de verificación. Se recomienda entregarlo en **PDF firmado digitalmente**, con cifrado y bajo cadena de custodia cuando sea necesario.
+
 ## 5. Herramientas a usar
 
 ## 6. Conclusiones
