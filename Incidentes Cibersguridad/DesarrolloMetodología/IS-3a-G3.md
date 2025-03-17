@@ -86,32 +86,28 @@ Además, debemos tener en cuenta los siguientes principios a la hora de manejar 
 
    - Datos del caso
 
-   |                    |     |
-   | ------------------ | --- |
-   | Número de caso:    |     |
-   | Fecha de apertura: |     |
-   | Hora de apertura:  |     |
-
-   - Datos de la evidencia
-
-   |                                     |                                              |
-   | ----------------------------------- | -------------------------------------------- |
-   | Tipo de evidencia                   | Disco duro, Pendrive, Ordenador, Móvil, etc. |
-   | Identificador                       | Número de la etiqueta                        |
-   | Descripción                         |                                              |
-   | Ubicación de recolección:           |                                              |
-   | Persona que recolecta la evidencia: | Nombre + Firma                               |
-   | Fecha y hora de recolección:        |                                              |
-   | HASH MD5                            | Si es necesario                              |
-   | HASH sha256                         | Si es necesario                              |
-
-   - Observaciones
-
-   |                                                  |     |
-   | ------------------------------------------------ | --- |
-   | Nombre del responsable de la cadena de custodia: |     |
-   | Firma del responsable de la cadena de custodia:  |     |
-   | Fecha de cierre de la cadena de custodia:        |     |
+    | Cadena de custodia                       |       |
+    | ---------------------------------------- | ----- |
+    | Sección                                  | Campo |
+    | 1. INFORMACIÓN DEL CASO                  |       |
+    | Número de Caso                           |       |
+    | Tipo de investigación                    |       |
+    | Fecha de Adquisición                     |       |
+    | Lugar de Adquisición                     |       |
+    | Lugar de Adquisición                     |       |
+    | 2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL     |       |
+    | Tipo de Dispositivo                      |       |
+    | Hash de la evidencia original            |       |
+    | 3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL |       |
+    | Fecha de Entrega                         |       |
+    | Hora de Entrega                          |       |
+    | Recibidor por                            |       |
+    | Ubicación en el Juzgado                  |       |
+    | 4. CREACIÓN Y VERIFICACIÓN DE COPIAS     |       |
+    | Fecha y Hora de Creación                 |       |
+    | Técnico Responsable                      |       |
+    | Hash de la Copia                         |       |
+    | Verificación de Integridad               |       |
 
 2. Securizar las evidencias en todo momento
 
@@ -132,6 +128,20 @@ Además, debemos tener en cuenta los siguientes principios a la hora de manejar 
    - Rellenar la cadena de custodia con los nuevos datos.
 
 ## 6. Procedimiento de análisis de evidencias
+
+Para adaptar el análisis, después de valorar las diferentes opciones disponibles hemos optado por usar la normativa UNE 71506 esta normativa se centra en el análisis forense y la ISO 27042:2015 que esta dice que tenemos que justificar los métodos utilizados donde se tiene que explicar los más adecuados para el caso y tiene que ser una elección imparcial.
+
+El análisis forense de evidencia digitales debe seguir un proceso metódico, auditable y repetible. El objetivo es responder a preguntas sobre el tiempo de intrusión, su origen, sistemas afectados ,etc. Antes de iniciar un análisis se debe cumplir los siguientes pasos:
+
+1. **Comprobar competencias.** Esto significa que tendriamos que verificar si el análisis solicitado está dentro de la competencia de laboratorio forense.
+2. **Revisión documental.** Esto sería estudiar la documentación para tener el contexto de las evidencias y relaciones etre ellas.
+3. **Supervisión de la cadena de custodia.** En este paso lo que haremos es comprobar quién recogió las evidencias, cuando, dónde y cómo se almacenaron hasta llegar al laboratorio.
+4. **Autorizaciones.** Esto simplemente es tener los permisos legales para realizar el análisis, según la normativa vigente.
+5. **Comprobación de estado.**  Verificamos que las evidencias no están dañadas y son susceptibles de análisis.
+6. **Evidencias adicionales.** Si se encuentran nuevas evidencias como pueden ser discos, memorias, etc. Estas evidencias se deben registrar y se debe obtener de nuevo las autorizaciones para analizarlas.
+7. **Hora de la BIOS.** Registramos la hora de la BIOS del equipo donde se alojan los discos para poder comparar la cronología.
+8. **Establecer prioridades.** Definimos los criterios de prioridad en el análisis.
+
 
 ## 7. Presentación de resultados del análisis de evidencias
 
