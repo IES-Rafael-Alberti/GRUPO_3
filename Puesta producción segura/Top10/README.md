@@ -38,10 +38,5 @@
 8. Riesgos en APIs y servicios Web
  Al haber tantas APIs, pensamos que puede ser un gran factor de riesgos si no se validan correctamente los campos que no validan los frameworks y se usan sin ningún tipo de control.
 
-<<<<<<< Updated upstream
-10. Fallas en el registro y monitoreo
-	Pensamos que sigue siendo crítico, aunque no tanto como otros años.
-=======
 9. Fallas en el registro y monitoreo
  Pensamos que sigue siendo crítico, aunque no tanto como otros años.
->>>>>>> Stashed changes
