@@ -10,7 +10,7 @@
    4.2. [Almacenado](#42-almacenado)
    4.3. [Análisis](#43-análisis)
    4.4. [Presentación](#44-presentación)
-5. [Herramientas a usar](#5-herramientas-a-usar)
+5. [Herramientas](#5-herramientas)
 6. [Conclusiones](#6-conclusiones)
 7. [Bibliografía](#7-bibliografía)
 
@@ -84,28 +84,27 @@ Además, debemos tener en cuenta los siguientes principios a la hora de manejar 
 
    - Datos del caso
 
-   | Cadena de custodia                       |       |
-   | ---------------------------------------- | ----- |
-   | Sección                                  | Campo |
-   | 1. INFORMACIÓN DEL CASO                  |       |
-   | Número de Caso                           |       |
-   | Tipo de investigación                    |       |
-   | Fecha de Adquisición                     |       |
-   | Lugar de Adquisición                     |       |
-   | Lugar de Adquisición                     |       |
-   | 2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL     |       |
-   | Tipo de Dispositivo                      |       |
-   | Hash de la evidencia original            |       |
-   | 3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL |       |
-   | Fecha de Entrega                         |       |
-   | Hora de Entrega                          |       |
-   | Recibidor por                            |       |
-   | Ubicación en el Juzgado                  |       |
-   | 4. CREACIÓN Y VERIFICACIÓN DE COPIAS     |       |
-   | Fecha y Hora de Creación                 |       |
-   | Técnico Responsable                      |       |
-   | Hash de la Copia                         |       |
-   | Verificación de Integridad               |       |
+   | Cadena de custodia                           | Campo |
+   | -------------------------------------------- | ----- |
+   | **Sección**                                  |       |
+   | **1. INFORMACIÓN DEL CASO**                  |       |
+   | Número de Caso                               |       |
+   | Tipo de investigación                        |       |
+   | Fecha de Adquisición                         |       |
+   | Lugar de Adquisición                         |       |
+   | **2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL**     |       |
+   | Tipo de Dispositivo                          |       |
+   | Hash de la evidencia original                |       |
+   | **3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL** |       |
+   | Fecha de Entrega                             |       |
+   | Hora de Entrega                              |       |
+   | Recibidor por                                |       |
+   | Ubicación en el Juzgado                      |       |
+   | **4. CREACIÓN Y VERIFICACIÓN DE COPIAS**     |       |
+   | Fecha y Hora de Creación                     |       |
+   | Técnico Responsable                          |       |
+   | Hash de la Copia                             |       |
+   | Verificación de Integridad                   |       |
 
 2. Securizar las evidencias en todo momento
 
@@ -140,11 +139,11 @@ El análisis forense de evidencia digitales debe seguir un proceso metódico, au
 7. **Hora de la BIOS.** Registramos la hora de la BIOS del equipo donde se alojan los discos para poder comparar la cronología.
 8. **Establecer prioridades.** Definimos los criterios de prioridad en el análisis.
 
-#### 1. Recuperación de ficheros borrados
+#### Recuperación de ficheros borrados
 
 Este proceso busca recuperar archivos eliminados de almacenamientos. Además se recuperan archivos de áreas no asignadas del disco o ficheros 'huérfanos'. También se localizan fragmentos de archivos mediante búsqueda en las cabeceras. Toda información recuperada debe estar documentada en el informe.
 
-#### 2. Estudio de particiones y sistemas de archivos
+#### Estudio de particiones y sistemas de archivos
 
 Se analiza la estructura de almacenamiento como pueden ser particiones, volúmenes físicos y lógicos, etc. Este proceso incluye:
 
@@ -156,15 +155,15 @@ Se analiza la estructura de almacenamiento como pueden ser particiones, volúmen
 
 - **Análisis de archivos.** Archivos comprimidos y sus cabeceras.
 
-#### 3. Estudio del sistema operativo
+#### Estudio del sistema operativo
 
 Se identifican los SO instalados, su fecha de instalación, actualizaciones, usuarios, privilegios y las últimas actividades registradas.También se examinan los dispositivos de hardware y software reconocido por el sistema.
 
-#### 4. Estudio de la seguridad implementada
+#### Estudio de la seguridad implementada
 
 Evaluamos si las evidencias han sido compromentidas mediante métodos de intrusión, modificación o eliminación. Se deben identidicar malware y evaluar su impacto.
 
-#### 5. Análisis detallado de los datos obtenidos
+#### Análisis detallado de los datos obtenidos
 
 Realizaremos un análisis exhaustivo de las evidencias electrónicas utilizando software especializzado. Este análisis incluye clasificación y el indexado de los datos, lo que agiliza la búsqueda de información clave. Además analizaremos los ddiversos elementos del sistema como hardware, configuración regional, última actividad y dispositivos conectados como puede ser USBs, impresoras y móviles. Tambíen deberemos analizar las conexiones de red, protocolos utilizados y las comunicaciones realizadas desde el equipo. Revisaremos los registros del sistema, los epacios no asignados del disco, cola de impresión y enlaces a archivos recientes.
 
@@ -174,7 +173,7 @@ El análisis tendrá las carpetas de los distintos usuarios, programas instalado
 
 Para garantizar la integridad y fiabilidad del análisis forense, seguimos las normativas **ISO 27042:2015**, **UNE 197001-2011**, **UNE 197010-2015** y **RFC 3227**, asegurando que la presentación de resultados sea clara y verificable.
 
-#### 1 Estructura del informe
+#### Estructura del informe
 
 1. **Portada**: Datos del caso y analista.
 2. **Introducción**: Contexto, objetivos y normativas aplicadas.
@@ -184,11 +183,22 @@ Para garantizar la integridad y fiabilidad del análisis forense, seguimos las n
 6. **Conclusiones y recomendaciones**: Impacto del incidente y medidas correctivas.
 7. **Anexos**: Capturas, logs y verificación de integridad.
 
-#### 2 Validación y entrega
+#### Validación y entrega
 
 El informe debe estar firmado y contener un hash de verificación. Se recomienda entregarlo en **PDF firmado digitalmente**, con cifrado y bajo cadena de custodia cuando sea necesario.
 
-## 5. Herramientas a usar
+## 5. Herramientas
+
+### Adquisición
+
+### Almacenamiento
+
+### Análisis
+
+### Presentación
+
+- Editor de notas markdown: Joplin, Obsidian, Visual Studio Code.
+- Editor de texto: Google Docs, Microsoft Word.
 
 ## 6. Conclusiones
 
