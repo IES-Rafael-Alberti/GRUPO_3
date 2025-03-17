@@ -1,4 +1,6 @@
-    2017
+# TOP 10 OWASP
+
+2017
     1. Injection
     2. Broken Authentications
     3. Sesitive Data Exposure
@@ -11,29 +13,35 @@
     10.Insufficient Logging & Monitoring
 
 2025
+
 1. Pérdida de control de acceso
-	En 2021 era top 1, y creemos que podría seguir siendolo.
+ En 2021 era top 1, y creemos que podría seguir siendolo.
 
 2. Componentes vulnerables y desactualizados
-	Todavía existen muchas webs que utilizan muchas librerias desactualizadas o vulnerables.
+ Todavía existen muchas webs que utilizan muchas librerias desactualizadas o vulnerables.
 
-3. Fallas criptográficas
-	Con el nivel de procesamiento actual, los cifrados más débiles pueden ser vulnerado en cuestión de segundos.
+3. IAs/automatización
+ Las IAs son un arma de doble filo, ya que ayudan a crear webs de manera más eficiente, pero también usa librerias desactualizadas, y, de igual manera, pueden automatizar procesos de vulnerar páginas web.
 
-4. IAs/automatización
-	Las IAs son un arma de doble filo, ya que ayudan a crear webs de manera más eficiente, pero también usa librerias desactualizadas, y, de igual manera, pueden automatizar procesos de vulnerar páginas web.
+4. Fallas criptográficas
+ Con el nivel de procesamiento actual, los cifrados más débiles pueden ser vulnerado en cuestión de segundos.
 
 5. Inyección
-	Sigue siendo un riesgo importante, aunque pensamos que menos que años anteriores ya que, al estar tan alto, pensamos que los desarrolladores se han puesto las pilas.
+ Sigue siendo un riesgo importante, aunque pensamos que menos que años anteriores ya que, ahora los frameworks vienen con protecciones integradas anti-inyecciones.
 
-7. Diseño ineguro
-	Apareció nuevo en 2025, pero no sabemos como puede ser un factor de riesgo, aún así lo incluimos en el top, aunque un poco más bajo.
+6. Diseño inseguro
+ Apareció nuevo en 2025, pero no sabemos como puede ser un factor de riesgo, aún así lo incluimos en el top, aunque un poco más bajo.
 
-8. Fallas en el Software y en la integridad de los datos
-	Esta sinceramente, hemos respetado el top del año anterior.
+7. Fallas en el Software y en la integridad de los datos
+ Esta sinceramente, hemos respetado el top del año anterior.
 
-9. Riesgos en APIs y servicios Web
-	Al haber tantas APIs, pensamos que puede ser un gran factor de riesgos si no se validan correctamente y se usan sin ningún tipo de control.
+8. Riesgos en APIs y servicios Web
+ Al haber tantas APIs, pensamos que puede ser un gran factor de riesgos si no se validan correctamente los campos que no validan los frameworks y se usan sin ningún tipo de control.
 
+<<<<<<< Updated upstream
 10. Fallas en el registro y monitoreo
 	Pensamos que sigue siendo crítico, aunque no tanto como otros años.
+=======
+9. Fallas en el registro y monitoreo
+ Pensamos que sigue siendo crítico, aunque no tanto como otros años.
+>>>>>>> Stashed changes
