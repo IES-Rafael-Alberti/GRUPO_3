@@ -143,7 +143,33 @@ El análisis forense de evidencia digitales debe seguir un proceso metódico, au
 
 #### 1. Recuperación de ficheros borrados
 
-Este proceso busca recuperar archivos eliminados de almacenamientos. Además se recuperan archivos de áreas no asignadas del disco o ficheros 'huérfanos'. También se localizan fragmentos de archivos mediante búsqueda en las cabeceras. Toda información recuperada debe estar documentada en el informe
+Este proceso busca recuperar archivos eliminados de almacenamientos. Además se recuperan archivos de áreas no asignadas del disco o ficheros 'huérfanos'. También se localizan fragmentos de archivos mediante búsqueda en las cabeceras. Toda información recuperada debe estar documentada en el informe.
+
+#### 2. Estudio de particiones y sistemas de archivos
+
+Se analiza la estructura de almacenamiento como pueden ser particiones, volúmenes físicos y lógicos, etc. Este proceso incluye:
+
+- **Enumeración de particiones.** Actuales y previas.
+
+- **Identificación de áreas ocultas.**
+
+- **Reconocimiento** de sistemas de archivos en contenedores y discos cifrados.
+
+- **Análisis de archivos.** Archivos comprimidos y sus cabeceras.
+
+#### 3. Estudio del sistema operativo
+
+Se identifican los SO instalados, su fecha de instalación, actualizaciones, usuarios, privilegios y las últimas actividades registradas.También se examinan los dispositivos de hardware y software reconocido por el sistema.
+
+#### 4. Estudio de la seguridad implementada
+
+Evaluamos si las evidencias han sido compromentidas mediante métodos de intrusión, modificación o eliminación. Se deben identidicar malware y evaluar su impacto.
+
+#### 5. Análisis detallado de los datos obtenidos
+
+Realizaremos un análisis exhaustivo de las evidencias electrónicas utilizando software especializzado. Este análisis incluye clasificación y el indexado de los datos, lo que agiliza la búsqueda de información clave. Además analizaremos los ddiversos elementos del sistema como hardware, configuración regional, última actividad y dispositivos conectados como puede ser USBs, impresoras y móviles. Tambíen deberemos analizar las conexiones de red, protocolos utilizados y las comunicaciones realizadas desde el equipo. Revisaremos los registros del sistema, los epacios no asignados del disco, cola de impresión y enlaces a archivos recientes.
+
+El análisis tendrá las carpetas de los distintos usuarios, programas instalados, metadatos de archivos y las aplicaciones de virtualización junto con sus configuraciones. También debermos analizar las Bases de datos y gestores asociados, archivos cifrados y particiones protegidas. Relacionado con la web debermos analizar el historial de navegación, cookies, correos electrónicos y registros de chats. Con todo este analisis podemos saber todo lo que hizo y encontrar las posibles evidencias importantes.
 
 ### 4.4. Presentación
 
