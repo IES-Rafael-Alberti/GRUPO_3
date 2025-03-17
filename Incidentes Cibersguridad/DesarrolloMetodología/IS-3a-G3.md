@@ -2,20 +2,17 @@
 
 ## Índice
 
-- [IS-3.a-G3](#is-3a-g3)
-  - [Índice](#índice)
-  - [1. Introducción](#1-introducción)
-  - [2. Normas investigadas](#2-normas-investigadas)
-  - [3. Puntos relevantes y Principios identificados durante la investigación](#3-puntos-relevantes-y-principios-identificados-durante-la-investigación)
-  - [4. Procedimiento de recolección](#4-procedimiento-de-recolección)
-    - [Recolección de evidencias en un equipo _encendido_](#recolección-de-evidencias-en-un-equipo-encendido)
-    - [Recolección de evidencias en un equipo _apagado_](#recolección-de-evidencias-en-un-equipo-apagado)
-  - [5. Procedimiento de almacenado](#5-procedimiento-de-almacenado)
-  - [6. Procedimiento de análisis de evidencias](#6-procedimiento-de-análisis-de-evidencias)
-  - [7. Presentación de resultados del análisis de evidencias](#7-presentación-de-resultados-del-análisis-de-evidencias)
-  - [8. Herramientas a usar](#8-herramientas-a-usar)
-  - [9. Conclusiones](#9-conclusiones)
-  - [10. Bibliografía](#10-bibliografía)
+1. [Introducción](#1-introducción)
+2. [Normas investigadas](#2-normas-investigadas)
+3. [Puntos relevantes y Principios identificados durante la investigación](#3-puntos-relevantes-y-principios-identificados-durante-la-investigación)
+4. [Procedimientos](#4-procedimientos)
+   4.1. [Recolección](#41-recolección)
+   4.2. [Almacenado](#42-almacenado)
+   4.3. [Análisis](#43-análisis)
+   4.4. [Presentación](#44-presentación)
+5. [Herramientas a usar](#5-herramientas-a-usar)
+6. [Conclusiones](#6-conclusiones)
+7. [Bibliografía](#7-bibliografía)
 
 ## 1. Introducción
 
@@ -47,27 +44,29 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 
 ## 3. Puntos relevantes y Principios identificados durante la investigación
 
-## 4. Procedimiento de recolección
+## 4. Procedimientos
+
+### 4.1. Recolección
 
 Para la recolección de evidencias digitales, nos hemos basado en la ISO 27037-2012 ya que se puede aplicar a nivel internacional, pudiendo usarla tanto en España como en el extrangero.
 Esta sección se centra en _identificar_ posibles dispositivos digitales y objetos relacionados, como pendrives, notas en los equipos, etc; y en la propia _adquisición_ de estos.
 Cuando se identifiquen las posibles fuentes de evidencias, debemos _evidenciar_ el estado inicial de estas con una fotografía y anotando su estado inicial, si está encendido o apagado, que programas tiene abiertos, etc; y localización en la compañía, departamentos, salas, etc. Es importante que se respete el estado de dichos dispositivos y que nadie no a autorizado los manipule.
 Por último, debemos diferenciar entre un equipo encendido de una apagado.
 
-### Recolección de evidencias en un equipo _encendido_
+#### Recolección de evidencias en un equipo _encendido_
 
 Lo primero que debemos hacer es la adquisición de memoria volátil(RAM), documentando todo el proceso y utilizando herramientas propias como **Dumpit**.
 Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos.
 Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
 
-### Recolección de evidencias en un equipo _apagado_
+#### Recolección de evidencias en un equipo _apagado_
 
 En estos casos, la memoria volátil ha quedado completamente en blanco, por lo que solo podremos hacer la adquisición del disco. Para ello, debemos extraer el disco y usar herramientas que **NO** lo modifiquen, como **FTK imager** o **Autopsy**, y esperar que los discos no esten cifrados. En caso que lo estén, solo podríamos hacer pruebas de fuerza bruta en la copia, no en original. Por último, podremos proceder con la etiquetación y el almacenaje de estos.
 
 Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza(cadena de custodia).
 Toda copia de datos que se haga, se debe hacer en discos nuevos o debidamente formateados.
 
-## 5. Procedimiento de almacenado
+### 4.2. Almacenado
 
 Para el proceso de almacenaje, nos hemos basado en el UNE 71506-2013, la cuál pensamos que es la que mejor explica el procedimiento de preservación y el almacenaje de evidencias digitales.
 Una vez acabado el proceso de recolección de evidencias, debemos asegurar que los dispositivos estén correctamente protegidos y almacenados hasta la llegada al laboratorio forense. Para ello, hacemos uso del siguiente material:
@@ -86,28 +85,28 @@ Además, debemos tener en cuenta los siguientes principios a la hora de manejar 
 
    - Datos del caso
 
-    | Cadena de custodia                       |       |
-    | ---------------------------------------- | ----- |
-    | Sección                                  | Campo |
-    | 1. INFORMACIÓN DEL CASO                  |       |
-    | Número de Caso                           |       |
-    | Tipo de investigación                    |       |
-    | Fecha de Adquisición                     |       |
-    | Lugar de Adquisición                     |       |
-    | Lugar de Adquisición                     |       |
-    | 2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL     |       |
-    | Tipo de Dispositivo                      |       |
-    | Hash de la evidencia original            |       |
-    | 3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL |       |
-    | Fecha de Entrega                         |       |
-    | Hora de Entrega                          |       |
-    | Recibidor por                            |       |
-    | Ubicación en el Juzgado                  |       |
-    | 4. CREACIÓN Y VERIFICACIÓN DE COPIAS     |       |
-    | Fecha y Hora de Creación                 |       |
-    | Técnico Responsable                      |       |
-    | Hash de la Copia                         |       |
-    | Verificación de Integridad               |       |
+   | Cadena de custodia                       |       |
+   | ---------------------------------------- | ----- |
+   | Sección                                  | Campo |
+   | 1. INFORMACIÓN DEL CASO                  |       |
+   | Número de Caso                           |       |
+   | Tipo de investigación                    |       |
+   | Fecha de Adquisición                     |       |
+   | Lugar de Adquisición                     |       |
+   | Lugar de Adquisición                     |       |
+   | 2. DESCRIPCIÓN EVIDENCIA EN ORIGINAL     |       |
+   | Tipo de Dispositivo                      |       |
+   | Hash de la evidencia original            |       |
+   | 3. PRESERVACIÓN DE LA EVIDENCIA ORIGINAL |       |
+   | Fecha de Entrega                         |       |
+   | Hora de Entrega                          |       |
+   | Recibidor por                            |       |
+   | Ubicación en el Juzgado                  |       |
+   | 4. CREACIÓN Y VERIFICACIÓN DE COPIAS     |       |
+   | Fecha y Hora de Creación                 |       |
+   | Técnico Responsable                      |       |
+   | Hash de la Copia                         |       |
+   | Verificación de Integridad               |       |
 
 2. Securizar las evidencias en todo momento
 
@@ -127,7 +126,7 @@ Además, debemos tener en cuenta los siguientes principios a la hora de manejar 
    - Comprobar los hashes que hicimos en la ubicación inicial.
    - Rellenar la cadena de custodia con los nuevos datos.
 
-## 6. Procedimiento de análisis de evidencias
+### 4.3. Análisis
 
 Para adaptar el análisis, después de valorar las diferentes opciones disponibles hemos optado por usar la normativa UNE 71506 esta normativa se centra en el análisis forense y la ISO 27042:2015 que esta dice que tenemos que justificar los métodos utilizados donde se tiene que explicar los más adecuados para el caso y tiene que ser una elección imparcial.
 
@@ -137,19 +136,18 @@ El análisis forense de evidencia digitales debe seguir un proceso metódico, au
 2. **Revisión documental.** Esto sería estudiar la documentación para tener el contexto de las evidencias y relaciones etre ellas.
 3. **Supervisión de la cadena de custodia.** En este paso lo que haremos es comprobar quién recogió las evidencias, cuando, dónde y cómo se almacenaron hasta llegar al laboratorio.
 4. **Autorizaciones.** Esto simplemente es tener los permisos legales para realizar el análisis, según la normativa vigente.
-5. **Comprobación de estado.**  Verificamos que las evidencias no están dañadas y son susceptibles de análisis.
+5. **Comprobación de estado.** Verificamos que las evidencias no están dañadas y son susceptibles de análisis.
 6. **Evidencias adicionales.** Si se encuentran nuevas evidencias como pueden ser discos, memorias, etc. Estas evidencias se deben registrar y se debe obtener de nuevo las autorizaciones para analizarlas.
 7. **Hora de la BIOS.** Registramos la hora de la BIOS del equipo donde se alojan los discos para poder comparar la cronología.
 8. **Establecer prioridades.** Definimos los criterios de prioridad en el análisis.
 
+### 4.4. Presentación
 
-## 7. Presentación de resultados del análisis de evidencias
+## 5. Herramientas a usar
 
-## 8. Herramientas a usar
+## 6. Conclusiones
 
-## 9. Conclusiones
-
-## 10. Bibliografía
+## 7. Bibliografía
 
 1. [Norma Española UNE 197001, Criterios generales para la elaboración de informes y dictámenes periciales](https://educacionadistancia.juntadeandalucia.es/centros/cadiz/pluginfile.php/700890/mod_resource/content/0/UNE_1970012011.pdf)
 2. [peritoinformaticocolegiado.es, Estándares nacionales e internacionales que puede seguir un perito informático para realizar el análisis forense de una evidencia y para la elaboración de un peritaje informático](https://peritoinformaticocolegiado.es/blog/estandares-nacionales-e-internacionales-que-puede-seguir-un-perito-informatico-para-realizar-el-analisis-forense-de-una-evidencia-y-para-la-elaboracion-de-un-peritaje-informatico/)
