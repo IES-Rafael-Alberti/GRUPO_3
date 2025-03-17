@@ -31,12 +31,11 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 
 - Normas UNE (Una Norma Española):
 
-  1. UNE 7106-2013
+  1. UNE 71506-2013
   2. UNE 71505-2
   3. UNE 71505-3
-  4. UNE 71506-2013
-  5. UNE 197001-2011
-  6. UNE 197010-2015
+  4. UNE 197001-2011
+  5. UNE 197010-2015
 
 - Publicaciónes para el desarrollo de un estándar de Internet (Request for Comments):
 
