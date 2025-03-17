@@ -51,3 +51,31 @@ Fdo:
 ## 3. Figuras
 
 ## 4. Hallazgos
+
+### Apartado 1:
+
+- #### Escaneo Windows con Nessus
+
+   [Archivo HTML](escaneos/ServerWindows_7gjsdz.html)
+
+- #### Escaneo Linux con Nessus
+
+   [Archivo HTML](escaneos/ServerLinux_bmd443.html)
+
+### Apartado 2:
+
+- #### Escaneo Windows con OpenVas
+
+
+- #### Escaneo Windows con OpenVas
+
+
+### Apartado 3:
+
+- #### Escaneo Windows con Nessus (con credenciales)
+
+   [Archivo HTML](escaneos/CredencialesWindowsServer_wvgezk.html)
+
+- #### Escaneo Linux con Nessus (con credenciales)
+
+   [Archivo HTML](escaneos/CredencialesLinuxServer_xs2isa.html)
