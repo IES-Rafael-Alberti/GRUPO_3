@@ -141,6 +141,10 @@ El análisis forense de evidencia digitales debe seguir un proceso metódico, au
 7. **Hora de la BIOS.** Registramos la hora de la BIOS del equipo donde se alojan los discos para poder comparar la cronología.
 8. **Establecer prioridades.** Definimos los criterios de prioridad en el análisis.
 
+#### 1. Recuperación de ficheros borrados
+
+Este proceso busca recuperar archivos eliminados de almacenamientos. Además se recuperan archivos de áreas no asignadas del disco o ficheros 'huérfanos'. También se localizan fragmentos de archivos mediante búsqueda en las cabeceras. Toda información recuperada debe estar documentada en el informe
+
 ### 4.4. Presentación
 
 ## 5. Herramientas a usar
