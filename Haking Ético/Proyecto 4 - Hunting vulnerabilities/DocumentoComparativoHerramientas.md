@@ -64,7 +64,7 @@ Aquí se analizarán las diferencias en el funcionamiento, detección de vulnera
 
 ## 6. Conclusión
 
-Nessus es mucho más rápida e intuitiva, pero su versión completa es de pago. OpenVAS su version es totalmente gratuita. Es mucho más lento, pero parece más detallado en el reporte. Su interfaz es mucho menos intuitiva y requiere más configuración para empezar a usarlo.
+Nessus es mucho más rápida e intuitiva, pero su versión completa es de pago. OpenVAS su version es totalmente gratuita. Es mucho más lento, pero es más detallado en el reporte. Su interfaz es mucho menos intuitiva y hace falta más configuración para empezar a escanear.
 
 ---
 
