@@ -39,6 +39,8 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 - Publicaciónes para el desarrollo de un estándar de Internet (Request for Comments):
 
   1. RFC 3227(Directrices para la recopilación y archivo de evidencias.)
+ 
+Para más detalles revisar la [tabla comparativa](TablaResumen.md)
 
 ## 3. Puntos relevantes y Principios identificados durante la investigación
 
