@@ -35,5 +35,5 @@
 9. Riesgos en APIs y servicios Web
 	Al haber tantas APIs, pensamos que puede ser un gran factor de riesgos si no se validan correctamente y se usan sin ningún tipo de control.
 
-10.Fallas en el registro y monitoreo
+10. Fallas en el registro y monitoreo
 	Pensamos que sigue siendo crítico, aunque no tanto como otros años.
