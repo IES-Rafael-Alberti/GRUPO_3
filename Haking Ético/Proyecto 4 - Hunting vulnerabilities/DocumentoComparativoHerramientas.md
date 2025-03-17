@@ -40,7 +40,7 @@ Aquí se analizarán las diferencias en el funcionamiento, detección de vulnera
 
 ### 3.2. Detección de vulnerabilidades
 
-- **Nessus**: Supuestamente tiene una base de datos más amplia en cuanto a vulnerabilidades, pero en nuestra experiencia, al escanear las mismas máquinas con OpenVAS, Nessus encontró menos vulnerabilidades. Aun así, crea muy buenos informes.
+- **Nessus**: Supuestamente tiene una base de datos más amplia en cuanto a vulnerabilidades, pero en nuestra experiencia, al escanear las mismas máquinas con OpenVAS, Nessus encontró menos vulnerabilidades. Esta herramienta crea unos buenos informes en html y en pdf como se pueden ver en los anexes. Mientras que openvas solo se puede exportar a XML
 
 - **OpenVAS**: Cuenta con una amplia base de datos de vulnerabilidades de código abierto, aunque su detección debería de ser inferior a Nessus en escenarios empresariales. Un punto en contra de openvas es que categoriza el reporte en high, medium y low. Nessus pone las critical para poder organizar mejor las vulnerabilidades como los CVE.
 
