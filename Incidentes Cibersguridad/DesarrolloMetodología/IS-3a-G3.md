@@ -54,13 +54,14 @@ Por último, debemos diferenciar entre un equipo encendido de una apagado.
 
 #### Recolección de evidencias en un equipo _encendido_
 
-Lo primero que debemos hacer es la adquisición de memoria volátil(RAM), documentando todo el proceso y utilizando herramientas propias como **Dumpit**.
-Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos.
-Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
+Lo primero que debemos hacer es la adquisición de memoria volátil(RAM), documentando todo el proceso y utilizando herramientas propias como **Dumpit**(para linux) y **RAM Capture**(para windows).
+Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos. Para dispositivos móviles, utilizamos herramientas como **Cellebrite UFED**, **XRY** o **Oxygen Forensic Detective**, que permiten extraer información sin modificar la original Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
 
 #### Recolección de evidencias en un equipo _apagado_
 
 En estos casos, la memoria volátil ha quedado completamente en blanco, por lo que solo podremos hacer la adquisición del disco. Para ello, debemos extraer el disco y usar herramientas que **NO** lo modifiquen, como **FTK imager** o **Autopsy**, y esperar que los discos no esten cifrados. En caso que lo estén, solo podríamos hacer pruebas de fuerza bruta en la copia, no en original. Por último, podremos proceder con la etiquetación y el almacenaje de estos.
+
+En dispositivos móviles apagados, no se puede adquirir memoria volátil, por lo que la recolección se va a centrar en el almacenamiento interno. Por lo que hacemos una extracción física utilizando herramientas como **Cellebrite UFED, XRY o Oxygen Forensic Detective**, las cuales no alteran la evidencia y ya la hemos mencionado anteriormente en los equipos encendidos.
 
 Es importante recalcar que todo este procedimiento debe estar correctamente documentado, incluyendo fecha y hora, nombre o descripción de los dispositivos y evidencias, en caso de crear archivos, incluir el hash **MD5** y **sha256** y la firma del operario que lo realiza(cadena de custodia).
 Toda copia de datos que se haga, se debe hacer en discos nuevos o debidamente formateados.
