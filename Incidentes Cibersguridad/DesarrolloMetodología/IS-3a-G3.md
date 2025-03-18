@@ -194,9 +194,42 @@ El informe debe estar firmado y contener un hash de verificación. Se recomienda
 
 ### Adquisición
 
+- DumpIt (Linux): RAM
+  
+- RAM Capture (Windows): RAM
+
+- FTK Imager (Windows/Linux): Disco duro
+
+- Autopsy (Windows/Linux): Disco duro
+
+- Cellebrite UFED (Móviles): Extracción forense de datos móviles.
+
+- XRY (Móviles): Extracción forense de datos móviles.
+
+- Oxygen Forensic Detective (Móviles): Extracción avanzada de datos desde dispositivos móviles y almacenamiento en la nube.
+
 ### Almacenamiento
 
+- Bolsas antiestáticas y cajas de seguridad selladas: Para la preservación de discos duros, pendrives y tarjetas SD.
+
+- Contenedores sellados: Protección de ordenadores y móviles.
+
+- SAI (Sistema de Alimentación Ininterrumpida): Mantenimiento de dispositivos que requieren energía hasta su llegada al laboratorio.
+
 ### Análisis
+
+Para el análisis usamos la ISO 27042:2015 que esta dice que tenemos que justificar las herramientas  más adecuados para el caso y tiene que ser una elección imparcial. Aún así se pueden usar estas herramientas:
+
+- Autopsy
+
+- Cellebrite UFED
+
+- XRY
+
+- Oxygen Forensic Detective
+  
+- FTK Imager
+
 
 ### Presentación
 
