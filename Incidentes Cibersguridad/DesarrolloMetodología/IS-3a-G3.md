@@ -41,7 +41,9 @@ A continueación, presentamos las normativas y estandares que hemos análiazado,
 
   1. RFC 3227
 
-## 3. Puntos relevantes y Principios identificados durante la investigación
+## 3. Puntos relevantes y principios identificados durante la investigación
+
+Para los puntos relevante de todas las normas, hemos desarrollado una [tabla comparativa](/TablaResumen.md) con cada punto fuerte de todas.
 
 ## 4. Procedimientos
 
