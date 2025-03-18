@@ -156,9 +156,11 @@ Se analiza la estructura de almacenamiento como pueden ser particiones, volúmen
 
 - **Análisis de archivos.** Archivos comprimidos y sus cabeceras.
 
+- **Para móviles**, se examinan particiones del sistema, almacenamiento interno y externo, así como posibles áreas cifradas o eliminadas.
+
 #### Estudio del sistema operativo
 
-Se identifican los SO instalados, su fecha de instalación, actualizaciones, usuarios, privilegios y las últimas actividades registradas.También se examinan los dispositivos de hardware y software reconocido por el sistema.
+Se identifican los SO instalados, su fecha de instalación, actualizaciones, usuarios, privilegios y las últimas actividades registradas.También se examinan los dispositivos de hardware y software reconocido por el sistema. Para móviles, se revisan las versiones del sistema, logs del dispositivo y datos de las aplicaciones.
 
 #### Estudio de la seguridad implementada
 
