@@ -55,7 +55,7 @@ Por último, debemos diferenciar entre un equipo encendido de una apagado.
 #### Recolección de evidencias en un equipo _encendido_
 
 Lo primero que debemos hacer es la adquisición de memoria volátil(RAM), documentando todo el proceso y utilizando herramientas propias como **Dumpit**(para linux) y **RAM Capture**(para windows).
-Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos. Para dispositivos móviles, utilizamos herramientas como **Cellebrite UFED**, **XRY** o **Oxygen Forensic Detective**, que permiten extraer información sin modificar la original Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
+Déspues, para evitar desgacias, hacemos la adquisición de disco duro con **FTK imager** o **Autopsy**, y así evitamos el peligro de que el disco esté cifrado y al llegar al laboratorio, no podamos acceder a los datos. Para dispositivos móviles, utilizamos herramientas como **Cellebrite UFED**, **XRY** o **Oxygen Forensic Detective**, que permiten extraer información sin modificar la original. Por último, podemos apagar el equipo, desenchufarlo de la corriente, etiquetarlo y almacenarlo en un recipiente adecuado, para su posterior transporte.
 
 #### Recolección de evidencias en un equipo _apagado_
 
@@ -237,6 +237,14 @@ Para el análisis usamos la ISO 27042:2015 que esta dice que tenemos que justifi
 - Editor de texto: Google Docs, Microsoft Word.
 
 ## 6. Conclusiones
+
+Nuestra metodología sigue un procedimiento estructurado y justificado para la recolección, almacenamiento, análisis y presentación de evidencias digitales. Basándonos en normativas reconocidas como la ISO 27037:2012 y la ISO 27042:2015, garantizamos la integridad del proceso forense.
+
+Se han definido herramientas específicas para cada fase, asegurando la trazabilidad de las evidencias y la fiabilidad del análisis. Se aplica una cadena de custodia y el uso de métodos de adquisición que nos permiten preservar la evidencia.
+
+En cuanto al análisis, la metodología se sigue un proceso para que este documentado y repetible, utilizando softwares para la recuperación de datos y la detección de posibles alteraciones en los sistemas investigados.
+
+La presentación de los hallazgos mediante informes verificables da transparencia y validez del proceso, para poder hacer su uso en procedimientos judiciales
 
 ## 7. Bibliografía
 
