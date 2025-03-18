@@ -247,6 +247,7 @@ Para el análisis usamos la ISO 27042:2015 que esta dice que tenemos que justifi
 5. [josedelgado.net, Qué es el Informe Pericial](https://josedelgado.net/que-es-el-informe-pericial/)
 6. [peritosinformaticos.es, ISO 197010/2015. Normas Generales para la elaboración de informes y dictámenes periciales sobre TIC.](https://peritosinformaticos.es/iso-197010-perito-informatico/)
 7. [indalics.com, Informe pericial informático](https://indalics.com/informe-pericial-informatico)
+8. [Reflexiones sobre la norma ISO/IEC](https://insecurityit.blogspot.com/2013/09/reflexiones-sobre-la-norma-isoiec.html)
 
 ---
 
