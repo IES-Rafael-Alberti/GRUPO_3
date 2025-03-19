@@ -1,5 +1,8 @@
 # IS-3.a-G3
 
+> [!IMPORTANT]
+> [Presentación Canva](https://www.canva.com/design/DAGh-UBeesQ/NtEPJOpgEnYQByd-hY6bVw/edit?utm_content=DAGh-UBeesQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Índice
 
 1. [Introducción](#1-introducción)
