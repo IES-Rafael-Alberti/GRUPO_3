@@ -23,7 +23,22 @@ Alenadro Seoane y yo, nos hemos dividido las vulnerabilidades encontradas de la 
 ![alt text](image-12.png)
 ![alt text](image-13.png)
 
-Esta vulnerabilidad permite subir archivos JavaServer Pages al servidor y poder así ejecutar código de manera remota.
+Esta vulnerabilidad permite subir archivos JavaServer Pages al servidor y poder así ejecutar código de manera remota. Busco la vulneravilidad en metasploitable:
+
+![alt text](image-14.png)
+
+Esta es la única que aparece, miramos y cambiamos sus ajustes:
+
+![alt text](image-15.png)
+
+E iniciamos el exploit:
+
+![alt text](image-16.png)
+> Este contenido ya nos lo da el Nessus.
+
+Voy a intentar escribir un archivo:
+
+
 
  - Elasticsearch ESA-2015-06
  - Elasticsearch Transport Protocol Unspecified Remote Code Execution
