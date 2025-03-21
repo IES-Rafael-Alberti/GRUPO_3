@@ -36,22 +36,27 @@ E iniciamos el exploit:
 ![alt text](image-16.png)
 > Este contenido ya nos lo da el Nessus.
 
-Voy a intentar escribir un archivo:
+Voy a intentar subir un archivo, para ello voy a utilizar [ajpShooter.py](https://github.com/00theway/Ghostcat-CNVD-2020-10487.git)
 
+![alt text](image-17.png)
 
+Primero que nada, voy a crear un shell.jsp con la que voy a intentar ejecutar código en el sistema, y ahora la subo con el siguiente comando:
+
+![alt text](image-18.png)
+
+Parece que dan algunos errores, no consigo sacar nada de aquí.
 
  - Elasticsearch ESA-2015-06
- - Elasticsearch Transport Protocol Unspecified Remote Code Execution
 
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](image-19.png)
+![alt text](image-20.png)
+![alt text](image-21.png)
 
 Esta vulnerabilidad nos permite ejecutar código de forma remota en el sistema a traves del protocolo Elasticsearch, lo primero que haré, es probar si el servicio está activo:
 
 ![alt text](image-4.png)
 
-La petición nos devuelve un resultado, por lo que está funcionando. Voy a usar mfscosole para buscar alguna vulnerabilidad relevante:
+La petición nos devuelve un resultado, por lo que está funcionando. Uso mfsconsole para buscar algún módulo de expotación:
 
 ![alt text](image-5.png)
 > Este es el único exploit que trata de ejecutar código de manera remota.
@@ -65,4 +70,21 @@ De esta forma, dmuestro que la vulnerabilidad es verídica y puede comprometer e
 
 ![alt text](image-8.png)
 
+
+ - Elasticsearch Transport Protocol Unspecified Remote Code Execution
+
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+Esta vulnerabilidad se explota de la misma forma que la anterior vulnerabilidad, mismos exploits y resultados. 
+
  - ManageEngine Desktop Central < 10 Build 10.0.533 Integer Overflow
+
+![alt text](image-22.png)
+![alt text](image-23.png)
+![alt text](image-24.png)
+![alt text](image-25.png)
+![alt text](image-26.png)
+
+Esta vulnerabilidad permite, a traves del envío de peticiones HTTP, a los atacantes hacer una denegación de servicio o la ejecución de código arbitrário.
