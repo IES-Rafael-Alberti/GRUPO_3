@@ -179,24 +179,66 @@ Esta vulnerabilidad explica que el servidor SSH es vulnerable a Terrapin, lo que
 ![alt text](image-57.png)
 ![alt text](image-58.png)
 
+Esta vulnerabilidad expone una configuración insegura en la que el host remoto permite cifrados SSL anónimos (también llamados anonymous cipher suites), los cuales no utilizan certificados ni autenticación en el proceso de establecer una conexión segura.
+
 #### SSL Certificate Expiry
 
+![alt text](image-59.png)
+![alt text](image-60.png)
+![alt text](image-61.png)
 
+Esta vulnerabilidad explica que el host utiliza certificados SSL que ya han expirado, lo que permite a los atacantes aprovechar la falta de validación para suplantar la identidad del servidor.
 
 #### SSL Certificate with Wrong Hostname
 
+![alt text](image-62.png)
+![alt text](image-63.png)
+![alt text](image-64.png)
 
+Esta vulnerabilidad explica que el host presenta un certificado SSL cuyo atributo 'commonName' (CN) no coincide con el nombre del servidor al que se está conectando, lo que permite a los atacantes suplantar la identidad del servidor.
 
 #### Elasticsearch Unrestricted Access Information Disclosure
 
+![alt text](image-65.png)
+![alt text](image-66.png)
 
+Esta vulnerabilidad explica que la aplicación Elasticsearch en el servidor web permite el acceso a recursos sensibles sin requerir autenticación, lo que permite a un atacante remoto y no autenticado extraer información de la base de datos.
+
+Podemos explotar esta vulnerabilidad de la siguiente forma:
+Buscamos un exploit en metasploit:
+
+![alt text](image-67.png)
+> Este es el exploit que estamos buscando.
+
+Usamos el exploit  y asignamos las opciones necesarias:
+
+![alt text](image-68.png)
+
+E iniciamos el exploit:
+> metasploitable no soporta versiones tan antiguas de Elasticsearch, igualmente, podemos hacer peticiones con curl o el propio navegador:
+
+![alt text](image-69.png)
+![alt text](image-70.png)
 
 #### SMB Signing not required
 
+![alt text](image-71.png)
+![alt text](image-72.png)
+![alt text](image-73.png)
+![alt text](image-73.png)
 
+Esta vulnerabilidad explica que el servidor SMB remoto no requiere firma en las comunicaciones, lo que permite a un atacante sin autenticar realizar ataques de tipo Man-in-the-Middle (MitM) y manipular el tráfico SMB.
 
 #### Terminal Services Encryption Level is Medium or Low
 
+![alt text](image-74.png)
+![alt text](image-75.png)
 
+Esta vulnerabilidad explica que el servicio de Escritorio Remoto (RDP) del host no está configurado para usar cifrado fuerte, lo que permite a un atacante interceptar fácilmente las comunicaciones y obtener capturas de pantalla, pulsaciones de teclas u otra información sensible.
 
 #### Terminal Services Doesn't Use Network Level Authentication (NLA) Only
+
+![alt text](image-76.png)
+![alt text](image-77.png)
+
+Esta vulnerabilidad explica que el servicio de Escritorio Remoto (RDP) del host no está configurado para exigir Network Level Authentication (NLA), lo que permite a un atacante establecer conexiones RDP completas sin autenticación previa, facilitando ataques de fuerza bruta, exploits y man-in-the-middle.
