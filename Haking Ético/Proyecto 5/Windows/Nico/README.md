@@ -15,6 +15,12 @@ Alenadro Seoane y yo, nos hemos dividido las vulnerabilidades encontradas de la 
 
 ![alt text](image-27.png)
 
+- Vulnerabilidades medias
+
+![alt text](image-50.png)
+
+- Vulnerabilidades bajas
+
 # Análisis
 
 ### Vulnerabilidades críticas
@@ -96,7 +102,7 @@ Esta vulnerabilidad permite, a traves del envío de peticiones HTTP, a los ataca
 > [!WARNING]
 > Tampoco consigo hacer nada
 
-### SSL RC4 Cipher Suites Supported (Bar Mitzvah)
+#### SSL RC4 Cipher Suites Supported (Bar Mitzvah)
 
 ![alt text](image-28.png)
 ![alt text](image-29.png)
@@ -105,7 +111,9 @@ Esta vulnerabilidad permite, a traves del envío de peticiones HTTP, a los ataca
 
 Esta vulnerabilidad explica que el host utiliza RC4 para cifrar los datos. RC4 tiene un fallo a la hora de cifrar, y es que no lo hace de manera 100% aleatoria, entonces, si pudieramos obtener miles de datos cifrados(por ejemplo cookies), podríamos llegar a descifrar todos los datos del servidor.
 
-### SSL Medium Strength Cipher Suites Supported (SWEET32)
+### Vulnerabilidades altas
+
+#### SSL Medium Strength Cipher Suites Supported (SWEET32)
 
 ![alt text](image-32.png)
 ![alt text](image-33.png)
@@ -115,7 +123,7 @@ Esta vulnerabilidad explica que el host utiliza RC4 para cifrar los datos. RC4 t
 
 Esta vulnerabilidad explica que el host utiliza cifrado SSL de fuerza media, de 64 a 112 bits, o encriptación 3DES. Ambos son cifrados obsoletos e insuficientes.
 
-### Oracle GlassFish Server Path Traversal
+#### Oracle GlassFish Server Path Traversal
 
 ![alt text](image-37.png)
 ![alt text](image-38.png)
@@ -136,7 +144,7 @@ listaremos el contenido de la carpeta de `vagrant`
 
 ![alt text](image-42.png)
 
-### SSL Certificate Signed Using Weak Hashing Algorithm
+#### SSL Certificate Signed Using Weak Hashing Algorithm
 
 ![alt text](image-43.png)
 ![alt text](image-44.png)
@@ -145,7 +153,7 @@ listaremos el contenido de la carpeta de `vagrant`
 
 Esta vulnerabilidad explica que el host utiliza algoritmos criptográficos débiles, permitiendo a los atacantes falsificar certificados y hacerse pasar por el verdadero host.
 
-### Oracle GlassFish Server URL normalization Denial of Service
+#### Oracle GlassFish Server URL normalization Denial of Service
 
 ![alt text](image-47.png)
 ![alt text](image-48.png)
@@ -153,3 +161,42 @@ Esta vulnerabilidad explica que el host utiliza algoritmos criptográficos débi
 
 Esta vulnerabilidad detecta una falla de denegación de servicio en el servidor Oracle GlassFish. La vulneravilidad es el resultado de un loop infinito en la función normalize() y se puede explotar mandando peticioenes a la consola del administrador.
 
+### Vulnerabilidades medias
+
+#### SSH Terrapin Prefix Truncation Weakness (CVE-2023-48795)
+
+![alt text](image-51.png)
+![alt text](image-52.png)
+![alt text](image-53.png)
+![alt text](image-54.png)
+
+Esta vulnerabilidad explica que el servidor SSH es vulnerable a Terrapin, lo que permite ataques de man-in-the-middle.
+
+#### SSL Anonymous Cipher Suites Supported
+
+![alt text](image-55.png)
+![alt text](image-56.png)
+![alt text](image-57.png)
+![alt text](image-58.png)
+
+#### SSL Certificate Expiry
+
+
+
+#### SSL Certificate with Wrong Hostname
+
+
+
+#### Elasticsearch Unrestricted Access Information Disclosure
+
+
+
+#### SMB Signing not required
+
+
+
+#### Terminal Services Encryption Level is Medium or Low
+
+
+
+#### Terminal Services Doesn't Use Network Level Authentication (NLA) Only
