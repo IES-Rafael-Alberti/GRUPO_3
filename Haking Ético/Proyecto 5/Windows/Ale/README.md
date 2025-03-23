@@ -127,3 +127,70 @@ Vamos a buscar un exploit con el CVE que nos dan. Solo nos aparece una la cuál 
 
 + Ejecutamos exploit:
 
+![alt text](img/image_25.png)
+
+Parece ser que el exploit se ejecuta pero no nos crea ninguna sesión.
+
+## Vulnerabilidades altas
+
+### MS12-020: Vulnerabilities in Remote Desktop Could Allow Remote Code Execution (2671387) (uncredentialed check)
+
+![alt text](img/image_26.png)
+
++ Descripción: esta vulnerabilidad nos permite ejecutar codigo remoto y poder hacer un ataque de denegación al servicio.
++ CVE: CVE-2012-0152, CVE-2012-0002
+
++ Output:
+
+![alt text](img/image_27.png)
+
+A través de los dos CVEs que nos proporcionan hemos encontrado un exploit el cuál nos permite hacer un ataque de denegación de servicio al servicio RDP.
+
+![alt text](img/image_28.png)
+
++ Options:
+
+![alt text](img/image_29.png)
+
++ Ejecutamos exploit:
+
+![alt text](img/image_30.png)
+![alt text](img/image_31.png)
+
+### MS14-066: Vulnerability in Schannel Could Allow Remote Code Execution (2992611) (uncredentialed check)
+
+![alt text](img/image_32.png)
+
++ Descripción: esta vulnerabilidad permite la ejecución de código remoto mediante paquetes TLS.
++ CVE: CVE-2014-6321
+
++ Output:
+
+![alt text](img/image_33.png)
+
+Hemos buscando algún exploit pero no hemos podido encontrar ninguno que se pueda ejecutar.
+
+### 
+
+
+
++ Descripción: 
++ CVE: 
+
++ Output:
+
+
+
+
+
+
+
++ Options:
+
+
+
++ Configuramos las opciones:
+
+
+
++ Ejecutamos exploit:
