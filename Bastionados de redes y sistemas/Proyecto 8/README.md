@@ -2,16 +2,9 @@
 
 ## Parte 1: Hardening individual
 
+- Nicolás Ruiz Ruiz: [ASUS Router](./Nico/Parte%20-%201.md)
 - Víctor Jiménez: [HardeningRE190.md](./Victor/HardeningRE190.md)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- Israel Valderrama: [HardeningPCWRT.md](./Israel/Individual/HardeningPCWRT.md)
-=======
 - Israel  Valderrama: [HardeningPCWRT.md](./Israel/HardeningPCWRT.md)
->>>>>>> Stashed changes
-=======
-- Israel  Valderrama: [HardeningPCWRT.md](./Israel/HardeningPCWRT.md)
->>>>>>> Stashed changes
 
 ## Parte 2: Bastionado UniFi
 
@@ -19,18 +12,8 @@ Diseño de la infraestructura (Planos y mapas de calor): [UniFi-Design.pdf](UniF
 
 Guias:
 
-- Nicolás Ruiz Ruiz: [VLAN](./ñop)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- Israel Valderrama García: [Mini Flex](./Israel/Grupal/Mini-Flex.md)
+- Nicolás Ruiz Ruiz: [Configurar Redes VLAN](https://app.tango.us/app/workflow/Configuraci-n-de-seguridad-VLANs-a6a1b474249045cba9e64e069ee007c0)
 - Víctor Jiménez: [Configurar Redes WiFi y VPNs](https://app.tango.us/app/workflow/Setting-Up-UniFi-WiFi-and-VPN-Network-8fe7386bf1b148c0bee9708b3ad0941d)
-
----
-=======
-- Israel Valderrama García: [Mini Flex](https://)
->>>>>>> Stashed changes
-=======
-- Israel Valderrama García: [Mini Flex](https://)
->>>>>>> Stashed changes
+- Israel Valderrama García: [Configurar RED y Wifi en UNIFI](https://app.tango.us/app/workflow/Configuraci-n-de-Red-y-WiFi-en-UniFi-6d47bfbf5e2a4cf598a367c83612c6e4)
 
 Proyecto realizado por _Grupo 3_
