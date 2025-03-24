@@ -2,7 +2,7 @@
 
 ## Parte 1: Hardening individual
 
-- Nicolás Ruiz Ruiz: [ASUS Router](./nico/)
+- Nicolás Ruiz Ruiz: [ASUS Router](./Nico/Parte%20-%201.md)
 - Víctor Jiménez: [HardeningRE190.md](./Victor/HardeningRE190.md)
 - Israel  Valderrama: [HardeningPCWRT.md](./Israel/HardeningPCWRT.md)
 
