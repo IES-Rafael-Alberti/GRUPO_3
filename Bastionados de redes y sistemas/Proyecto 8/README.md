@@ -6,6 +6,7 @@
 - Víctor Jiménez: [HardeningRE190.md](./Victor/HardeningRE190.md)
 - Israel  Valderrama: [HardeningPCWRT.md](./Israel/HardeningPCWRT.md)
 - Alejandro Díaz Batra [HardenignpcWRT](./ale)
+- Alejandro Seoane Martínez [Hardering-RouterAsus](./Alejandro-Seoane/README.md)
 
 ## Parte 2: Bastionado UniFi
 
