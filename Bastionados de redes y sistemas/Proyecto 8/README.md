@@ -13,9 +13,7 @@ Diseño de la infraestructura (Planos y mapas de calor): [UniFi-Design.pdf](UniF
 Guias:
 
 - Nicolás Ruiz Ruiz: [VLAN](./ñop)
-- Israel Valderrama García: [Mini Flex](./Israel/Grupal/Mini-Flex.md)
 - Víctor Jiménez: [Configurar Redes WiFi y VPNs](https://app.tango.us/app/workflow/Setting-Up-UniFi-WiFi-and-VPN-Network-8fe7386bf1b148c0bee9708b3ad0941d)
-
-- Israel Valderrama García: [Mini Flex](https://app.tango.us/app/workflow/Configuraci-n-de-Red-y-WiFi-en-UniFi-6d47bfbf5e2a4cf598a367c83612c6e4)
+- Israel Valderrama García: [Configurar RED y Wifi en UNIFI](https://app.tango.us/app/workflow/Configuraci-n-de-Red-y-WiFi-en-UniFi-6d47bfbf5e2a4cf598a367c83612c6e4)
 
 Proyecto realizado por _Grupo 3_
