@@ -40,3 +40,11 @@ Para ello damos un nombre al dispositivo y añadimos su dirección MAC.
 Para evitar que se puede acceder a la red desde fuera del área deseada, ajustaremos el rango de la red para que se mantenga dentro de la zona desde donde queremos que sea accesible.
 
 ![7ad34511d4ccc60447843888a872ef72.png](./img/7ad34511d4ccc60447843888a872ef72.png)
+
+## Conclusión
+
+Una vez seguidos estos pasos tendremos el dispositivo RE190 completamente bastionado, habiendo cubierto todas las opciones de seguridad disponibles en su menú de configuración.
+
+---
+
+Guía realizada por Víctor Jiménez
