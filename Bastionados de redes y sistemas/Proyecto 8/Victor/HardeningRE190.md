@@ -15,31 +15,31 @@ El primer paso es cambiar la contraseña de acceso a la configuración por una q
 - Incluir números
 - Incluir caracteres especiales
 
-![1-ChangePassword.png](./img/HardeningRE190/1-ChangePassword.png)
+![1-ChangePassword.png](./img/1-ChangePassword.png)
 
 ### 2. Actualizar firmware
 
 El segundo paso será actualizar el firmware a la ultima versión disponible ya que de esta forma podremos hacer uso de las ultimas funciones en materia de seguridad.
 
-![2-UpgradeButtonHeader.png](./img/HardeningRE190/2-UpgradeButtonHeader.png)
+![2-UpgradeButtonHeader.png](./img/2-UpgradeButtonHeader.png)
 
-![3-UpgradeFirmware.png](./img/HardeningRE190/3-UpgradeFirmware.png)
+![3-UpgradeFirmware.png](./img/3-UpgradeFirmware.png)
 
 ### 3. Habilitar whitelist
 
 Para evitar que se conecten dispositivos no deseados, habilitaremos una whitelist a la que añadiremos los dispositivos que queremos que puedan conectarse.
 
-![4-SetWhitelist.png](./img/HardeningRE190/4-SetWhitelist.png)
+![4-SetWhitelist.png](./img/4-SetWhitelist.png)
 
 Para ello damos un nombre al dispositivo y añadimos su dirección MAC.
 
-![5-AddDeviceMAC.png](./img/HardeningRE190/5-AddDeviceMAC.png)
+![5-AddDeviceMAC.png](./img/5-AddDeviceMAC.png)
 
 ### 4. Alcance de la red
 
 Para evitar que se puede acceder a la red desde fuera del área deseada, ajustaremos el rango de la red para que se mantenga dentro de la zona desde donde queremos que sea accesible.
 
-![6-WiFiCoverage.png](./img/HardeningRE190/6-WiFiCoverage.png)
+![6-WiFiCoverage.png](./img/6-WiFiCoverage.png)
 
 ## Conclusión
 
