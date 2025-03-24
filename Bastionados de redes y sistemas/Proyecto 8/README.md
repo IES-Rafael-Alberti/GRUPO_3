@@ -13,4 +13,6 @@ Diseño de la infraestructura: [UniFi-Design.pdf](UniFi-Design.pdf)
 - Israel Valderrama García: [Mini Flex](./Israel/Grupal/Mini-Flex.md)
 - Víctor Jiménez: [Configurar Redes WiFi y VPNs](https://app.tango.us/app/workflow/Setting-Up-UniFi-WiFi-and-VPN-Network-8fe7386bf1b148c0bee9708b3ad0941d)
 
+---
+
 Proyecto realizado por _Grupo 3_
