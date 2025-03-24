@@ -5,6 +5,7 @@
 - Nicolás Ruiz Ruiz: [ASUS Router](./Nico/Parte%20-%201.md)
 - Víctor Jiménez: [HardeningRE190.md](./Victor/HardeningRE190.md)
 - Israel  Valderrama: [HardeningPCWRT.md](./Israel/HardeningPCWRT.md)
+- Alejandro Díaz Batra []
 
 ## Parte 2: Bastionado UniFi
 
@@ -15,5 +16,6 @@ Guias:
 - Nicolás Ruiz Ruiz: [Configurar Redes VLAN](https://app.tango.us/app/workflow/Configuraci-n-de-seguridad-VLANs-a6a1b474249045cba9e64e069ee007c0)
 - Víctor Jiménez: [Configurar Redes WiFi y VPNs](https://app.tango.us/app/workflow/Setting-Up-UniFi-WiFi-and-VPN-Network-8fe7386bf1b148c0bee9708b3ad0941d)
 - Israel Valderrama García: [Configurar RED y Wifi en UNIFI](https://app.tango.us/app/workflow/Configuraci-n-de-Red-y-WiFi-en-UniFi-6d47bfbf5e2a4cf598a367c83612c6e4)
+- Alejandro Díaz Batra : [Bastionado del portal cautivo](https://app.tango.us/app/workflow/Bastionado-del-portal-cautivo--Guest-Portal---red-de-invitados-completa--a8c710ed78244bf9a92bef5007e095cf)
 
 Proyecto realizado por _Grupo 3_
