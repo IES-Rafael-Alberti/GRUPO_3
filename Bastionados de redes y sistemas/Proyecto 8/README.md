@@ -6,6 +6,6 @@
 
 ## Parte 2: Bastionado UniFi
 
----
+- Nicolás Ruiz Ruiz: [VLAN](./ñop)
 
 Proyecto realizado por _Grupo 3_
