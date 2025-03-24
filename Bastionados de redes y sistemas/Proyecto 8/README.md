@@ -7,7 +7,7 @@
 
 ## Parte 2: Bastionado UniFi
 
-Diseño de la infraestructura: [UniFi-Design.pdf](UniFi-Design.pdf)
+Diseño de la infraestructura (Planos y mapas de calor): [UniFi-Design.pdf](UniFi-Design.pdf)
 
 - Nicolás Ruiz Ruiz: [VLAN](./ñop)
 - Israel Valderrama García: [Mini Flex](./Israel/Grupal/Mini-Flex.md)
