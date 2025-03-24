@@ -2,74 +2,76 @@
 
 ## Introducción
 
-Para esta primera parte del proyecto, se nos pide utilizar un emulador de routers reales y realizar una guía de bastionado de este.
-He decidido usar el emulador online de [ASUS](https://demoui.asus.com/ES/)
+En esta parte del proyecto se nos pide usar un emulador de routers reales y hacer una guía de bastionado.
+He elegido el emulador online de [ASUS](https://demoui.asus.com/ES/) porque es accesible, completo y muy intuitivo.
 
 ![alt text](img/image.png)
 
-## Previo
+## Antes de Empezar
 
-Primero que nada, vamos a tener en cuenta algunos puntos básicos. En estos puntos encontramos:
+Antes de entrar al lío, hay que tener claras unas medidas básicas de seguridad que deberíamos aplicar sí o sí en cualquier router:
 
-**1. Actualización del firmware**
+**1. Actualizar el Firmware**
 
 ![alt text](img/image-1.png)
 
-Tener instaladas las últimas versiones del firmware ayuda a evitar y corregir las vulnerabilidades.
+Tener el firmware al día es clave para corregir fallos de seguridad que ya se conocen. Nada nuevo, pero mucha gente lo pasa por alto.
 
-**2. Cambiar las credenciales por defecto**
+**2. Cambiar las Credenciales por Defecto**
 
 ![alt text](img/image-2.png)
 
-Muchos routers usan la misma contraseña por defecto para iniciar sesión en su web. Esto genera un problema de seguridad en el que cualquier usuario que conozca esa contraseña por defecto, puede acceder a él, y por tanto a la red.
+La mayoría de routers vienen con usuario y contraseña por defecto, y son tan conocidas que cualquiera podría entrar si no se cambian.
 
 ![alt text](img/image-3.png)
 
-También podemos aprovechar y cambiar la contraseña del wifi, que podría tener el mismo problema que la de inicio de sesión.
+Aprovechamos y cambiamos también la contraseña del WiFi, que muchas veces arrastra el mismo problema.
 
-**3. Quitar servicios innecesarios**
+**3. Desactivar Servicios Innecesarios**
 
-Innecesarios es bastante relativo, ya que, depende de la empresa, puede usar algunos servicios u otros, pero podríamos desacticar el AiCloud, ya que solo sirve para *compartir* archivos mediante USB conectados al router. Teniendo equipos NAS o carpetas compartidas, lo veo bastante innecesario.
+Esto depende mucho del entorno, pero por lo general, hay cosas que sobran.
+Por ejemplo, **AiCloud**, que sirve para compartir archivos desde un USB conectado al router. Si ya hay un NAS o carpetas compartidas, sobra completamente.
 
 ![alt text](img/image-4.png)
 
 ## Bastionado
 
-En esta parte, vamos a ver y tratar todas las secciones y pestañas que podamos encontrar en el router.
+Ahora sí, vamos con el recorrido completo por las secciones del router, viendo qué se puede reforzar y qué es mejor desactivar.
 
-### General
+### Sección General
 
 **1. Mapa de la red**
 
 ![alt text](img/image-5.png)
 
-En esta sección, vemos el típico home de los routers donde podemos ver información de los equipos conectados:
+EAquí se ve lo típico: dispositivos conectados, estado general del WiFi, etc.
 
 ![alt text](img/image-6.png)
+
 ![alt text](img/image-7.png)
 
-Además de poder cambiar configuraciones de seguridad del wifi:
+También nos deja tocar cosas importantes como el SSID, tipo de cifrado y contraseña.
 
 ![alt text](img/image-8.png)
 
-Podemos cambiar el nombre de la red(SSID), el modo de autenticación, encriptación y contraseña del wifi. En modo de autenticación, podemos poner WPA empresarial y crear usuarios.
-
 **2. AiMesh**
 
-El AiMesh sirve para conectar varios routers y crear una red Wifi en malla para toda la empresa/hogar. O sea, utilizar routers como puntos de acceso para liberar la carga de los routers. No se puede quitar, tampoco lo veo necesario, y para crear un nodo, solo tendremos que enchufar el router a la corriente y a la red y poner la IP de este en el router:
+Sirve para montar una red en malla usando varios routers ASUS.
+No se puede desactivar, pero tampoco molesta. Si se quiere usar, basta con conectar otro router y asignarle IP.
 
 ![alt text](img/image-9.png)
 
 **3. Red para invitados**
 
-Esta red está aparte de la red de la empresa, por lo que no es peligroso dejarlo habilitado, lo que sí, podría ocasionar problemas de rendimiento en el router. Podemos desactivarlo en el siguiente panel:
+Crea una red separada, así que no representa mucho riesgo, pero puede afectar al rendimiento.
+Viene desactivada por defecto, y así se puede quedar salvo que sea estrictamente necesario.
 
 ![alt text](img/image-10.png)
 > Por defecto viene desactivado.
 
 **4. AiProtection**
 
-Supervisa en tiempo real la red para detectar malwares e intrusiones antes de que alcancen los dispositivos críticos. Tenemos 2 apartados:
+Funciona como IDS/IPS, detecta amenazas antes de que lleguen a los dispositivos. Tiene dos partes:
 
 ![alt text](img/image-13.png)
 
@@ -77,33 +79,33 @@ Supervisa en tiempo real la red para detectar malwares e intrusiones antes de qu
 
 ![alt text](img/image-14.png)
 
-Recomiendo dejarlo activado ya que proporciona protección a los equipos de la red. 
+Dejar activado. Aporta bastante a nivel de seguridad.
 
 **4.2. Control paterno**
 
 ![alt text](img/image-15.png)
 
-Sinceramente lo desactivaría, no bloquea contenido malicioso solo adulto. Esto no es realmente necesario, y además el router gasta recursos al bloquear estas páginas.
+Esto lo quitaría. No bloquea contenido realmente peligroso, solo páginas *adultas*, y encima consume recursos.
 
 **5. Adaptive QoS**
 
-Es solo un monitor de ancho de banda.
+Solo muestra estadísticas de ancho de banda. No afecta a la seguridad.
 
 **6. Traffic Analyzer**
 
-Analiza el tráfico de la red y muestra los equipos(MAC) y las aplicaciones más utilizadas.
+Permite ver qué dispositivos consumen más red y qué aplicaciones están usando.
 
 ![alt text](img/image-16.png)
 
 **7. USB applications**
 
-Vamos a desactivar los dispositivos USB en el siguiente punto.
+Si se puede, mejor desactivarlas. Son un punto de entrada físico que no siempre se controla bien.
 
 **8. AiCloed 2.0**
 
 ![alt text](img/image-17.png)
 
-Desactivamos el *Cloud Disk* y el *Smart Access*, ya que, en caso que tengan un NAS en la empresa, se compartirá a través de IP no desde el router.
+Desactivamos todo: Cloud Disk y Smart Access. Si la empresa usa NAS, ya se accede por red, no por aquí.
 
 ### Configuración avanzada
 
@@ -111,43 +113,41 @@ Desactivamos el *Cloud Disk* y el *Smart Access*, ya que, en caso que tengan un 
 
 ![alt text](img/image-18.png)
 
-Si fuera necesario tener el Wifi activado, tendriamos que poner la autenticación WPA2 Enterprise
-
-Y en la pestaña de configuración de RADIUS, especificar la IP de este y su clave simétrica:
+Si hay que dejar el WiFi activado, que sea con autenticación WPA2 Enterprise.
+Y si hay un servidor RADIUS, se configura así:
 
 ![alt text](img/image-19.png)
 
 **2. LAN**
 
-Aquí podemos cambiar muchas cosas:
+Aquí se configura la IP del router, la máscara de red...
 
 ![alt text](img/image-20.png)
 
-La IP y máscara del Red.
-
 ![alt text](img/image-21.png)
 
-Como se hace el asignamiento de IPs(DHCP) y el rango de este, si se desactiva, habría que añadir las IPs una a una a través de la MAC.
+...y el DHCP. Si se desactiva, habría que asignar IPs a mano por MAC.
 
 **3. WAN**
 
-EL protocolo WAN es para tener *internet* en los equipos conectados, obviamente lo activamos.
+Permite que los dispositivos tengan internet. No hay mucho que pensar: activado.
 
 ![alt text](img/image-22.png)
 
 **4. Alexa & IFTTT**
 
-**¡¡NO!!**
+**Ni tocarlo.**
+Abre la puerta a servicios externos que no pintan nada en una red segura.
 
 **5. IPv6**
 
-No está tan estandarizado aún como para activarlo.
+Aunque está en auge, todavía no está 100% implantado en todos lados. Mejor desactivado salvo que sea necesario.
 
 ![alt text](img/image-23.png)
 
 **6. VPN**
 
-Si tuvieran trabajadores en *home office*, podríamos activar el servicio VPN:
+Si hay teletrabajo, se puede activar para que se conecten desde fuera de forma segura.
 
 ![alt text](img/image-24.png)
 
@@ -155,33 +155,34 @@ Si tuvieran trabajadores en *home office*, podríamos activar el servicio VPN:
 
 ![alt text](img/image-25.png)
 
-El firewall sirve para bloquear paquetes que vengan y vayan a cualquier dirección y a cualquier puerto.
-
-Por lo que veo, no podemos rechazar peticiones que vengan desde fuera, solo podemos hacer el redireccionamiento de puertos, el cual solo se recomienda si tenemos un servidor VPN en local.
+Sirve para bloquear tráfico entrante/saliente por IP o puerto.
+El sistema de este router no permite filtrar todo lo que quisiéramos, pero sí podemos hacer redirecciones (port forwarding), útil por ejemplo si tenemos una VPN local.
 
 ![alt text](img/image-27.png)
 > Ejemplo de redireccionamiento
 
-Tamién podemos bloquear URLs específicas:
+También se pueden bloquear URLs concretas.
 
 ![alt text](img/image-28.png)
 
 **8. Administration**
 
-En esta sección podremos modificar aspectod como la autenticidad para acceder al router, actualizar el firmware y crear/guardar/cargar copias de seguridad:
+Aquí se gestiona el acceso al router, las actualizaciones y las copias de seguridad:
+
+
 
 ![alt text](img/image-29.png)
 
 ![alt text](img/image-30.png)
 
 ![alt text](img/image-31.png)
-> Para este último, tendremos que activar el USB para guardarlos en él.
+> Para las copias, se necesita activar temporalmente el USB.
 
 **9. System Log**
 
 ![alt text](img/image-32.png)
 
-En esta sección, veremos varias pestañas donde pondremos ver logs del router de diferente indole:
+Registro de eventos del router. Útil para revisar fallos, accesos y demás.
 
 ![alt text](img/image-33.png)
 
@@ -189,9 +190,10 @@ En esta sección, veremos varias pestañas donde pondremos ver logs del router d
 
 **10. Network Tools**
 
-No aplica en esta documentación.
+No se va a usar en esta práctica.
 
 ## Conclusión
 
-De esta forma, habríamos acabado con el bastionado al router de ASUS.
-Evidentemente, lo he configurado de la forma que yo creo correcto, cada organización es un mundo y muchas opciones que yo he desactivado, pueden ser útiles o necesarias en la empresa, lo suyo es ir comparando las necesidades con esta guía.
+Y con esto tendríamos el bastionado del router ASUS.
+Obviamente, he configurado el router como yo lo veo más seguro, pero cada empresa tiene sus necesidades. Lo que para unos sobra, para otros puede ser imprescindible.
+Esta guía sirve como punto de partida. A partir de aquí, lo suyo es adaptarlo según el entorno y lo que se quiera proteger.
