@@ -6,6 +6,8 @@
 
 ## Parte 2: Bastionado UniFi
 
+Diseño de la infraestructura: [UniFi-Design.pdf](UniFi-Design.pdf)
+
 - Nicolás Ruiz Ruiz: [VLAN](./ñop)
 
 Proyecto realizado por _Grupo 3_
