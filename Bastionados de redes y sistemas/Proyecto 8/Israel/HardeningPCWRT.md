@@ -6,7 +6,7 @@
 
 + Cambio de Credenciales
 + Actualización de Firmware
-+ Seguridad de la red Inalámbrica
++ Seguridad de la red InalámbricaS
   + Configuración del cifrado y Configuración de SSID
 + Control de Acceso y Restricciones
   + Filtrado de MAC
