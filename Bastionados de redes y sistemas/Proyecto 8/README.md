@@ -5,7 +5,7 @@
 - Nicolás Ruiz Ruiz: [ASUS Router](./Nico/Parte%20-%201.md)
 - Víctor Jiménez: [HardeningRE190.md](./Victor/HardeningRE190.md)
 - Israel  Valderrama: [HardeningPCWRT.md](./Israel/HardeningPCWRT.md)
-- Alejandro Díaz Batra []
+- Alejandro Díaz Batra [HardenignpcWRT](./ale)
 
 ## Parte 2: Bastionado UniFi
 
