@@ -39,6 +39,7 @@ En Cádiz a 26 de Marzo de 2025
 Fdo:
 
 <img src="img/firma.png" alt="firma" width="200"/>
+<img src="img/Text_Signature.png" alt="firma" width="200"/>
 
 ## Figuras
 
