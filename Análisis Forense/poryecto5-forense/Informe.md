@@ -133,6 +133,8 @@ Esto le permitió exfiltrar el contenido del archivo de contraseñas del sistema
 
 Este archivo `passwd.txt` se encuentra también en el sistema comprometido, como se muestra en el **hallazgo 3**, lo que confirma la ejecución del comando y la posterior extracción de datos sensibles.
 
+Cabe destacar que, si bien el archivo */etc/passwd* fue exfiltrado, este no contiene información sensible como hashes de contraseñas desde sistemas modernos. Para obtener dichas credenciales habría sido necesario acceder al archivo */etc/shadow*, el cual no fue comprometido, lo que limita el impacto del ataque.
+
 ### 6.4 Línea del tiempo
 
 En este apartado se ha creado una línea de tiempo de los pasos más importantes que se han identificado que realizó el usuario del ordenador.  
@@ -143,7 +145,7 @@ En este apartado se ha creado una línea de tiempo de los pasos más importantes
 
 Tras el análisis forense realizado sobre las evidencias proporcionadas, se confirma que el servidor Linux fue comprometido a través de una vulnerabilidad de tipo **Command Injection**, clasificada dentro del estándar **OWASP A03:2021 - Injection**. Esta vulnerabilidad fue explotada mediante un archivo web vulnerable (`ping.php`), el cual permitía al atacante ejecutar comandos arbitrarios del sistema.La actividad maliciosa fue llevada a cabo desde la dirección IP `192.168.1.28`, que interactuó en múltiples ocasiones con dicho archivo. A través del análisis de los registros del servidor y de la memoria RAM, se pudo reconstruir la secuencia exacta de acciones, incluyendo la ejecución del comando:`cat /etc/passwd > passwd.txt`
 
-Este comando permitió al atacante copiar el contenido del archivo de contraseñas del sistema y almacenarlo en un nuevo archivo (`passwd.txt`), lo que representa una exfiltración de información sensible.
+Este comando permitió al atacante copiar el archivo /etc/passwd, que contiene la lista de usuarios del sistema. Aunque este archivo es legible por cualquier usuario y no contiene contraseñas, su exfiltración representa una fuga de información útil para el reconocimiento del sistema por parte del atacante.
 
 ## 8. Anexos
 
