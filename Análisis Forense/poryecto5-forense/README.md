@@ -12,4 +12,6 @@
 
 ---
 
-Hecho por el Grupo 3.
+- Alejandro Díaz Barea
+- Nicolás Ruiz Ruiz
+- Alejandro Seoane Martínez
