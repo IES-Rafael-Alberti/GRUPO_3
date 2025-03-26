@@ -152,3 +152,4 @@ La Declaración de abstención y tacha, el Juramento de promesa, así como las f
 [Proyecto 5: Incident on Linux Server - Anexos](./Anexos.md)
 
 <img src="img/firma.png" alt="firma" width="200"/>
+<img src="img/Text_Signature.png" alt="firma" width="200"/>
