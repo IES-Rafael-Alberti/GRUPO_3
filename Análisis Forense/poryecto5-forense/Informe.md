@@ -4,7 +4,7 @@
 
 **Nombre**:  Incident on Linux Server I
 
-**Peritos**: Alejandro Díaz Barea, Alejandro Second, Nicolás Ruiz Ruiz
+**Peritos**: Alejandro Díaz Barea, Alejandro Seoane Martínez, Nicolás Ruiz Ruiz
 
 **Fecha**: 24/03/2025
 
