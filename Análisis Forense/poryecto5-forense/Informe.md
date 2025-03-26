@@ -137,6 +137,8 @@ Este archivo `passwd.txt` se encuentra también en el sistema comprometido, como
 
 En este apartado se ha creado una línea de tiempo de los pasos más importantes que se han identificado que realizó el usuario del ordenador.  
 
+![alt text](img/linea_tiempo.png)
+
 ## 7. Conclusión
 
 Tras el análisis forense realizado sobre las evidencias proporcionadas, se confirma que el servidor Linux fue comprometido a través de una vulnerabilidad de tipo **Command Injection**, clasificada dentro del estándar **OWASP A03:2021 - Injection**. Esta vulnerabilidad fue explotada mediante un archivo web vulnerable (`ping.php`), el cual permitía al atacante ejecutar comandos arbitrarios del sistema.La actividad maliciosa fue llevada a cabo desde la dirección IP `192.168.1.28`, que interactuó en múltiples ocasiones con dicho archivo. A través del análisis de los registros del servidor y de la memoria RAM, se pudo reconstruir la secuencia exacta de acciones, incluyendo la ejecución del comando:`cat /etc/passwd > passwd.txt`
