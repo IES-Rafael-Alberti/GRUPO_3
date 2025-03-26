@@ -112,12 +112,12 @@ Para examinar la imagen del disco duro, se utilizó la herramienta FTK Imager en
 
 ### 6.1 Sistema Operativo
 
-Se han analizado los archivos relacionados con el sistema operativo, a partir de los cuales se ha obtenido la siguiente información:
+Tras analizar los archivos del sistema operativo, se obtuvo la siguiente información:
 
-- El sistema operativo instalado es ***Ubuntu 8.04**.
-- El nombre del equipo es ***metasploitable**.
-- Los usuarios encontrados en el sistema fueron **user** y **msfadmin**.
-- El último inicio de sesión del usuario *msfadmin* fue el **20 de Mayo  las 12:00:33**.
+- El sistema operativo instalado es **Ubuntu 8.04**.
+- El nombre del equipo es **metasploitable**.
+- Los usuarios encontrados son **user** y **msfadmin**.
+- El último inicio de sesión del usuario msfadmin fue el **20 de mayo a las 12:00:33**.
 
 ### 6.2 Logs del sistema
 
