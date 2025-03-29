@@ -43,11 +43,17 @@ La empresa acabó pagando 4.4 millones de dólares en Bitocin, aunque pudieron r
 [Entrada en el Mitre](https://attack.mitre.org/techniques/T1486/)
 
 ## Herramientas y vectores usados
-Software/métodos empleados por los atacantes.
 
-Cómo se relacionan con técnicas ATT&CK.
+### 1. Acceso a la infraestructura informática
 
-Opcional: mención del grupo APT si es conocido y su perfil en MITRE.
+- Método: se accedió a través de unas credenciales filtradas en una VPN que utilizaba la empresa para que los empleados se conectasen de forma remota sin autenticación multifactor.
+- Herramientas utilizadas: para encontrar las credenciales los ciberdelincuentes utilizaron bases de datos filtradas en la Dark Web.
+- Técnica MITRE: [T1078 – Valid Accounts](https://attack.mitre.org/techniques/T1078/)
+
+### 2. Navegación por el sistema
+
+- Una vez consiguieron acceso al sistema hiceron uso de comnados de PowerSHell y CMD para moverse por el sistema y ejecutar cargas maliciosas.
+- Técnica MITRE: (https://attack.mitre.org/techniques/T1059/)
 
 
 
