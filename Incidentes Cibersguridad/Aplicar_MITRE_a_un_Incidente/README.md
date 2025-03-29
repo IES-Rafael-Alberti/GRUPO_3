@@ -49,6 +49,45 @@ Cómo se relacionan con técnicas ATT&CK.
 
 Opcional: mención del grupo APT si es conocido y su perfil en MITRE.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Evaluación de defensa
 ¿Qué falló? ¿Qué podría haberlo prevenido o detectado?
 
