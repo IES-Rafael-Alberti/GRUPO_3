@@ -18,7 +18,7 @@ La empresa acabó pagando 4.4 millones de dólares en Bitocin, aunque pudieron r
 | Exfiltration         | T1041 – Exfiltration Over C2 Channel                 |
 | Impact               | T1486 – Data Encrypted for Impact (ransomware)       |
 
-### 1. Initial Access T1078 – Valid Accounts
+### 1. Initial Access T1078 – Valid Accounts (uso de credenciales robadas)
 [Entrada en el Mitre](https://attack.mitre.org/techniques/T1078/)
 
 ### 2. Execution T1059 – Command and Scripting Interpreter
@@ -89,11 +89,44 @@ Opcional: mención del grupo APT si es conocido y su perfil en MITRE.
 
 
 ## Evaluación de defensa
-¿Qué falló? ¿Qué podría haberlo prevenido o detectado?
 
-Técnicas de mitigación y detección (según MITRE).
+### ¿Qué falló?
 
-Controles que podrían haberse aplicado (EDR, segmentación, MFA, etc.).
+El grupo accedió a la red de la empresa a traves de una filtración de credenciales de la VPN, igualmente, esto se podría haber evitado utilizando autenticación multifactor, lo que facilitó mucho el vector de ataque.
+
+La empresa fue incapaz de detectar el movimiento de los atacantes en la red, y tampoco pudieron detectar la ejecución del virus a tiempo. De esta forma, el ransomware afectó a todos los sistemas de la red, lo cual indica que la red estaba mal segmentada.
+
+Cuando la compañía se enteró del ataque, ya era demasiado tarde, y el impacto fue tan grave, que decidieron pagar el rescate.
+
+### Técnicas MITRE de mitigación y detección
+
+| Categoría        | Técnica MITRE ATT&CK              | Mitigación / Detección                  |
+| ---------------- | --------------------------------- | --------------------------------------- |
+| Initial Access   | T1078 – Valid Accounts            | M1032 – Multi-factor Authentication     |
+| Execution        | T1059 – Command & Scripting       | M1040 – Behavior Monitoring             |
+| Lateral Movement | T1021 – Remote Services           | M1031 – Network Segmentation            |
+| Impact           | T1486 – Data Encrypted for Impact | M1053 – Data Backup + M1049 – Antivirus |
+| Defense Evasion  | T1562 – Impair Defenses           | M1038 – Execution Prevention            |
+
+#### 1. Multi-factor Authentication
+
+Implementar MFA (Autenticación Multifactor) en todos los accesos remotos y servicios críticos de la empresa.
+
+#### 2. Behavior Monitoring
+
+Controlar quién entra en la red, usando ubicaciones geográficas o identificadores MAC, y bloquear todo acceso desconocido.
+
+#### 3. Network Segmentation
+
+Separar la red en varias VLANs, diferenciando entre zonas críticas y comunes, para que en futuros incidentes no se propaguen por toda la infraestructura.
+
+#### 4. Data Backup + Antivirus
+
+Realizar copias de seguridad periódicas para en caso de peridada de datos, mitigar los daños; e implementar buenos antivirus capaces de detectar y prevenir malwares.
+
+#### 5. Execution Prevention
+
+Bloquear la ejecución de código en un sistema a través del control de aplicaciones y/o el bloqueo de scripts.
 
 ## Lecciones aprendidas y correlación con ASVS u otros marcos (opcional)
 Qué aporta MITRE a la respuesta ante incidentes.
