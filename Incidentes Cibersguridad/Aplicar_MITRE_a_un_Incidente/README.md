@@ -1,9 +1,9 @@
 1. Descripción del incidente (Resumen ejecutivo)
-Qué ocurrió, cuándo y a quién.
+En mayo de 2021, la empresa estadounidense Colonial Pipeline, sufrió una parálisis temporal debido a un ransomware, que cortó el suministro de combustible a gran parte de Estados Unidos.
 
-Tipo de ataque (ransomware, APT, fuga de datos…).
+El grupo de ciberdelincuentes *Darkside*, coló un ransomware en la infraestructura de la empresa debido a unas credenciales de VPN filtradas, con lo que consiguieron cifrar los sistemas internos para exigir un pago.
 
-Breve cronología.
+La empresa acabó pagando 4.4 millones de dólares en Bitocin, aunque pudieron recuperar parte de ella gracias al FBI.
 
 ⚠️ Nada de explicar qué es MITRE ni ATT&CK, ya lo cubren otros.
 
