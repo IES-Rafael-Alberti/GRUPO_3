@@ -18,29 +18,21 @@ La empresa acabó pagando 4.4 millones de dólares en Bitocin, aunque pudieron r
 | Exfiltration         | T1041 – Exfiltration Over C2 Channel                 |
 | Impact               | T1486 – Data Encrypted for Impact (ransomware)       |
 
-### 1. Initial Access T1078 – Valid Accounts (uso de credenciales robadas)
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1078/)
+### [1. Initial Access T1078 – Valid Accounts (uso de credenciales robadas)](https://attack.mitre.org/techniques/T1078/)
 
-### 2. Execution T1059 – Command and Scripting Interpreter
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1059/)
+### [2. Execution T1059 – Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/)
 
-### 3. Persistence T1547 – Boot or Logon Autostart Execution
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1547/)
+### [3. Persistence T1547 – Boot or Logon Autostart Execution](https://attack.mitre.org/techniques/T1547/)
 
-### 4. Privilege Escalation	T1068 – Exploitation for Privilege Escalation
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1068/)
+### [4. Privilege Escalation	T1068 – Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068/)
 
-### 5. Defense Evasion T1562 – Impair Defenses
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1562/)
+### [5. Defense Evasion T1562 – Impair Defenses](https://attack.mitre.org/techniques/T1562/)
 
-### 6. Command and Control T1071 – Application Layer Protocol
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1071/)
+### [6. Command and Control T1071 – Application Layer Protocol](https://attack.mitre.org/techniques/T1071/)
 
-### 7. Exfiltration	T1041 – Exfiltration Over C2 Channel
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1041/)
+### [7. Exfiltration	T1041 – Exfiltration Over C2 Channel](https://attack.mitre.org/techniques/T1041/)
 
-### 8. Impact T1486 – Data Encrypted for Impact (ransomware)
-[Entrada en el Mitre](https://attack.mitre.org/techniques/T1486/)
+### [8. Impact T1486 – Data Encrypted for Impact (ransomware)](https://attack.mitre.org/techniques/T1486/)
 
 ## Herramientas y vectores usados
 
