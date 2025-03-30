@@ -61,46 +61,12 @@ Finalmente, activaron el ransomware *Darkside* creados por ellos mismos, cifrand
 ### 2. Navegación por el sistema
 
 - Una vez consiguieron acceso al sistema hiceron uso de comnados de PowerSHell y CMD para moverse por el sistema y ejecutar cargas maliciosas.
-- Técnica MITRE: (https://attack.mitre.org/techniques/T1059/)
+- Técnica MITRE: [T1059 - Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/)
 
+### 3. Cifrado de Archivos y Extorsión (Ransomware)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Para atacar a los archivos de la empresa con un virus utilizaron `DarkSide Ransomware` un malware personalizado que cifraba archivos críticos y dejaba notas de rescate. 
+- Técnica MITRE: [T1486 – Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/)
 
 ## Evaluación de defensa
 
