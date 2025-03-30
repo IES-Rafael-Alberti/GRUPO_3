@@ -156,3 +156,7 @@ https://attack.mitre.org/
 https://www.trendmicro.com/es_es/research/21/e/what-we-know-about-darkside-ransomware-and-the-us-pipeline-attac.html
 
 https://www.securin.io/articles/darkside-the-ransomware-that-brought-a-us-pipeline-to-a-halt/
+
+https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack
+
+https://www.metabaseq.com/threat/inside-darkside-the-ransomware-that-attacked-colonial-pipeline/
