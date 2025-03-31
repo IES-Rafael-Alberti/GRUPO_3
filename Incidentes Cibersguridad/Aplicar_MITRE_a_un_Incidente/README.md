@@ -60,7 +60,7 @@ Finalmente, activaron el ransomware *Darkside* creados por ellos mismos, cifrand
 
 ### 2. Navegación por el sistema
 
-- Una vez consiguieron acceso al sistema hiceron uso de comnados de PowerSHell y CMD para moverse por el sistema y ejecutar cargas maliciosas.
+- Una vez consiguieron acceso al sistema hiceron uso de comandos de PowerSHell y CMD para moverse por el sistema y ejecutar cargas maliciosas.
 - Técnica MITRE: [T1059 - Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059/)
 
 ### 3. Cifrado de Archivos y Extorsión (Ransomware)
