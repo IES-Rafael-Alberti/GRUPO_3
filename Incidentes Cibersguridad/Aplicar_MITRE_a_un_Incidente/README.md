@@ -1,3 +1,5 @@
+# Investigación de incidentes - MITRE
+
 ## Descripción del incidente
 En mayo de 2021, la empresa estadounidense Colonial Pipeline, sufrió una parálisis temporal debido a un ransomware, que cortó el suministro de combustible a gran parte de Estados Unidos.
 
