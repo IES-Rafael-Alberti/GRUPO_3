@@ -117,6 +117,10 @@ Qué se debería implementar tras el incidente.
 
 Breve reflexión final, con enfoque técnico.
 
+## Presentación
+
+https://www.canva.com/design/DAGjRsj3h6c/VrE9GDWv8Cs9nU7x-SEqQw/edit
+
 ## Fuentes
 
 https://attack.mitre.org/
