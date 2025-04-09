@@ -72,6 +72,8 @@ Esta vulnerabilidad permite a los atacantes usar el módulo **mod_copy** quee pe
 | CVSS score | 7.5       |
 | CVE        | 2016-2183 |
 
+![alt text](./img/image-3.png)
+
 La vulnerabilidad indica que el host usa  encriptación media (entre 64 y 112 bits o encriptación 3DES).
 
 #### Medias
@@ -82,6 +84,19 @@ La vulnerabilidad indica que el host usa  encriptación media (entre 64 y 112 bi
 - TLS Version 1.0 Protocol Detection
 - TLS Version 1.1 Deprecated Protocol
 - SSH Terrapin Prefix Truncation Weakness (CVE-2023-48795)
+
+| Campo      | Valor      |
+|------------|------------|
+| Severity   | Medium     |
+| ID         | 187315     |
+| Version    | 1.4        |
+| Type       | remote     |
+| Family     | Misc.      |
+| CVSS score | 5.9        |
+| CVE        | 2023-48795 |
+
+La entrada indica que el servidor es vulnerable a Man-in-the-Middle para manipular los paquetes iniciales de la negociación, sin que el cliente ni el servidor lo noten.
+
 - Apache Multiviews Arbitrary Directory Listing
 - SMB Signing not required
 - SSH Weak Algorithms Supported
