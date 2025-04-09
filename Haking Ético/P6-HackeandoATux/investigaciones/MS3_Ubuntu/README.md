@@ -98,8 +98,52 @@ La vulnerabilidad indica que el host usa  encriptación media (entre 64 y 112 bi
 La entrada indica que el servidor es vulnerable a Man-in-the-Middle para manipular los paquetes iniciales de la negociación, sin que el cliente ni el servidor lo noten.
 
 - Apache Multiviews Arbitrary Directory Listing
+
+| Campo      | Valor      |
+|------------|------------|
+| Severity   | Medium     |
+| ID         | 10704      |
+| Version    | 1.38       |
+| Type       | remote     |
+| Family     | Web Server |
+| CVSS score | 5.3        |
+| CVE        | 2001-0731  |
+
+**Multiviews** es un módulo de apache que intenta mostrar archivos basandose en coincidencias. Por ejemplo /index. -> /index.html
+
+![alt text](./img/image-4.png)
+
+Esto indica que el servicio es vulnerable y podríamos hacer un dirbuster para listar todo el contenido de este:
+
+![alt text](./img/image-5.png)
+
 - SMB Signing not required
+
+| Campo      | Valor      |
+|------------|------------|
+| Severity   | Medium     |
+| ID         | 57608      |
+| Version    | 1.20       |
+| Type       | remote     |
+| Family     | Misc.      |
+| CVSS score | 5.3        |
+| CVE        | N/A        |
+
+Esta vulnerabilidad indica que el servidor SMB no exige el uso de firmas digitales en las comunicaciones. Esto permite que un atacante no autenticado intercepte y manipule el tráfico entre clientes y el servidor, facilitando ataques de tipo MitM.
+
 - SSH Weak Algorithms Supported
+
+| Campo      | Valor      |
+|------------|------------|
+| Severity   | Medium     |
+| ID         | 90317      |
+| Version    | 1.3        |
+| Type       | remote     |
+| Family     | Misc.      |
+| CVSS score | 4.3        |
+| CVE        | N/A        |
+
+Indica que el servidor SSH está configurado para utilizar algoritmos de cifrado débiles, específicamente el cifrado de flujo Arcfour
 
 #### Bajas
 
