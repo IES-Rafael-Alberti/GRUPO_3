@@ -62,6 +62,18 @@ Esta vulnerabilidad permite a los atacantes usar el módulo **mod_copy** quee pe
 - Drupal Database Abstraction API SQLi
 - SSL Medium Strength Cipher Suites Supported (SWEET32)
 
+| Campo      | Valor     |
+|------------|-----------|
+| Severity   | High      |
+| ID         | 42873     |
+| Version    | 1.22      |
+| Type       | remote    |
+| Family     | General   |
+| CVSS score | 7.5       |
+| CVE        | 2016-2183 |
+
+La vulnerabilidad indica que el host usa  encriptación media (entre 64 y 112 bits o encriptación 3DES).
+
 #### Medias
 
 - IP Forwarding Enabled
