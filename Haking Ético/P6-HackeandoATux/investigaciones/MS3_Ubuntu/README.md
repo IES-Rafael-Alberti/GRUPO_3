@@ -41,6 +41,12 @@ La investigación y comprobación de vulnerabilidades detectadas la hemos dividi
 - Drupal Coder Module Deserialization RCE
 - ProFTPD mod_copy Information Disclosure
 
+Esta vulnerabilidad permite a los atacantes usar el módulo **mod_copy** quee permite ejecutar comandos para copiar y pegar en el servidor FTP (**SITE CPFR** y **SITE CPTO**) sin la necesidad de estar autenticados:
+
+![alt text](./img/image-1.png)
+
+![alt text](./img/image-2.png)
+
 #### Altas
 
 - Drupal Database Abstraction API SQLi
