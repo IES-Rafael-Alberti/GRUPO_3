@@ -165,7 +165,19 @@ Indica que el servidor SSH está configurado para utilizar algoritmos de cifrado
 
 - ICMP Timestamp Request Remote Date Disclosure
 
+| Campo      | Valor      |
+|------------|------------|
+| Severity   | Low        |
+| ID         | 10114      |
+| Version    | 1.56       |
+| Type       | remote     |
+| Family     | General    |
+| CVSS score | 2.9        |
+| CVE        | 1999-0524  |
 
+Esta vulnerabilidad indica que el host responde a solicitudes ICMP de marca de tiempo, permitiendo a los atacantes conocer la hora local del sistema.
+
+![alt text](./img/image-6.png)
 
 ---
 
