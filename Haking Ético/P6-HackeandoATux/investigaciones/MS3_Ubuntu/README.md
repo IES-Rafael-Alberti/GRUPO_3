@@ -53,9 +53,9 @@ La investigación y comprobación de vulnerabilidades detectadas la hemos dividi
 
 Esta vulnerabilidad permite a los atacantes usar el módulo **mod_copy** quee permite ejecutar comandos para copiar y pegar en el servidor FTP (**SITE CPFR** y **SITE CPTO**) sin la necesidad de estar autenticados:
 
-![alt text](./img/image-1.png)
+![alt text](./img/ProFTPD1.png)
 
-![alt text](./img/image-2.png)
+![alt text](./img/ProFTPD2.png)
 
 #### Altas
 
@@ -72,7 +72,7 @@ Esta vulnerabilidad permite a los atacantes usar el módulo **mod_copy** quee pe
 | CVSS score | 7.5       |
 | CVE        | 2016-2183 |
 
-![alt text](./img/image-3.png)
+![alt text](./img/SSL_Strength.png)
 
 La vulnerabilidad indica que el host usa  encriptación media (entre 64 y 112 bits o encriptación 3DES).
 
@@ -111,11 +111,12 @@ La entrada indica que el servidor es vulnerable a Man-in-the-Middle para manipul
 
 **Multiviews** es un módulo de apache que intenta mostrar archivos basandose en coincidencias. Por ejemplo /index. -> /index.html
 
-![alt text](./img/image-4.png)
+![alt text](./img/Apache_Multiviews1.png)
 
 Esto indica que el servicio es vulnerable y podríamos hacer un dirbuster para listar todo el contenido de este:
 
-![alt text](./img/image-5.png)
+![alt text](./img/Apache_Multiviews2
+.png)
 
 - SMB Signing not required
 
@@ -177,7 +178,7 @@ Indica que el servidor SSH está configurado para utilizar algoritmos de cifrado
 
 Esta vulnerabilidad indica que el host responde a solicitudes ICMP de marca de tiempo, permitiendo a los atacantes conocer la hora local del sistema.
 
-![alt text](./img/image-6.png)
+![alt text](./img/ICMP_timesting.png)
 
 ---
 
