@@ -137,20 +137,35 @@ Esta vulnerabilidad indica que el servidor SMB no exige el uso de firmas digital
 |------------|------------|
 | Severity   | Medium     |
 | ID         | 90317      |
-| Version    | 1.3        |
+| Version    | Rev. 1.3   |
 | Type       | remote     |
 | Family     | Misc.      |
 | CVSS score | 4.3        |
 | CVE        | N/A        |
 
-Indica que el servidor SSH está configurado para utilizar algoritmos de cifrado débiles, específicamente el cifrado de flujo Arcfour
+Indica que el servidor SSH está configurado para utilizar algoritmos de cifrado débiles, específicamente el cifrado de flujo Arcfour.
 
 #### Bajas
 
 - SSH Server CBC Mode Ciphers Enabled
 - SSH Weak Key Exchange Algorithms Enabled
 - SSH Weak MAC Algorithms Enabled
+
+| Campo      | Valor      |
+|------------|------------|
+| Severity   | Low        |
+| ID         | 71049      |
+| Version    | Rev. 1.4   |
+| Type       | remote     |
+| Family     | Misc.      |
+| CVSS score | 2.6        |
+| CVE        | N/A        |
+
+​La vulnerabilidad indica que el servidor SSH está configurado para permitir algoritmos débiles, específicamente MD5 y algoritmos de 96 bits.
+
 - ICMP Timestamp Request Remote Date Disclosure
+
+
 
 ---
 
