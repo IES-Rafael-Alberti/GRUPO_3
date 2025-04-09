@@ -56,7 +56,7 @@ La investigación y comprobación de vulnerabilidades detectadas la hemos dividi
   | Explotación | Módulo `exploit/unix/webapp/drupal_coder_exec`                                                                                                                                            |
   | CVE         | CVE-2014-3704                                                                                                                                                                             |
 
-  ![exploitDrupalCoderModuleDeserializationRCE.png](img/exploitDrupalCoderModuleDeserializationRCE.png)
+  ![exploitDrupal.png](img/exploitDrupal.png)
 
 - ProFTPD mod_copy Information Disclosure
 
@@ -87,7 +87,7 @@ Esta vulnerabilidad permite a los atacantes usar el módulo **mod_copy** quee pe
   | Explotación | Módulo `exploit/unix/webapp/drupal_coder_exec`                                                                                                                                                                                                  |
   | CVE         | CVE-2014-3704                                                                                                                                                                                                                                   |
 
-  ![exploitDrupalCoderModuleDeserializationRCE.png](img/exploitDrupalCoderModuleDeserializationRCE.png)
+  ![exploitDrupal.png](img/exploitDrupal.png)
 
 - SSL Medium Strength Cipher Suites Supported (SWEET32)
 
