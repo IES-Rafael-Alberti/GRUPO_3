@@ -11,5 +11,5 @@ La investigación y comprobación de vulnerabilidades detectadas la hemos dividi
 
 ![alt text](image.png)
 
-**Victor** -> **Azul**
-**Nicolas** -> **Rojo**
+**Victor** -> **Rojo**
+**Nicolas** -> **Azul**
