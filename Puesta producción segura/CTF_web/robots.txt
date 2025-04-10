@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin
+
+# A veces, el arte esconde más de lo que muestra. 
+# En la galería, una copa de vino destaca en el lienzo correcto.
