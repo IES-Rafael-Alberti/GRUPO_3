@@ -48,9 +48,9 @@ La investigación y comprobación de vulnerabilidades detectadas la hemos dividi
   | Explotación | ' or 1=1-- - / ' UNION SELECT username, first_name, last_name, password FROM payroll.users-- -                                          |
   | CWE         | CWE-89                                                                                                                                  |
 
-  ![alt text](./investigaciones/MS3_Ubuntu/img/SQLi1.png)
+  ![alt text](./img/SQLi1.png)
   
-  ![alt text](./investigaciones/MS3_Ubuntu/img/SQLi2.png)
+  ![alt text](./img/SQLi2.png)
 
 - Canonical Ubuntu Linux SEoL (14.04.x)
 
