@@ -1,0 +1,4 @@
+pymisp
+urllib3
+dotenv
+requests
