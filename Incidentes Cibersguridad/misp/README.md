@@ -21,6 +21,8 @@ MISP_VERIFYCERT=False
 VT_API_KEY=tu_clave_api_de_virustotal
 ```
 
+> Para crear la `MISP_KEY` tienes que ir a tu web de misp , vas a admin > Auth keys > Add authentication key
+
 > Si usas un certificado autofirmado, deja `MISP_VERIFYCERT=False`.
 
 ## Uso

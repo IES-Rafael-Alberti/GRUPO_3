@@ -1,5 +1,6 @@
 import os
 import requests
+import time
 from dotenv import load_dotenv
 from pymisp import PyMISP, MISPEvent, MISPAttribute
 import urllib3
@@ -21,24 +22,17 @@ def init_misp_instance(url, key, ssl):
 
 def analyze_url_with_virustotal(url):
     print(f"🔍 Analyzing URL with VirusTotal: {url}")
-    headers = {
-        "x-apikey": vt_api_key,
-        "Content-Type": "application/x-www-form-urlencoded"
-    }
+    headers = {"x-apikey": vt_api_key,"Content-Type": "application/x-www-form-urlencoded"}
+    url_vt = "https://www.virustotal.com/api/v3"
 
-    response = requests.post(
-        "https://www.virustotal.com/api/v3/urls",
-        headers=headers,
-        data=f"url={url}"
-    )
+    response = requests.post(f"{url_vt}/urls",headers=headers,data=f"url={url}")
 
     if response.status_code != 200:
-        print(f"❌ Failed to submit URL to VirusTotal. Code: {response.status_code}")
-        print(response.text)
+        print(f"Failed to submit URL to VirusTotal. Code: {response.status_code}")
         return None
 
-    analysis_id = response.json()["data"]["id"]
-    analysis_url = f"https://www.virustotal.com/api/v3/analyses/{analysis_id}"
+    analysis_url = response.json()["data"]["links"]["self"]
+
     result = requests.get(analysis_url, headers=headers).json()
 
     return result
@@ -60,15 +54,19 @@ def create_misp_event_from_url(misp, url, analysis):
     attribute.category = 'Network activity'
     misp.add_attribute(event_id, attribute)
 
-    stats = analysis.get("data", {}).get("attributes", {}).get("stats", {})
+    attributes = analysis.get("data", {}).get("attributes", {})
+    stats = attributes.get("stats", {})
+    results = attributes.get("last_analysis_results", {})
+
     malicious_count = stats.get("malicious", 0)
+    malicious_engines = [engine for engine, data in results.items() if data.get("category") == "malicious"]
 
     if malicious_count > 0:
-        msg = f"⚠️ VirusTotal flagged this URL as malicious by {malicious_count} engine(s)."
+        print(f"⚠️ VirusTotal flagged this URL as malicious by {malicious_count} engine(s).")
+        print(f"🚨 Engines: {', '.join(malicious_engines)}")
     else:
-        msg = "✅ This URL was not flagged as malicious by VirusTotal."
+        print("✅ Esta URL no fue marcada como maliciosa por VirusTotal.")
 
-    print(msg)
     return event_id
 
 def list_misp_events(misp):
@@ -87,6 +85,7 @@ if __name__ == '__main__':
     url = sys.argv[1]
     misp = init_misp_instance(misp_url, misp_key, misp_verifycert)
     analysis = analyze_url_with_virustotal(url)
+    
     if analysis:
         create_misp_event_from_url(misp, url, analysis)
         list_misp_events(misp)
