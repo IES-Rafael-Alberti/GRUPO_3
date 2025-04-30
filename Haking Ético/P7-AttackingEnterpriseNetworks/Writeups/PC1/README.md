@@ -88,3 +88,20 @@ Vemos que nos ha encontrado que la contraseña de usuario es usuario.
 Vamos a hacer una prueba desde el sistema comprometido y efectivamente nos podemos loguear con usuario y acceder al sistema.
 
 ![alt text](img/image18.png)
+
+## Puerta trasera
+
+Una vez hemos vulnerado la máquina crearemos una puerta trasera para poder acceder a ella. Para poder crear esto usaremos un payload que se active cuando un usuario inicie sesión.
+
+Lo primero que tendremos que hacer es crear el payload de meterpreter, para esto utilizaremos `msvenom`.
+
+Le pondremos la ruta del payload, nuestra IP, el puerto por el que vamos a escuchar y el tipo de archivo que vamos a generar junto a su nombre.
+
+![alt text](img/image19.png)
+
+Ahora 
+
+![alt text](img/image20.png)
+
+![alt text](img/image21.png)
+
