@@ -99,9 +99,35 @@ Le pondremos la ruta del payload, nuestra IP, el puerto por el que vamos a escuc
 
 ![alt text](img/image19.png)
 
-Ahora 
+Ahora usaremos este módulo de metaexploit que nos permite generar persistencia con el payload que hemos creado.
 
 ![alt text](img/image20.png)
 
+Configuramos el módulo eligiendo las opciones que necesitemos para que funcione.
+
 ![alt text](img/image21.png)
 
+Y lo ejecutaremos. Vemos que el módulo se ha completado y nos ha generado la persistencia.
+Podemos ver como ha cogido nuestro payload y lo ha metido en C:\Users\usuario\AppData\Local\Temp.
+
+![alt text](img/image22.png)
+
+Una vez hemos generado la persistencia vamos a probar que funcione correctamente. Para elo utilizaremos el modulo de handler para ponernos en escucha hasta que el payload se ejecute.
+
+![alt text](img/image23.png)
+
+Lo ejecutamos y nos ponemos en escucha.
+
+![alt text](img/image24.png)
+
+Haremos la prueba de que el usuario inicia sesión.
+
+![alt text](img/image25.png)
+
+Una vez el usuario inicie sesión nos conectará con una consola de meterpreter al sistema.
+
+![alt text](img/image26.png)
+
+Aquí podemos ver que tendríamos permisos del usuario que se ha logueado.
+
+![alt text](img/image27.png)
