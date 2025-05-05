@@ -203,7 +203,27 @@ En esta sección se agrupan las figuras y vulnerabilidades encontradas en los si
 
 #### Vulnerabilidades
 
+Vamos a envenenar los logs de apache , con un user agent que sea un script de php , para poder meter comandos de terminal
+
+- Figura 29: ![exploit](./Writeups/PC3/img/image-6.png)
+
+Escribimos esto en la url en el navegador 
+
+- Figura 30: ![exploit](./Writeups/PC3/img/image-37.png)
+
+Abrimos el puerto 4445 y revisamos que se haya hecho la reverse shell
+
+- Figura 31: ![exploit](./Writeups/PC3/img/image-38.png)
+
 #### Persistencia
+
+Hacemos una backdoor que nos permita acceder a ssh mediante un certificado, creamos uno en nuestra máquina kali.
+
+- Figura 32: ![alt text](img/image-34.png)
+
+Ahora probamos a conectarnos y vemos que funciona perfectamente
+
+- Figura 33: ![alt text](img/image-45.png)
 
 ### 5.4. PC4 - Solstice
 
