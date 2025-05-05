@@ -194,18 +194,31 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ### PC2
 
+- Hallazgo 2:
+
+| **Description of vulnerability** | Acceso a archivos sensibles vía SMB y LFI en WordPress mediante plugin vulnerable |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      |   CWE-200 / CWE-22          |
+| **CVSS v3**                      |   7.5       |
+| **Severity**                     |   Alta      |
+| **Impact**                       |   WordPress con plugin vulnerable      |
+| **Affected systems**             |   WordPress con plugin vulnerable      |
+| **Proof Of Concept (POC)**       |   ![alt text](./Writeups/PC2/img/image-21.png)      |
+| **Remediation**                  |   Restringir acceso a SMB, eliminar archivos sensibles de recursos compartidos, actualizar o eliminar plugins vulnerables de WordPress      |
+| **Reference links**              |   https://cwe.mitre.org/data/definitions/200.html, https://cwe.mitre.org/data/definitions/22.html       |
+
 - Hallazgo X:
 
-| **Description of vulnerability** ||
+| **Description of vulnerability** | Inyección de código PHP a través de un plugin vulnerable en WordPress |
 | -------------------------------- | -------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      |         |
-| **CVSS v3**                      |         |
-| **Severity**                     |         |
-| **Impact**                       |         |
-| **Affected systems**             |         |
-| **Proof Of Concept (POC)**       |         |
-| **Remediation**                  |         |
-| **Reference links**              |         |
+| **CVE/CWE**                      | CWE-94 / CWE-89         |
+| **CVSS v3**                      | 8.8         |
+| **Severity**                     | Crítica         |
+| **Impact**                       | Ejecución remota de comandos, compromiso total del sistema         |
+| **Affected systems**             | WordPress con plugin vulnerable        |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC2/img/image-24.png)        |
+| **Remediation**                  | Eliminar o actualizar el plugin vulnerable, revisar integridad de archivos y permisos en WordPress, aplicar políticas de hardening        |
+| **Reference links**              | https://cwe.mitre.org/data/definitions/94.html, https://cwe.mitre.org/data/definitions/89.html         |
 
 ### PC3
 
