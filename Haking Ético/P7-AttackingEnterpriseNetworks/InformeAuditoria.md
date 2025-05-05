@@ -35,7 +35,43 @@
 
 ## 2. Glosario de términos
 
-{GLOSARIO DE TÉRMINOS}
+- Pivoting: Técnica que permite moverse lateralmente por una red desde una máquina comprometida.
+
+- Enumeración: Recolección activa de información sobre servicios, usuarios y recursos de un sistema.
+
+- Escaneo de vulnerabilidades: Detección automática de debilidades en sistemas o aplicaciones.
+
+- Reverse Shell: Conexión desde un sistema comprometido hacia el atacante para obtener control remoto.
+
+- Proxychains: Herramienta que permite redirigir conexiones a través de proxies.
+
+- Metasploit Framework: Entorno de explotación para el desarrollo y ejecución de exploits y payloads.
+
+- Payload: Código malicioso que se ejecuta tras explotar una vulnerabilidad.
+
+- Nmap: Herramienta de escaneo de red y detección de servicios.
+
+- RDP (Remote Desktop Protocol): Protocolo de acceso remoto a escritorios de Windows.
+
+- LFI (Local File Inclusion): Vulnerabilidad que permite incluir archivos locales en una aplicación web.
+
+- CVE (Common Vulnerabilities and Exposures): Identificador único para vulnerabilidades de seguridad públicas.
+
+- CWE (Common Weakness Enumeration): Clasificación de tipos de fallos de seguridad en software.
+
+- Chisel: Herramienta para crear túneles TCP sobre HTTP.
+
+- Netcat: Herramienta de red para lectura y escritura de conexiones TCP/UDP.
+
+- John the Ripper: Herramienta de craqueo de contraseñas.
+
+- Samba: Protocolo de compartición de archivos e impresoras en redes Windows y Linux.
+
+- Proxy SOCKS: Servidor proxy que reenvía tráfico a través de un túnel cifrado.
+
+- User-Agent: Cabecera HTTP que identifica el cliente que realiza una petición.
+
+- Allow_url_include: Directiva de PHP que permite incluir archivos remotos en scripts, desaconsejada por seguridad.
 
 ## 3. Introducción
 
