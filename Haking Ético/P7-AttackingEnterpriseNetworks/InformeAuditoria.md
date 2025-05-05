@@ -125,7 +125,17 @@ A parte hemos podido vulnerar alguna contraseña de los usuarios del sistema uti
 
 ### 5.2. PC2 - symfonos1
 
-{PROCESOS DE LA MAQUINA 2}
+Tras haber comprometido una primera máquina en la red (PC1), se procede a identificar nuevas interfaces de red disponibles en el sistema ya vulnerado. En concreto, se detectan dos interfaces relevantes que pertenecen a las redes 192.168.68.0/24 y 10.10.10.0/24, lo que permite ampliar el radio de acción del atacante.
+
+Usando Metasploit, se realiza un escaneo activo de la nueva red interna (10.10.10.0/24), localizando un segundo equipo. Una vez identificado, se realiza un reconocimiento más profundo, descubriendo que el puerto 445 (SMB) está abierto. A pesar de que el sistema operativo del host no puede determinarse directamente, se confirma la presencia del servicio SMB operativo. Aprovechando esto, se listan los usuarios disponibles en el servicio y, tras obtener uno, se lanza un ataque de fuerza bruta al SMB, lo cual resulta exitoso.
+
+Tras comprometer el SMB, se examinan las carpetas compartidas y se localizan archivos potencialmente útiles, como uno con contraseñas y un directorio web. A pesar de que el intento de autenticación vía SSH con las credenciales extraídas falla, se explora el servicio web disponible en el puerto 80. Para poder acceder desde fuera de la red, se establece un proxy inverso con Metasploit, lo que permite examinar el sitio como si se estuviera dentro.
+
+En este punto se identifica un WordPress instalado, y tras un análisis de sus directorios y plugins se descubre uno vulnerable. Se explota el plugin usando una técnica basada en la manipulación del sistema de logs SMTP (accesible por el puerto 25), lo que permite inyectar comandos a través de una URL manipulada. Mediante este ataque, se ejecuta código remoto y se obtiene una reverse shell como el usuario helios.
+
+Para permitir la conexión entrante desde esta segunda máquina (PC2), se redirige el tráfico a través de la máquina previamente comprometida (PC1) y se ajustan las reglas del firewall para facilitar la conexión. Ya con acceso interactivo, se analiza la máquina buscando formas de escalar privilegios. Se detecta un binario con permisos SUID llamado statuscheck, el cual hace uso del comando curl. Se simula una sustitución del binario por un script malicioso que otorga privilegios de root, ejecutándolo gracias al path manipulado desde /tmp.
+
+Una vez obtenidos permisos de root, se establece persistencia insertando una clave pública RSA en el archivo authorized_keys del root, lo que permite futuras conexiones SSH sin necesidad de repetir todo el proceso de explotación.
 
 ### 5.3. PC3 - Durian
 
