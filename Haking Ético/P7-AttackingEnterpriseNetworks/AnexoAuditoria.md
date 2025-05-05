@@ -157,29 +157,47 @@ En esta sección se agrupan los hallazgos y vulnerabilidades encontradas en los 
 
 #### Persistencia
 
-Hallazgo 22: crear persistencia copiando clave RSA de la máquina atacante
+- Hallazgo 22: crear persistencia copiando clave RSA de la máquina atacante
 
 ![](./Writeups/PC2/img/image-37.png)
 
-Hallazgo 23: comprobación
+- Hallazgo 23: comprobación
 
 ![](./Writeups/PC2/img/image-38.png)
 
 ### PC3 - Duriam
 
 #### Pivoting
+
+- Hallazgo 24, 25 y 26: Uso de chisel para crear un tunel desde la máquina atacante hasta Symfonos
+
+![](./Writeups/PC3/img/image-2.png)
+
+![](./Writeups/PC3/img/image-1.png)
+
+![](./Writeups/PC3/img/image-23.png)
+
 #### Escaneo
+
+- Hallazgo 27: escaneo de puertos de PC3
+
+![](./Writeups/PC3/img/image-8.png)
+
+- Hallazgo 28: fuzzeo de directorios
+
+![](./Writeups/PC3/img/image-9.png)
+
 #### Vulnerabilidades
 #### Persistencia
 
-### PC4 - Duriam
+### PC4 - Solstice
 
 #### Pivoting
 #### Escaneo
 #### Vulnerabilidades
 #### Persistencia
 
-### PC5 - Duriam
+### PC5 - Corrosion
 
 #### Pivoting
 #### Escaneo
