@@ -38,7 +38,7 @@ Asimismo, este informe no debe considerarse una certificación de seguridad abso
 
 ## 3. Información de contacto
 
-**Empresa auditada:** Pata de Palo Corp.
+**Empresa auditada:** CyberSecPro S.A.
 
 **Equipo auditor:** Grupo 3, IES Rafael Alberti
 
