@@ -143,7 +143,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ### PC1
 
-- Hallazgo X:
+- Hallazgo 1:
 
 | **Description of vulnerability** | Fallo crítico en el protocolo RDP de Microsoft que permite ejecución remota de código sin autenticación                                                |
 | -------------------------------- | -------------------------------------------------------------------------------------- |
@@ -197,7 +197,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **Severity**                     | High                                                                                                                                    |
 | **Impact**                       | Lectura de archivos sensibles, ejecución remota de código, obtención de shell.                                                          |
 | **Affected systems**             | Sistema web en 10.10.10.4 (servicio en puerto 8593).                                                                                    |
-| **Proof Of Concept (POC)**       | Inyección en User-Agent con payload PHP.                                                                                                |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC4/img/image-12.jpg )                                                                                                |
 | **Remediation**                  | Validar y sanear correctamente las entradas de usuario en parámetros GET. Deshabilitar `allow_url_include` y `allow_url_fopen` en PHP.  |
 | **Reference links**              | [OWASP LFI](https://owasp.org/www-community/attacks/Local_File_Inclusion), [CWE-98](https://cwe.mitre.org/data/definitions/98.html)     |
 
