@@ -67,9 +67,124 @@ En esta sección se agrupan los hallazgos y vulnerabilidades encontradas en los 
 
 ### PC1 - Sin nombre
 
-#### Hallazgos
+#### Escaneo
 
+- Hallazgo 1: puertos abiertos de PC1
 
+![](./Writeups/PC1/img/image2.png)
+
+- Hallazgo 2: escaneo de vulnerabilidades
+
+![](./Writeups/PC1/img/image4.png)
+
+#### Vulnerabilidades
+
+- Hallazgo 3: exploit usado
+
+![](./Writeups/PC1/img/image4.3.png)
+
+- Hallazgo 4: inicio en el sistema
+
+![](./Writeups/PC1/img/image9.png)
+
+#### Persistencia
+
+- Hallazgo 5: creación del payload
+
+![](./Writeups/PC1/img/image19.png)
+
+- Hallazgo 6: exploit usado
+
+![](./Writeups/PC1/img/image20.png)
+
+- Hallazgo 7: Comprobación del payload
+
+![](./Writeups/PC1/img/image26.png)
+
+### PC2 - Symfonos
+
+#### Pivoting
+
+- Hallazgo 8: exploit usado para añadir las redes de PC1
+
+![](./Writeups/PC2/img/image-2.png)
+
+#### Escaneo
+
+- Hallazgo 9: escaneo de puertos abiertos
+
+![](./Writeups/PC2/img/image-4.png)
+
+#### Vulnerabilidades
+
+- Hallazgos 10, 11 y 12: archivos encontrados en el SMB
+
+![](./Writeups/PC2/img/image-11.png)
+
+![](./Writeups/PC2/img/image-12.png)
+
+![](./Writeups/PC2/img/image-13.png)
+
+- Hallazgo 13: wordpress instalado en la máquina
+
+![](./Writeups/PC2/img/image-17.png)
+
+- Hallazgo 14: plugin encontrado en carpeta _uploads_
+
+![](./Writeups/PC2/img/image-19.png)
+
+- Hallazgo 15: exploit que permite ver archivos del sistema
+
+![](./Writeups/PC2/img/image-21.png)
+
+- Hallazgo 16: correo inyectado con php
+
+![](./Writeups/PC2/img/image-24.png)
+
+- Hallazgos 17 y 18: inicio en el sistema
+
+![](./Writeups/PC2/img/image-27.png)
+
+![](./Writeups/PC2/img/image-30.png)
+
+- Hallazgo 19, 20 y 21: escalada de privilegios
+
+![](./Writeups/PC2/img/image-33.png)
+
+![](./Writeups/PC2/img/image-34.png)
+
+![](./Writeups/PC2/img/image-35.png)
+
+#### Persistencia
+
+Hallazgo 22: crear persistencia copiando clave RSA de la máquina atacante
+
+![](./Writeups/PC2/img/image-37.png)
+
+Hallazgo 23: comprobación
+
+![](./Writeups/PC2/img/image-38.png)
+
+### PC3 - Duriam
+
+#### Pivoting
+#### Escaneo
+#### Vulnerabilidades
+#### Persistencia
+
+### PC4 - Duriam
+
+#### Pivoting
+#### Escaneo
+#### Vulnerabilidades
+#### Persistencia
+
+### PC5 - Duriam
+
+#### Pivoting
+#### Escaneo
+#### Vulnerabilidades
+#### Persistencia
 
 ## 1. Figuras
 
