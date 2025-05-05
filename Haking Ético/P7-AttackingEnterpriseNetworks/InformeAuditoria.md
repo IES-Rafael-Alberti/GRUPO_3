@@ -221,7 +221,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **Remediation**                  |   Restringir acceso a SMB, eliminar archivos sensibles de recursos compartidos, actualizar o eliminar plugins vulnerables de WordPress      |
 | **Reference links**              |   https://cwe.mitre.org/data/definitions/200.html, https://cwe.mitre.org/data/definitions/22.html       |
 
-- Hallazgo X:
+- Hallazgo 3:
 
 | **Description of vulnerability** | Inyección de código PHP a través de un plugin vulnerable en WordPress |
 | -------------------------------- | -------------------------------------------------------------------------------------- |
@@ -236,7 +236,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ### PC3
 
-- Hallazgo 3:
+- Hallazgo 4:
 
 | **Description of vulnerability** | Vulnerabilidad de inclusión local de archivos (LFI) que permite ejecutar código arbitrario mediante envenenamiento de logs de Apache. |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -251,7 +251,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ### PC4
 
-- Hallazgo 4:
+- Hallazgo 5:
 
 | **Description of vulnerability** | Local File Inclusion (LFI) que permite leer archivos locales y ejecutar código PHP malicioso inyectado vía User-Agent.                  |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
