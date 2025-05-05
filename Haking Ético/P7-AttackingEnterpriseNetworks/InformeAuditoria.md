@@ -92,7 +92,24 @@ Las herramientas utilizadas han sido las siguientes:
 
 ### 5.4. PC4 - solstice
 
-{PROCESOS DE LA MAQUINA 4}
+Una vez visto que tenemos una subred en el sistema que hemos vulnerado (PC1) lo que hacemos es escanear la nueva red para ver que puertos tiene abierto, y para ello usamos el siguiente modulo de metasploit `auxiliary/scanner/portscan/tcp` y configuramos los parámetros, como se puede ver en la _Figura X_ del Anexo.
+
+Hemos visto que tiene varias ip asociadas a esa red:
+
+- 10.10.10.4 -> 22, 21, 25, 80, 139, 445, 2121, 3128, 8593.
+- 10.10.10.5 -> 135, 139, 445, 3389, (Esta es la ip del windows).  
+- 10.10.10.2 -> 135, 445, 2179, 3306, 5040, 7070, 8733,9102, 9180.
+- 10.10.10.1 -> 53
+
+Una vez que sabemos que la ip correcta es la 10.10.10.4 lo que hacemos es crear un proxy con el siguiente modulo de metasploit `server/socks_proxy` lo configuramos como se ve en la _Figura X_ del Anexo y lo ejecutamos. 
+
+Después lo que deberemos hacer es un nmap con proxychains para ver cuales son los servicios que están ejecutándose en cada puerto como se puede ver en la _Figura X_ del Anexo.
+
+Como hay un servicio que no sabemos cual es, entonces para saber que servicio es hemos probado hacer curl por si tiene una página y es un servicio http. Una vez realizado el curl al puerto `8593` nos ha devuelto una página y vemos que tiene dos enlaces uno que sería a `/index.php` y otro que tiene `/index.php?book=list` como se puede ver en la _Figura X_ del Anexo.
+
+Una vez visto esto podemos probar si tiene una vulnerabilidad de LFI para ver si nos muestra algo del sistema y hemos probado para ver si nos muestra el contenido del `/etc/passwd`y para ello lo hemos probado como se puede ver desde la _Figura X_ hasta la _Figura X_ del Anexo
+
+Otra de las vulnerabilidades que hemos encontrado es que el servicio del Samba es vulnerable y hemos probado el módulo de `scanner/smb/smb_login` y hemos puesto en la configuración los parámetros de USER_FILE y PASs_FILE le hemos pasados dos diccionarios y lo hemos ejecutado y nos ha creado varias sesiones como se puede ver en la _Figura X_ del Anexo.
 
 ### 5.5. PC5 - Corrosion
 

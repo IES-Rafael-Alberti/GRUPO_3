@@ -2,8 +2,9 @@
 
 ## Pivoting
 
-Una vez visto que tenemos una subred en el sistema que hemos vulnerado lo que hacemos es escanear la nueva red para ver que puertos tiene abierto, y para ello usamos el sisgueinte modulo de metasploit `auxiliary/scanner/portscan/tcp` y configuramos los parametros.
+Una vez visto que tenemos una subred en el sistema que hemos vulnerado (PC1) lo que hacemos es escanear la nueva red para ver que puertos tiene abierto, y para ello usamos el siguiente modulo de metasploit `auxiliary/scanner/portscan/tcp` y configuramos los parametros.
 
+![alt text](img/image-123.png)
 ![alt text](img/image.png)
 
 Hemos visto que tiene varias ip asociadas a esa red:
@@ -29,7 +30,7 @@ En el curl vemos que hay dos enlaces y vemos que hay una pagina que se llama `in
 
 ![alt text](img/image-7.png)
 
-![alt text](img/image-8.png)
+
 
 ## SAMBA
 
