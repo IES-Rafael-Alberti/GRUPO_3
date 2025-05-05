@@ -38,7 +38,7 @@ Se auditarán los siguientes sistemas:
 
 La prueba se realizarán en los siguientes dominios y rangos de red:
 
-- "External" facing target host: 192.168.68.166
+- "External" facing target host: 192.168.68.0/24
 - Rango de red interno: 10.10.10.0/24
 - Rango de red interno: 10.10.20.0/24
 - Rango de red interno: 10.10.30.0/24
