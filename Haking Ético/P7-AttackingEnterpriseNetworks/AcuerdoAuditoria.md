@@ -28,11 +28,11 @@ Se auditarán los siguientes sistemas:
 
 | Nombre          | Sistema operativo      | Dirección IP (oculta por privacidad) | Auditor                  |
 | --------------- | ---------------------- | ------------------------------------ | ------------------------ |
-| PC1             | Windows Vista (64-bit) |                                      | Alejandro Seoane         |
-| PC2 - symfonos1 | Debian (64-bit)        |                                      | Nicolas Ruiz             |
-| PC3 - Durian    | Debian (64-bit)        |                                      | Alejandro Diaz           |
+| PC1             | Windows Vista (64-bit) | 192.168.68.8                         | Alejandro Seoane         |
+| PC2 - symfonos1 | Debian (64-bit)        | 10.10.10.7                           | Nicolas Ruiz             |
+| PC3 - Durian    | Debian (64-bit)        | 10.10.20.5                           | Alejandro Diaz           |
 | PC4 - solstice  | Debian (64-bit)        | 10.10.10.4                           | Israel Valderrama        |
-| PC5 - Corrosion | Ubuntu (64-bit)        |                                      | Victor Jimenez           |
+| PC5 - Corrosion | Ubuntu (64-bit)        | 10.10.30.4                           | Victor Jimenez           |
 
 ## 3. Alcance
 
