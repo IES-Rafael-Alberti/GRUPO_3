@@ -205,25 +205,35 @@ En esta sección se agrupan las figuras y vulnerabilidades encontradas en los si
 
 Vamos a envenenar los logs de apache , con un user agent que sea un script de php , para poder meter comandos de terminal
 
-- Figura 29: ![exploit](./Writeups/PC3/img/image-6.png)
+- Figura 29:
+
+![exploit](./Writeups/PC3/img/image-6.png)
 
 Escribimos esto en la url en el navegador 
 
-- Figura 30: ![exploit](./Writeups/PC3/img/image-37.png)
+- Figura 30:
+
+![exploit](./Writeups/PC3/img/image-37.png)
 
 Abrimos el puerto 4445 y revisamos que se haya hecho la reverse shell
 
-- Figura 31: ![exploit](./Writeups/PC3/img/image-38.png)
+- Figura 31:
+
+![exploit](./Writeups/PC3/img/image-38.png)
 
 #### Persistencia
 
 Hacemos una backdoor que nos permita acceder a ssh mediante un certificado, creamos uno en nuestra máquina kali.
 
-- Figura 32: ![alt text](img/image-34.png)
+- Figura 32:
+
+![alt text](img/image-34.png)
 
 Ahora probamos a conectarnos y vemos que funciona perfectamente
 
-- Figura 33: ![alt text](img/image-45.png)
+- Figura 33:
+
+![alt text](img/image-45.png)
 
 ### 5.4. PC4 - Solstice
 
@@ -244,3 +254,22 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 #### Vulnerabilidades
 
 #### Persistencia
+
+
+
+## 6. Hallazgos
+
+
+- Hallazgo 3:
+
+| **Description of vulnerability** | Vulnerabilidad de inclusión local de archivos (LFI) que permite ejecutar código arbitrario mediante envenenamiento de logs de Apache. |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-98 (Improper Control of Filename for Include/Require in PHP Program)                                                              |
+| **CVSS v3**                      | 7.8                                                                                                                                     |
+| **Severity**                     | Alta                                                                                                                                    |
+| **Impact**                       | Ejecución remota de comandos, obtención de acceso shell, posibilidad de escalada de privilegios a root.                                |
+| **Affected systems**             | Servidor Linux con Apache y PHP vulnerable al LFI (afecta a sistemas sin validación de entradas en scripts PHP).                       |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC3/img/image-6.png)    ![exploit](./Writeups/PC3/img/image-37.png)![exploit](./Writeups/PC3/img/image-38.png)                                                                                       |
+| **Remediation**                  | Validar y sanitizar todas las entradas de usuario; deshabilitar funciones peligrosas en PHP (`allow_url_include`, `include`, `require`); aplicar configuración segura de Apache. |
+| **Reference links**              | https://owasp.org/www-community/attacks/Local_File_Inclusion                                                                           |
+
