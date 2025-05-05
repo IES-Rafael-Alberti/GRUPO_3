@@ -136,11 +136,10 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ## 7. Índices de gravedad de los hallazgos
 
-| ID  | Vulnerabilidad   | Riesgo | Impacto | Probabilidad | Severidad Final |
-| --- | ---------------- | ------ | ------- | ------------ | --------------- |
-| 1   | Vulnerabilidad 1 | Alto   | Alto    | Alta         | Crítica         |
-| 2   | Vulnerabilidad 2 | Medio  | Medio   | Media        | Media           |
-| ..  | ...              | ...    | ...     | ...          | ...             |
+- **Crítica** (9.0 – 10.0)
+- **Alta** (7.0 – 8.9)
+- **Media** (4.0 – 6.9)
+- **Baja** (0.1 – 3.9)
 
 ### PC1
 
