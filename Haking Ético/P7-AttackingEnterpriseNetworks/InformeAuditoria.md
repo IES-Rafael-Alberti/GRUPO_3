@@ -85,13 +85,13 @@ Se recomienda con urgencia aplicar actualizaciones de seguridad, limitar la expo
 
 El esquema y los datos de las maquinas a auditar son los siguientes:
 
-| Nombre          | Sistema operativo      | Auditor           |
-| --------------- | ---------------------- | ----------------- |
-| PC1             | Windows 7 (64-bit)     | Alejandro Seoane  |
-| PC2 - symfonos1 | Debian (64-bit)        | Nicolas Ruiz      |
-| PC3 - Durian    | Debian (64-bit)        | Alejandro Díaz    |
-| PC4 - solstice  | Debian (64-bit)        | Israel Valderrama |
-| PC5 - Corrosion | Ubuntu (64-bit)        | Víctor Jiménez    |
+| Nombre          | Sistema operativo  | Auditor           |
+| --------------- | ------------------ | ----------------- |
+| PC1             | Windows 7 (64-bit) | Alejandro Seoane  |
+| PC2 - symfonos1 | Debian (64-bit)    | Nicolas Ruiz      |
+| PC3 - Durian    | Debian (64-bit)    | Alejandro Díaz    |
+| PC4 - solstice  | Debian (64-bit)    | Israel Valderrama |
+| PC5 - Corrosion | Ubuntu (64-bit)    | Víctor Jiménez    |
 
 ![EnvironmentDiagram.png](img/EnvironmentDiagram.png)
 
@@ -150,7 +150,7 @@ Una vez visto que tenemos una subred en el sistema que hemos vulnerado (PC1) lo 
 Hemos visto que tiene varias ip asociadas a esa red:
 
 - 10.10.10.4 -> 22, 21, 25, 80, 139, 445, 2121, 3128, 8593.
-- 10.10.10.5 -> 135, 139, 445, 3389, (Esta es la ip del windows).  
+- 10.10.10.5 -> 135, 139, 445, 3389, (Esta es la ip del windows).
 - 10.10.10.2 -> 135, 445, 2179, 3306, 5040, 7070, 8733,9102, 9180.
 - 10.10.10.1 -> 53
 
@@ -160,7 +160,7 @@ Después lo que deberemos hacer es un nmap con proxychains para ver cuales son l
 
 Como hay un servicio que no sabemos cual es, entonces para saber que servicio es hemos probado hacer curl por si tiene una página y es un servicio http. Una vez realizado el curl al puerto `8593` nos ha devuelto una página y vemos que tiene dos enlaces uno que sería a `/index.php` y otro que tiene `/index.php?book=list`.
 
-Una vez visto esto podemos probar si tiene una vulnerabilidad de LFI para ver si nos muestra algo del sistema y hemos probado para ver si nos muestra el contenido del `/etc/passwd`y para ello lo hemos probado como se puede ver en la _Figura 39_  del Anexo.
+Una vez visto esto podemos probar si tiene una vulnerabilidad de LFI para ver si nos muestra algo del sistema y hemos probado para ver si nos muestra el contenido del `/etc/passwd`y para ello lo hemos probado como se puede ver en la _Figura 39_ del Anexo.
 
 Ahora hemos metido un payload malicioso de php en el user agent para poder vulnerar la maquina y explotarla como se ve en la _Figura 40_ y _Figura 41_ del Anexo.
 
@@ -172,11 +172,11 @@ Entramos en /root/.ssh/ y creamos un archivo que se llama authorized_keys y pega
 
 En otra terminal intentamos entrar por ssh con el siguiente comando `ssh -i .ssh/id_rsa root@ip` como se ve en la _Figura 49_ del Anexo.
 
-Otra de las vulnerabilidades que hemos encontrado es que el servicio del Samba es vulnerable y hemos probado el módulo de `scanner/smb/smb_login` y hemos puesto en la configuración los parámetros de USER_FILE y PASs_FILE le hemos pasados dos diccionarios y lo hemos ejecutado y nos ha creado varias sesiones como se puede ver en la _Figura 42_, _Figura 43_ y _Figura 44_ del Anexo.
+Otra de las vulnerabilidades que hemos encontrado es que el servicio del Samba es vulnerable y hemos probado el módulo de `scanner/smb/smb_login` y hemos puesto en la configuración los parámetros de USER*FILE y PASs_FILE le hemos pasados dos diccionarios y lo hemos ejecutado y nos ha creado varias sesiones como se puede ver en la \_Figura 42*, _Figura 43_ y _Figura 44_ del Anexo.
 
 ### 5.5. PC5 - Corrosion
 
-{PROCESOS DE LA MAQUINA 5}
+Tras comprometer el PC4 se descubrió una nueva red interna (10.10.30.0/24) en la que se encontró una nueva maquina. Pivotando a traves de un túnel creado con Chisel se ha podido acceder a ella, comprometiendo el servicio Apache TomCat en su version 9.0.56 expuesto en el puerto 8080 de la máquina.
 
 ## 6. Trayectoria del ataque
 
@@ -195,90 +195,89 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 - Hallazgo 1:
 
-| **Description of vulnerability** | Fallo crítico en el protocolo RDP de Microsoft que permite ejecución remota de código sin autenticación                                                |
-| -------------------------------- | -------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      | CVE-2014-3704 / CWE-502                                                                |
-| **CVSS v3**                      | 9.8                                                                                    |
-| **Severity**                     | Crítica                                                                                |
-| **Impact**                       | Ejecución remota de código, toma de control total del sistema y propagación de malware. |
-| **Affected systems**             | Windows 7, Windows Server 2008, Windows Server 2008 R2                                                                    |
-| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC1/img/image8.png )             |
-| **Remediation**                  | Aplicar parches de Microsoft (KB4499164, KB4499175); deshabilitar RDP si no es esencial                  |
-| **Reference links**              | https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0708                                           |
+| **Description of vulnerability** | Fallo crítico en el protocolo RDP de Microsoft que permite ejecución remota de código sin autenticación |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CVE-2014-3704 / CWE-502                                                                                 |
+| **CVSS v3**                      | 9.8                                                                                                     |
+| **Severity**                     | Crítica                                                                                                 |
+| **Impact**                       | Ejecución remota de código, toma de control total del sistema y propagación de malware.                 |
+| **Affected systems**             | Windows 7, Windows Server 2008, Windows Server 2008 R2                                                  |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC1/img/image8.png)                                                               |
+| **Remediation**                  | Aplicar parches de Microsoft (KB4499164, KB4499175); deshabilitar RDP si no es esencial                 |
+| **Reference links**              | https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0708                                            |
 
 ### PC2
 
 - Hallazgo 2:
 
-| **Description of vulnerability** | Acceso a archivos sensibles vía SMB y LFI en WordPress mediante plugin vulnerable |
-| -------------------------------- | -------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      |   CWE-200 / CWE-22          |
-| **CVSS v3**                      |   7.5       |
-| **Severity**                     |   Alta      |
-| **Impact**                       |   WordPress con plugin vulnerable      |
-| **Affected systems**             |   WordPress con plugin vulnerable      |
-| **Proof Of Concept (POC)**       |   ![alt text](./Writeups/PC2/img/image-21.png)      |
-| **Remediation**                  |   Restringir acceso a SMB, eliminar archivos sensibles de recursos compartidos, actualizar o eliminar plugins vulnerables de WordPress      |
-| **Reference links**              |   https://cwe.mitre.org/data/definitions/200.html, https://cwe.mitre.org/data/definitions/22.html       |
+| **Description of vulnerability** | Acceso a archivos sensibles vía SMB y LFI en WordPress mediante plugin vulnerable                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **CVE/CWE**                      | CWE-200 / CWE-22                                                                                                                     |
+| **CVSS v3**                      | 7.5                                                                                                                                  |
+| **Severity**                     | Alta                                                                                                                                 |
+| **Impact**                       | WordPress con plugin vulnerable                                                                                                      |
+| **Affected systems**             | WordPress con plugin vulnerable                                                                                                      |
+| **Proof Of Concept (POC)**       | ![alt text](./Writeups/PC2/img/image-21.png)                                                                                         |
+| **Remediation**                  | Restringir acceso a SMB, eliminar archivos sensibles de recursos compartidos, actualizar o eliminar plugins vulnerables de WordPress |
+| **Reference links**              | https://cwe.mitre.org/data/definitions/200.html, https://cwe.mitre.org/data/definitions/22.html                                      |
 
 - Hallazgo 3:
 
-| **Description of vulnerability** | Inyección de código PHP a través de un plugin vulnerable en WordPress |
-| -------------------------------- | -------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      | CWE-94 / CWE-89         |
-| **CVSS v3**                      | 8.8         |
-| **Severity**                     | Crítica         |
-| **Impact**                       | Ejecución remota de comandos, compromiso total del sistema         |
-| **Affected systems**             | WordPress con plugin vulnerable        |
-| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC2/img/image-24.png)        |
-| **Remediation**                  | Eliminar o actualizar el plugin vulnerable, revisar integridad de archivos y permisos en WordPress, aplicar políticas de hardening        |
-| **Reference links**              | https://cwe.mitre.org/data/definitions/94.html, https://cwe.mitre.org/data/definitions/89.html         |
+| **Description of vulnerability** | Inyección de código PHP a través de un plugin vulnerable en WordPress                                                              |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-94 / CWE-89                                                                                                                    |
+| **CVSS v3**                      | 8.8                                                                                                                                |
+| **Severity**                     | Crítica                                                                                                                            |
+| **Impact**                       | Ejecución remota de comandos, compromiso total del sistema                                                                         |
+| **Affected systems**             | WordPress con plugin vulnerable                                                                                                    |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC2/img/image-24.png)                                                                                        |
+| **Remediation**                  | Eliminar o actualizar el plugin vulnerable, revisar integridad de archivos y permisos en WordPress, aplicar políticas de hardening |
+| **Reference links**              | https://cwe.mitre.org/data/definitions/94.html, https://cwe.mitre.org/data/definitions/89.html                                     |
 
 ### PC3
 
 - Hallazgo 4:
 
-| **Description of vulnerability** | Vulnerabilidad de inclusión local de archivos (LFI) que permite ejecutar código arbitrario mediante envenenamiento de logs de Apache. |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      | CWE-98 (Improper Control of Filename for Include/Require in PHP Program)                                                              |
-| **CVSS v3**                      | 7.8                                                                                                                                     |
-| **Severity**                     | Alta                                                                                                                                    |
-| **Impact**                       | Ejecución remota de comandos, obtención de acceso shell, posibilidad de escalada de privilegios a root.                                |
-| **Affected systems**             | Servidor Linux con Apache y PHP vulnerable al LFI (afecta a sistemas sin validación de entradas en scripts PHP).                       |
-| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC3/img/image-6.png)    ![exploit](./Writeups/PC3/img/image-37.png)![exploit](./Writeups/PC3/img/image-38.png)                                                                                       |
+| **Description of vulnerability** | Vulnerabilidad de inclusión local de archivos (LFI) que permite ejecutar código arbitrario mediante envenenamiento de logs de Apache.                                            |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-98 (Improper Control of Filename for Include/Require in PHP Program)                                                                                                         |
+| **CVSS v3**                      | 7.8                                                                                                                                                                              |
+| **Severity**                     | Alta                                                                                                                                                                             |
+| **Impact**                       | Ejecución remota de comandos, obtención de acceso shell, posibilidad de escalada de privilegios a root.                                                                          |
+| **Affected systems**             | Servidor Linux con Apache y PHP vulnerable al LFI (afecta a sistemas sin validación de entradas en scripts PHP).                                                                 |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC3/img/image-6.png) ![exploit](./Writeups/PC3/img/image-37.png)![exploit](./Writeups/PC3/img/image-38.png)                                                |
 | **Remediation**                  | Validar y sanitizar todas las entradas de usuario; deshabilitar funciones peligrosas en PHP (`allow_url_include`, `include`, `require`); aplicar configuración segura de Apache. |
-| **Reference links**              | https://owasp.org/www-community/attacks/Local_File_Inclusion                                                                           |
+| **Reference links**              | https://owasp.org/www-community/attacks/Local_File_Inclusion                                                                                                                     |
 
 ### PC4
 
 - Hallazgo 5:
 
-| **Description of vulnerability** | Local File Inclusion (LFI) que permite leer archivos locales y ejecutar código PHP malicioso inyectado vía User-Agent.                  |
-| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      | CWE-98: Improper Control of Filename for Include yCWE-20: Improper Input Validation                                                     |
-| **CVSS v3**                      | 7.8 (High)                                                                                                                              |
-| **Severity**                     | High                                                                                                                                    |
-| **Impact**                       | Lectura de archivos sensibles, ejecución remota de código, obtención de shell.                                                          |
-| **Affected systems**             | Sistema web en 10.10.10.4 (servicio en puerto 8593).                                                                                    |
-| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC4/img/image-12.jpg )                                                                                                |
-| **Remediation**                  | Validar y sanear correctamente las entradas de usuario en parámetros GET. Deshabilitar `allow_url_include` y `allow_url_fopen` en PHP.  |
-| **Reference links**              | [OWASP LFI](https://owasp.org/www-community/attacks/Local_File_Inclusion), [CWE-98](https://cwe.mitre.org/data/definitions/98.html)     |
-
+| **Description of vulnerability** | Local File Inclusion (LFI) que permite leer archivos locales y ejecutar código PHP malicioso inyectado vía User-Agent.                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-98: Improper Control of Filename for Include yCWE-20: Improper Input Validation                                                    |
+| **CVSS v3**                      | 7.8 (High)                                                                                                                             |
+| **Severity**                     | High                                                                                                                                   |
+| **Impact**                       | Lectura de archivos sensibles, ejecución remota de código, obtención de shell.                                                         |
+| **Affected systems**             | Sistema web en 10.10.10.4 (servicio en puerto 8593).                                                                                   |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC4/img/image-12.jpg)                                                                                            |
+| **Remediation**                  | Validar y sanear correctamente las entradas de usuario en parámetros GET. Deshabilitar `allow_url_include` y `allow_url_fopen` en PHP. |
+| **Reference links**              | [OWASP LFI](https://owasp.org/www-community/attacks/Local_File_Inclusion), [CWE-98](https://cwe.mitre.org/data/definitions/98.html)    |
 
 ### PC5
 
 - Hallazgo X:
 
-| **Description of vulnerability** ||
-| -------------------------------- | -------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      |         |
-| **CVSS v3**                      |         |
-| **Severity**                     |         |
-| **Impact**                       |         |
-| **Affected systems**             |         |
-| **Proof Of Concept (POC)**       |         |
-| **Remediation**                  |         |
-| **Reference links**              |         |
+| **Description of vulnerability** |     |
+| -------------------------------- | --- |
+| **CVE/CWE**                      |     |
+| **CVSS v3**                      |     |
+| **Severity**                     |     |
+| **Impact**                       |     |
+| **Affected systems**             |     |
+| **Proof Of Concept (POC)**       |     |
+| **Remediation**                  |     |
+| **Reference links**              |     |
 
 ## 8. Recomendaciones generales
 
@@ -310,9 +309,8 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **PC1** (Windows 7)          | RDP vulnerable (BlueKeep - CVE-2019-0708)     | Explotación remota con Metasploit     | Acceso admin inmediato                       | Payload persistente con `multi/handler` | **Crítica (9.8)**  |
 | **PC2** (symfonos1 - Debian) | SMB expuesto y plugin vulnerable en WordPress | Fuerza bruta SMB, RCE por plugin SMTP | SUID binario mal configurado (`statuscheck`) | Clave SSH root                          | **Crítica (8.8)**  |
 | **PC3** (Durian - Debian)    | LFI en Apache con envenenamiento de logs      | Pivoting con Chisel + LFI → RCE       | Uso de GDB para obtener root                 | Clave SSH root                          | **Alta (7.8)**     |
-| **PC4** (solstice - Debian)  | LFI con ejecución de código vía User-Agent    | Curl + Netcat + reverse shell         | Acceso root por servicio PHP mal validado    | authorized\_keys en `.ssh/`             | **Alta (7.8)**     |
-| **PC5** (Corrosion - Ubuntu) | *(Pendiente de análisis completo)*            | *(Información no incluida)*           | *(N/D)*                                      | *(N/D)*                                 | *(N/D)*            |
-
+| **PC4** (solstice - Debian)  | LFI con ejecución de código vía User-Agent    | Curl + Netcat + reverse shell         | Acceso root por servicio PHP mal validado    | authorized_keys en `.ssh/`              | **Alta (7.8)**     |
+| **PC5** (Corrosion - Ubuntu) | _(Pendiente de análisis completo)_            | _(Información no incluida)_           | _(N/D)_                                      | _(N/D)_                                 | _(N/D)_            |
 
 ## 10. Anexos
 
