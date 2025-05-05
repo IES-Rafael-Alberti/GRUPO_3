@@ -305,7 +305,46 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 
 ## 6. Hallazgos
 
+- Hallazgo 1:
+
+| **Description of vulnerability** | Fallo crítico en el protocolo RDP de Microsoft que permite ejecución remota de código sin autenticación                                                |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CVE-2014-3704 / CWE-502                                                                |
+| **CVSS v3**                      | 9.8                                                                                    |
+| **Severity**                     | Crítica                                                                                |
+| **Impact**                       | Ejecución remota de código, toma de control total del sistema y propagación de malware. |
+| **Affected systems**             | Windows 7, Windows Server 2008, Windows Server 2008 R2                                                                    |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC1/img/image8.png )             |
+| **Remediation**                  | Aplicar parches de Microsoft (KB4499164, KB4499175); deshabilitar RDP si no es esencial                  |
+| **Reference links**              | https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0708                                           |
+
+- Hallazgo 2:
+
+| **Description of vulnerability** | Acceso a archivos sensibles vía SMB y LFI en WordPress mediante plugin vulnerable |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      |   CWE-200 / CWE-22          |
+| **CVSS v3**                      |   7.5       |
+| **Severity**                     |   Alta      |
+| **Impact**                       |   WordPress con plugin vulnerable      |
+| **Affected systems**             |   WordPress con plugin vulnerable      |
+| **Proof Of Concept (POC)**       |   ![alt text](./Writeups/PC2/img/image-21.png)      |
+| **Remediation**                  |   Restringir acceso a SMB, eliminar archivos sensibles de recursos compartidos, actualizar o eliminar plugins vulnerables de WordPress      |
+| **Reference links**              |   https://cwe.mitre.org/data/definitions/200.html, https://cwe.mitre.org/data/definitions/22.html       |
+
 - Hallazgo 3:
+
+| **Description of vulnerability** | Inyección de código PHP a través de un plugin vulnerable en WordPress |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-94 / CWE-89         |
+| **CVSS v3**                      | 8.8         |
+| **Severity**                     | Crítica         |
+| **Impact**                       | Ejecución remota de comandos, compromiso total del sistema         |
+| **Affected systems**             | WordPress con plugin vulnerable        |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC2/img/image-24.png)        |
+| **Remediation**                  | Eliminar o actualizar el plugin vulnerable, revisar integridad de archivos y permisos en WordPress, aplicar políticas de hardening        |
+| **Reference links**              | https://cwe.mitre.org/data/definitions/94.html, https://cwe.mitre.org/data/definitions/89.html         |
+
+- Hallazgo 4:
 
 | **Description of vulnerability** | Vulnerabilidad de inclusión local de archivos (LFI) que permite ejecutar código arbitrario mediante envenenamiento de logs de Apache. |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -318,7 +357,7 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 | **Remediation**                  | Validar y sanitizar todas las entradas de usuario; deshabilitar funciones peligrosas en PHP (`allow_url_include`, `include`, `require`); aplicar configuración segura de Apache. |
 | **Reference links**              | <https://owasp.org/www-community/attacks/Local_File_Inclusion>                                                                           |
 
-- Hallazgo 4:
+- Hallazgo 5:
 
 | **Description of vulnerability** | Local File Inclusion (LFI) que permite leer archivos locales y ejecutar código PHP malicioso inyectado vía User-Agent.                  |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
