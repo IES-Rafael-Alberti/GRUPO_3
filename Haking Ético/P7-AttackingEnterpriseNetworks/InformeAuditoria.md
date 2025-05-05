@@ -31,7 +31,9 @@
 
 ## 1. Resumen ejecutivo
 
-{RESUMEN EJECUTIVO}
+Durante la auditoría de seguridad se identificaron múltiples vulnerabilidades críticas que permitieron comprometer completamente el entorno evaluado. El acceso inicial se logró explotando una falla en el protocolo RDP de una máquina con Windows 7, lo que facilitó el movimiento lateral a través de la red interna. Se accedió a otras máquinas aprovechando servicios mal configurados y aplicaciones web vulnerables, incluyendo WordPress con plugins inseguros y fallos de inclusión local de archivos (LFI).
+
+Estas brechas permitieron escalar privilegios, obtener acceso persistente y tomar el control total de los sistemas. La falta de segmentación de red, actualizaciones de seguridad y controles básicos facilitó los ataques. Se recomienda aplicar parches, reforzar la configuración de los servicios y mejorar la arquitectura de red para mitigar riesgos futuros.
 
 ## 2. Glosario de términos
 
