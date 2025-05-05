@@ -288,11 +288,37 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ## 8. Recomendaciones generales
 
-Para mitigar los riesgos lo que deberíamos hacer es actualizar las versiones que contengan vulnerabilidades.
+- Actualizaciones y parches  
+   Mantener sistemas, servicios y aplicaciones actualizados mediante un proceso continuo de gestión de vulnerabilidades.
+
+- Reducción de superficie de ataque  
+   Deshabilitar servicios innecesarios y restringir el acceso a servicios críticos con firewalls y listas de control.
+
+- Seguridad en aplicaciones web  
+   Validar entradas del usuario, eliminar plugins obsoletos y desactivar funciones inseguras de PHP.
+
+- Segmentación y control de accesos  
+   Dividir la red en segmentos seguros (VLANs) y aplicar políticas de acceso estrictas (Zero Trust).
+
+- Monitoreo y respuesta a incidentes  
+   Usar sistemas de detección y monitoreo para identificar accesos no autorizados o actividad sospechosa.
+
+- Gestión de credenciales  
+   Aplicar contraseñas fuertes, almacenar de forma segura y usar autenticación multifactor (MFA).
+
+- Revisión de persistencias  
+   Detectar puertas traseras, claves SSH no autorizadas y cron jobs sospechosos, revisando logs y binarios críticos.
 
 ## 9. Resultados técnicos del informe
 
-{CONCLUSIÓN DE LOS RESULTADOS DEL INFORME}
+| Máquina                      | Vulnerabilidad Principal                      | Técnica utilizada                     | Escalada de Privilegios                      | Persistencia                            | Nivel de Severidad |
+| ---------------------------- | --------------------------------------------- | ------------------------------------- | -------------------------------------------- | --------------------------------------- | ------------------ |
+| **PC1** (Windows 7)          | RDP vulnerable (BlueKeep - CVE-2019-0708)     | Explotación remota con Metasploit     | Acceso admin inmediato                       | Payload persistente con `multi/handler` | **Crítica (9.8)**  |
+| **PC2** (symfonos1 - Debian) | SMB expuesto y plugin vulnerable en WordPress | Fuerza bruta SMB, RCE por plugin SMTP | SUID binario mal configurado (`statuscheck`) | Clave SSH root                          | **Crítica (8.8)**  |
+| **PC3** (Durian - Debian)    | LFI en Apache con envenenamiento de logs      | Pivoting con Chisel + LFI → RCE       | Uso de GDB para obtener root                 | Clave SSH root                          | **Alta (7.8)**     |
+| **PC4** (solstice - Debian)  | LFI con ejecución de código vía User-Agent    | Curl + Netcat + reverse shell         | Acceso root por servicio PHP mal validado    | authorized\_keys en `.ssh/`             | **Alta (7.8)**     |
+| **PC5** (Corrosion - Ubuntu) | *(Pendiente de análisis completo)*            | *(Información no incluida)*           | *(N/D)*                                      | *(N/D)*                                 | *(N/D)*            |
+
 
 ## 10. Anexos
 
