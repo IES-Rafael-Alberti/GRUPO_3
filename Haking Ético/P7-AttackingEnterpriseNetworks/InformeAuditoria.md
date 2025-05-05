@@ -29,7 +29,7 @@
 9. [Resultados técnicos del informe](#9-resultados-técnicos-del-informe)
 10. [Anexos](#10-anexos)
 
-## 1. Resumen de la evaluación
+## 1. Resumen ejecutivo
 
 {RESUMEN EJECUTIVO}
 
@@ -45,7 +45,7 @@ El esquema y los datos de las maquinas a auditar son los siguientes:
 
 | Nombre          | Sistema operativo      | Auditor           |
 | --------------- | ---------------------- | ----------------- |
-| PC1             | Windows Vista (64-bit) | Alejandro Seoane  |
+| PC1             | Windows 7 (64-bit)     | Alejandro Seoane  |
 | PC2 - symfonos1 | Debian (64-bit)        | Nicolas Ruiz      |
 | PC3 - Durian    | Debian (64-bit)        | Alejandro Díaz    |
 | PC4 - solstice  | Debian (64-bit)        | Israel Valderrama |
@@ -80,7 +80,12 @@ Las herramientas utilizadas han sido las siguientes:
 
 ### 5.1. PC1
 
-{PROCESOS DE LA MAQUINA 1}
+Primero haremos un escaneo de la red para localizar la IP y los puertos que tiene abierto la máquina que queremos vulnerar. Una vez localizado empezaremos la búsquedas de posibles explotaciones a través del puerto rdp.
+Con el módulo de `winodws/rdp/cve_2019_0708_bluekeep_rce` para conseguir una shell con privilegios de administrador.
+
+Una vez teniendo acceso con permisos de administrador hemos conseguido crear persistencdia para poder acceder cada vez que el usuario inicie sesión nos conectará al sistema con un payload que hemos creado. Hemos usado los módulos `windows/manage/persistence_exe`y `multi/handler`.
+
+A parte hemos podido vulnerar alguna contraseña de los usuarios del sistema utilizando John the Ripper.
 
 ### 5.2. PC2 - symfonos1
 
@@ -126,6 +131,81 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | 1   | Vulnerabilidad 1 | Alto   | Alto    | Alta         | Crítica         |
 | 2   | Vulnerabilidad 2 | Medio  | Medio   | Media        | Media           |
 | ..  | ...              | ...    | ...     | ...          | ...             |
+
+### PC1
+
+- Hallazgo X:
+
+| **Description of vulnerability** | Fallo crítico en el protocolo RDP de Microsoft que permite ejecución remota de código sin autenticación                                                |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CVE-2014-3704 / CWE-502                                                                |
+| **CVSS v3**                      | 9.8                                                                                    |
+| **Severity**                     | Crítica                                                                                |
+| **Impact**                       | Ejecución remota de código, toma de control total del sistema y propagación de malware. |
+| **Affected systems**             | Windows 7, Windows Server 2008, Windows Server 2008 R2                                                                    |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC1/img/image8.png )             |
+| **Remediation**                  | Aplicar parches de Microsoft (KB4499164, KB4499175); deshabilitar RDP si no es esencial                  |
+| **Reference links**              | https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0708                                           |
+
+### PC2
+
+- Hallazgo X:
+
+| **Description of vulnerability** ||
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      |         |
+| **CVSS v3**                      |         |
+| **Severity**                     |         |
+| **Impact**                       |         |
+| **Affected systems**             |         |
+| **Proof Of Concept (POC)**       |         |
+| **Remediation**                  |         |
+| **Reference links**              |         |
+
+### PC3
+
+- Hallazgo X:
+
+| **Description of vulnerability** ||
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      |         |
+| **CVSS v3**                      |         |
+| **Severity**                     |         |
+| **Impact**                       |         |
+| **Affected systems**             |         |
+| **Proof Of Concept (POC)**       |         |
+| **Remediation**                  |         |
+| **Reference links**              |         |
+
+### PC4
+
+- Hallazgo X:
+
+| **Description of vulnerability** ||
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      |         |
+| **CVSS v3**                      |         |
+| **Severity**                     |         |
+| **Impact**                       |         |
+| **Affected systems**             |         |
+| **Proof Of Concept (POC)**       |         |
+| **Remediation**                  |         |
+| **Reference links**              |         |
+
+### PC5
+
+- Hallazgo X:
+
+| **Description of vulnerability** ||
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      |         |
+| **CVSS v3**                      |         |
+| **Severity**                     |         |
+| **Impact**                       |         |
+| **Affected systems**             |         |
+| **Proof Of Concept (POC)**       |         |
+| **Remediation**                  |         |
+| **Reference links**              |         |
 
 ## 8. Recomendaciones generales
 
