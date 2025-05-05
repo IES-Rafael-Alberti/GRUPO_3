@@ -188,18 +188,19 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ### PC4
 
-- Hallazgo X:
+- Hallazgo 4:
 
-| **Description of vulnerability** ||
-| -------------------------------- | -------------------------------------------------------------------------------------- |
-| **CVE/CWE**                      |         |
-| **CVSS v3**                      |         |
-| **Severity**                     |         |
-| **Impact**                       |         |
-| **Affected systems**             |         |
-| **Proof Of Concept (POC)**       |         |
-| **Remediation**                  |         |
-| **Reference links**              |         |
+| **Description of vulnerability** | Local File Inclusion (LFI) que permite leer archivos locales y ejecutar código PHP malicioso inyectado vía User-Agent.                  |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-98: Improper Control of Filename for Include yCWE-20: Improper Input Validation                                                     |
+| **CVSS v3**                      | 7.8 (High)                                                                                                                              |
+| **Severity**                     | High                                                                                                                                    |
+| **Impact**                       | Lectura de archivos sensibles, ejecución remota de código, obtención de shell.                                                          |
+| **Affected systems**             | Sistema web en 10.10.10.4 (servicio en puerto 8593).                                                                                    |
+| **Proof Of Concept (POC)**       | Inyección en User-Agent con payload PHP.                                                                                                |
+| **Remediation**                  | Validar y sanear correctamente las entradas de usuario en parámetros GET. Deshabilitar `allow_url_include` y `allow_url_fopen` en PHP.  |
+| **Reference links**              | [OWASP LFI](https://owasp.org/www-community/attacks/Local_File_Inclusion), [CWE-98](https://cwe.mitre.org/data/definitions/98.html)     |
+
 
 ### PC5
 
