@@ -177,6 +177,8 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 - **Media** (4.0 – 6.9)
 - **Baja** (0.1 – 3.9)
 
+---
+
 ### PC1
 
 - Hallazgo 1:
