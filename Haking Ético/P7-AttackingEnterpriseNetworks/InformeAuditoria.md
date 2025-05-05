@@ -139,7 +139,9 @@ Una vez obtenidos permisos de root, se establece persistencia insertando una cla
 
 ### 5.3. PC3 - Durian
 
-{PROCESOS DE LA MAQUINA 3}
+Se ha realizado un acceso encadenado mediante pivoting con chisel, creando túneles reverse SOCKS desde la máquina atacante (Kali) hacia PC1 (Windows) y de ahí hacia PC2. Esto nos permitió alcanzar PC3, donde encontramos una vulnerabilidad LFI en un servicio HTTP.
+
+Mediante la inclusión de archivos y envenenamiento de logs de Apache, se ejecutaron comandos y obtuvimos una reverse shell. Luego, realizamos escalada de privilegios a root utilizando gdb. Finalmente, se creo una clave SSH con certificado para mantener acceso persistente al sistema.
 
 ### 5.4. PC4 - solstice
 
