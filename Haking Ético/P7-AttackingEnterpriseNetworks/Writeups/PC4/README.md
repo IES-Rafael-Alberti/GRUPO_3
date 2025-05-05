@@ -30,11 +30,33 @@ En el curl vemos que hay dos enlaces y vemos que hay una pagina que se llama `in
 
 ![alt text](img/image-7.png)
 
+Ahora intentamos meter en el user agent un payload de php malicioso
 
+![alt text](img/image-12.jpg)
+
+Ahora ponemos en escucha el puerto al que te quieras conectar con `nc -nlvp 4444` y en otra terminal ponemos lo siguiente.
+
+![alt text](img/image-13.jpg)
+
+![alt text](img/image-14.jpg)
+
+Una vez dentro ponemos otro netcat en el puerto que quieras con `nc -nlvp 1234`. Y en la terminal que tenemos ya conectada la metemos un reverse shell de php que nos hemos descargado y la hemos guardado como `shell.php` y ahora ejecutamos el siguiente comando `curl 127.0.0.1:57/shell.php`.
+
+![alt text](img/image-15.jpg)
+
+![alt text](img/image-16.jpg)
+
+Para ganar persistencia tenemos que crear una clave de ssh y copiamos la publica y la guardamos en `/root/.ssh/authorized_keys`
+
+![alt text](img/image-17.jpg)
+
+Una vez hecho eso ya probaríamos a iniciar sesión en ssh con el siguiente comando: `ssh -i  .ssh/id_rsa root@ip`, y ya estaríamos dentro.
+
+![alt text](img/image-18.jpg)
 
 ## SAMBA
 
-Hemos utilizado el samba para ver si podriamos conseguir acceos y para ello hemos utilizado el modulo  `scanner/smb/smb_login` de metasploit y hemos ajustados las opciones y hemos conseguido acceso a 17 sesiones de samba
+Hemos utilizado el samba para ver si podríamos conseguir acceso y para ello hemos utilizado el modulo  `scanner/smb/smb_login` de metasploit y hemos ajustados las opciones y hemos conseguido acceso a 17 sesiones de samba
 
 ![alt text](img/image-9.png)
 

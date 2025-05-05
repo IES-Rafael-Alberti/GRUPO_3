@@ -112,7 +112,17 @@ Después lo que deberemos hacer es un nmap con proxychains para ver cuales son l
 
 Como hay un servicio que no sabemos cual es, entonces para saber que servicio es hemos probado hacer curl por si tiene una página y es un servicio http. Una vez realizado el curl al puerto `8593` nos ha devuelto una página y vemos que tiene dos enlaces uno que sería a `/index.php` y otro que tiene `/index.php?book=list` como se puede ver en la _Figura X_ del Anexo.
 
-Una vez visto esto podemos probar si tiene una vulnerabilidad de LFI para ver si nos muestra algo del sistema y hemos probado para ver si nos muestra el contenido del `/etc/passwd`y para ello lo hemos probado como se puede ver desde la _Figura X_ hasta la _Figura X_ del Anexo
+Una vez visto esto podemos probar si tiene una vulnerabilidad de LFI para ver si nos muestra algo del sistema y hemos probado para ver si nos muestra el contenido del `/etc/passwd`y para ello lo hemos probado como se puede ver desde la _Figura X_ hasta la _Figura X_ del Anexo. 
+
+Ahora hemos metido un payload malicioso de php en el user agent para poder vulnerar la maquina y explotarla como se ve en la _Figura X_ del Anexo.
+
+Hemos puesto en escucha el puerto al que nos queremos conectar con el siguiente comando: `nc -nlvp 4444` y en otra terminal hemos puesto lo que se ven en las _Figuras X y X_ del Anexo.
+
+Una vez estando dentro hemos puesto un netcat en el puerto 1234 con el siguiente comando `nc -nlvp 1234` y en la terminal que nos hemos conseguido entramos en el directorio `/var/tmp/sv` y creamos un archivo que se llama shell.php y le hemos puesto el contenido de una reverse shell de php que hay en internet y hemos puesto en la terminal el siguiente comando `curl 127.0.0.1:57/shell.php` y ya con esto hemos mejorado la shell.
+
+Entramos en /root/.ssh/ y creamos un archivo que se llama authorized_keys y pegamos el contenido de la clave pública de ssh que hemos generado. Reiniciamos el servicio de ssh como se ve en la _Figura X_ del Anexo.
+
+En otra terminal intentamos entrar por ssh con el siguiente comando `ssh -i .ssh/id_rsa root@ip` como se ve en la _Figura X_ del Anexo.
 
 Otra de las vulnerabilidades que hemos encontrado es que el servicio del Samba es vulnerable y hemos probado el módulo de `scanner/smb/smb_login` y hemos puesto en la configuración los parámetros de USER_FILE y PASs_FILE le hemos pasados dos diccionarios y lo hemos ejecutado y nos ha creado varias sesiones como se puede ver en la _Figura X_ del Anexo.
 
