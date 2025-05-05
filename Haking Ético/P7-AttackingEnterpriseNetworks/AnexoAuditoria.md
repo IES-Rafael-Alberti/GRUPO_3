@@ -228,13 +228,13 @@ Hacemos una backdoor que nos permita acceder a ssh mediante un certificado, crea
 
 - Figura 32:
 
-![alt text](img/image-34.png)
+![alt text](./Writeups/PC3/img/image-34.png)
 
 Ahora probamos a conectarnos y vemos que funciona perfectamente
 
 - Figura 33:
 
-![alt text](img/image-45.png)
+![alt text](./Writeups/PC3/img/image-45.png)
 
 ### 5.4. PC4 - Solstice
 
