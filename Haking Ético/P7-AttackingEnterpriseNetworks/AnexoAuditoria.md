@@ -81,127 +81,127 @@ En esta sección se agrupan las figuras y vulnerabilidades encontradas en los si
 
 ### 5.1. PC1 - Sin nombre
 
-#### Escaneo
+#### Escaneo PC1
 
 - Figura 1: puertos abiertos de PC1
 
-![](./Writeups/PC1/img/image2.png)
+![alt text](./Writeups/PC1/img/image2.png)
 
 - Figura 2: escaneo de vulnerabilidades
 
-![](./Writeups/PC1/img/image4.png)
+![alt text](./Writeups/PC1/img/image4.png)
 
-#### Vulnerabilidades
+#### Vulnerabilidades PC1
 
 - Figura 3: exploit usado
 
-![](./Writeups/PC1/img/image4.3.png)
+![alt text](./Writeups/PC1/img/image4.3.png)
 
 - Figura 4: inicio en el sistema
 
-![](./Writeups/PC1/img/image9.png)
+![alt text](./Writeups/PC1/img/image9.png)
 
-#### Persistencia
+#### Persistencia PC1
 
 - Figura 5: creación del payload
 
-![](./Writeups/PC1/img/image19.png)
+![alt text](./Writeups/PC1/img/image19.png)
 
 - Figura 6: exploit usado
 
-![](./Writeups/PC1/img/image20.png)
+![alt text](./Writeups/PC1/img/image20.png)
 
 - Figura 7: Comprobación del payload
 
-![](./Writeups/PC1/img/image26.png)
+![alt text](./Writeups/PC1/img/image26.png)
 
 ### 5.2. PC2 - Symfonos
 
-#### Pivoting
+#### Pivoting PC2
 
 - Figura 8: exploit usado para añadir las redes de PC1
 
-![](./Writeups/PC2/img/image-2.png)
+![alt text](./Writeups/PC2/img/image-2.png)
 
-#### Escaneo
+#### Escaneo PC2
 
 - Figura 9: escaneo de puertos abiertos
 
-![](./Writeups/PC2/img/image-4.png)
+![alt text](./Writeups/PC2/img/image-4.png)
 
-#### Vulnerabilidades
+#### Vulnerabilidades PC2
 
 - Figuras 10, 11 y 12: archivos encontrados en el SMB
 
-![](./Writeups/PC2/img/image-11.png)
+![alt text](./Writeups/PC2/img/image-11.png)
 
-![](./Writeups/PC2/img/image-12.png)
+![alt text](./Writeups/PC2/img/image-12.png)
 
-![](./Writeups/PC2/img/image-13.png)
+![alt text](./Writeups/PC2/img/image-13.png)
 
 - Figura 13: wordpress instalado en la máquina
 
-![](./Writeups/PC2/img/image-17.png)
+![alt text](./Writeups/PC2/img/image-17.png)
 
 - Figura 14: plugin encontrado en carpeta _uploads_
 
-![](./Writeups/PC2/img/image-19.png)
+![alt text](./Writeups/PC2/img/image-19.png)
 
 - Figura 15: exploit que permite ver archivos del sistema
 
-![](./Writeups/PC2/img/image-21.png)
+![alt text](./Writeups/PC2/img/image-21.png)
 
 - Figura 16: correo inyectado con php
 
-![](./Writeups/PC2/img/image-24.png)
+![alt text](./Writeups/PC2/img/image-24.png)
 
 - Figuras 17 y 18: inicio en el sistema
 
-![](./Writeups/PC2/img/image-27.png)
+![alt text](./Writeups/PC2/img/image-27.png)
 
-![](./Writeups/PC2/img/image-30.png)
+![alt text](./Writeups/PC2/img/image-30.png)
 
 - Figura 19, 20 y 21: escalada de privilegios
 
-![](./Writeups/PC2/img/image-33.png)
+![alt text](./Writeups/PC2/img/image-33.png)
 
-![](./Writeups/PC2/img/image-34.png)
+![alt text](./Writeups/PC2/img/image-34.png)
 
-![](./Writeups/PC2/img/image-35.png)
+![alt text](./Writeups/PC2/img/image-35.png)
 
-#### Persistencia
+#### Persistencia PC2
 
 - Figura 22: crear persistencia copiando clave RSA de la máquina atacante
 
-![](./Writeups/PC2/img/image-37.png)
+![alt text](./Writeups/PC2/img/image-37.png)
 
 - Figura 23: comprobación
 
-![](./Writeups/PC2/img/image-38.png)
+![alt text](./Writeups/PC2/img/image-38.png)
 
 ### 5.3. PC3 - Duriam
 
-#### Pivoting
+#### Pivoting PC3
 
 - Figura 24, 25 y 26: Uso de chisel para crear un tunel desde la máquina atacante hasta Symfonos
 
-![](./Writeups/PC3/img/image-2.png)
+![alt text](./Writeups/PC3/img/image-2.png)
 
-![](./Writeups/PC3/img/image-1.png)
+![alt text](./Writeups/PC3/img/image-1.png)
 
-![](./Writeups/PC3/img/image-23.png)
+![alt text](./Writeups/PC3/img/image-23.png)
 
-#### Escaneo
+#### Escaneo PC3
 
 - Figura 27: escaneo de puertos de PC3
 
-![](./Writeups/PC3/img/image-8.png)
+![alt text](./Writeups/PC3/img/image-8.png)
 
 - Figura 28: fuzzeo de directorios
 
-![](./Writeups/PC3/img/image-9.png)
+![alt text](./Writeups/PC3/img/image-9.png)
 
-#### Vulnerabilidades
+#### Vulnerabilidades PC3
 
 Vamos a envenenar los logs de apache , con un user agent que sea un script de php , para poder meter comandos de terminal
 
@@ -209,7 +209,7 @@ Vamos a envenenar los logs de apache , con un user agent que sea un script de ph
 
 ![exploit](./Writeups/PC3/img/image-6.png)
 
-Escribimos esto en la url en el navegador 
+Escribimos esto en la url en el navegador
 
 - Figura 30:
 
@@ -221,7 +221,7 @@ Abrimos el puerto 4445 y revisamos que se haya hecho la reverse shell
 
 ![exploit](./Writeups/PC3/img/image-38.png)
 
-#### Persistencia
+#### Persistencia PC3
 
 Hacemos una backdoor que nos permita acceder a ssh mediante un certificado, creamos uno en nuestra máquina kali.
 
@@ -237,28 +237,29 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 
 ### 5.4. PC4 - Solstice
 
-#### Pivoting
+#### Pivoting PC4
 
-#### Escaneo
+- Figura 34:
 
-#### Vulnerabilidades
+![alt text](./Writeups/PC2/img/image-2.png)
 
-#### Persistencia
+#### Escaneo PC4
+
+#### Vulnerabilidades PC4
+
+#### Persistencia PC4
 
 ### 5.5. PC5 - Corrosion
 
-#### Pivoting
+#### Pivoting PC5
 
-#### Escaneo
+#### Escaneo PC5
 
-#### Vulnerabilidades
+#### Vulnerabilidades PC5
 
-#### Persistencia
-
-
+#### Persistencia PC5
 
 ## 6. Hallazgos
-
 
 - Hallazgo 3:
 
@@ -271,5 +272,4 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 | **Affected systems**             | Servidor Linux con Apache y PHP vulnerable al LFI (afecta a sistemas sin validación de entradas en scripts PHP).                       |
 | **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC3/img/image-6.png)    ![exploit](./Writeups/PC3/img/image-37.png)![exploit](./Writeups/PC3/img/image-38.png)                                                                                       |
 | **Remediation**                  | Validar y sanitizar todas las entradas de usuario; deshabilitar funciones peligrosas en PHP (`allow_url_include`, `include`, `require`); aplicar configuración segura de Apache. |
-| **Reference links**              | https://owasp.org/www-community/attacks/Local_File_Inclusion                                                                           |
-
+| **Reference links**              | <https://owasp.org/www-community/attacks/Local_File_Inclusion>                                                                           |
