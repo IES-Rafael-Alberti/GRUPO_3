@@ -18,6 +18,7 @@
    5.3. [PC3-Duriam](#53-pc3---duriam)  
    5.4. [PC4-Solstice](#54-pc4---solstice)  
    5.5. [PC5-Corrosion](#55-pc5---corrosion)
+6. [Hallazgos](#6-hallazgos)
 
 ## 1. Declaración de confidencialidad
 
@@ -245,9 +246,52 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 
 #### Escaneo PC4
 
+- Figura 35, Figura 36, Figura 37, Figura 38: Escaneos de puertos
+
+![alt text](./Writeups/PC4/img/image-123.png)
+![alt text](./Writeups/PC4/img/image.png)
+![alt text](./Writeups/PC4/img/image-2.png)
+![alt text](./Writeups/PC4/img/image-3.png)
+
 #### Vulnerabilidades PC4
 
+- Figura 39: Información de `/etc/passwd` con LFI.
+
+![alt text](./Writeups/PC4/img/image-7.png)
+
+-  Figura 40, Figura 41: Payload malicioso
+
+![alt text](./Writeups/PC4/img/image-12.jpg)
+
+![alt text](./Writeups/PC4/img/image-13.jpg)
+
+- Figura 42, 43, 44: Explotación del samba
+
+![alt text](./Writeups/PC4/img/image-9.png)
+
+![alt text](./Writeups/PC4/img/image-10.png)
+
+![alt text](./Writeups/PC4/img/image-11.png)
+
 #### Persistencia PC4
+
+- Figura 45: Obtención de shell
+
+![alt text](./Writeups/PC4/img/image-14.jpg)
+
+- Figura 46, 47: Mejora de shell
+
+![alt text](./Writeups/PC4/img/image-15.jpg)
+
+![alt text](./Writeups/PC4/img/image-16.jpg)
+
+- Figura 48: Creación backdoor ssh
+
+![alt text](./Writeups/PC4/img/image-17.jpg)
+
+- Figura 49: Conexión mediante ssh
+
+![alt text](./Writeups/PC4/img/image-18.jpg)
 
 ### 5.5. PC5 - Corrosion
 
@@ -273,3 +317,16 @@ Ahora probamos a conectarnos y vemos que funciona perfectamente
 | **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC3/img/image-6.png)    ![exploit](./Writeups/PC3/img/image-37.png)![exploit](./Writeups/PC3/img/image-38.png)                                                                                       |
 | **Remediation**                  | Validar y sanitizar todas las entradas de usuario; deshabilitar funciones peligrosas en PHP (`allow_url_include`, `include`, `require`); aplicar configuración segura de Apache. |
 | **Reference links**              | <https://owasp.org/www-community/attacks/Local_File_Inclusion>                                                                           |
+
+- Hallazgo 4:
+
+| **Description of vulnerability** | Local File Inclusion (LFI) que permite leer archivos locales y ejecutar código PHP malicioso inyectado vía User-Agent.                  |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CWE-98: Improper Control of Filename for Include yCWE-20: Improper Input Validation                                                     |
+| **CVSS v3**                      | 7.8 (High)                                                                                                                              |
+| **Severity**                     | High                                                                                                                                    |
+| **Impact**                       | Lectura de archivos sensibles, ejecución remota de código, obtención de shell.                                                          |
+| **Affected systems**             | Sistema web en 10.10.10.4 (servicio en puerto 8593).                                                                                    |
+| **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC4/img/image-12.jpg )                                                                                                |
+| **Remediation**                  | Validar y sanear correctamente las entradas de usuario en parámetros GET. Deshabilitar `allow_url_include` y `allow_url_fopen` en PHP.  |
+| **Reference links**              | [OWASP LFI](https://owasp.org/www-community/attacks/Local_File_Inclusion), [CWE-98](https://cwe.mitre.org/data/definitions/98.html)     |
