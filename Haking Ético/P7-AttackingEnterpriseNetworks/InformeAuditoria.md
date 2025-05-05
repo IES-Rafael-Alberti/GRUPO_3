@@ -31,9 +31,13 @@
 
 ## 1. Resumen ejecutivo
 
-Durante la auditoría de seguridad se identificaron múltiples vulnerabilidades críticas que permitieron comprometer completamente el entorno evaluado. El acceso inicial se logró explotando una falla en el protocolo RDP de una máquina con Windows 7, lo que facilitó el movimiento lateral a través de la red interna. Se accedió a otras máquinas aprovechando servicios mal configurados y aplicaciones web vulnerables, incluyendo WordPress con plugins inseguros y fallos de inclusión local de archivos (LFI).
+Durante la auditoría de seguridad realizada en el entorno evaluado se detectaron múltiples vulnerabilidades críticas que comprometieron seriamente la integridad y confidencialidad de los sistemas. El punto de entrada fue una máquina Windows 7 expuesta mediante el protocolo RDP vulnerable (BlueKeep), lo que permitió obtener acceso como administrador. Desde allí, se llevó a cabo un movimiento lateral hacia otras máquinas dentro de redes internas mediante técnicas de pivoting y uso de herramientas como Metasploit, Proxychains y Chisel.
 
-Estas brechas permitieron escalar privilegios, obtener acceso persistente y tomar el control total de los sistemas. La falta de segmentación de red, actualizaciones de seguridad y controles básicos facilitó los ataques. Se recomienda aplicar parches, reforzar la configuración de los servicios y mejorar la arquitectura de red para mitigar riesgos futuros.
+Se comprometieron varias máquinas Linux y Windows aprovechando servicios como SMB, Apache y WordPress, este último con plugins vulnerables a inyección de código y fallos de inclusión de archivos (LFI). En varios casos, se logró escalar privilegios a root mediante binarios mal configurados o técnicas de inyección, estableciendo persistencia con claves SSH o cargas maliciosas.
+
+El análisis evidenció una falta de segmentación adecuada de la red, ausencia de parches de seguridad, servicios innecesarios expuestos y validaciones insuficientes en aplicaciones web. Estas debilidades facilitaron el acceso no autorizado y el control total de los sistemas comprometidos.
+
+Se recomienda con urgencia aplicar actualizaciones de seguridad, limitar la exposición de servicios sensibles, reforzar la validación de entradas en aplicaciones, segmentar correctamente la red y establecer mecanismos de monitoreo y respuesta ante incidentes.
 
 ## 2. Glosario de términos
 
