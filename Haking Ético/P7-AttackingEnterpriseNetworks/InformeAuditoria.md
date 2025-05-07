@@ -10,7 +10,7 @@
 
 ## Índice
 
-1. [Resumen de la evaluación](#1-resumen-de-la-evaluación)
+1. [Resumen de la evaluación](#1-resumen-ejecutivo)
 2. [Glosario de términos](#2-glosario-de-términos)
 3. [Introducción](#3-introducción)  
    3.1. [Máquinas a auditar](#31-máquinas-a-auditar)  
@@ -176,7 +176,7 @@ Otra de las vulnerabilidades que hemos encontrado es que el servicio del Samba e
 
 ### 5.5. PC5 - Corrosion
 
-Tras comprometer el PC4 se descubrió una nueva red interna (10.10.30.0/24) en la que se encontró una nueva maquina. Pivotando a traves de un túnel creado con Chisel se ha podido acceder a ella, comprometiendo el servicio Apache TomCat en su version 9.0.56 expuesto en el puerto 8080 de la máquina.
+Tras comprometer el PC4, se descubrió una nueva red interna (10.10.30.0/24) en la que se encontró una nueva maquina. Pivotando a traves de un túnel creado con Chisel, se ha podido acceder a ella, comprometiendo el servicio Apache TomCat en su version 9.0.56 expuesto en el puerto 8080 de la máquina, a traves de la cual ha sido posible obtener una shell reversa que permite la ejecución de código en la maquina vulnerada.
 
 ## 6. Trayectoria del ataque
 
@@ -204,7 +204,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **Affected systems**             | Windows 7, Windows Server 2008, Windows Server 2008 R2                                                  |
 | **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC1/img/image8.png)                                                               |
 | **Remediation**                  | Aplicar parches de Microsoft (KB4499164, KB4499175); deshabilitar RDP si no es esencial                 |
-| **Reference links**              | https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0708                                            |
+| **Reference links**              | <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0708>                                          |
 
 ### PC2
 
@@ -219,7 +219,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **Affected systems**             | WordPress con plugin vulnerable                                                                                                      |
 | **Proof Of Concept (POC)**       | ![alt text](./Writeups/PC2/img/image-21.png)                                                                                         |
 | **Remediation**                  | Restringir acceso a SMB, eliminar archivos sensibles de recursos compartidos, actualizar o eliminar plugins vulnerables de WordPress |
-| **Reference links**              | https://cwe.mitre.org/data/definitions/200.html, https://cwe.mitre.org/data/definitions/22.html                                      |
+| **Reference links**              | <https://cwe.mitre.org/data/definitions/200.html>, <https://cwe.mitre.org/data/definitions/22.html>                                  |
 
 - Hallazgo 3:
 
@@ -232,7 +232,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **Affected systems**             | WordPress con plugin vulnerable                                                                                                    |
 | **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC2/img/image-24.png)                                                                                        |
 | **Remediation**                  | Eliminar o actualizar el plugin vulnerable, revisar integridad de archivos y permisos en WordPress, aplicar políticas de hardening |
-| **Reference links**              | https://cwe.mitre.org/data/definitions/94.html, https://cwe.mitre.org/data/definitions/89.html                                     |
+| **Reference links**              | <https://cwe.mitre.org/data/definitions/94.html>, <https://cwe.mitre.org/data/definitions/89.html>                                 |
 
 ### PC3
 
@@ -247,7 +247,7 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 | **Affected systems**             | Servidor Linux con Apache y PHP vulnerable al LFI (afecta a sistemas sin validación de entradas en scripts PHP).                                                                 |
 | **Proof Of Concept (POC)**       | ![exploit](./Writeups/PC3/img/image-6.png) ![exploit](./Writeups/PC3/img/image-37.png)![exploit](./Writeups/PC3/img/image-38.png)                                                |
 | **Remediation**                  | Validar y sanitizar todas las entradas de usuario; deshabilitar funciones peligrosas en PHP (`allow_url_include`, `include`, `require`); aplicar configuración segura de Apache. |
-| **Reference links**              | https://owasp.org/www-community/attacks/Local_File_Inclusion                                                                                                                     |
+| **Reference links**              | <https://owasp.org/www-community/attacks/Local_File_Inclusion>                                                                                                                   |
 
 ### PC4
 
@@ -266,18 +266,18 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ### PC5
 
-- Hallazgo X:
+- Hallazgo 6:
 
-| **Description of vulnerability** |     |
-| -------------------------------- | --- |
-| **CVE/CWE**                      |     |
-| **CVSS v3**                      |     |
-| **Severity**                     |     |
-| **Impact**                       |     |
-| **Affected systems**             |     |
-| **Proof Of Concept (POC)**       |     |
-| **Remediation**                  |     |
-| **Reference links**              |     |
+| **Description of vulnerability** | Remote code execution in Apache Tomcat                                                                                                              |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **CVE/CWE**                      | CVE-2024-56337 / CWE-264                                                                                                                            |
+| **CVSS v3**                      | 7.8 (High)                                                                                                                                          |
+| **Severity**                     | High                                                                                                                                                |
+| **Impact**                       | Obtención de shell, incluyendo acceso a archivos sensibles e inyección de código                                                                    |
+| **Affected systems**             | Sistema web alojado en el puerto 8080 de la maquina                                                                                                 |
+| **Proof Of Concept (POC)**       | ![PC5-uploadPayload.png](./Writeups/PC5/img/PC5-uploadPayload.png) ![PC5-payloadUploaded.png](./Writeups/PC5/img/PC5-payloadUploaded.png)           |
+| **Remediation**                  | Actualizar a la última versión de Apache Tomcat y configurar la propiedad `sun.io.useCanonCaches` como `false` si se ejecuta usando Java 8, 11 o 17 |
+| **Reference links**              | <https://www.cybersecurity-help.cz/vdb/SB2024122063>, <https://www.cybersecurity-help.cz/vdb/cwe/264/>                                              |
 
 ## 8. Recomendaciones generales
 
@@ -304,13 +304,13 @@ Durante la auditoría se llevó a cabo un reconocimiento inicial de la red local
 
 ## 9. Resultados técnicos del informe
 
-| Máquina                      | Vulnerabilidad Principal                      | Técnica utilizada                     | Escalada de Privilegios                      | Persistencia                            | Nivel de Severidad |
-| ---------------------------- | --------------------------------------------- | ------------------------------------- | -------------------------------------------- | --------------------------------------- | ------------------ |
-| **PC1** (Windows 7)          | RDP vulnerable (BlueKeep - CVE-2019-0708)     | Explotación remota con Metasploit     | Acceso admin inmediato                       | Payload persistente con `multi/handler` | **Crítica (9.8)**  |
-| **PC2** (symfonos1 - Debian) | SMB expuesto y plugin vulnerable en WordPress | Fuerza bruta SMB, RCE por plugin SMTP | SUID binario mal configurado (`statuscheck`) | Clave SSH root                          | **Crítica (8.8)**  |
-| **PC3** (Durian - Debian)    | LFI en Apache con envenenamiento de logs      | Pivoting con Chisel + LFI → RCE       | Uso de GDB para obtener root                 | Clave SSH root                          | **Alta (7.8)**     |
-| **PC4** (solstice - Debian)  | LFI con ejecución de código vía User-Agent    | Curl + Netcat + reverse shell         | Acceso root por servicio PHP mal validado    | authorized_keys en `.ssh/`              | **Alta (7.8)**     |
-| **PC5** (Corrosion - Ubuntu) | _(Pendiente de análisis completo)_            | _(Información no incluida)_           | _(N/D)_                                      | _(N/D)_                                 | _(N/D)_            |
+| Máquina                      | Vulnerabilidad Principal                      | Técnica utilizada                                                                                        | Escalada de Privilegios                      | Persistencia                            | Nivel de Severidad |
+| ---------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------- | --------------------------------------- | ------------------ |
+| **PC1** (Windows 7)          | RDP vulnerable (BlueKeep - CVE-2019-0708)     | Explotación remota con Metasploit                                                                        | Acceso admin inmediato                       | Payload persistente con `multi/handler` | **Crítica (9.8)**  |
+| **PC2** (symfonos1 - Debian) | SMB expuesto y plugin vulnerable en WordPress | Fuerza bruta SMB, RCE por plugin SMTP                                                                    | SUID binario mal configurado (`statuscheck`) | Clave SSH root                          | **Crítica (8.8)**  |
+| **PC3** (Durian - Debian)    | LFI en Apache con envenenamiento de logs      | Pivoting con Chisel + LFI → RCE                                                                          | Uso de GDB para obtener root                 | Clave SSH root                          | **Alta (7.8)**     |
+| **PC4** (solstice - Debian)  | LFI con ejecución de código vía User-Agent    | Curl + Netcat + reverse shell                                                                            | Acceso root por servicio PHP mal validado    | authorized_keys en `.ssh/`              | **Alta (7.8)**     |
+| **PC5** (Corrosion - Ubuntu) | LFI con ejecución de código                   | Pivoting usando Chisel, inclusión de archivos locales y shell reversa que permite la ejecución de código | Secuestro de librería de Python              | Clave SSH                               | **Alta (7.8)**     |
 
 ## 10. Anexos
 
