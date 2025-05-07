@@ -10,4 +10,4 @@ Trabajo realizado por Grupo3:
 
 | Nombre | Fecha | Qué se ha hecho |
 |-|-|-|
-| Nicolás Ruiz Ruiz | 08-05-2025 | Añadir lista de activos de la empresa(Clases, grupos y activos) |
+| Nicolás Ruiz Ruiz | 07-05-2025 | Añadir lista de activos de la empresa(Clases, grupos y activos) |
