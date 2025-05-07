@@ -70,26 +70,4 @@ Decido escanear los directorios que pueden encontrarse en la web que se encuentr
      ![PC5-uploadPayload.png](img/PC5-uploadPayload.png)
      ![PC5-payloadUploaded.png](img/PC5-payloadUploaded.png)
 
-## Escalada de Privilegios
-
-### Método de Escalada
-
-[Descripción del método de escalada de privilegios]
-
-### Procesos de Escalada
-
-1. Paso 1
-2. Paso 2
-3. ...
-
-## Persistencia
-
-### Método Utilizado
-
-[Descripción del método de escalada de privilegios]
-
-### Procesos de Persistencia
-
-1. Paso 1
-2. Paso 2
-3. ...
+     Por ultimo solo falta poner en escucha el puerto especificado anteriormente en el payload usando `netcat` y acceder a la url del en la que se encuentra el payload para recibir la reverse shell y entrar en la maquina.
