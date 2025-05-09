@@ -8,7 +8,7 @@ Trabajo realizado por Grupo3:
 
 # Tabla de registros
 
-| Nombre            | Fecha      | Qué se ha hecho                       |
+| **Nombre**        | **Fecha**  | **Qué se ha hecho**                   |
 |-------------------|------------|---------------------------------------|
 | Nicolás Ruiz      | 07-05-2025 | Añadir lista de activos de la empresa |
 | Alejandro Díaz    | 08-05-2025 | Valoración de activos                 |
