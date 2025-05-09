@@ -3,14 +3,6 @@
 SCRIPT_DIR="/home/alejandro/Escritorio/misp"
 VENV_DIR="$SCRIPT_DIR/.venv"
 APP_SCRIPT="$SCRIPT_DIR/main.py"
-URL_A_ANALIZAR="$1"
-
-# Verificar que se ha pasado una URL
-if [ -z "$URL_A_ANALIZAR" ]; then
-    echo "Uso: $0 <url-a-analizar>"
-    echo "Ejemplo: $0 https://example.com"
-    exit 1
-fi
 
 # Crear entorno virtual si no existe
 if [ ! -d "$VENV_DIR" ]; then
@@ -36,8 +28,8 @@ fi
 
 # Ejecutar script
 if [ -f "$APP_SCRIPT" ]; then
-    echo "Ejecutando análisis para: $URL_A_ANALIZAR"
-    python "$APP_SCRIPT" "$URL_A_ANALIZAR"
+    echo "Ejecutando análisis"
+    python3 "$APP_SCRIPT"
 else
     echo "Error: No se encontró el script Python en $APP_SCRIPT."
 fi

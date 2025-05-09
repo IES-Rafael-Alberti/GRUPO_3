@@ -1,0 +1,6 @@
+https://example.com
+http://testphp.vulnweb.com
+https://www.google.com
+https://phishing.demo.openphish.com
+http://neutrinoapi.com/test-malware-url/
+http://myetherevvalliet.com/
