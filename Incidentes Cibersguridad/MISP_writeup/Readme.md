@@ -11,7 +11,7 @@ Herramienta de Threat intelligence
 
 Vamos a `Administration -> List Users -> Add User`
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 > Podemos ver los usuarios en `Administration -> List Users -> List Users`
 
