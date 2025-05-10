@@ -4,7 +4,7 @@
 
 ![Imagen que aún no existe]
 
-Para el análisis del dispositivo móvil del marido, voy a usar esta [seetcheat](https://pbs.twimg.com/media/FL-GAXBUUAEJRZq.jpg) de móvil. Voy a 
+Para el análisis del dispositivo móvil del marido, voy a usar esta [seetcheat](https://pbs.twimg.com/media/FL-GAXBUUAEJRZq.jpg) de móvil. Voy a hacer una amalgama de información y al final hago un resumen de todo.
 
 | Dato | Valor |
 |-|-|
