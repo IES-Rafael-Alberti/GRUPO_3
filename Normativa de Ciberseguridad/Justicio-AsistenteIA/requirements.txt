@@ -1,0 +1,11 @@
+python-dotenv
+gradio
+langchain-openai
+langchain-huggingface
+langchain-community
+langchain-text-splitters
+langgraph
+langchain-core
+faiss-cpu
+tf-keras
+beautifulsoup4
