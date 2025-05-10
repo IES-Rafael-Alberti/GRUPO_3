@@ -1,6 +1,6 @@
 ## Dispositivos bluetooth
 
-Podemos ver dos dispositivos en la televisión, el primero es un amazon echo y el segundo unos auriculares Xiaomi
+Podemos ver dos dispositivos en la televisión, el primero es un amazon echo y el segundo es una pulsera xiaomi.
 
 ![](img/img1.png)
 
@@ -8,7 +8,7 @@ Podemos ver dos dispositivos en la televisión, el primero es un amazon echo y e
 
 ![](img/img2.png)
 
-**Auriculares bluetooth Xiaomi **
+**Pulsera bluetooth Xiaomi**
 
 ![](img/img3.png)
 
