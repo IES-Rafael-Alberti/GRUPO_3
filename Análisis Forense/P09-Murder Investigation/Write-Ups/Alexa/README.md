@@ -126,7 +126,7 @@ Habían varias personas en la casa.
 Un hombre manda la orden de apagar la televisión.
 
 - 15:06
-La mujer da la orden de enciender pandora.
+La mujer da la orden de encender pandora.
 
 - 15:12 - 15:13
 El hombre y la mujer se pelean.
