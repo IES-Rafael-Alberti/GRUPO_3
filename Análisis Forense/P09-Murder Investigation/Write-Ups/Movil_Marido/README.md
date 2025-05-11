@@ -45,22 +45,22 @@ Vale, creo que con esta información inicial del telefono será suficiente, voy 
 Se encuentra una nota de lo que parece ser un diario: El autor, lleva a sus hijos(Jasin y otro) a "Fantasy World" para ver "Carnival Fantasy" el día 05/09/2012
 
 Un posible mapa:
-![alt text](snb_thumbnailimage_001.jpg)
+![alt text](img/snb_thumbnailimage_001.jpg)
 
 Se encuentra una nota con la siguiente información: Viaje a "Abbey Sacred" 05/09/2012
 
 Se encuentra un folleto de "Fantasy Parade"
-![alt text](snb_thumbnailimage_001-1.jpg)
+![alt text](img/snb_thumbnailimage_001-1.jpg)
 
 Se encuentran varias entradas relacionadas con el trabajo del autor:
-![alt text](snb_thumbnailimage_001-2.jpg)
-![alt text](snb_thumbnailimage_001-3.jpg)
-![alt text](snb_thumbnailimage_001-4.jpg)
-![alt text](snb_thumbnailimage_001-5.jpg)
+![alt text](img/snb_thumbnailimage_001-2.jpg)
+![alt text](img/snb_thumbnailimage_001-3.jpg)
+![alt text](vsnb_thumbnailimage_001-4.jpg)
+![alt text](img/snb_thumbnailimage_001-5.jpg)
 
 Se encuentra una nota del trabajo que indica una reunión el día 29 de abril de 2012 a las 4 p.m.
-![alt text](snb_thumbnailimage_001-6.jpg)
-![alt text](snb_thumbnailimage_002.jpg)
+![alt text](img/snb_thumbnailimage_001-6.jpg)
+![alt text](img/snb_thumbnailimage_002.jpg)
 
 - Aplicaciones instaladas:
 
@@ -88,7 +88,7 @@ Tampoco se encuentra información relevante, más que muchos mensajes de spam de
 
 - Historial de navegación:
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 Lo único interesante que sacamos son las busquedas relacionadas con la programación, que junto con las notas anteriores, podemos teorizar que el usurio es programador.
 
