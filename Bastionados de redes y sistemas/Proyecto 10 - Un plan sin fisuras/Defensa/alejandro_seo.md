@@ -1,9 +1,9 @@
 # Registro de trabajo
 
-- 08-05-2025 Identificaión de las vulnerabilidades
+- 08-05-2025 Identificación de las vulnerabilidades
 
-- 11-05-2025 Identificacíon activos críticos
+- 11-05-2025 Identificación activos críticos
 
-- 11-05-2025 Medidas técnicas prioritarias
+- 11-05-2025 Cálculo de madurez de la empresa
 
-- 11-05-2025 Conclusión de lo realizado anteriormente
+- 11-05-2025 Conclusión activos
