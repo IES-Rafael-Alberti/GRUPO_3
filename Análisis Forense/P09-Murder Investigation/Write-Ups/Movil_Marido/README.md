@@ -94,3 +94,80 @@ Lo único interesante que sacamos son las busquedas relacionadas con la programa
 
 En el archivo "Coockies" encontramos entradas normales, servicios de google, samsung, etc.
 
+
+- Móvil de la víctima:
+
+```
+<N1 Tag="1c:af:05:9e:19:74">
+    <N1 Tag="Timestamp" Type="int">1499931533</N1>
+    <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2>
+    <N3 Tag="DevClass" Type="int">5898764</N3>
+    <N4 Tag="DevType" Type="int">1</N4>
+    <N5 Tag="AddrType" Type="int">0</N5>
+</N1>
+```
+
+Aquí podemos el dispositivo móvil de la mujer del marido llamado `Betty (SHV-E250L)` con MAC `1c:af:05:9e:19:74`.
+
+![alt text](img/image2.png)
+
+- Amazon Echo:
+
+```
+<N2 Tag="74:c2:46:88:5d:09">
+    <N1 Tag="Timestamp" Type="int">1500194150</N1>
+    <N2 Tag="DevClass" Type="int">787476</N2>
+    <N3 Tag="DevType" Type="int">1</N3>
+    <N4 Tag="AddrType" Type="int">0</N4>
+    <N5 Tag="Name" Type="string">Echo-2W5</N5>
+    <N6 Tag="Manufacturer" Type="int">69</N6>
+    <N7 Tag="LmpVer" Type="int">5</N7>
+    <N8 Tag="LmpSubVer" Type="int">0</N8>
+    <N9 Tag="LinkKeyType" Type="int">4</N9>
+    <N10 Tag="PinLength" Type="int">0</N10>
+    <N11 Tag="LinkKey" Type="binary">234da2cdf7a5b993987432e337c6e005</N11>
+    <N12 Tag="Service" Type="string">0000110a-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb 4e72b490-1d0f-bf92-0e47-a84e01000000 </N12>
+</N2>
+```
+
+Podemos ver el dispositivo `Echo-2W5` con MAC `74:c2:46:88:5d:09`. Este podemos ver que es un dispositivo como el Alexa que consta en el informe pericial.
+
+![alt text](../Movil_Victima/img/1.png)
+
+- Pulsera inteligente (No se sabe con exactitud):
+
+```
+<N4 Tag="88:0f:10:f6:c8:b7">
+    <N1 Tag="Name" Type="string">MI1A</N1>
+    <N2 Tag="DevClass" Type="int">7936</N2>
+    <N3 Tag="DevType" Type="int">2</N3>
+    <N4 Tag="AddrType" Type="int">0</N4>
+    <N5 Tag="Timestamp" Type="int">1500194153</N5>
+</N4>
+```
+
+Creemos que este dispositivo llamado `MI1A` con MAC `88:0f:10:f6:c8:b7` puede ser la pulsera inteligente que consta en el informe pericial.
+
+![alt text](../Movil_Victima/img/3.png)
+
+- Auriculares inalámbricos:
+
+```
+<N5 Tag="b8:ad:3e:01:5b:6a">
+    <N1 Tag="Timestamp" Type="int">1500193456</N1>
+    <N2 Tag="Name" Type="string">LG HBS900</N2>
+    <N3 Tag="DevClass" Type="int">2360324</N3>
+    <N4 Tag="DevType" Type="int">1</N4>
+    <N5 Tag="AddrType" Type="int">0</N5>
+    <N6 Tag="Manufacturer" Type="int">10</N6>
+    <N7 Tag="LmpVer" Type="int">6</N7>
+    <N8 Tag="LmpSubVer" Type="int">8648</N8>
+    <N9 Tag="LinkKeyType" Type="int">4</N9>
+    <N10 Tag="PinLength" Type="int">0</N10>
+    <N11 Tag="LinkKey" Type="binary">29fb76aa459555ea59f8cede4aabba7e</N11>
+    <N12 Tag="Service" Type="string">00001101-0000-1000-8000-00805f9b34fb 00001108-0000-1000-8000-00805f9b34fb 0000111e-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb </N12>
+</N5>
+```
+Por último, podemos ver un dispositivo llamado `LG HBS900` con MAC `b8:ad:3e:01:5b:6a`.
+
+![alt text](img/image1.png)
