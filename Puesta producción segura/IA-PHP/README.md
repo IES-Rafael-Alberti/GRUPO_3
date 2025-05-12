@@ -2,3 +2,9 @@
 
 Participantes: 
 
+- Israel Valderrama
+- Alejandro Seoane
+- Víctor Jiménez
+- Nicolas Ruiz
+- Alejandro Díaz
+
