@@ -67,3 +67,30 @@ url2 = "https://www.esedsl.com/blog/que-normativas-de-ciberseguridad-debe-cumpli
 url3 = "https://www.globalsuitesolutions.com/es/normas-iso-para-mejorar-la-ciberseguridad/"     # Estándares y normas ISO para mejorar la ciberseguridad
 url4 = "https://owasp.org/www-project-top-ten/"                                                 # OWASP Top 10
 ```
+
+
+**Preprocesado**  
+   - división en fragmentos con `RecursiveCharacterTextSplitter` (chunk_size=1000, overlap=100)  
+
+**Indexación**  
+   - generación de embeddings con `HuggingFaceEmbeddings` (`all-mpnet-base-v2`)  
+   - almacenamiento en FAISS para búsquedas de similitud  
+
+**Flujo de respuesta**  
+   - al detectar “ley” o “artículo” en la consulta, se buscan los fragmentos más relevantes  
+   - se construye un prompt que incluye el contexto extraído  
+   - el modelo `gpt-4o` genera la respuesta en streaming  
+
+## Agente reactivo con búsqueda
+- Herramienta: `TavilySearchResults` (máx. 2 resultados)  
+- Memoria: `MemorySaver` para mantener el hilo de la conversación  
+- Lógica:  
+  1. recibe el historial y el mensaje actual  
+  2. decide si invocar la herramienta de búsqueda  
+  3. integra los resultados y genera respuesta fluida  
+
+## Interfaz de usuario con gradio
+- componente: `gr.ChatInterface`  
+- permite streaming de respuestas y muestra fragmentos usados  
+- ejemplos predefinidos para probar rgpd, lssi y iso 27001  
+- tema “ocean” y chat de 400 px de alto  
