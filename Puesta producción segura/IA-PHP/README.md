@@ -57,18 +57,14 @@ Para las pruebas de la IA le pasamos un archivo [ejemplo.php](ejemplo.php) con e
 
 1. Problemas potenciales.
 
-- Vulerabilidades en la gestión de entradas, como SQL y XSS.
-
-- Falta de CSRF.
-
-- Nula gestión de errores.
-
 ![alt text](image.png)
 
 2. El código corregido, según los ejemplos proporcionados.
 
 ![alt text](image-1.png)
 
-[php-corregido](.)
+[php-corregido](php-corregido.php)
 
-3. 
+3. Recomendaciones.
+
+![alt text](image-2.png)
