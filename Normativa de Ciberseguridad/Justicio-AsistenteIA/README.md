@@ -7,12 +7,17 @@
 Crea un archivo con el nombre de `.env`, con las siguientes variables
 
 ```.env
-# HELICONE_API_KEY=tuAPIKEY
+# API key para Helicone (analítica de llamadas)
 HELICONE_API_KEY=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
-OPENROUTER_API_KEY=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
+
+# API key de OpenRouter (acceso al modelo GPT-4o)
+OPENROUTER_API_KEY=tu_openrouter_api_key
 OPENROUTER_BASE_URL=https://openrouter.helicone.ai/api/v1
-TAVILY_API_KEY=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
+
+# API key para Tavily (herramienta de búsqueda)
+TAVILY_API_KEY=tu_tavily_api_key
 ```
+
 
 ### 2. Ejecución del script
 
