@@ -45,7 +45,8 @@ resource "virtualbox_vm" "pc1" {
 # PC2 - red1 y red2
 resource "virtualbox_vm" "pc2" {
   name  = "pc2"
-  image = "ubuntu.box"
+  memory = var.vm_memory
+  cpus   = var.vm_cpus
 
   network_adapter {
     type           = "hostonly"
@@ -61,7 +62,8 @@ resource "virtualbox_vm" "pc2" {
 # PC3 - red2
 resource "virtualbox_vm" "pc3" {
   name  = "pc3"
-  image = "ubuntu.box"
+  memory = var.vm_memory
+  cpus   = var.vm_cpus
 
   network_adapter {
     type           = "hostonly"
@@ -72,7 +74,7 @@ resource "virtualbox_vm" "pc3" {
 # PC4 - red1 y red3
 resource "virtualbox_vm" "pc4" {
   name  = "pc4"
-  image = "ubuntu.box"
+  memory = var.vm_memory cpus   = var.vm_cpus
 
   network_adapter {
     type           = "hostonly"
@@ -88,7 +90,8 @@ resource "virtualbox_vm" "pc4" {
 # PC5 - red3
 resource "virtualbox_vm" "pc5" {
   name  = "pc5"
-  image = "ubuntu.box"
+  memory = var.vm_memory
+  cpus   = var.vm_cpus
 
   network_adapter {
     type           = "hostonly"
