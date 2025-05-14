@@ -13,7 +13,6 @@
 │   └── controls/
 │   │   └── packagesCheck.rb
 │   └── inspec.yml
-│
 ├── terraform/
 │   ├── main.tf
 │   ├── variables.tf
