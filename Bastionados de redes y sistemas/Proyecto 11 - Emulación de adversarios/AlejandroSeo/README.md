@@ -5,7 +5,6 @@
 - Estructura:
 
 ```txt
-/Victor/
 ├── ansible/
 │   ├── inventory.ini
 │   └── playbook.yml
