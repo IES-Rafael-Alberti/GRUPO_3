@@ -6,6 +6,7 @@ https://www.canva.com/design/DAGndV6-2WU/Oon3muZbs6Fc8_hrL3QaRQ/edit?utm_content
 
 ### Estructura:
 
+```bash
 ├── terraform/
 │   └── main.tf
 ├── ansible/
@@ -13,3 +14,4 @@ https://www.canva.com/design/DAGndV6-2WU/Oon3muZbs6Fc8_hrL3QaRQ/edit?utm_content
 │   └── hosts
 ├── inspec_apache/
 │   └── controls/example.rb
+```
