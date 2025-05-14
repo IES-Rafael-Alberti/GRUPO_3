@@ -13,5 +13,9 @@ https://www.canva.com/design/DAGndV6-2WU/Oon3muZbs6Fc8_hrL3QaRQ/edit?utm_content
 │   ├── playbook.yml
 │   └── hosts
 ├── inspec/
-│   └── controls/example.rb
+|   ├── inspec.yml
+│   ├── inspec.lock
+│   ├── README.md
+│   └── controls/
+│       └── example.rb
 ```
