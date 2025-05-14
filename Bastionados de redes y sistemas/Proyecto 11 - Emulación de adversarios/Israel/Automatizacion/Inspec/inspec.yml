@@ -1,0 +1,9 @@
+name: israel_proyecto11
+version: 0.1.0
+title: Verificación de configuración de Apache y herramientas básicas
+maintainer: Israel
+copyright: 2025
+summary: Este perfil valida que Apache y las herramientas básicas estén instalados y funcionando en el servidor.
+license: Apache-2.0
+inspec_version: ">= 4.0"
+depends: []

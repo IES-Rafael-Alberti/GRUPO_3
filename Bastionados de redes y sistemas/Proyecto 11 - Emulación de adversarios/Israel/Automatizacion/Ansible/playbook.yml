@@ -1,0 +1,22 @@
+- name: Cliente
+  hosts: web
+  become: true
+  tasks:
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Activar Apache
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Instalar herramientas básicas
+      apt:
+        name:
+          - curl
+          - net-tools
+        state: present
