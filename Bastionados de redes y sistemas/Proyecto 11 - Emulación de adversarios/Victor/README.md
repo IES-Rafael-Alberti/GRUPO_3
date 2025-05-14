@@ -11,7 +11,7 @@
 │   └── playbook.yml
 ├── inspec/
 │   └── controls/
-│       └── basic_checks.rb
+│       └── packagesCheck.rb
 ├── terraform/
 │   ├── main.tf
 │   ├── variables.tf
