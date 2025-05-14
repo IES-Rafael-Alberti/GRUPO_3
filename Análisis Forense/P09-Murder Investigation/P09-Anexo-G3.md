@@ -74,9 +74,63 @@ Figura 9 : Dispositivo Google On Hub
 
 ## 4. Hallazgos
 
-### 4.1 Raspberry Pi (TV Inteligente).
+### 4.2 Alexa. 
 
-- Hallazgo 1: Ejecución Película
+- Hallazgo 1: Interacción crítica con el dispositivo Alexa
+
+
+| Campo                         | Valor                                                                                                                                                                                                                             |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Archivos de audio (.wav) y archivos JSON                                                                                                                                                                                |
+| Contenido del fichero         | 14 grabaciones de voz (órdenes a Alexa), imágenes de historial                                                                                                                                                                    |
+| MAC time                      | 17/Jul/2017 entre las 15:01 y 15:20 (hora local aproximada)                                                                                                                                                                       |
+| Observaciones                 | Se registran órdenes clave como: "call ambulance", "turn off TV", "turn on Pandora". También se detectan frases de conflicto entre dos personas. Las órdenes coinciden con el intervalo de tiempo en que se produjo el incidente. |
+
+
+### 4.3 Google on hub.
+
+- Hallazgo 2: Análisis del tráfico y configuración del router
+
+| Campo                         | Valor|
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Configuración del sistema, interfaces de red, tabla ARP|
+| Ruta de localización completa | `/etc/*`, `/proc/net/arp`, y capturas del sistema|
+| Contenido del fichero         | Archivos de configuración, imágenes del sistema y salida de comandos|
+| Observaciones                 | El dispositivo opera sobre Chrome OS versión 9460.40.5. Se detecta el uso de servidores DNS públicos (8.8.8.8 y 8.8.4.4) y uno anómalo (210.115.225.11) con origen en Corea del Sur. Se identificaron tres redes SSID activas y múltiples interfaces de red, entre ellas `br-lan` y `br-guest`, con direcciones IP asignadas. A través de la tabla ARP se comprobó que al menos 8 dispositivos estaban conectados a la red principal, 1 a la red de invitados y 2 presentaban IPs fuera de rango esperado. Esto podría indicar conexiones irregulares o configuraciones no autorizadas. |
+
+
+### 4.4 Dispositivo móvil marido.
+
+Hallazgo 3: Información forense del dispositivo móvil
+
+
+| Campo                         | Valor|
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Información del sistema, notas, registros de red y dispositivos|
+| Ruta de localización completa | Diversas rutas internas del sistema Android y particiones de usuario|
+| Contenido del fichero         | Capturas, metadatos del dispositivo, notas personales, redes conocidas, dispositivos bluetooth emparejados|
+| MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC|
+| Observaciones                 | El dispositivo Samsung SHV-E250S (modelo coreano) tenía activado Knox, Android 4.4.2 y estaba configurado en inglés, con zona horaria de Corea. Se identificaron redes conocidas como "HOME" y dispositivos emparejados como el móvil de la víctima (`Betty`), un Amazon Echo (`Echo-2W5`), una pulsera inteligente (`MI1A`) y unos auriculares LG (`LG HBS900`). Las notas personales y elementos multimedia indican actividad laboral y familiar normal, sin indicios directos de actividad maliciosa, pero con vínculos clave al entorno de la víctima. |
+
+
+### 4.5 Dispositivo móvil víctima.
+
+Hallazgo 4: Información forense del dispositivo móvil
+
+
+| Campo                         | Valor|
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Tipo de evidencias            | Metadatos del sistema, configuración Bluetooth, correos electrónicos|
+| Ruta de localización completa | `USERDATA/data/com.android.email/`, `USERDATA/misc/bluedroid/bt_config.xml`|
+| Contenido del fichero         | Información del dispositivo, correos en coreano, dispositivos Bluetooth emparejados|
+| MAC time                      | Último timestamp registrado: 13/07/2017 16:27:41 KST (compilación del sistema)|
+| Observaciones                 | El dispositivo es un Samsung SHV-E250L con Android 4.4.2, Knox activado y zona horaria configurada en Asia/Seoul. Se identificaron múltiples redes conocidas, y tres dispositivos emparejados por Bluetooth: el móvil del marido (`Simon`), un Amazon Echo (`Echo-2W5`) y un dispositivo identificado como pulsera inteligente (`MI1A`). En el correo electrónico no se encontró contenido relevante tras la traducción desde el coreano. Esta información refuerza el vínculo entre ambos móviles y otros dispositivos clave del entorno investigado. |
+
+
+
+### 4.6 Raspberry Pi (TV Inteligente).
+
+- Hallazgo 5: Ejecución Película
 
 | Campo                         | Valor                                                                                                                       |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -84,11 +138,10 @@ Figura 9 : Dispositivo Google On Hub
 | Contenido del fichero         | ![](./Write-Ups/TV/img/img5.png) ![](./Write-Ups/TV/img/img6.png)|
 | MAC time                      | 	17/Jul/2017:06:19:37 +0000                                                                                                  |
 
-- Hallazgo 2: Dispositivos bluetooth
+- Hallazgo 6: Dispositivos bluetooth
 
 | Campo                         | Valor                                                                                                                       |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Ruta de localización completa | `/var/lib/bluetooth/B8:27:EB:E6:8D:79/cache`                                                                                               |
 | Contenido del fichero         | ![](./Write-Ups/TV/img/img1.png) ![](./Write-Ups/TV/img/img2.png) ![](./Write-Ups/TV/img/img3.png)|
 | MAC time                      | 	15/Jul/2017 23:52:00 +0000    15/Jul/2017 23:41:00 +0000                                                                                               |
-
