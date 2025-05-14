@@ -46,6 +46,10 @@ El equipo pericial responsable de la redacción de este informe es el Grupo 3. L
 
 ### 3.2. Antecedentes
 
+El 17 de julio de 2017, a las 15:31, un conserje del edificio alertó a la policía tras recibir el aviso de un vecino, quien informó que había encontrado a su esposa fallecida en su domicilio, presentando signos de múltiples puñaladas. La policía llegó al lugar a las 15:40, hallando el cuerpo sin vida de la víctima en el salón de la vivienda. Posteriormente, los agentes procedieron a interrogar tanto al conserje como al marido de la víctima.
+
+El esposo declaró que él se había mudado recientemente al piso. Según su testimonio, antes de encontrar el cuerpo, estaba viendo una película en el dormitorio con auriculares puestos, ya que su mujer había puesto música y no podía oír nada del exterior. Una vez finalizada la película, se dirigió al salón, donde encontró a su esposa sin vida y avisó al conserje para que llamara a la policía.
+
 ### 3.3. Objetivos
 
 El objetivo de este informe forense es realizar una investigación de las evidencias aportadas que expliquen los hechos ocurridos para informar adecuadamente sobre los mismos.
@@ -81,9 +85,31 @@ El objetivo de este informe forense es realizar una investigación de las eviden
 
 Las herramientas utilizadas durante la investigación han sido las siguientes:
 
+- Autopsy 4.21.0
+- FTK imager 7.5
+- VLC 3.0.16
+- Wireshark 4.4.6
+
 ### 5.2. Metodología
 
+En primer lugar se ha verificado la integridad de las evidencias obtenidas en vista de mantener la integridad de los datos que estas contienen.
+Tras ello se ha procedido al análisis de las dos adquisiciones móviles que se nos da con Autopsy, se ha analizado los archivos de la SmartTV con FTK Imager, se han analizado los audios de Alexa con VLC y por último hemos utilizado Wireshark para analizar el tráfico de red del SmartHome.
+
 ## 6. Procesos
+
+### 6.1 Análisis móvil victima
+
+En el aná
+
+### 6.2 Análisis móvil marido de la victima
+
+### 6.3 Análisis SmartTV
+
+### 6.4 Análisis Alexa
+
+### 6.5 Análisis tráfico de red SmartHome
+
+### 6.6 Análisis informe diagnóstico Google OnHub
 
 ## 7. Línea de tiempo
 
