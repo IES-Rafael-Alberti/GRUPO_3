@@ -1,0 +1,10 @@
+name: Victima
+title: Perfil de Inspec para verificar apache
+maintainer: Alejandro Seoane
+version: 0.1.0
+supports:
+  - platform: ubuntu
+    platform-family: debian
+
+dependencies:
+  - name: apache2

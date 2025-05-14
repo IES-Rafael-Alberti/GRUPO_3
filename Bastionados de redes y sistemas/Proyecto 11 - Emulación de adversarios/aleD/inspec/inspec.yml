@@ -1,0 +1,10 @@
+name: Verificaciones
+title: Verficaciones
+maintainer: Alejandro Diaz
+copyright: Alejandro Diaz
+copyright_email: adibar0510@g.educaand.es
+license: Apache-2.0
+summary: An InSpec Compliance Profile
+version: 0.1.0
+supports:
+  platform: os

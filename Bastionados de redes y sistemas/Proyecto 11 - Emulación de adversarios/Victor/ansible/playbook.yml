@@ -1,0 +1,23 @@
+- name: Preparar servidor
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Activar Apache2
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Instalar herramientas basicas
+      apt:
+        name:
+          - curl
+          - net-tools
+        state: present
