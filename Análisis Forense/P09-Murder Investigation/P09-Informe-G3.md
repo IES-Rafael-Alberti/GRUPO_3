@@ -74,10 +74,45 @@ El objetivo de este informe forense es realizar una investigación de las eviden
 
 | **Sección**         | **Campo**                                           |
 | ------------------- | --------------------------------------------------- |
-| Tipo de Dispositivo |  |
-| Nombre del archivo  |  |
+| Tipo de Dispositivo | Smartphone  |
+| Nombre del archivo  | smartphone_victima.zip |
+| Hash MD5            | 8daf9d23e39675452f99c5099a72b317 |
+| Hash SHA256         | c3e334c996b811c51067e9e0657cb621523576f15eb2c19ec52c32bf36e3e5ff |
+| ------------------- | --------------------------------------------------- |
+| Tipo de Dispositivo | Smartphone |
+| Nombre del archivo  | smartphone_marido_victima.zip |
+| Hash MD5            | 1472be511173e7e0f4919958b1c96ffe |
+| Hash SHA256         | 5a46acdf7fb5a70734a2e0e39a8c9b5cc9b7ee799fe800a0a7512af08e15c025 |
+| ------------------- | --------------------------------------------------- |
+| Tipo de Dispositivo | Televisión |
+| Nombre del archivo  | TV_Inteligente.zip |
+| Hash MD5            | d9d2b3b3048a836289cec02c6353b6e9 |
+| Hash SHA256         | 5423ea3f60d4ad0874346d3ba31c8783e5f2ce4b15b261ba0085e07f11e650e6 |
+| ------------------- | --------------------------------------------------- |
+| Tipo de Dispositivo | Router de Google |
+| Nombre del archivo  | InformeDiagnosticoOnHub |
 | Hash MD5            |  |
-| Hash SHA1           |  |
+| Hash SHA256         |  |
+| ------------------- | ------------------------------------------------------- |
+| Tipo de Dispositivo | Altavoz inteligente con asistente virtual (Amazon Echo) |
+| Nombre del archivo  | Alexa.zip |
+| Hash MD5            | 4a07bd78d8f4ba227841c971eeb7d1b3 |
+| Hash SHA256         | 4767513d714698afcd7506dd2304528a8db8243e2dff1be6e1ede591d0d19f83 |
+| ------------------- | ------------------------------------------------------- |
+| Tipo de Dispositivo | Medio de almacenamiento |
+| Nombre del archivo  | Tráfico_SmartHome_PorCOAP.pcap |
+| Hash MD5            | 67ab09760148a66402aa7d9b0abaa322 |
+| Hash SHA256         | f5ad42a50ca0d16261c1ca4742d78fd99c9e7fc6ab67fdb3a53909ff7f786ce0 |
+| ------------------- | ------------------------------------------------------- |
+| Tipo de Dispositivo | Medio de almacenamiento |
+| Nombre del archivo  | Tráfico_SmartHome_PorIP.pcap |
+| Hash MD5            | 8fb0edb521c9ad191adf55054203a6f4 |
+| Hash SHA256         | a4664f1719d26382edd6d352cc8715fea3ee73bbb00245d71943fbacbbeeca3e |
+| ------------------- | ------------------------------------------------------- |
+| Tipo de Dispositivo |  |
+| Nombre del archivo  | Hashes.zip |
+| Hash MD5            |  |
+| Hash SHA256         |  |
 
 ## 5. Análisis
 
