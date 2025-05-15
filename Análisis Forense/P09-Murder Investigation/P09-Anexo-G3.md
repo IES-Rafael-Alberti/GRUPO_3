@@ -81,23 +81,23 @@ Figura 8 : Archivo encargado de resgistros sesiones de inicio (`/var/log/wtmp`)
 
 ![](./Write-Ups/TV/img/img4.png)
 
-Figura 9 : Dispositivo Google On Hub
+Figura 9 : DNS encontrada en el dispositivo Google On Hub
 
 ![](./Write-Ups/GoogleOnHub/image.png)
 
-Figura 10: Historial de navegación
+Figura 10: Historial de navegación del marido
 
 ![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png)
 
-Figura 11: Amazon echo
+Figura 11: Dispositivo bluetooth vinculado a los móviles(Alexa echo)
 
 ![Amazon echo](Write-Ups/Movil_Victima/img/1.png)
 
-Figura 12: Modelo del móvil del marido
+Figura 12: Modelo del móvil del marido de la víctima
 
 ![Móvil del marido](./Write-Ups/Movil_Marido/img/image2.png)
 
-Figura 13: Pulsera Inteligente
+Figura 13: Dispositivo bluetooth conectada a los móviles y al televisor(Pulsera inteligente)
 
 ![Pulsera inteligente](Write-Ups/Movil_Victima/img/3.png)
 
@@ -105,7 +105,7 @@ Figura 14: Modelo de móvil de la víctima
 
 ![alt text](Write-Ups/Movil_Marido/img/image2.png)
 
-Hallazgo 15: Auriculares inalámbricos
+Hallazgo 15: Dispositivo bluetooth conectada al móvil del marido de la víctima
 
 ![alt text](Write-Ups/Movil_Marido/img/image1.png)
 
