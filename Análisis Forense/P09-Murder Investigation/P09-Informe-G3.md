@@ -137,6 +137,12 @@ En el aná
 
 ### 6.3 Análisis SmartTV
 
+Se analizó la Raspberry Pi utilizada como Smart TV. Se puede ver en el archivo `/var/log/wtmp` que se encarga de los registros de sessiones de inicio, un log a las 3PM, ver **figura 8**
+
+En los registros de Kodi (/home/osmc/.kodi/temp/kodi.log) se ha encontrado que se finalizó la reproducción de una película el 17/07/2017 a las 06:19:37 UTC, ver **Hallazgo 5**.
+
+Además, en la ruta `/var/lib/bluetooth/B8:27:EB:E6:8D:79/cache` se identificaron dos dispositivos Bluetooth emparejados, Echo-2W5 y MI1A, con actividad registrada el 15/07/2017. El primero es un Amazon Echo y el segundo es una pulsera xiaomi, ver **Hallazgo 6**. Se puede ver que por lo menos de forma bluetooth no hay cascos conectado, como referenció el marido de la víctima.
+
 ### 6.4 Análisis Alexa
 
 #### 6.4.1 Descripción del Material Analizado
