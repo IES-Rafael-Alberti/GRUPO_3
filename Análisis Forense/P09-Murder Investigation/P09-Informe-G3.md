@@ -157,9 +157,7 @@ El análisis de los directorios de ChatOn y Gmail no ha revelado comunicaciones 
 
 #### 6.2.4 Historial de Navegación
 
-![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png)
-
-muestra búsquedas relacionadas con programación, lo que refuerza el perfil profesional del usuario como programador. No se han detectado búsquedas sospechosas ni relacionadas con el caso.
+Muestra búsquedas relacionadas con programación, lo que refuerza el perfil profesional del usuario como programador. No se han detectado búsquedas sospechosas ni relacionadas con el caso. Ver la  *_Figura 10_* del Anexo
 
 #### 6.2.5 Dispositivos vinculados por Bluetooth
 
