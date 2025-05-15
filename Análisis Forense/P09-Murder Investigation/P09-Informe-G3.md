@@ -30,6 +30,16 @@
 
 ## 1. Resumen Ejecutivo
 
+El presente informe forense, elaborado por el Grupo 3 de expertos en ciberseguridad, documenta la investigación de un homicidio ocurrido el 17 de julio de 2017. La víctima fue hallada en su domicilio con múltiples puñaladas, y el principal testigo, su esposo, alegó estar viendo una película con auriculares en otra habitación durante el suceso.
+
+La investigación se centró en el análisis de dispositivos electrónicos y fuentes digitales relevantes recogidas en la escena, incluyendo smartphones de la víctima y su esposo, un altavoz inteligente Amazon Echo, una SmartTV (Raspberry Pi), registros de tráfico de red del entorno Smart Home y el GoogleOnHub. Se emplearon herramientas especializadas como Autopsy, FTK Imager, VLC y Wireshark para garantizar la integridad y el análisis exhaustivo de las evidencias.
+
+El análisis de los dispositivos móviles permitió reconstruir la interacción tecnológica entre los habitantes de la vivienda, identificando emparejamientos Bluetooth entre los teléfonos, el Amazon Echo y una pulsera inteligente. No se detectaron comunicaciones sospechosas ni búsquedas relevantes para el caso en los historiales de navegación o mensajería.
+
+En la SmartTV, los registros confirmaron la finalización de la reproducción de una película coincidiendo con el horario declarado por el esposo. Sin embargo, no se encontraron auriculares conectados por Bluetooth a la SmartTV.
+
+El análisis del Amazon Echo reveló la existencia de grabaciones de audio y comandos realizados en los momentos cercanos al crimen, proporcionando información adicional sobre la actividad en el domicilio.
+
 ## 2. Glosario de términos
 
 ## 3. Introducción
@@ -147,7 +157,7 @@ Se han identificado los siguientes dispositivos emparejados en el dispositivo:
 
 - Amazon Echo:
 
-```
+```txt
    <N1 Tag="74:c2:46:88:5d:09">
          <N1 Tag="Name" Type="string">Echo-2W5</N1>
          <N2 Tag="Manufacturer" Type="int">69</N2>
@@ -166,7 +176,7 @@ Se han identificado los siguientes dispositivos emparejados en el dispositivo:
 
 - Móvil marido:
 
-```
+```txt
   <N2 Tag="50:f5:20:a5:7d:cc">
         <N1 Tag="Timestamp" Type="int">1499931539</N1>
         <N2 Tag="Name" Type="string">Simon (SHV-E250S)</N2>
@@ -180,7 +190,7 @@ Se han identificado los siguientes dispositivos emparejados en el dispositivo:
 
 - Pulsera inteligente (No se sabe con exactitud si es el objeto mencionado):
 
-```
+```txt
     <N3 Tag="88:0f:10:f6:c8:b7">
         <N1 Tag="Name" Type="string">MI1A</N1>
         <N2 Tag="DevClass" Type="int">7936</N2>
@@ -414,7 +424,7 @@ No se han encontrado limitaciones en el proceso de investigación de este caso.
 
 ## 10. Anexos
 
-La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en el siguiente anexo:
+La Declaración de abstención y tacha, el Juramento de promesa, así como las figuras y hallazgos relacionados con el caso, se encuentran recogidos en el anexo [P09-Anexo-G3.md](https://github.com/IES-Rafael-Alberti/GRUPO_3/blob/main/An%C3%A1lisis%20Forense/P09-Murder%20Investigation/P09-Anexo-G3.md#1-declaraci%C3%B3n-de-abstenci%C3%B3n-y-tacha)
 
 ---
 
