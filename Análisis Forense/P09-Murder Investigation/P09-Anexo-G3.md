@@ -89,13 +89,21 @@ Figura 10: Historial de navegación
 
 ![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png)
 
-Figura 11: Modelo del móvil 
+Figura 11: Amazon echo
 
-![Historial de navegación](./Write-Ups/Movil_Marido/img/image2.png)
+![Amazon echo](Write-Ups/Movil_Victima/img/1.png)
+
+Figura 12: Modelo del móvil
+
+![Móvil del marido](./Write-Ups/Movil_Marido/img/image2.png)
+
+Figura 13: Pulsera Inteligente
+
+![Pulsera inteligente](Write-Ups/Movil_Victima/img/3.png)
 
 ## 4. Hallazgos
 
-### 4.2 Alexa.
+### 4.2 Alexa
 
 - Hallazgo 1: Interacción crítica con el dispositivo Alexa
 
@@ -106,7 +114,7 @@ Figura 11: Modelo del móvil
 | MAC time              | 17/Jul/2017 entre las 15:01 y 15:20 (hora local aproximada)                                                                                                                                                                       |
 | Observaciones         | Se registran órdenes clave como: "call ambulance", "turn off TV", "turn on Pandora". También se detectan frases de conflicto entre dos personas. Las órdenes coinciden con el intervalo de tiempo en que se produjo el incidente. |
 
-### 4.3 Google on hub.
+### 4.3 Google on hub
 
 - Hallazgo 2: Análisis del tráfico y configuración del router
 
@@ -117,7 +125,7 @@ Figura 11: Modelo del móvil
 | Contenido del fichero         | Archivos de configuración, imágenes del sistema y salida de comandos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Observaciones                 | El dispositivo opera sobre Chrome OS versión 9460.40.5. Se detecta el uso de servidores DNS públicos (8.8.8.8 y 8.8.4.4) y uno anómalo (210.115.225.11) con origen en Corea del Sur. Se identificaron tres redes SSID activas y múltiples interfaces de red, entre ellas `br-lan` y `br-guest`, con direcciones IP asignadas. A través de la tabla ARP se comprobó que al menos 8 dispositivos estaban conectados a la red principal, 1 a la red de invitados y 2 presentaban IPs fuera de rango esperado. Esto podría indicar conexiones irregulares o configuraciones no autorizadas. |
 
-### 4.4 Dispositivo móvil marido.
+### 4.4 Dispositivo móvil marido
 
 Hallazgo 3: Información forense del dispositivo móvil
 
@@ -129,23 +137,7 @@ Hallazgo 3: Información forense del dispositivo móvil
 | MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Observaciones                 | El dispositivo Samsung SHV-E250S (modelo coreano) tenía activado Knox, Android 4.4.2 y estaba configurado en inglés, con zona horaria de Corea. Se identificaron redes conocidas como "HOME" y dispositivos emparejados como el móvil de la víctima (`Betty`), un Amazon Echo (`Echo-2W5`), una pulsera inteligente (`MI1A`) y unos auriculares LG (`LG HBS900`). Las notas personales y elementos multimedia indican actividad laboral y familiar normal, sin indicios directos de actividad maliciosa, pero con vínculos clave al entorno de la víctima. |
 
-Hallazgo 7: Dispositivos Bluetooth móvil del marido
-
-
-
-| Campo                         | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Tipo de evidencias            | Dispositivo móvil de la víctima                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Contenido del fichero         |   ```<N1 Tag="1c:af:05:9e:19:74"> <N1 Tag="Timestamp" Type="int">1499931533</N1> <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2> <N3 Tag="DevClass" Type="int">5898764</N3> <N4 Tag="DevType" Type="int">1</N4> <N5 Tag="AddrType" Type="int">0</N5> </N1>```|
-
-
-| MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC |                               
-| Observaciones                 | Aquí podemos el dispositivo móvil de la mujer del marido llamado `Betty (SHV-E250L)` con MAC `1c:af:05:9e:19:74`.|
-
-
-
-### 4.5 Dispositivo móvil víctima.
+### 4.5 Dispositivo móvil víctima
 
 Hallazgo 4: Información forense del dispositivo móvil
 
@@ -157,7 +149,7 @@ Hallazgo 4: Información forense del dispositivo móvil
 | MAC time                      | Último timestamp registrado: 13/07/2017 16:27:41 KST (compilación del sistema)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Observaciones                 | El dispositivo es un Samsung SHV-E250L con Android 4.4.2, Knox activado y zona horaria configurada en Asia/Seoul. Se identificaron múltiples redes conocidas, y tres dispositivos emparejados por Bluetooth: el móvil del marido (`Simon`), un Amazon Echo (`Echo-2W5`) y un dispositivo identificado como pulsera inteligente (`MI1A`). En el correo electrónico no se encontró contenido relevante tras la traducción desde el coreano. Esta información refuerza el vínculo entre ambos móviles y otros dispositivos clave del entorno investigado. |
 
-### 4.6 Raspberry Pi (TV Inteligente).
+### 4.6 Raspberry Pi (TV Inteligente)
 
 - Hallazgo 5: Ejecución Película
 
@@ -174,3 +166,33 @@ Hallazgo 4: Información forense del dispositivo móvil
 | Ruta de localización completa | `/var/lib/bluetooth/B8:27:EB:E6:8D:79/cache`                                                       |
 | Contenido del fichero         | ![](./Write-Ups/TV/img/img1.png) ![](./Write-Ups/TV/img/img2.png) ![](./Write-Ups/TV/img/img3.png) |
 | MAC time                      | 15/Jul/2017 23:52:00 +0000 15/Jul/2017 23:41:00 +0000                                              |
+
+### 4.7 Dispositivos vinculados por bluetoothal dispositvo de la víctima
+
+Hallazgo 7: Dispositivos Bluetooth móvil del marido
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | ispositiv Amazon Echo                                                                              |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N1 Tag="74:c2:46:88:5d:09"><N1 Tag="Name" Type="string">Echo-2W5</N1><N2 Tag="Manufacturer" Type="int">69</N2><N3 Tag="LmpVer" Type="int">5</N3><N4 Tag="LmpSubVer" Type="int">0</N4><N5 Tag="DevClass" Type="int">787476</N5><N6 Tag="DevType" Type="int">1</N6><N7 Tag="LinkKeyType" Type="int">4</N7><N8 Tag="PinLength" Type="int">0</N8><N9 Tag="LinkKey" Type="binary">964318898948219dfe49005bf025256e</N9><N10 Tag="Service" Type="string">0000110a-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb 4e72b490-1d0f-bf92-0e47-a84e01000000 </N10></N1>``` |
+| Observaciones                 | Podemos ver el dispositivo Echo-2W5 con MAC 74:c2:46:88:5d:09. Este podemos ver que es un dispositivo como el Alexa que consta en el informe pericial.|
+
+Hallazgo 8: Dispositivos móvil del marido
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Dispositivo móvil de la víctima                                                                    |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N2 Tag="50:f5:20:a5:7d:cc"><N1 Tag="Timestamp" Type="int">1499931539</N1><N2 Tag="Name" Type="string">Simon (SHV-E250S)</N2><N3 Tag="DevClass" Type="int">5898764</N3><N4 Tag="DevType" Type="int">1</N4><N5 Tag="AddrType" Type="int">0</N5></N2>``` |
+| Observaciones                 | Podemos ver como al dispositivo móvil del marido llamado Simon (SHV-E250S) con MAC 50:f5:20:a5:7d:cc|
+
+Hallazgo 9: Pulsera inteligente
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Pulsera inteligente                                                                                |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N3 Tag="88:0f:10:f6:c8:b7"><N1 Tag="Name" Type="string">MI1A</N1><N2 Tag="DevClass" Type="int">7936</N2><N3 Tag="DevType" Type="int">2</N3><N4 Tag="AddrType" Type="int">0</N4><N5 Tag="Manufacturer" Type="int">0</N5><N6 Tag="LmpVer" Type="int">0</N6><N7 Tag="LmpSubVer" Type="int">0</N7><N8 Tag="Timestamp" Type="int">1499933446</N8></N3>```                                                              |
+| Observaciones                 | Podemos ver el último dispositivo que aparece llamado MI1A con MAC 88:0f:10:f6:c8:b7. |
+
