@@ -135,18 +135,17 @@ Tras ello se ha procedido al análisis de las dos adquisiciones móviles que se 
 
 En el análisis del movil de la víctima se tiene como objetivo recopilar el mayor número de información dentro del teléfono que pueda ser relevante en la investigación del caso. Se ha seguido un procedimiento sistemático para asegurar la integridad de la evidencia y obtener resultados fiables, centrando el análisis de las bases de datos donde se encontro la mayoría de información relevante, aunque tambíen se encontrarón algunos archivos con configuraciones.
 
-
 #### 6.1.2 Información general del dispositivo
 
 El modelo que se ha analizado corresponde con un Samsung SHV-E250L (Note II versión coreana) con sistema operativo Android 4.4.2 (KitKat) y número de serie 4300d1b15be8b061.
-El nombre del dispositivo es Betty (SHV-E250L) el cuál tiene una cuenta de correo asociada: bettyhallym@gmail.com.
+El nombre del dispositivo es Betty (SHV-E250L) el cuál tiene una cuenta de correo asociada: <bettyhallym@gmail.com>.
 La última actividad registrada fue el día en el que ocurrieron los echos (15 julio de 2017).
 
 #### 6.1.3 Dispositivos vinculados por Bluetooth
 
 Se han identificado los siguientes dispositivos emparejados en el dispositivo:
 
-- Amazon Echo: 
+- Amazon Echo:
 
 ```
    <N1 Tag="74:c2:46:88:5d:09">
@@ -220,7 +219,7 @@ El análisis de los directorios de ChatOn y Gmail no ha revelado comunicaciones 
 
 #### 6.2.4 Historial de Navegación
 
-Muestra búsquedas relacionadas con programación, lo que refuerza el perfil profesional del usuario como programador. No se han detectado búsquedas sospechosas ni relacionadas con el caso. Ver la  *_Figura 10_* del Anexo
+Muestra búsquedas relacionadas con programación, lo que refuerza el perfil profesional del usuario como programador. No se han detectado búsquedas sospechosas ni relacionadas con el caso. Ver la  __Figura 10__ del Anexo
 
 #### 6.2.5 Dispositivos vinculados por Bluetooth
 
@@ -374,6 +373,22 @@ A partir del análisis de los audios y el historial, se ha reconstruido la sigui
 El análisis forense del dispositivo Alexa revela que había presencia y actividad de varias personas en la vivienda antes de las 15:00. Los registros de audio muestran interacciones desde las 14:45, seguidas de una secuencia de comandos y conversaciones que culminan con una solicitud de llamada a una ambulancia a las 15:20. Esta cronología aporta contexto relevante sobre los hechos investigados y sugiere la necesidad de revisar y contrastar la hora de llegada mencionada en el enunciado con otras fuentes de evidencia.
 
 ### 6.5 Análisis tráfico de red SmartHome
+
+Se analizaron los archivos de captura de tráfico con extensión .pcap correspondientes a las comunicaciones de los dispositivos SmartHome, específicamente los ficheros Trafico_SmartHome_PorIP.pcap y Tráfico_SmartHome_PorCOAP.pcap.
+
+El objetivo era identificar posibles interacciones, comandos o patrones de comportamiento relevantes alrededor del 17 de julio de 2017. Para ello, se inspeccionaron protocolos como CoAP (Constrained Application Protocol), comúnmente utilizado en entornos IoT, así como los paquetes de red entre direcciones IP internas que podrían estar asociadas a dispositivos domóticos presentes en la vivienda.
+
+Durante el análisis no se detectaron eventos concluyentes que permitan inferir interacciones significativas entre los usuarios y los dispositivos SmartHome en la franja horaria crítica. Tampoco se identificaron patrones anómalos ni comandos susceptibles de haber sido emitidos hacia los dispositivos del hogar inteligente.
+
+Esta ausencia de hallazgos podría explicarse por diversas razones, entre ellas:
+
+- Limitación en la capacidad de los dispositivos para registrar o transmitir eventos.
+
+- Tráfico cifrado o encapsulado no interpretable con la información disponible.
+
+- Eliminación previa o inactividad de los dispositivos en los momentos relevantes.
+
+No obstante, se confirma que existió tráfico de red asociado a dispositivos IoT en el entorno doméstico, lo que valida su presencia operativa durante el periodo analizado, aunque sin que se haya podido extraer información útil para reconstruir acciones concretas.
 
 ### 6.6 Análisis informe diagnóstico Google OnHub
 
