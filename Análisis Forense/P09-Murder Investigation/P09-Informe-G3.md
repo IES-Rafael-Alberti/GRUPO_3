@@ -131,7 +131,70 @@ Tras ello se ha procedido al análisis de las dos adquisiciones móviles que se 
 
 ### 6.1 Análisis móvil victima
 
-En el aná
+#### 6.1.1 Introducción
+
+En el análisis del movil de la víctima se tiene como objetivo recopilar el mayor número de información dentro del teléfono que pueda ser relevante en la investigación del caso. Se ha seguido un procedimiento sistemático para asegurar la integridad de la evidencia y obtener resultados fiables, centrando el análisis de las bases de datos donde se encontro la mayoría de información relevante, aunque tambíen se encontrarón algunos archivos con configuraciones.
+
+
+#### 6.1.2 Información general del dispositivo
+
+El modelo que se ha analizado corresponde con un Samsung SHV-E250L (Note II versión coreana) con sistema operativo Android 4.4.2 (KitKat) y número de serie 4300d1b15be8b061.
+El nombre del dispositivo es Betty (SHV-E250L) el cuál tiene una cuenta de correo asociada: bettyhallym@gmail.com.
+La última actividad registrada fue el día en el que ocurrieron los echos (15 julio de 2017).
+
+#### 6.1.3 Dispositivos vinculados por Bluetooth
+
+Se han identificado los siguientes dispositivos emparejados en el dispositivo:
+
+- Amazon Echo: 
+
+```
+   <N1 Tag="74:c2:46:88:5d:09">
+         <N1 Tag="Name" Type="string">Echo-2W5</N1>
+         <N2 Tag="Manufacturer" Type="int">69</N2>
+         <N3 Tag="LmpVer" Type="int">5</N3>
+         <N4 Tag="LmpSubVer" Type="int">0</N4>
+         <N5 Tag="DevClass" Type="int">787476</N5>
+         <N6 Tag="DevType" Type="int">1</N6>
+         <N7 Tag="LinkKeyType" Type="int">4</N7>
+         <N8 Tag="PinLength" Type="int">0</N8>
+         <N9 Tag="LinkKey" Type="binary">964318898948219dfe49005bf025256e</N9>
+         <N10 Tag="Service" Type="string">0000110a-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb 4e72b490-1d0f-bf92-0e47-a84e01000000 </N10>
+     </N1>
+```
+
+![alt text](./Write-Ups/Movil_Victima/img/1.png)
+
+- Móvil marido:
+
+```
+  <N2 Tag="50:f5:20:a5:7d:cc">
+        <N1 Tag="Timestamp" Type="int">1499931539</N1>
+        <N2 Tag="Name" Type="string">Simon (SHV-E250S)</N2>
+        <N3 Tag="DevClass" Type="int">5898764</N3>
+        <N4 Tag="DevType" Type="int">1</N4>
+        <N5 Tag="AddrType" Type="int">0</N5>
+    </N2>
+```
+
+![alt text](./Write-Ups/Movil_Victima/img/2.png)
+
+- Pulsera inteligente (No se sabe con exactitud si es el objeto mencionado):
+
+```
+    <N3 Tag="88:0f:10:f6:c8:b7">
+        <N1 Tag="Name" Type="string">MI1A</N1>
+        <N2 Tag="DevClass" Type="int">7936</N2>
+        <N3 Tag="DevType" Type="int">2</N3>
+        <N4 Tag="AddrType" Type="int">0</N4>
+        <N5 Tag="Manufacturer" Type="int">0</N5>
+        <N6 Tag="LmpVer" Type="int">0</N6>
+        <N7 Tag="LmpSubVer" Type="int">0</N7>
+        <N8 Tag="Timestamp" Type="int">1499933446</N8>
+    </N3>
+```
+
+![alt text](./Write-Ups/Movil_Victima/img/3.png)
 
 ### 6.2 Análisis móvil marido de la victima
 
