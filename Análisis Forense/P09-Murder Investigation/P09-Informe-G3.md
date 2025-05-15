@@ -141,7 +141,7 @@ El objetivo es identificar y recopilar información relevante almacenada en el t
 
 #### 6.2.2 Información general del dispositivo
 
-El dispositivo analizado corresponde a un Samsung SHV-E250S (Note II versión coreana) con sistema operativo Android 4.4.2 (KitKat). El dispositivo cuenta con la plataforma Exynos 4 y tiene activado el sistema de seguridad Knox. El nombre asignado al dispositivo es "Simon (SHV-E250S)" y está asociado a la cuenta `simonhallym@gmail.com`. La última actividad registrada data del 15 de julio de 2017. 
+El dispositivo analizado corresponde a un Samsung SHV-E250S (Note II versión coreana) con sistema operativo Android 4.4.2 (KitKat). El dispositivo cuenta con la plataforma Exynos 4 y tiene activado el sistema de seguridad Knox. El nombre asignado al dispositivo es "Simon (SHV-E250S)" y está asociado a la cuenta `simonhallym@gmail.com`. La última actividad registrada data del 15 de julio de 2017.
 
 #### 6.2.3 Aplicaciones Instaladas
 
@@ -157,7 +157,7 @@ El análisis de los directorios de ChatOn y Gmail no ha revelado comunicaciones 
 
 #### 6.2.4 Historial de Navegación
 
-![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png) 
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png)
 
 muestra búsquedas relacionadas con programación, lo que refuerza el perfil profesional del usuario como programador. No se han detectado búsquedas sospechosas ni relacionadas con el caso.
 
@@ -167,7 +167,7 @@ Se han identificado los siguientes dispositivos emparejados:
 
 - Móvil de la victima(desarrollado en el punto anterior):
 
-```html
+```txt
 <N1 Tag="1c:af:05:9e:19:74">
     <N1 Tag="Timestamp" Type="int">1499931533</N1>
     <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2>
@@ -177,11 +177,11 @@ Se han identificado los siguientes dispositivos emparejados:
 </N1>
 ```
 
-![Historial de navegación](./Write-Ups/Movil_Marido/img/image2.png) 
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image2.png)
 
 - Amazon Echo:
 
-```html
+```txt
 <N2 Tag="74:c2:46:88:5d:09">
     <N1 Tag="Timestamp" Type="int">1500194150</N1>
     <N2 Tag="DevClass" Type="int">787476</N2>
@@ -198,11 +198,11 @@ Se han identificado los siguientes dispositivos emparejados:
 </N2>
 ```
 
-![Historial de navegación](./Write-Ups/Movil_Victima/img/1.png) 
+![Historial de navegación](./Write-Ups/Movil_Victima/img/1.png)
 
 - Pulsera inteligente:
 
-```html
+```txt
 <N4 Tag="88:0f:10:f6:c8:b7">
     <N1 Tag="Name" Type="string">MI1A</N1>
     <N2 Tag="DevClass" Type="int">7936</N2>
@@ -211,11 +211,12 @@ Se han identificado los siguientes dispositivos emparejados:
     <N5 Tag="Timestamp" Type="int">1500194153</N5>
 </N4>
 ```
-![Historial de navegación](./Write-Ups/Movil_Victima/img/3.png) 
+
+![Historial de navegación](./Write-Ups/Movil_Victima/img/3.png)
 
 - Auriculares inalámbricos:
 
-```html
+```txt
 <N5 Tag="b8:ad:3e:01:5b:6a">
     <N1 Tag="Timestamp" Type="int">1500193456</N1>
     <N2 Tag="Name" Type="string">LG HBS900</N2>
@@ -232,7 +233,7 @@ Se han identificado los siguientes dispositivos emparejados:
 </N5>
 ```
 
-![Historial de navegación](./Write-Ups/Movil_Marido/img/image1.png) 
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image1.png)
 
 #### 6.2.6 Conclusión
 
@@ -258,28 +259,28 @@ Se ha recibido para análisis un conjunto de evidencias extraídas de un disposi
 
 - 4 archivos en formato JSON asociados a las grabaciones.
 
-- Imágenes adicionales del historial de comandos. 
+- Imágenes adicionales del historial de comandos.
 
 #### 6.4.2 Análisis de los Archivos de Audio
 
 A continuación, se detallan los archivos de audio, la hora registrada y el contenido relevante de cada uno:
 
-| Archivo | Hora    | Voz                  | Contenido | Observaciones |
-|---------|---------|----------------------|-----------|---------------|
-| 1.wav   | 3:20 PM | Masculina | "Alexa, call ambulance!"	| | 
-| 2.wav   | 3:20 PM | Masculina | "Alexa, call ambulance!" | Idéntico a 1.wav |
-| 3.wav   | 3:20 PM | Masculina | "Alexa, turn off TV" | |
-| 4.wav   | 3:20 PM | Masculina | "Alexa, turn off TV" | Idéntico a 3.wav |
-| 5.wav   | 3:13 PM | Femenina | "Alexa, ... stop" | Pausa entre "Alexa" y "stop", música de fondo |
-| 6.wav   | 3:12 PM | Femenina | "Alexa, ... stop" | Idéntico a 5.wav |
-| 7.wav   | 3:12 PM | Femenina y Masculina | "Alexa, ... stop" / "I can't believe you're doing this to me. We said we would. What are you thinking?" | JSON vacío, solo imagen de historial |
-| 8.wav   | 3:12 PM | Femenina y Masculina | "Alexa, ... stop" / "How can you do this? What are you thinking?" |
-| 9.wav   | 3:06 PM | Femenina | "Alexa, turn on Pandora" | Pandora es una app de música |
-| 10.wav  | 3:06 PM | Femenina | "Alexa, turn on Pandora" | Idéntico a 9.wav |
-| 11.wav	 | 3:01 PM | Masculina | "Alexa, turn on TV"	| |
-| 12.wav	 | 3:01 PM | Masculina | "Alexa, turn on TV" | Idéntico a 11.wav |
-| 13.wav	 | 2:45 PM | Varias | Conversación informal, parece una demostración del dispositivo a invitados | |
-| 14.wav	 | 2:57 PM | Masculina | Incomprensible | |
+| Archivo | Hora    | Voz                  | Contenido                                                                                               | Observaciones                                 |
+| ------- | ------- | -------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| 1.wav   | 3:20 PM | Masculina            | "Alexa, call ambulance!"                                                                                |                                               |
+| 2.wav   | 3:20 PM | Masculina            | "Alexa, call ambulance!"                                                                                | Idéntico a 1.wav                              |
+| 3.wav   | 3:20 PM | Masculina            | "Alexa, turn off TV"                                                                                    |                                               |
+| 4.wav   | 3:20 PM | Masculina            | "Alexa, turn off TV"                                                                                    | Idéntico a 3.wav                              |
+| 5.wav   | 3:13 PM | Femenina             | "Alexa, ... stop"                                                                                       | Pausa entre "Alexa" y "stop", música de fondo |
+| 6.wav   | 3:12 PM | Femenina             | "Alexa, ... stop"                                                                                       | Idéntico a 5.wav                              |
+| 7.wav   | 3:12 PM | Femenina y Masculina | "Alexa, ... stop" / "I can't believe you're doing this to me. We said we would. What are you thinking?" | JSON vacío, solo imagen de historial          |
+| 8.wav   | 3:12 PM | Femenina y Masculina | "Alexa, ... stop" / "How can you do this? What are you thinking?"                                       |
+| 9.wav   | 3:06 PM | Femenina             | "Alexa, turn on Pandora"                                                                                | Pandora es una app de música                  |
+| 10.wav  | 3:06 PM | Femenina             | "Alexa, turn on Pandora"                                                                                | Idéntico a 9.wav                              |
+| 11.wav  | 3:01 PM | Masculina            | "Alexa, turn on TV"                                                                                     |                                               |
+| 12.wav  | 3:01 PM | Masculina            | "Alexa, turn on TV"                                                                                     | Idéntico a 11.wav                             |
+| 13.wav  | 2:45 PM | Varias               | Conversación informal, parece una demostración del dispositivo a invitados                              |                                               |
+| 14.wav  | 2:57 PM | Masculina            | Incomprensible                                                                                          |                                               |
 
 #### 6.4.3 Análisis de Archivos JSON e Imágenes del Historial
 
@@ -326,6 +327,8 @@ Por último se miró la tabla ARP del sistema , donde encontramos conexiones de 
 ## 7. Línea de tiempo
 
 Tras el análisis hemos creado la siguiente linea del tiempo con los hechos acontecidos:
+
+![timeLine.png](./img/timeLine.png)
 
 ## 8. Limitaciones
 
