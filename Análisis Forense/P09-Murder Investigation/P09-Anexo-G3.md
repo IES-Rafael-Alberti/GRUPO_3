@@ -137,19 +137,10 @@ Hallazgo 7: Dispositivos Bluetooth móvil del marido
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Tipo de evidencias            | Dispositivo móvil de la víctima                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Contenido del fichero         |    
-```
-<N1 Tag="1c:af:05:9e:19:74">
-    <N1 Tag="Timestamp" Type="int">1499931533</N1>
-    <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2>
-    <N3 Tag="DevClass" Type="int">5898764</N3>
-    <N4 Tag="DevType" Type="int">1</N4>
-    <N5 Tag="AddrType" Type="int">0</N5>
-</N1>
-```|
+| Contenido del fichero         |   ```<N1 Tag="1c:af:05:9e:19:74"> <N1 Tag="Timestamp" Type="int">1499931533</N1> <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2> <N3 Tag="DevClass" Type="int">5898764</N3> <N4 Tag="DevType" Type="int">1</N4> <N5 Tag="AddrType" Type="int">0</N5> </N1>```|
 
 
-| MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC |                               
 | Observaciones                 | Aquí podemos el dispositivo móvil de la mujer del marido llamado `Betty (SHV-E250L)` con MAC `1c:af:05:9e:19:74`.|
 
 
