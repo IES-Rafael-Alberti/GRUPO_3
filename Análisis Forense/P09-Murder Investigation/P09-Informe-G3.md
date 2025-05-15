@@ -135,6 +135,109 @@ En el aná
 
 ### 6.2 Análisis móvil marido de la victima
 
+#### 6.2.1 Introducción
+
+El objetivo es identificar y recopilar información relevante almacenada en el teléfono que pueda aportar datos útiles para la investigación. Se ha seguido un procedimiento sistemático para asegurar la integridad de la evidencia y obtener resultados fiables, centrando el análisis en las aplicaciones, notas, historial y dispositivos vinculados al móvil.
+
+#### 6.2.2 Información general del dispositivo
+
+El dispositivo analizado corresponde a un Samsung SHV-E250S (Note II versión coreana) con sistema operativo Android 4.4.2 (KitKat). El dispositivo cuenta con la plataforma Exynos 4 y tiene activado el sistema de seguridad Knox. El nombre asignado al dispositivo es "Simon (SHV-E250S)" y está asociado a la cuenta `simonhallym@gmail.com`. La última actividad registrada data del 15 de julio de 2017. 
+
+#### 6.2.3 Aplicaciones Instaladas
+
+Entre las aplicaciones instaladas destacan:
+
+- ChatOn: Mensajería de Samsung (sin uso registrado).
+
+- Google Talk (Hangouts), Gmail, Chrome: Uso habitual.
+
+- AlexaCommands, Dropbox, Kodi: Potencial relevancia para la investigación.
+
+El análisis de los directorios de ChatOn y Gmail no ha revelado comunicaciones relevantes, salvo varios mensajes de spam de aerolíneas.
+
+#### 6.2.4 Historial de Navegación
+
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png) 
+
+muestra búsquedas relacionadas con programación, lo que refuerza el perfil profesional del usuario como programador. No se han detectado búsquedas sospechosas ni relacionadas con el caso.
+
+#### 6.2.5 Dispositivos vinculados por Bluetooth
+
+Se han identificado los siguientes dispositivos emparejados:
+
+- Móvil de la victima(desarrollado en el punto anterior):
+
+```html
+<N1 Tag="1c:af:05:9e:19:74">
+    <N1 Tag="Timestamp" Type="int">1499931533</N1>
+    <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2>
+    <N3 Tag="DevClass" Type="int">5898764</N3>
+    <N4 Tag="DevType" Type="int">1</N4>
+    <N5 Tag="AddrType" Type="int">0</N5>
+</N1>
+```
+
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image2.png) 
+
+- Amazon Echo:
+
+```html
+<N2 Tag="74:c2:46:88:5d:09">
+    <N1 Tag="Timestamp" Type="int">1500194150</N1>
+    <N2 Tag="DevClass" Type="int">787476</N2>
+    <N3 Tag="DevType" Type="int">1</N3>
+    <N4 Tag="AddrType" Type="int">0</N4>
+    <N5 Tag="Name" Type="string">Echo-2W5</N5>
+    <N6 Tag="Manufacturer" Type="int">69</N6>
+    <N7 Tag="LmpVer" Type="int">5</N7>
+    <N8 Tag="LmpSubVer" Type="int">0</N8>
+    <N9 Tag="LinkKeyType" Type="int">4</N9>
+    <N10 Tag="PinLength" Type="int">0</N10>
+    <N11 Tag="LinkKey" Type="binary">234da2cdf7a5b993987432e337c6e005</N11>
+    <N12 Tag="Service" Type="string">0000110a-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb 4e72b490-1d0f-bf92-0e47-a84e01000000 </N12>
+</N2>
+```
+
+![Historial de navegación](./Write-Ups/Movil_Victima/img/1.png) 
+
+- Pulsera inteligente:
+
+```html
+<N4 Tag="88:0f:10:f6:c8:b7">
+    <N1 Tag="Name" Type="string">MI1A</N1>
+    <N2 Tag="DevClass" Type="int">7936</N2>
+    <N3 Tag="DevType" Type="int">2</N3>
+    <N4 Tag="AddrType" Type="int">0</N4>
+    <N5 Tag="Timestamp" Type="int">1500194153</N5>
+</N4>
+```
+![Historial de navegación](./Write-Ups/Movil_Victima/img/3.png) 
+
+- Auriculares inalámbricos:
+
+```html
+<N5 Tag="b8:ad:3e:01:5b:6a">
+    <N1 Tag="Timestamp" Type="int">1500193456</N1>
+    <N2 Tag="Name" Type="string">LG HBS900</N2>
+    <N3 Tag="DevClass" Type="int">2360324</N3>
+    <N4 Tag="DevType" Type="int">1</N4>
+    <N5 Tag="AddrType" Type="int">0</N5>
+    <N6 Tag="Manufacturer" Type="int">10</N6>
+    <N7 Tag="LmpVer" Type="int">6</N7>
+    <N8 Tag="LmpSubVer" Type="int">8648</N8>
+    <N9 Tag="LinkKeyType" Type="int">4</N9>
+    <N10 Tag="PinLength" Type="int">0</N10>
+    <N11 Tag="LinkKey" Type="binary">29fb76aa459555ea59f8cede4aabba7e</N11>
+    <N12 Tag="Service" Type="string">00001101-0000-1000-8000-00805f9b34fb 00001108-0000-1000-8000-00805f9b34fb 0000111e-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb </N12>
+</N5>
+```
+
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image1.png) 
+
+#### 6.2.6 Conclusión
+
+El análisis inicial del dispositivo no revela comunicaciones sospechosas ni indicios directos de implicación en el incidente investigado. La vinculación con el móvil de la víctima y otros dispositivos del hogar refuerza la convivencia y la interacción tecnológica habitual.
+
 ### 6.3 Análisis SmartTV
 
 Se analizó la Raspberry Pi utilizada como Smart TV. Se puede ver en el archivo `/var/log/wtmp` que se encarga de los registros de sessiones de inicio, un log a las 3PM, ver **figura 8**
