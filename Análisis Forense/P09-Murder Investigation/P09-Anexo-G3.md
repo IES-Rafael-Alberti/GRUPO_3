@@ -85,6 +85,10 @@ Figura 9 : Dispositivo Google On Hub
 
 ![](./Write-Ups/GoogleOnHub/image.png)
 
+Figura 10: Historial de navegación
+
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png)
+
 ## 4. Hallazgos
 
 ### 4.2 Alexa.
