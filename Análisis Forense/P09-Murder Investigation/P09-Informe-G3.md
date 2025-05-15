@@ -139,6 +139,69 @@ En el aná
 
 ### 6.4 Análisis Alexa
 
+#### 6.4.1 Descripción del Material Analizado
+
+Se ha recibido para análisis un conjunto de evidencias extraídas de un dispositivo Amazon Alexa, consistentes en:
+
+- 14 archivos de audio en formato WAV, grabados por el dispositivo.
+
+- Varias imágenes del historial de consultas realizadas al dispositivo.
+
+- 4 archivos en formato JSON asociados a las grabaciones.
+
+- Imágenes adicionales del historial de comandos. 
+
+#### 6.4.2 Análisis de los Archivos de Audio
+
+A continuación, se detallan los archivos de audio, la hora registrada y el contenido relevante de cada uno:
+
+| Archivo | Hora    | Voz                  | Contenido | Observaciones |
+|---------|---------|----------------------|-----------|---------------|
+| 1.wav   | 3:20 PM | Masculina | "Alexa, call ambulance!"	| | 
+| 2.wav   | 3:20 PM | Masculina | "Alexa, call ambulance!" | Idéntico a 1.wav |
+| 3.wav   | 3:20 PM | Masculina | "Alexa, turn off TV" | |
+| 4.wav   | 3:20 PM | Masculina | "Alexa, turn off TV" | Idéntico a 3.wav |
+| 5.wav   | 3:13 PM | Femenina | "Alexa, ... stop" | Pausa entre "Alexa" y "stop", música de fondo |
+| 6.wav   | 3:12 PM | Femenina | "Alexa, ... stop" | Idéntico a 5.wav |
+| 7.wav   | 3:12 PM | Femenina y Masculina | "Alexa, ... stop" / "I can't believe you're doing this to me. We said we would. What are you thinking?" | JSON vacío, solo imagen de historial |
+| 8.wav   | 3:12 PM | Femenina y Masculina | "Alexa, ... stop" / "How can you do this? What are you thinking?" |
+| 9.wav   | 3:06 PM | Femenina | "Alexa, turn on Pandora" | Pandora es una app de música |
+| 10.wav  | 3:06 PM | Femenina | "Alexa, turn on Pandora" | Idéntico a 9.wav |
+| 11.wav	 | 3:01 PM | Masculina | "Alexa, turn on TV"	| |
+| 12.wav	 | 3:01 PM | Masculina | "Alexa, turn on TV" | Idéntico a 11.wav |
+| 13.wav	 | 2:45 PM | Varias | Conversación informal, parece una demostración del dispositivo a invitados | |
+| 14.wav	 | 2:57 PM | Masculina | Incomprensible | |
+
+#### 6.4.3 Análisis de Archivos JSON e Imágenes del Historial
+
+Se analizaron los archivos JSON y las imágenes del historial de consultas. Se identificaron los siguientes eventos adicionales:
+
+- Consultas al dispositivo a las 2:31 PM, 12:07 PM, 11:57 AM, y 8:24 PM del 16 de abril de 2017.
+
+- El 17 de abril de 2017, fecha de la muerte de la víctima, se concentran los eventos relevantes entre las 15:00 y las 15:31.
+
+#### 6.4.4 Cronología de los Hechos Relevantes (17 de abril de 2017)
+
+A partir del análisis de los audios y el historial, se ha reconstruido la siguiente secuencia temporal:
+
+- Antes de las 15:00: Se detecta la presencia de varias personas en la vivienda.
+
+- 15:01: Un hombre ordena encender la televisión.
+
+- 15:06: Una mujer solicita encender la aplicación de música Pandora.
+
+- 15:12 - 15:13: Se produce una discusión entre el hombre y la mujer.
+
+- 15:13: La mujer ordena detener la música.
+
+- 15:20: El hombre ordena apagar la televisión.
+
+- 15:20: El hombre solicita llamar a una ambulancia.
+
+#### 6.4.5 Conclusiones del Análisis de Alexa
+
+El análisis forense del dispositivo Alexa revela que había presencia y actividad de varias personas en la vivienda antes de las 15:00. Los registros de audio muestran interacciones desde las 14:45, seguidas de una secuencia de comandos y conversaciones que culminan con una solicitud de llamada a una ambulancia a las 15:20. Esta cronología aporta contexto relevante sobre los hechos investigados y sugiere la necesidad de revisar y contrastar la hora de llegada mencionada en el enunciado con otras fuentes de evidencia.
+
 ### 6.5 Análisis tráfico de red SmartHome
 
 ### 6.6 Análisis informe diagnóstico Google OnHub
