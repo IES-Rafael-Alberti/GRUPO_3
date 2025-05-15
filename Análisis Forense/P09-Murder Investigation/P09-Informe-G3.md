@@ -42,6 +42,30 @@ El análisis del Amazon Echo reveló la existencia de grabaciones de audio y com
 
 ## 2. Glosario de términos
 
+**SmartTV:**
+Televisor inteligente que, además de mostrar contenido tradicional, permite conectarse a internet y ejecutar aplicaciones como servicios de streaming, navegación web, etc.
+
+**Bluetooth:**
+Tecnología inalámbrica de corto alcance utilizada para la transmisión de datos entre dispositivos electrónicos, como teléfonos móviles, auriculares y altavoces.
+
+**Altavoz inteligente (Amazon Echo):**
+Dispositivo que integra un asistente virtual (como Alexa), capaz de ejecutar comandos de voz, reproducir música, controlar otros dispositivos y grabar interacciones.
+
+**Evidencia digital:**
+Cualquier información almacenada o transmitida en formato electrónico que pueda ser utilizada en una investigación.
+
+**Emparejamiento Bluetooth:**
+Proceso mediante el cual dos dispositivos habilitados para Bluetooth se reconocen y se conectan para intercambiar datos.
+
+**Grabaciones de comandos:**
+Registros de las órdenes de voz emitidas a dispositivos inteligentes, almacenadas para su posterior consulta o análisis.
+
+**Registro de actividad:**
+Historial de acciones realizadas en un dispositivo, como reproducción de contenido, conexiones, búsquedas o comandos ejecutados.
+
+**Búsquedas relevantes:**
+Consultas realizadas en internet o en aplicaciones que pueden aportar información significativa para la investigación.
+
 ## 3. Introducción
 
 ### 3.1 Datos del equipo
@@ -421,6 +445,12 @@ Tras el análisis hemos creado la siguiente linea del tiempo con los hechos acon
 No se han encontrado limitaciones en el proceso de investigación de este caso.
 
 ## 9. Conclusión
+
+A partir del análisis forense realizado sobre los dispositivos electrónicos y fuentes digitales asociados al caso, se han obtenido datos relevantes que permiten reconstruir parcialmente los acontecimientos ocurridos en el periodo investigado. La revisión de la SmartTV indica que se estaba reproduciendo una película durante el intervalo de interés, y los registros de los dispositivos móviles y del altavoz inteligente muestran actividad habitual, sin evidencias de comunicaciones o búsquedas anómalas en ese periodo.
+
+No se hallaron pruebas concluyentes sobre la utilización de auriculares conectados a la SmartTV en el momento de los hechos. Asimismo, los registros de emparejamiento Bluetooth y las grabaciones del altavoz inteligente aportan información complementaria sobre la dinámica en la vivienda, sin que se detecten elementos que permitan establecer de manera definitiva la secuencia completa de los hechos.
+
+En conclusión, la evidencia digital analizada proporciona información relevante sobre la actividad tecnológica en el domicilio durante el periodo investigado, pero no permite establecer afirmaciones concluyentes sobre la totalidad de los hechos ocurridos. Se recomienda complementar estos hallazgos con otras fuentes de investigación para lograr una visión más completa y objetiva del caso.
 
 ## 10. Anexos
 
