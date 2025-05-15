@@ -93,13 +93,21 @@ Figura 11: Amazon echo
 
 ![Amazon echo](Write-Ups/Movil_Victima/img/1.png)
 
-Figura 12: Modelo del móvil
+Figura 12: Modelo del móvil del marido
 
 ![Móvil del marido](./Write-Ups/Movil_Marido/img/image2.png)
 
 Figura 13: Pulsera Inteligente
 
 ![Pulsera inteligente](Write-Ups/Movil_Victima/img/3.png)
+
+Figura 14: Modelo de móvil de la víctima
+
+![alt text](Write-Ups/Movil_Marido/img/image2.png)
+
+Hallazgo 15: Auriculares inalámbricos
+
+![alt text](Write-Ups/Movil_Marido/img/image1.png)
 
 ## 4. Hallazgos
 
@@ -167,18 +175,18 @@ Hallazgo 4: Información forense del dispositivo móvil
 | Contenido del fichero         | ![](./Write-Ups/TV/img/img1.png) ![](./Write-Ups/TV/img/img2.png) ![](./Write-Ups/TV/img/img3.png) |
 | MAC time                      | 15/Jul/2017 23:52:00 +0000 15/Jul/2017 23:41:00 +0000                                              |
 
-### 4.7 Dispositivos vinculados por bluetoothal dispositvo de la víctima
+### 4.7 Dispositivos vinculados por bluetooth al dispositvo de la víctima
 
-Hallazgo 7: Dispositivos Bluetooth móvil del marido
+Hallazgo 7: Dispositivo Amazon Echo
 
 | Campo                         | Valor                                                                                              |
 | ----------------------------- | -------------------------------------------------------------------------------------------------- |
-| Tipo de evidencias            | ispositiv Amazon Echo                                                                              |
+| Tipo de evidencias            | Dispositivo Amazon Echo                                                                              |
 | Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
 | Contenido del fichero         | ```<N1 Tag="74:c2:46:88:5d:09"><N1 Tag="Name" Type="string">Echo-2W5</N1><N2 Tag="Manufacturer" Type="int">69</N2><N3 Tag="LmpVer" Type="int">5</N3><N4 Tag="LmpSubVer" Type="int">0</N4><N5 Tag="DevClass" Type="int">787476</N5><N6 Tag="DevType" Type="int">1</N6><N7 Tag="LinkKeyType" Type="int">4</N7><N8 Tag="PinLength" Type="int">0</N8><N9 Tag="LinkKey" Type="binary">964318898948219dfe49005bf025256e</N9><N10 Tag="Service" Type="string">0000110a-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb 4e72b490-1d0f-bf92-0e47-a84e01000000 </N10></N1>``` |
 | Observaciones                 | Podemos ver el dispositivo Echo-2W5 con MAC 74:c2:46:88:5d:09. Este podemos ver que es un dispositivo como el Alexa que consta en el informe pericial.|
 
-Hallazgo 8: Dispositivos móvil del marido
+Hallazgo 8: Dispositivo móvil del marido
 
 | Campo                         | Valor                                                                                              |
 | ----------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -196,3 +204,40 @@ Hallazgo 9: Pulsera inteligente
 | Contenido del fichero         | ```<N3 Tag="88:0f:10:f6:c8:b7"><N1 Tag="Name" Type="string">MI1A</N1><N2 Tag="DevClass" Type="int">7936</N2><N3 Tag="DevType" Type="int">2</N3><N4 Tag="AddrType" Type="int">0</N4><N5 Tag="Manufacturer" Type="int">0</N5><N6 Tag="LmpVer" Type="int">0</N6><N7 Tag="LmpSubVer" Type="int">0</N7><N8 Tag="Timestamp" Type="int">1499933446</N8></N3>```                                                              |
 | Observaciones                 | Podemos ver el último dispositivo que aparece llamado MI1A con MAC 88:0f:10:f6:c8:b7. |
 
+### 4.8 Dispositivos vinculados por bluetooth al dispositvo del marido de la víctima
+
+Hallazgo 10: Dispositivo móvil de la víctima
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Dispositivo móvil de la víctima                                                                    |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N1 Tag="1c:af:05:9e:19:74"><N1 Tag="Timestamp" Type="int">1499931533</N1><N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2><N3 Tag="DevClass" Type="int">5898764</N3><N4 Tag="DevType" Type="int">1</N4><N5 Tag="AddrType" Type="int">0</N5></N1>``` |
+| Observaciones                 | Aquí podemos el dispositivo móvil de la mujer del marido llamado Betty (SHV-E250L) con MAC 1c:af:05:9e:19:74.|
+
+Hallazgo 11: Dispositivo Amazon Echo
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Dispositivo Amazon Echo                                                                              |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N1 Tag="74:c2:46:88:5d:09"><N1 Tag="Name" Type="string">Echo-2W5</N1><N2 Tag="Manufacturer" Type="int">69</N2><N3 Tag="LmpVer" Type="int">5</N3><N4 Tag="LmpSubVer" Type="int">0</N4><N5 Tag="DevClass" Type="int">787476</N5><N6 Tag="DevType" Type="int">1</N6><N7 Tag="LinkKeyType" Type="int">4</N7><N8 Tag="PinLength" Type="int">0</N8><N9 Tag="LinkKey" Type="binary">964318898948219dfe49005bf025256e</N9><N10 Tag="Service" Type="string">0000110a-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb 4e72b490-1d0f-bf92-0e47-a84e01000000 </N10></N1>``` |
+| Observaciones                 | Podemos ver el dispositivo Echo-2W5 con MAC 74:c2:46:88:5d:09. Este podemos ver que es un dispositivo como el Alexa que consta en el informe pericial.|
+
+Hallazgo 12: Pulsera inteligente
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Pulsera inteligente                                                                                |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N3 Tag="88:0f:10:f6:c8:b7"><N1 Tag="Name" Type="string">MI1A</N1><N2 Tag="DevClass" Type="int">7936</N2><N3 Tag="DevType" Type="int">2</N3><N4 Tag="AddrType" Type="int">0</N4><N5 Tag="Manufacturer" Type="int">0</N5><N6 Tag="LmpVer" Type="int">0</N6><N7 Tag="LmpSubVer" Type="int">0</N7><N8 Tag="Timestamp" Type="int">1499933446</N8></N3>```                                                              |
+| Observaciones                 | Podemos ver el último dispositivo que aparece llamado MI1A con MAC 88:0f:10:f6:c8:b7. |
+
+Hallazgo 13: Auriculares inalámbricos:
+
+| Campo                         | Valor                                                                                              |
+| ----------------------------- | -------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Auriculares inalámbricos                                                                              |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                              |
+| Contenido del fichero         | ```<N5 Tag="b8:ad:3e:01:5b:6a"><N1 Tag="Timestamp" Type="int">1500193456</N1><N2 Tag="Name" Type="string">LG HBS900</N2><N3 Tag="DevClass" Type="int">2360324</N3><N4 Tag="DevType" Type="int">1</N4><N5 Tag="AddrType" Type="int">0</N5><N6 Tag="Manufacturer" Type="int">10</N6><N7 Tag="LmpVer" Type="int">6</N7><N8 Tag="LmpSubVer" Type="int">8648</N8><N9 Tag="LinkKeyType" Type="int">4</N9><N10 Tag="PinLength" Type="int">0</N10><N11 Tag="LinkKey" Type="binary">29fb76aa459555ea59f8cede4aabba7e</N11><N12 Tag="Service" Type="string">00001101-0000-1000-8000-00805f9b34fb 00001108-0000-1000-8000-00805f9b34fb 0000111e-0000-1000-8000-00805f9b34fb 0000110b-0000-1000-8000-00805f9b34fb 0000110e-0000-1000-8000-00805f9b34fb </N12></N5>```                                                              |
+| Observaciones                 | Podemos ver un dispositivo llamado LG HBS900 con MAC b8:ad:3e:01:5b:6a. |
