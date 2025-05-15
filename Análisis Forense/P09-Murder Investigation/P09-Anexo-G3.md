@@ -89,6 +89,10 @@ Figura 10: Historial de navegación
 
 ![Historial de navegación](./Write-Ups/Movil_Marido/img/image.png)
 
+Figura 11: Modelo del móvil 
+
+![Historial de navegación](./Write-Ups/Movil_Marido/img/image2.png)
+
 ## 4. Hallazgos
 
 ### 4.2 Alexa.
@@ -119,11 +123,36 @@ Hallazgo 3: Información forense del dispositivo móvil
 
 | Campo                         | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Tipo de evidencias            | Información del sistema, notas, registros de red y dispositivos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Tipo de evidencias            | Información del sistema, notas, registros de red y dispositivos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Ruta de localización completa | Diversas rutas internas del sistema Android y particiones de usuario                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Contenido del fichero         | Capturas, metadatos del dispositivo, notas personales, redes conocidas, dispositivos bluetooth emparejados                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Observaciones                 | El dispositivo Samsung SHV-E250S (modelo coreano) tenía activado Knox, Android 4.4.2 y estaba configurado en inglés, con zona horaria de Corea. Se identificaron redes conocidas como "HOME" y dispositivos emparejados como el móvil de la víctima (`Betty`), un Amazon Echo (`Echo-2W5`), una pulsera inteligente (`MI1A`) y unos auriculares LG (`LG HBS900`). Las notas personales y elementos multimedia indican actividad laboral y familiar normal, sin indicios directos de actividad maliciosa, pero con vínculos clave al entorno de la víctima. |
+
+Hallazgo 7: Dispositivos Bluetooth móvil del marido
+
+
+
+| Campo                         | Valor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tipo de evidencias            | Dispositivo móvil de la víctima                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Ruta de localización completa | USERDATA/misc/bluedroid/bt_config.xml                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Contenido del fichero         |    
+```
+<N1 Tag="1c:af:05:9e:19:74">
+    <N1 Tag="Timestamp" Type="int">1499931533</N1>
+    <N2 Tag="Name" Type="string">Betty (SHV-E250L)</N2>
+    <N3 Tag="DevClass" Type="int">5898764</N3>
+    <N4 Tag="DevType" Type="int">1</N4>
+    <N5 Tag="AddrType" Type="int">0</N5>
+</N1>
+```|
+
+
+| MAC time                      | Último check-in: 15/Jul/2017 16:00:04 UTC                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Observaciones                 | Aquí podemos el dispositivo móvil de la mujer del marido llamado `Betty (SHV-E250L)` con MAC `1c:af:05:9e:19:74`.|
+
+
 
 ### 4.5 Dispositivo móvil víctima.
 
