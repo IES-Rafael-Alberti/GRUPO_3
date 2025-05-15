@@ -214,11 +214,11 @@ El análisis forense del dispositivo Alexa revela que había presencia y activid
 
 Para el análisis se extrajeron evidencias del dispositivo Google On Hub (ver **hallazgo 2** ), un router con sistema operativo basado en Chrome OS, desarrollado por Google en colaboración con TP-Link y ASUS. La figura 9 muestra el panel inicial con información clave obtenida del sistema, como la versión del sistema operativo (CHROMEOS_RELEASE_VERSION=9460.40.5) y las DNS configuradas. Entre ellas, destaca la dirección 210.115.225.11, cuya geolocalización en Corea del Sur no corresponde con un servicio DNS habitual, lo que sugiere una posible configuración alterada.
 
-A continuación, se analizaron las configuraciones de red del sistema, donde se identificaron tres SSID activos: HOME, HOME-guest y 4E2F1AD, tal como se observa en la figura 11. Estos nombres corresponden a redes domésticas principales, de invitados y en malla, lo que refuerza el papel del dispositivo como punto de acceso múltiple.
+Luego hemos analizado las configuraciones de red del sistema, donde se identificaron tres SSID activos: HOME, HOME-guest y 4E2F1AD, tal como se observa en la figura 11. Estos nombres corresponden a redes domésticas principales, de invitados y en malla, lo que refuerza el papel del dispositivo como punto de acceso múltiple.
 
 Se documenta la lista completa de adaptadores de red presentes en el sistema, donde se observa que las interfaces br-lan y br-guest tienen direcciones IP asignadas en subredes diferentes, lo cual concuerda con la segmentación entre red principal y de invitados.
 
-Finalmente, se consultó la tabla ARP del sistema , donde se identificaron conexiones de al menos 11 dispositivos. Del total, 8 se encuentran en la red principal (br-lan), 1 en la red de invitados y 2 presentan direcciones IP anómalas, fuera del rango habitual, una de ellas dentro del espacio link-local (169.254.x.x). Esta distribución puede indicar conexiones no autorizadas o configuraciones irregulares dentro del entorno de red del dispositivo.
+Por último se miró la tabla ARP del sistema , donde encontramos conexiones de al menos 11 dispositivos. Del total, 8 se encuentran en la red principal (br-lan), 1 en la red de invitados y 2 presentan direcciones IP anómalas, fuera del rango habitual, una de ellas dentro del espacio link-local (169.254.x.x). Esta distribución puede indicar conexiones no autorizadas o configuraciones irregulares dentro del entorno de red del dispositivo.
 
 ## 7. Línea de tiempo
 
